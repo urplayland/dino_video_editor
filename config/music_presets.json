@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "soundfont": {
+    "path": "library/media/instruments/fluidr3/FluidR3_GM.sf2",
+    "sha256": "74594e8f4250680adf590507a306655a299935343583256f3b722c48a1bc1cb0",
+    "license": "MIT; copied package copyright/permission notice retained",
+    "license_path": "library/licenses/fluidr3-gm.txt",
+    "source": "Ubuntu fluid-soundfont-gm 3.1-5.3; Frank Wen FluidR3",
+    "source_reference": "https://sources.debian.org/src/fluid-soundfont/3.1-5.2/README/"
+  },
+  "instruments": {
+    "flute": {
+      "channel": 0,
+      "program": 73,
+      "pan": 74
+    },
+    "celesta": {
+      "channel": 1,
+      "program": 8,
+      "pan": 52
+    },
+    "harp": {
+      "channel": 2,
+      "program": 46,
+      "pan": 82
+    },
+    "strings": {
+      "channel": 3,
+      "program": 48,
+      "pan": 49
+    },
+    "cello": {
+      "channel": 4,
+      "program": 42,
+      "pan": 60
+    },
+    "pizzicato": {
+      "channel": 5,
+      "program": 45,
+      "pan": 77
+    },
+    "tremolo": {
+      "channel": 6,
+      "program": 44,
+      "pan": 44
+    },
+    "bassoon": {
+      "channel": 7,
+      "program": 70,
+      "pan": 58
+    },
+    "horn": {
+      "channel": 8,
+      "program": 60,
+      "pan": 86
+    },
+    "drums": {
+      "channel": 9,
+      "program": 0,
+      "pan": 64
+    },
+    "bass": {
+      "channel": 10,
+      "program": 43,
+      "pan": 64
+    },
+    "timpani": {
+      "channel": 11,
+      "program": 47,
+      "pan": 55
+    },
+    "musicbox": {
+      "channel": 12,
+      "program": 10,
+      "pan": 78
+    }
+  },
+  "renderer": {
+    "gain": 0.45,
+    "reverb_room_size": 0.55,
+    "reverb_damp": 0.35,
+    "reverb_level": 0.18,
+    "chorus": false
+  },
+  "notes": "Reusable General MIDI instrument registry; zero-based programme/channel numbers. No vocal or choir instruments are used."
+}

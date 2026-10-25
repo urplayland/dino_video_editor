@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dino Adventures production v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "status",
+    "languages",
+    "source_video",
+    "original_reference",
+    "source_start_s",
+    "duration_s",
+    "voice_registry",
+    "sfx_registry",
+    "output_dir",
+    "report_dir",
+    "original_audio",
+    "mix",
+    "transcript_evidence",
+    "dialogue",
+    "beds",
+    "sfx",
+    "exports",
+    "api_preflight"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "multilingual_production"
+    },
+    "status": {
+      "enum": [
+        "sample",
+        "draft",
+        "verified",
+        "approved"
+      ]
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "en",
+          "zh",
+          "ms"
+        ]
+      }
+    },
+    "source_video": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_start_s": {
+      "const": 0
+    },
+    "duration_s": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "voice_registry": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sfx_registry": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "report_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_audio": {
+      "const": "replace"
+    },
+    "transcript_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "dialogue": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "character",
+          "voice_version",
+          "status",
+          "start_s",
+          "end_s",
+          "text",
+          "source_verification"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "character": {
+            "type": "string",
+            "minLength": 1
+          },
+          "voice_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "sample",
+              "draft",
+              "verified",
+              "approved"
+            ]
+          },
+          "start_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "text": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh",
+              "ms"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ms": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "source_verification": {
+            "type": "string",
+            "minLength": 1
+          },
+          "audio": {
+            "type": "object"
+          },
+          "include_in_dub": {
+            "type": "boolean",
+            "default": true
+          }
+        }
+      }
+    },
+    "beds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "category",
+          "start_s",
+          "duration_s",
+          "gain_db",
+          "status",
+          "dialogue_free"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "music",
+              "ambience",
+              "sfx"
+            ]
+          },
+          "start_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "gain_db": {
+            "type": "number",
+            "minimum": -60,
+            "maximum": 12
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "approved"
+            ]
+          },
+          "dialogue_free": {
+            "const": true
+          }
+        }
+      }
+    },
+    "sfx": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "category",
+          "start_s",
+          "duration_s",
+          "gain_db",
+          "status",
+          "dialogue_free"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "music",
+              "ambience",
+              "sfx"
+            ]
+          },
+          "start_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "gain_db": {
+            "type": "number",
+            "minimum": -60,
+            "maximum": 12
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "approved"
+            ]
+          },
+          "dialogue_free": {
+            "const": true
+          }
+        }
+      }
+    },
+    "mix": {
+      "type": "object",
+      "required": [
+        "integrated_lufs",
+        "true_peak_db"
+      ],
+      "properties": {
+        "integrated_lufs": {
+          "type": "number",
+          "minimum": -30,
+          "maximum": -12
+        },
+        "true_peak_db": {
+          "type": "number",
+          "minimum": -6,
+          "maximum": -1
+        }
+      }
+    },
+    "exports": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh",
+        "ms"
+      ],
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ms": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "api_preflight": {
+      "type": "object",
+      "required": [
+        "owner_confirmed_billing_disabled"
+      ],
+      "properties": {
+        "owner_confirmed_billing_disabled": {
+          "const": true
+        }
+      }
+    }
+  }
+}

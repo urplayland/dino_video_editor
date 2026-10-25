@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "language": "ms",
+  "status": "current_episode_usage_audited",
+  "register": "Natural Malaysian Malay children's dialogue; conversational forms allowed, not a fully formal classroom text",
+  "names_registry": "config/character_names.json",
+  "terms": {
+    "character.dino": {
+      "canonical": "Dino",
+      "category": "character_name",
+      "address_forms": [
+        "Dino",
+        "Dino kecil"
+      ],
+      "note": "kecil is the source's affectionate little-Dino adjective, not a second name. Keep Dino spelling and pronunciation consistent."
+    },
+    "character.moon": {
+      "canonical": "Bulan",
+      "category": "character_name",
+      "note": "Capital B when addressing/referring to the personified Moon character."
+    },
+    "character.cloud": {
+      "canonical": "Atuk Awan",
+      "category": "character_name",
+      "status": "owner_confirmed",
+      "note": "Owner confirmed Atuk Awan. Use this name for the character in future episodes; ordinary awan and place Gunung Awan retain their meanings. Current episode has no direct spoken address to the Guardian, so no new dialogue or regeneration is needed."
+    },
+    "place.cloud_mountain": {
+      "canonical": "Gunung Awan",
+      "category": "place_name"
+    },
+    "environment.clouds": {
+      "canonical": "awan",
+      "category": "common_noun",
+      "note": "Ordinary clouds are not the Guardian. Never globally replace awan with the Guardian's proper name."
+    },
+    "action.save": {
+      "canonical": "selamatkan",
+      "category": "verb"
+    },
+    "state.trapped_behind_clouds": {
+      "canonical": "tersekat di sebalik awan",
+      "category": "scene_phrase",
+      "note": "This is the selected final take. Older terperangkap takes remain archived but are not used in current v007. Other trapping contexts may legitimately need different wording."
+    },
+    "state.free": {
+      "canonical": "bebas",
+      "category": "adjective"
+    },
+    "action.help_request": {
+      "canonical": "tolong",
+      "category": "request",
+      "note": "Polite request use; do not mechanically replace it with bantu."
+    },
+    "action.help_together": {
+      "canonical": "bantu",
+      "category": "verb"
+    }
+  },
+  "pronouns": {
+    "first_person": "saya",
+    "second_person": "kamu",
+    "inclusive_we": "kita",
+    "third_person": "dia",
+    "note": "Current consistent defaults. Other pronouns may be appropriate when context changes; this is not a grammar ban."
+  },
+  "conversational_forms": {
+    "tak": "tidak",
+    "nak": "hendak",
+    "dah": "sudah"
+  },
+  "sources": [
+    "https://prpm.dbp.gov.my/Cari1?d=123312&keyword=atuk",
+    "https://prpm.dbp.gov.my/Cari1?d=73980&keyword=nak",
+    "https://prpm.dbp.gov.my/Cari1?d=73980&keyword=dah",
+    "https://prpm.dbp.gov.my/Cari1?d=73980&keyword=disekati"
+  ],
+  "approval_note": "Owner confirmed the Malay Guardian name Atuk Awan. Other entries reflect audited current usage; this is not a native-speaker acting approval."
+}

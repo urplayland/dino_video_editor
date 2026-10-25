@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "language": "zh",
+  "font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+  "font_name": "Noto Sans CJK SC",
+  "font_size": 38,
+  "margin_bottom": 34,
+  "max_text_width": 610,
+  "packaged_offset_s": 2,
+  "ass_path": "episodes/save-the-moon/media/derived/subtitles-zh-v009/zh.ass",
+  "story_srt_path": "episodes/save-the-moon/media/derived/subtitles-zh-v009/zh-story.srt",
+  "packaged_srt_path": "episodes/save-the-moon/exports/dino_saves_the_moon_zh_flh_v009.srt",
+  "report_path": "episodes/save-the-moon/reports/branding-zh-v009/subtitles.json",
+  "layout": "overlay",
+  "outline_px": 2.5,
+  "shadow_px": 2,
+  "font_index": 2
+}

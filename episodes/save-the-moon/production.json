@@ -1,0 +1,1107 @@
+{
+  "schema_version": 1,
+  "kind": "multilingual_production",
+  "status": "verified",
+  "title": "Dino Saves the Moon",
+  "languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "source_video": "episodes/save-the-moon/media/originals/handover-20261025/Dino_Saves_the_Moon_NO_AUDIO.mp4",
+  "original_reference": "episodes/save-the-moon/media/originals/handover-20261025/upload/Dino_save_the_moon_20261021165509(1).mp4",
+  "source_start_s": 0,
+  "duration_s": 70.927018,
+  "voice_registry": "config/voices.json",
+  "sfx_registry": "config/sfx_presets.json",
+  "original_audio": "replace",
+  "output_dir": "episodes/save-the-moon/media/derived/production-v001",
+  "report_dir": "episodes/save-the-moon/reports/production-v002",
+  "transcript_evidence": [
+    "episodes/save-the-moon/reports/transcription-original.small-en.json",
+    "episodes/save-the-moon/reports/transcription-original.medium-en.json"
+  ],
+  "source_verification_status": "independent_machine_transcripts_compared_picture_speaker_review",
+  "human_review_status": "English v007 accepted; Malay v007 retained; Chinese v009 natural-dialogue/name revision technically verified and delivered, owner listening review pending.",
+  "api_preflight": {
+    "owner_confirmed_billing_disabled": true,
+    "model_metadata_verified": true,
+    "first_english_line_succeeded": true,
+    "on_quota_exhaustion": "stop_and_report_no_billing_or_model_changes",
+    "credential_source": "bursa-sim-primary-env-runtime-only",
+    "credential_switch_authorization": "Owner explicitly authorized Bursa SIM primary GEMINI_API_KEY and confirmed billing disabled on 2026-10-25.",
+    "owner_authorized_free_key_pool": true,
+    "authorized_key_variables": [
+      "GEMINI_API_KEY_B",
+      "GEMINI_API_KEY_C",
+      "GEMINI_API_KEY_F",
+      "GEMINI_API_KEY_H",
+      "GEMINI_API_KEY_I",
+      "GEMINI_API_KEY_S",
+      "GEMINI_API_KEY_T",
+      "GEMINI_API_KEY_D"
+    ],
+    "owner_authorization": "Owner authorized remaining available configured Bursa keys in free tier; English FLH branding and ending take priority before further language generation."
+  },
+  "mix": {
+    "integrated_lufs": -16,
+    "true_peak_db": -1.5,
+    "status": "production_working_targets_not_platform_certification"
+  },
+  "score": {
+    "music_path": "episodes/save-the-moon/media/derived/score-v002/underscore.wav",
+    "ambience_path": "library/media/audio/ambience/dino-night-v001.wav",
+    "generator": "tools/scene_score.py",
+    "duration_s": 70.927018,
+    "provenance": "Original nine-cue MIDI composition; offline FluidR3 GM sampled instruments, MIT notice library/licenses/fluidr3-gm.txt; retained original synthesized night ambience.",
+    "plan": "episodes/save-the-moon/music-v002.json"
+  },
+  "beds": [
+    {
+      "path": "episodes/save-the-moon/media/derived/score-v002/underscore.wav",
+      "category": "music",
+      "start_s": 0,
+      "duration_s": 70.927018,
+      "gain_db": -2,
+      "status": "verified",
+      "dialogue_free": true
+    },
+    {
+      "path": "library/media/audio/ambience/dino-night-v001.wav",
+      "category": "ambience",
+      "start_s": 0,
+      "duration_s": 70.927018,
+      "gain_db": -3,
+      "status": "verified",
+      "dialogue_free": true
+    }
+  ],
+  "sfx": [
+    {
+      "id": "cloud-cover",
+      "effect": "whoosh",
+      "path": "library/media/audio/sfx/kit-v001/whoosh.wav",
+      "start_s": 2.3,
+      "duration_s": 1.2,
+      "gain_db": -7,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "dino-reaction",
+      "effect": "pop",
+      "path": "library/media/audio/sfx/kit-v001/pop.wav",
+      "start_s": 4.0,
+      "duration_s": 0.35,
+      "gain_db": -11,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "dino-walk-1",
+      "effect": "footsteps",
+      "path": "library/media/audio/sfx/kit-v001/footsteps.wav",
+      "start_s": 20.3,
+      "duration_s": 2,
+      "gain_db": -10,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "dino-walk-2",
+      "effect": "footsteps",
+      "path": "library/media/audio/sfx/kit-v001/footsteps.wav",
+      "start_s": 22.5,
+      "duration_s": 2,
+      "gain_db": -10,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "guardian-arrive",
+      "effect": "whoosh",
+      "path": "library/media/audio/sfx/kit-v001/whoosh.wav",
+      "start_s": 30.35,
+      "duration_s": 1.2,
+      "gain_db": -7,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "guardian-presence",
+      "effect": "rumble",
+      "path": "library/media/audio/sfx/kit-v001/rumble.wav",
+      "start_s": 31.65,
+      "duration_s": 2.5,
+      "gain_db": -10,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "moon-reveal",
+      "effect": "chime",
+      "path": "library/media/audio/sfx/kit-v001/chime.wav",
+      "start_s": 44.2,
+      "duration_s": 2.4,
+      "gain_db": -10,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "restoration-wind",
+      "effect": "whoosh",
+      "path": "library/media/audio/sfx/kit-v001/whoosh.wav",
+      "start_s": 53.9,
+      "duration_s": 1.2,
+      "gain_db": -5,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "restoration-chime",
+      "effect": "chime",
+      "path": "library/media/audio/sfx/kit-v001/chime.wav",
+      "start_s": 55,
+      "duration_s": 2.4,
+      "gain_db": -5,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "moon-free",
+      "effect": "chime",
+      "path": "library/media/audio/sfx/kit-v001/chime.wav",
+      "start_s": 58,
+      "duration_s": 2.4,
+      "gain_db": -10,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    },
+    {
+      "id": "ending-sparkles",
+      "effect": "chime",
+      "path": "library/media/audio/sfx/kit-v001/chime.wav",
+      "start_s": 68,
+      "duration_s": 2.4,
+      "gain_db": -8,
+      "status": "verified",
+      "dialogue_free": true,
+      "category": "sfx",
+      "timing_basis": "Editorial cue aligned to contact sheet; not original SFX transcription."
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "dino-opening",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 4.5,
+      "end_s": 8.0,
+      "text": {
+        "en": "Oh no! Where did the moon go?",
+        "zh": "糟了！月亮去哪儿了？",
+        "ms": "Alamak! Bulan pergi ke mana?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-opening-audio-check.json",
+          "gain_db": -4.8,
+          "start_s": 4.5,
+          "end_s": 7.6384
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 刚发现月亮不见了，有点着急又疑惑。 本句约2.8秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130710745331Z/dino-opening.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-opening-audio-check.json",
+          "gain_db": -2.9,
+          "start_s": 4.5,
+          "end_s": 7.1848
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-opening-audio-check.json",
+          "gain_db": -4.3,
+          "start_s": 4.5,
+          "end_s": 8.005
+        }
+      }
+    },
+    {
+      "id": "dino-call",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 8.05,
+      "end_s": 9.8,
+      "text": {
+        "en": "Moon!",
+        "zh": "月亮！",
+        "ms": "Bulan!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-call-audio-check.json",
+          "gain_db": -4.2,
+          "start_s": 8.05,
+          "end_s": 9.1052
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/zh-dino-call-audio-check.json",
+          "gain_db": -5.2
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-call-audio-check.json",
+          "gain_db": -5.6
+        }
+      },
+      "include_in_dub": false,
+      "editorial_note": "Owner requested removing only the standalone Moon call after Where did the moon go; retain the source transcript and unused stem. Later Moon! Can you hear me? remains included."
+    },
+    {
+      "id": "dino-call-hear",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 11.75,
+      "end_s": 14.9,
+      "text": {
+        "en": "Moon! Can you hear me?",
+        "zh": "月亮！你能听见我吗？",
+        "ms": "Bulan! Kamu dengar tak?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-call-hear-audio-check.json",
+          "gain_db": -5.5,
+          "start_s": 11.75,
+          "end_s": 14.2808
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 抬头呼唤月亮，着急但不大喊。 本句约2.3秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130731745590Z/dino-call-hear.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-call-hear-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 11.75,
+          "end_s": 14.6335
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-call-hear-audio-check.json",
+          "gain_db": -1.3,
+          "start_s": 11.75,
+          "end_s": 13.8625
+        }
+      }
+    },
+    {
+      "id": "moon-help",
+      "character": "moon",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 14.95,
+      "end_s": 17.0,
+      "text": {
+        "en": "Dino, help me!",
+        "zh": "小迪诺，救救我！",
+        "ms": "Dino, tolong saya!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-moon-help-audio-check.json",
+          "gain_db": -4.7,
+          "start_s": 14.95,
+          "end_s": 16.7989
+        },
+        "zh": {
+          "delivery_style": "用自然华语，像月亮看见朋友后，清楚、真诚地求助。保持Sulafat温柔女性本来的声线，发声清亮、连贯有支撑。小迪诺读 xiǎo dí nuò，迪与迪士尼的迪同音，诺与承诺的诺同音。整句自然地一口气说出，语气稍着急，约2秒。",
+          "direction_profile": "zh-natural-v002/name-focus-v003",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T133608596930Z/moon-help.wav",
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-moon-help-audio-check.json",
+          "gain_db": -8.0,
+          "start_s": 14.95,
+          "end_s": 16.9327
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-moon-help-audio-check.json",
+          "gain_db": -4.8,
+          "start_s": 14.95,
+          "end_s": 17.3198
+        }
+      }
+    },
+    {
+      "id": "dino-is-that-you",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 17.1,
+      "end_s": 20.5,
+      "text": {
+        "en": "Moon? Is that you?",
+        "zh": "月亮？是你吗？",
+        "ms": "Bulan? Kamukah itu?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-is-that-you-audio-check.json",
+          "gain_db": -3.7,
+          "start_s": 17.1,
+          "end_s": 19.2639
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 惊讶地认出声音，真诚地确认。 本句约1.8秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130813745740Z/dino-is-that-you.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-is-that-you-audio-check.json",
+          "gain_db": -6.5,
+          "start_s": 17.1,
+          "end_s": 19.0593
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-is-that-you-audio-check.json",
+          "gain_db": -4.2,
+          "start_s": 17.3798,
+          "end_s": 19.9265
+        }
+      }
+    },
+    {
+      "id": "cloud-challenge",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 31.5,
+      "end_s": 34.5,
+      "text": {
+        "en": "Who dares enter Cloud Mountain?",
+        "zh": "谁敢闯入云雾山？",
+        "ms": "Siapa berani masuk Gunung Awan?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-challenge-audio-check.json",
+          "gain_db": -4.7,
+          "start_s": 32.15,
+          "end_s": 35.155
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 发现有人来了，温和但有分量地发问，不要吼叫。 本句约2.4秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130834745821Z/cloud-challenge.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-challenge-audio-check.json",
+          "gain_db": -3.6,
+          "start_s": 32.15,
+          "end_s": 35.0725
+        },
+        "ms": {
+          "delivery_style": "Keep the approved warm old-gentleman character and natural Malaysian pronunciation. This cue must be compact: speak as one connected phrase at a lively conversational pace, no dramatic pauses or drawn-out vowels, about 2.6 seconds.",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/ms/take-20261025T123932081311Z/cloud-challenge.wav",
+          "start_s": 32.15,
+          "end_s": 35.154,
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-challenge-audio-check.json",
+          "gain_db": -1.4
+        }
+      },
+      "timing_overrides": {
+        "en": {
+          "start_s": 32.15,
+          "reason": "Owner Cloud entrance sync correction"
+        },
+        "zh": {
+          "start_s": 32.15,
+          "reason": "Apply approved v007 Cloud face-entry anchor; independently fit each language dialogue duration."
+        },
+        "ms": {
+          "start_s": 32.15,
+          "reason": "Apply approved v007 Cloud face-entry anchor; independently fit each language dialogue duration."
+        }
+      }
+    },
+    {
+      "id": "cloud-question",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 34.65,
+      "end_s": 37.4,
+      "text": {
+        "en": "Why do you want to save the moon, little Dino?",
+        "zh": "小迪诺，你为什么想救月亮？",
+        "ms": "Kenapa kamu nak selamatkan Bulan, Dino kecil?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-question-audio-check.json",
+          "gain_db": -2.3,
+          "start_s": 35.215,
+          "end_s": 38.558
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 好奇、耐心地问小迪诺，名字和句子自然连在一起。 本句约2.6秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130855745918Z/cloud-question.wav",
+          "required_names": [
+            "迪诺"
+          ],
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-question-audio-check.json",
+          "gain_db": -1.8,
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "start_s": 35.1325,
+          "end_s": 38.5422
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-question-audio-check.json",
+          "gain_db": -3.2,
+          "start_s": 35.214,
+          "end_s": 38.6869
+        }
+      },
+      "timing_overrides": {
+        "en": {
+          "start_s": 35.215,
+          "reason": "Owner Cloud entrance sync correction"
+        }
+      }
+    },
+    {
+      "id": "dino-friend",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 37.5,
+      "end_s": 40.15,
+      "text": {
+        "en": "Because the moon is my friend.",
+        "zh": "因为月亮是我的朋友。",
+        "ms": "Sebab Bulan kawan saya."
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-friend-audio-check.json",
+          "gain_db": -3.5,
+          "start_s": 38.618,
+          "end_s": 40.7603
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 真诚、朴实地说明原因。 本句约2.1秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130916745980Z/dino-friend.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-friend-audio-check.json",
+          "gain_db": -6.2,
+          "start_s": 38.6022,
+          "end_s": 41.2572
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-friend-audio-check.json",
+          "gain_db": -5.0,
+          "start_s": 38.7469,
+          "end_s": 41.5236
+        }
+      },
+      "timing_overrides": {
+        "en": {
+          "start_s": 38.618,
+          "reason": "Owner Cloud entrance sync correction"
+        }
+      }
+    },
+    {
+      "id": "cloud-friend",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 40.45,
+      "end_s": 42.25,
+      "text": {
+        "en": "Your friend?",
+        "zh": "你的朋友？",
+        "ms": "Kawan kamu?"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-friend-audio-check.json",
+          "gain_db": 3.0,
+          "start_s": 40.8203,
+          "end_s": 41.8502
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 有一点意外，带着好奇重复他的话。 本句约1.0秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130937746170Z/cloud-friend.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-friend-audio-check.json",
+          "gain_db": -1.7,
+          "start_s": 41.3172,
+          "end_s": 42.5511
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-friend-audio-check.json",
+          "gain_db": -0.9,
+          "start_s": 41.5836,
+          "end_s": 43.2078
+        }
+      },
+      "timing_overrides": {
+        "en": {
+          "start_s": 40.8203,
+          "reason": "Owner Cloud entrance sync correction"
+        }
+      }
+    },
+    {
+      "id": "cloud-look",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 42.4,
+      "end_s": 43.6,
+      "text": {
+        "en": "Look!",
+        "zh": "你看！",
+        "ms": "Tengok!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-look-audio-check.json",
+          "gain_db": 3.3,
+          "start_s": 42.4,
+          "end_s": 43.1142
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 温和简短地示意他看。 本句约0.7秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T130958746205Z/cloud-look.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-look-audio-check.json",
+          "gain_db": 0.0,
+          "start_s": 42.6111,
+          "end_s": 43.2413
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-look-audio-check.json",
+          "gain_db": -4.9,
+          "start_s": 43.2678,
+          "end_s": 43.7885
+        }
+      }
+    },
+    {
+      "id": "cloud-trapped",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 43.85,
+      "end_s": 47.3,
+      "text": {
+        "en": "The moon is trapped behind those clouds.",
+        "zh": "月亮被困在那些云后面了。",
+        "ms": "Bulan tersekat di sebalik awan."
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-trapped-audio-check.json",
+          "gain_db": -0.4,
+          "start_s": 43.85,
+          "end_s": 47.305
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 像和孩子解释眼前情况一样自然连贯。 本句约2.7秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131019746249Z/cloud-trapped.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-trapped-audio-check.json",
+          "gain_db": -3.1,
+          "start_s": 43.85,
+          "end_s": 47.305
+        },
+        "ms": {
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/ms/take-20261025T124220993152Z/cloud-trapped.wav",
+          "delivery_style": "Keep the approved warm wise gentleman character and natural Malaysian pronunciation. Speak in a single clear connected phrase, no drawn-out vowels or pauses; compact delivery around 2.8 seconds.",
+          "start_s": 43.85,
+          "end_s": 47.5309,
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-trapped-audio-check.json",
+          "gain_db": -0.6
+        }
+      }
+    },
+    {
+      "id": "dino-see",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 47.5,
+      "end_s": 49.35,
+      "text": {
+        "en": "I can see her!",
+        "zh": "我看见她了！",
+        "ms": "Saya nampak dia!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-see-audio-check.json",
+          "gain_db": -7.1,
+          "start_s": 47.5,
+          "end_s": 48.7122
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 看见月亮了，开心地回应。 本句约1.1秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131040746392Z/dino-see.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-see-audio-check.json",
+          "gain_db": -7.6,
+          "start_s": 47.5,
+          "end_s": 48.7257
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-see-audio-check.json",
+          "gain_db": -5.8,
+          "start_s": 47.5909,
+          "end_s": 49.2751
+        }
+      }
+    },
+    {
+      "id": "dino-save",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 49.5,
+      "end_s": 51.55,
+      "text": {
+        "en": "Please help me save the moon.",
+        "zh": "请帮我救救月亮。",
+        "ms": "Tolong saya selamatkan Bulan."
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-save-audio-check.json",
+          "gain_db": -1.1,
+          "start_s": 49.5,
+          "end_s": 51.4436
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 真诚而着急地请求帮忙，不夸张哭喊。 本句约1.6秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131122748622Z/dino-save.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-save-audio-check.json",
+          "gain_db": -3.4,
+          "start_s": 49.5,
+          "end_s": 51.4619
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-save-audio-check.json",
+          "gain_db": -7.3,
+          "start_s": 49.5,
+          "end_s": 52.0076
+        }
+      }
+    },
+    {
+      "id": "cloud-together",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 51.8,
+      "end_s": 55.3,
+      "text": {
+        "en": "Then let us help her together.",
+        "zh": "那我们就一起帮她吧。",
+        "ms": "Mari kita bantu dia bersama-sama."
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-together-audio-check.json",
+          "gain_db": 0.6,
+          "start_s": 51.8,
+          "end_s": 54.7837
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 微笑着鼓励合作，轻快、肯定。 本句约2.2秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131143755555Z/cloud-together.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-together-audio-check.json",
+          "gain_db": -2.4,
+          "start_s": 51.8,
+          "end_s": 53.9515
+        },
+        "ms": {
+          "delivery_style": "Keep the approved warm old-gentleman character and natural Malaysian pronunciation. Deliver this encouraging invitation as one flowing, warm sentence, no slow pauses; about 3.0 seconds.",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/ms/take-20261025T124020782300Z/cloud-together.wav",
+          "start_s": 52.0676,
+          "end_s": 55.5726,
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-together-audio-check.json",
+          "gain_db": 0.4
+        }
+      }
+    },
+    {
+      "id": "dino-free",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 56.25,
+      "end_s": 60.2,
+      "text": {
+        "en": "The moon is free!",
+        "zh": "月亮得救啦！",
+        "ms": "Bulan dah bebas!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-free-audio-check.json",
+          "gain_db": -4.9,
+          "start_s": 56.25,
+          "end_s": 57.8303
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 看见成功后的自然喜悦，别尖叫。 本句约1.4秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131204759134Z/dino-free.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-free-audio-check.json",
+          "gain_db": -7.3,
+          "spoken_text": "月亮得救了！",
+          "spoken_text_evidence": [
+            "episodes/save-the-moon/reports/production-v002/full-natural-verification.log",
+            "episodes/save-the-moon/reports/production-v002/natural-particle-independent.log"
+          ],
+          "start_s": 56.25,
+          "end_s": 58.24
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-free-audio-check.json",
+          "gain_db": -6.3,
+          "start_s": 56.25,
+          "end_s": 58.1663
+        }
+      }
+    },
+    {
+      "id": "moon-thanks",
+      "character": "moon",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 61.4,
+      "end_s": 63.6,
+      "text": {
+        "en": "Thank you, Dino!",
+        "zh": "谢谢你，迪诺！",
+        "ms": "Terima kasih, Dino!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-moon-thanks-audio-check.json",
+          "gain_db": -4.3,
+          "start_s": 61.4,
+          "end_s": 63.312
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Sulafat温柔女性声线：亲切清澈，像朋友一样说话，带自然的笑意或求助情绪，不用厚重气声和唱歌般的拖腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 带笑意真诚地感谢迪诺，名字清楚而自然。 本句约1.6秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131225757924Z/moon-thanks.wav",
+          "required_names": [
+            "迪诺"
+          ],
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-moon-thanks-audio-check.json",
+          "gain_db": -6.2,
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "start_s": 61.4,
+          "end_s": 63.1709
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-moon-thanks-audio-check.json",
+          "gain_db": -4.1,
+          "start_s": 61.4,
+          "end_s": 63.5843
+        }
+      }
+    },
+    {
+      "id": "cloud-praise",
+      "character": "cloud",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 63.9,
+      "end_s": 66.0,
+      "text": {
+        "en": "You did it, little Dino!",
+        "zh": "小迪诺，你做到了！",
+        "ms": "Kamu berjaya, Dino kecil!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-cloud-praise-audio-check.json",
+          "gain_db": -2.2,
+          "start_s": 63.9,
+          "end_s": 66.4832
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 像爷爷一样温暖肯定迪诺，名字清楚，不刻意强调每个字。 本句约1.8秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131246757919Z/cloud-praise.wav",
+          "required_names": [
+            "迪诺"
+          ],
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-cloud-praise-audio-check.json",
+          "gain_db": -1.9,
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "start_s": 63.9,
+          "end_s": 66.6835
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-cloud-praise-audio-check.json",
+          "gain_db": -0.2,
+          "start_s": 63.9,
+          "end_s": 67.1389
+        }
+      }
+    },
+    {
+      "id": "dino-we-did-it",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 66.25,
+      "end_s": 69.0,
+      "text": {
+        "en": "We did it together!",
+        "zh": "是我们一起做到的！",
+        "ms": "Kita berjaya bersama-sama!"
+      },
+      "source_verification": "Matched original audio with small.en and medium.en ASR; speaker assigned against picture. Automated source verification; human pronunciation/acting review pending.",
+      "translations": {
+        "zh": "editorial_translation_of_verified_english",
+        "ms": "editorial_translation_malaysian_usage"
+      },
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/en-dino-we-did-it-audio-check.json",
+          "gain_db": -7.4,
+          "start_s": 66.5432,
+          "end_s": 68.6093
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 开心地强调是大家一起做到的，自然收尾。 本句约2.0秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "direction_profile": "zh-natural-v002",
+          "audio_review_status": "verified_automated",
+          "audio_path": "episodes/save-the-moon/media/derived/production-v001/zh/take-20261025T131307756792Z/dino-we-did-it.wav",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v002/zh-dino-we-did-it-audio-check.json",
+          "gain_db": -4.2,
+          "start_s": 66.7435,
+          "end_s": 68.7788
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/save-the-moon/reports/production-v001/ms-dino-we-did-it-audio-check.json",
+          "gain_db": -6.8,
+          "start_s": 67.1989,
+          "end_s": 69.6781
+        }
+      }
+    }
+  ],
+  "exports": {
+    "en": "episodes/save-the-moon/exports/dino_saves_the_moon_en_sync_v004.mp4",
+    "zh": "episodes/save-the-moon/exports/dino_saves_the_moon_zh_natural_v003.mp4",
+    "ms": "episodes/save-the-moon/exports/dino_saves_the_moon_ms.mp4"
+  },
+  "production_languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "character_names_registry": "config/character_names.json",
+  "voice_direction_profiles": {
+    "zh": "config/voice_direction.zh-v002.json"
+  }
+}

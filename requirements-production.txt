@@ -1,0 +1,2 @@
+# Formal manifest and registry validation; tested version.
+jsonschema==4.26.0

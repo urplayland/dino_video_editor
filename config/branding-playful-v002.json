@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "brand": "Family Learning Hub",
+  "status": "owner_requested_playful_revision_no_story_logo",
+  "assets": {
+    "logo.png": {
+      "path": "library/media/branding/flh-v001/logo.png",
+      "source": "webapp/public/images/brand/logo-512-20261018.png",
+      "sha256": "32f2fe8c53a62e6725ac6acbe0613b16f95b6d7fabb0d0d835c19a3d3e1dcfb7",
+      "source_repo": "family-hub-monorepo"
+    },
+    "mascot.png": {
+      "path": "library/media/branding/flh-v001/mascot.png",
+      "source": "webapp/public/logo_banner.png",
+      "sha256": "a18a99524cf06a5f49c955ab17dc881040fbcd4ca54df7d4c6fec1781b0f5489",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Outfit-800.ttf": {
+      "path": "library/media/branding/flh-v001/Outfit-800.ttf",
+      "source": "webapp/public/fonts/Outfit-800.ttf",
+      "sha256": "1f832c35c299bdafc73805dfe146a17af5dd0518753700f1a0acabd34f250c26",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Nunito-700.ttf": {
+      "path": "library/media/branding/flh-v001/Nunito-700.ttf",
+      "source": "webapp/public/fonts/Nunito-700.ttf",
+      "sha256": "2ff1544d575cd14d3fa7f71ee5349b7f9f609c95d123d92864342d70ce9a89d1",
+      "source_repo": "family-hub-monorepo"
+    },
+    "OFL.txt": {
+      "path": "library/media/branding/flh-v001/OFL.txt",
+      "source": "webapp/public/fonts/OFL.txt",
+      "sha256": "2a05f94aa107315bedb761ad765ba393a13e437b8d61f4cc950f3a1e5bb19935",
+      "source_repo": "family-hub-monorepo"
+    },
+    "star.webp": {
+      "path": "library/media/branding/flh-v001/star.webp",
+      "source_repo": "family-hub-monorepo",
+      "source": "webapp/public/images/ui/star.webp",
+      "sha256": "bbd4b61777162b8f441edd082abbfc336870f78cb8e254078f00e124fc68ea7a"
+    },
+    "moon.webp": {
+      "path": "library/media/branding/flh-v001/moon.webp",
+      "source_repo": "family-hub-monorepo",
+      "source": "webapp/public/images/ui/science-moon.webp",
+      "sha256": "466cee3b15a6bed176b6bdca31b7306387fb166a862d92947d9ae3ed8f9e6224"
+    }
+  },
+  "background": "FFFDF9",
+  "text_color": "4B4B4B",
+  "secondary_color": "706B65",
+  "accent": "1CB0F6",
+  "intro_duration_s": 3.0,
+  "outro_duration_s": 4.0,
+  "watermark": {
+    "size_px": 68,
+    "x": 32,
+    "y": 40,
+    "opacity": 0.92,
+    "enabled": false
+  },
+  "presentation": "Family Learning Hub presents; no new host character or voice",
+  "website": "familylearninghub.com",
+  "animation": {
+    "enabled": true,
+    "style": "gentle owl bob and tilt; drifting stars and crescent; no animation changes inside story",
+    "decorated_background": true
+  }
+}

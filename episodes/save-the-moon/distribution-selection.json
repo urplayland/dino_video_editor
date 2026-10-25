@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "owner_selected_latest_three_for_distribution_planning",
+  "selection_date": "2026-10-25",
+  "media": {
+    "en": {
+      "file": "episodes/save-the-moon/exports/dino_saves_the_moon_en_flh_v007.mp4",
+      "sha256": "bbdd8ed57c0620e191387974a9b67e1ebae07ce8f8a37f01995a315d054439ab",
+      "duration_s": "75.427214",
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    },
+    "zh": {
+      "file": "episodes/save-the-moon/exports/dino_saves_the_moon_zh_flh_v009.mp4",
+      "sha256": "4ec4ded8d0825a40a95d20c6d23a5ae95ef6f3fb6afe7910e58a2f7c90c70107",
+      "duration_s": "75.427409",
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    },
+    "ms": {
+      "file": "episodes/save-the-moon/exports/dino_saves_the_moon_ms_flh_v007.mp4",
+      "sha256": "a96a12ae6ecb09af13ccf45b9b469cb18a3107a3eebcd4e9c987c1f57922903a",
+      "duration_s": "75.427214",
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    }
+  },
+  "platform_derivatives_created": false,
+  "social_media_uploaded": false,
+  "note": "Retain English v007, Mandarin v009 and Malaysian Malay v007 as selected content baselines. Distribution derivatives require separate filenames and must preserve existing sources."
+}

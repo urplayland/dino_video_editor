@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "brand_config": "config/branding-logo-v004.json",
+  "source_manifest": "episodes/save-the-moon/production.json",
+  "source_video": "episodes/save-the-moon/exports/dino_saves_the_moon_en_sync_v004.mp4",
+  "source_duration_s": 70.927018,
+  "music": "library/media/audio/music/dino-night-v001.wav",
+  "language": "en",
+  "series": "Dino Adventures",
+  "title_lines": [
+    "Dino Saves",
+    "the Moon"
+  ],
+  "output": "episodes/save-the-moon/exports/dino_saves_the_moon_en_flh_v007.mp4",
+  "work_dir": "episodes/save-the-moon/media/derived/branding-en-v008",
+  "preview_dir": "episodes/save-the-moon/reports/branding-en-v008",
+  "subtitles": "episodes/save-the-moon/subtitles.en.json"
+}

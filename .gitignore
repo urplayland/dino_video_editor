@@ -4,6 +4,7 @@ __pycache__/
 .venv/
 .env
 .env.*
+!.env.example
 
 # Originals supplied at the repository root are retained locally.
 /*.mp4

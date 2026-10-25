@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "zh-natural-v002",
+  "language": "zh",
+  "status": "owner_requested_natural_delivery_pending_listening_review",
+  "names_registry": "config/character_names.json",
+  "common": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。",
+  "name_direction": "主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。",
+  "characters": {
+    "dino": "保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。",
+    "cloud": "保留Charon温暖老爷爷声线：像亲切的爷爷在和孩子聊天，有分量但不端着，不故意压低嗓子，不慢吞吞地朗诵。",
+    "moon": "保留Sulafat温柔女性声线：亲切清澈，像朋友一样说话，带自然的笑意或求助情绪，不用厚重气声和唱歌般的拖腔。"
+  }
+}

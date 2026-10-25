@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "owner_confirmed",
+  "characters": {
+    "dino": {
+      "zh": "迪诺",
+      "pinyin": "dí nuò",
+      "tones": [
+        2,
+        4
+      ],
+      "forbidden": [
+        "伊诺",
+        "依诺",
+        "比诺",
+        "Yino",
+        "Bino"
+      ],
+      "asr_homophones": [
+        "狄诺",
+        "敌诺",
+        "迪懦",
+        "狄懦",
+        "敌懦"
+      ],
+      "asr_homophone_policy": "These spellings have the same dí nuò pronunciation and are accepted only as recognition spellings. Subtitles/requested name remain 迪诺. 李诺/伊诺/依诺/比诺 and Latin Dino are not accepted by the strict Chinese name check.",
+      "ms": "Dino",
+      "ms_status": "audited_existing_episode_usage"
+    },
+    "moon": {
+      "zh": "月亮",
+      "pinyin": "yuè liang",
+      "ms": "Bulan",
+      "ms_status": "audited_existing_episode_usage"
+    },
+    "cloud": {
+      "zh": "云爷爷",
+      "pinyin": "yún yé ye",
+      "ms_status": "owner_confirmed",
+      "ms": "Atuk Awan"
+    }
+  },
+  "notes": "Final owner choice supersedes the briefly proposed 露娜. Do not add dialogue just to introduce names."
+}

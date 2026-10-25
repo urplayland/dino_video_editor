@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dino Adventures sfx v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "effects"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "effects": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "description",
+          "category",
+          "source",
+          "asset_path",
+          "default_gain_db",
+          "tags",
+          "license"
+        ],
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "asset_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "default_gain_db": {
+            "type": "number"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "duration_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

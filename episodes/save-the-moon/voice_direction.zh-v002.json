@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "profile": "config/voice_direction.zh-v002.json",
+  "text_overrides": {
+    "moon-help": "小迪诺，救救我！",
+    "dino-free": "月亮得救啦！"
+  },
+  "scene_direction": {
+    "dino-opening": "刚发现月亮不见了，有点着急又疑惑。",
+    "dino-call-hear": "抬头呼唤月亮，着急但不大喊。",
+    "moon-help": "认出迪诺，赶紧向他求助，名字清楚但不要拆字念。",
+    "dino-is-that-you": "惊讶地认出声音，真诚地确认。",
+    "cloud-challenge": "发现有人来了，温和但有分量地发问，不要吼叫。",
+    "cloud-question": "好奇、耐心地问小迪诺，名字和句子自然连在一起。",
+    "dino-friend": "真诚、朴实地说明原因。",
+    "cloud-friend": "有一点意外，带着好奇重复他的话。",
+    "cloud-look": "温和简短地示意他看。",
+    "cloud-trapped": "像和孩子解释眼前情况一样自然连贯。",
+    "dino-see": "看见月亮了，开心地回应。",
+    "dino-save": "真诚而着急地请求帮忙，不夸张哭喊。",
+    "cloud-together": "微笑着鼓励合作，轻快、肯定。",
+    "dino-free": "看见成功后的自然喜悦，别尖叫。",
+    "moon-thanks": "带笑意真诚地感谢迪诺，名字清楚而自然。",
+    "cloud-praise": "像爷爷一样温暖肯定迪诺，名字清楚，不刻意强调每个字。",
+    "dino-we-did-it": "开心地强调是大家一起做到的，自然收尾。"
+  },
+  "duration_targets_s": {
+    "dino-opening": 2.8,
+    "dino-call-hear": 2.3,
+    "moon-help": 1.7,
+    "dino-is-that-you": 1.8,
+    "cloud-challenge": 2.4,
+    "cloud-question": 2.6,
+    "dino-friend": 2.1,
+    "cloud-friend": 1.0,
+    "cloud-look": 0.7,
+    "cloud-trapped": 2.7,
+    "dino-see": 1.1,
+    "dino-save": 1.6,
+    "cloud-together": 2.2,
+    "dino-free": 1.4,
+    "moon-thanks": 1.6,
+    "cloud-praise": 1.8,
+    "dino-we-did-it": 2.0
+  },
+  "cue_refinements": {
+    "moon-help": "用自然华语，像月亮看见朋友后，清楚、真诚地求助。保持Sulafat温柔女性本来的声线，发声清亮、连贯有支撑。小迪诺读 xiǎo dí nuò，迪与迪士尼的迪同音，诺与承诺的诺同音。整句自然地一口气说出，语气稍着急，约2秒。"
+  }
+}

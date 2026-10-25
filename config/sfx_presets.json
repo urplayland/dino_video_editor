@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "notes": "Reusable sound-effect presets. Add new entries here; their asset files belong in output/sfx or a future library of licensed WAV files.",
+  "effects": {
+    "whoosh": {
+      "description": "Cloud entering or swirling",
+      "source": "local_synth",
+      "duration_s": 1.2,
+      "default_gain_db": -8,
+      "tags": [
+        "cloud",
+        "magic",
+        "wind"
+      ],
+      "category": "sfx",
+      "asset_path": "library/media/audio/sfx/kit-v001/whoosh.wav",
+      "license": "No separate license supplied; synthetic kit placeholder",
+      "approval_status": "placeholder_pending_review"
+    },
+    "chime": {
+      "description": "Moon light and magical sparkle",
+      "source": "local_synth",
+      "duration_s": 2.4,
+      "default_gain_db": -10,
+      "tags": [
+        "moon",
+        "magic",
+        "success"
+      ],
+      "category": "sfx",
+      "asset_path": "library/media/audio/sfx/kit-v001/chime.wav",
+      "license": "No separate license supplied; synthetic kit placeholder",
+      "approval_status": "placeholder_pending_review"
+    },
+    "pop": {
+      "description": "Dino surprise or cartoon reaction",
+      "source": "local_synth",
+      "duration_s": 0.35,
+      "default_gain_db": -14,
+      "tags": [
+        "dino",
+        "reaction"
+      ],
+      "category": "sfx",
+      "asset_path": "library/media/audio/sfx/kit-v001/pop.wav",
+      "license": "No separate license supplied; synthetic kit placeholder",
+      "approval_status": "placeholder_pending_review"
+    },
+    "footsteps": {
+      "description": "Light cartoon footsteps",
+      "source": "local_synth",
+      "duration_s": 2.0,
+      "default_gain_db": -16,
+      "tags": [
+        "dino",
+        "movement"
+      ],
+      "category": "sfx",
+      "asset_path": "library/media/audio/sfx/kit-v001/footsteps.wav",
+      "license": "No separate license supplied; synthetic kit placeholder",
+      "approval_status": "placeholder_pending_review"
+    },
+    "rumble": {
+      "description": "Gentle cloud guardian presence",
+      "source": "local_synth",
+      "duration_s": 2.5,
+      "default_gain_db": -20,
+      "tags": [
+        "cloud",
+        "ambient"
+      ],
+      "category": "sfx",
+      "asset_path": "library/media/audio/sfx/kit-v001/rumble.wav",
+      "license": "No separate license supplied; synthetic kit placeholder",
+      "approval_status": "placeholder_pending_review"
+    }
+  }
+}

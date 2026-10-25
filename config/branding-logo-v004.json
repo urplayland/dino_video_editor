@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "brand": "Family Learning Hub",
+  "status": "owner_requested_website_playful_clarity_theme",
+  "assets": {
+    "logo.png": {
+      "path": "library/media/branding/flh-v001/logo.png",
+      "source": "webapp/public/images/brand/logo-512-20261018.png",
+      "sha256": "32f2fe8c53a62e6725ac6acbe0613b16f95b6d7fabb0d0d835c19a3d3e1dcfb7",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Outfit-800.ttf": {
+      "path": "library/media/branding/flh-v001/Outfit-800.ttf",
+      "source": "webapp/public/fonts/Outfit-800.ttf",
+      "sha256": "1f832c35c299bdafc73805dfe146a17af5dd0518753700f1a0acabd34f250c26",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Nunito-700.ttf": {
+      "path": "library/media/branding/flh-v001/Nunito-700.ttf",
+      "source": "webapp/public/fonts/Nunito-700.ttf",
+      "sha256": "2ff1544d575cd14d3fa7f71ee5349b7f9f609c95d123d92864342d70ce9a89d1",
+      "source_repo": "family-hub-monorepo"
+    },
+    "OFL.txt": {
+      "path": "library/media/branding/flh-v001/OFL.txt",
+      "source": "webapp/public/fonts/OFL.txt",
+      "sha256": "2a05f94aa107315bedb761ad765ba393a13e437b8d61f4cc950f3a1e5bb19935",
+      "source_repo": "family-hub-monorepo"
+    },
+    "sonic-logo.wav": {
+      "path": "library/media/audio/branding/flh-logo-sting-v001.wav",
+      "source": "Original four-note mallet tag composed locally by tools/logo_bumper.py",
+      "sha256": "15ca8ecbe7610489f499126ea66750f414bd50844e3c07c1c8d3934279a78ef4"
+    }
+  },
+  "background": "FFFDF9",
+  "text_color": "4B4B4B",
+  "secondary_color": "706B65",
+  "accent": "1CB0F6",
+  "intro_duration_s": 2.0,
+  "outro_duration_s": 2.5,
+  "watermark": {
+    "size_px": 68,
+    "x": 32,
+    "y": 40,
+    "opacity": 0.92,
+    "enabled": false
+  },
+  "presentation": "Only existing FLH logo, brand name and website; no story watermark or new narrator",
+  "website": "familylearninghub.com",
+  "animation": {
+    "enabled": true,
+    "type": "logo_bumper",
+    "style": "Playful Clarity warm cream and blue/green/gold/purple palette, restrained rounded edge shapes, blue hard-rim website pill, gentle logo pop and rebound"
+  },
+  "bumper_media_dir": "library/media/branding/flh-bumper-v004",
+  "sonic_logo": "library/media/audio/branding/flh-logo-sting-v001.wav",
+  "playful_palette": {
+    "blue": "1CB0F6",
+    "blue_rim": "1899D6",
+    "green": "58CC02",
+    "yellow": "FFC800",
+    "purple": "8549BA",
+    "blue_tint": "E4F5FE",
+    "green_tint": "EFF8DC",
+    "yellow_tint": "FFF2CE",
+    "purple_tint": "F2EAF8"
+  },
+  "theme_reference": {
+    "name": "Playful Clarity",
+    "sources": [
+      "webapp/app/globals.css",
+      "docs/ui_components.md",
+      "webapp/lib/ogBrand.tsx"
+    ],
+    "source_repo": "family-hub-monorepo",
+    "interpretation": "Canonical exact solid brand colors, warm cream/ink, Nunito/Outfit, hard-rim rounded website pill and gentle logo bounce. Pale edge tints are derived presentation colors."
+  }
+}

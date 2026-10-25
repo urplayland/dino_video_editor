@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "language": "ms",
+  "font_path": "library/media/branding/flh-v001/Nunito-700.ttf",
+  "font_name": "Nunito ExtraLight",
+  "font_size": 36,
+  "margin_bottom": 34,
+  "max_text_width": 610,
+  "packaged_offset_s": 2,
+  "ass_path": "episodes/save-the-moon/media/derived/subtitles-ms-v007/ms.ass",
+  "story_srt_path": "episodes/save-the-moon/media/derived/subtitles-ms-v007/ms-story.srt",
+  "packaged_srt_path": "episodes/save-the-moon/exports/dino_saves_the_moon_ms_flh_v007.srt",
+  "report_path": "episodes/save-the-moon/reports/branding-ms-v007/subtitles.json",
+  "layout": "overlay",
+  "outline_px": 2.5,
+  "shadow_px": 2
+}

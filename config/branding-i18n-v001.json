@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "brand": "Family Learning Hub",
+  "status": "owner_requested_branding_first_version",
+  "assets": {
+    "logo.png": {
+      "path": "library/media/branding/flh-v001/logo.png",
+      "source": "webapp/public/images/brand/logo-512-20261018.png",
+      "sha256": "32f2fe8c53a62e6725ac6acbe0613b16f95b6d7fabb0d0d835c19a3d3e1dcfb7",
+      "source_repo": "family-hub-monorepo"
+    },
+    "mascot.png": {
+      "path": "library/media/branding/flh-v001/mascot.png",
+      "source": "webapp/public/logo_banner.png",
+      "sha256": "a18a99524cf06a5f49c955ab17dc881040fbcd4ca54df7d4c6fec1781b0f5489",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Outfit-800.ttf": {
+      "path": "library/media/branding/flh-v001/Outfit-800.ttf",
+      "source": "webapp/public/fonts/Outfit-800.ttf",
+      "sha256": "1f832c35c299bdafc73805dfe146a17af5dd0518753700f1a0acabd34f250c26",
+      "source_repo": "family-hub-monorepo"
+    },
+    "Nunito-700.ttf": {
+      "path": "library/media/branding/flh-v001/Nunito-700.ttf",
+      "source": "webapp/public/fonts/Nunito-700.ttf",
+      "sha256": "2ff1544d575cd14d3fa7f71ee5349b7f9f609c95d123d92864342d70ce9a89d1",
+      "source_repo": "family-hub-monorepo"
+    },
+    "OFL.txt": {
+      "path": "library/media/branding/flh-v001/OFL.txt",
+      "source": "webapp/public/fonts/OFL.txt",
+      "sha256": "2a05f94aa107315bedb761ad765ba393a13e437b8d61f4cc950f3a1e5bb19935",
+      "source_repo": "family-hub-monorepo"
+    },
+    "wqy-zenhei.ttc": {
+      "path": "library/media/branding/flh-v001/wqy-zenhei.ttc",
+      "source": "Ubuntu fonts-wqy-zenhei package / wqy-zenhei.ttc",
+      "sha256": "79c18ebe7b811951e8311bad7103ebeae8c337ed9988ea69e8a78a66cfe029b9"
+    },
+    "wqy-copyright.txt": {
+      "path": "library/media/branding/flh-v001/wqy-copyright.txt",
+      "source": "Ubuntu fonts-wqy-zenhei package / wqy-copyright.txt",
+      "sha256": "d183af7db6d782fe7009eeafef0cef67099ef50ef18dd81513de8004b0361cb7"
+    },
+    "GPL-2.txt": {
+      "path": "library/media/branding/flh-v001/GPL-2.txt",
+      "source": "Ubuntu fonts-wqy-zenhei package / GPL-2.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "NotoSansCJK-Bold.ttc": {
+      "path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+      "source": "Ubuntu fonts-noto-cjk package / NotoSansCJK-Bold.ttc",
+      "sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb"
+    },
+    "NotoSansCJK-Regular.ttc": {
+      "path": "library/media/branding/flh-v001/NotoSansCJK-Regular.ttc",
+      "source": "Ubuntu fonts-noto-cjk package / NotoSansCJK-Regular.ttc",
+      "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+    },
+    "NotoSansCJK-copyright.txt": {
+      "path": "library/media/branding/flh-v001/NotoSansCJK-copyright.txt",
+      "source": "Ubuntu fonts-noto-cjk package / NotoSansCJK-copyright.txt",
+      "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+    }
+  },
+  "background": "FFFDF9",
+  "text_color": "4B4B4B",
+  "secondary_color": "706B65",
+  "accent": "1CB0F6",
+  "intro_duration_s": 3.0,
+  "outro_duration_s": 4.0,
+  "watermark": {
+    "size_px": 68,
+    "x": 32,
+    "y": 40,
+    "opacity": 0.92
+  },
+  "presentation": "Family Learning Hub presents; no new host character or voice",
+  "website": "familylearninghub.com"
+}

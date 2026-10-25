@@ -1,52 +1,66 @@
-# Dino Adventures — video post-production
+# Dino Adventures — multilingual dubbing production
 
-A reusable workspace for editing the Dino Adventures series. Each episode has its own sources, editing plan, project files, and exports. Reusable audio and other series assets belong in the shared library.
+A reusable post-production workspace for Family Learning Hub's Dino Adventures series. The current goal is the **entire 70.927-second Dino Saves the Moon episode** in English, Mandarin Chinese and Malaysian Bahasa Melayu. The earlier prototype stopping point has been cancelled.
 
-The first episode is **Dino Save the Moon** (`save-the-moon`). Its video and audio kit have been imported and technically checked; see [the validation record](episodes/save-the-moon/source-validation.md). Editorial review and approved timing, audio mix, and export settings are still pending.
+The complete handover is now imported locally, including the original mixed-audio MP4, a silent picture master, original audio, kit scripts/presets, effects and audition recordings. The animation is preserved. Approved voices remain **Dino=Puck, Cloud Guardian=Charon, Moon=Sulafat**, using `gemini-3.8-flash-tts`.
+
+**Current delivery:** the owner selected English **v007**, Mandarin **v009**, and Malaysian Malay **v007** for distribution planning. All three complete videos passed technical checks; Mandarin v009 includes the natural-dialogue/name revision. Approved names are 迪诺 / 月亮 / 云爷爷 in Chinese and Dino / Bulan / Atuk Awan in Malay. Outputs, subtitles, audio stems and media verification reports remain outside Git. See [the selected delivery manifest](episodes/save-the-moon/distribution-selection.json) and [the episode plan](episodes/save-the-moon/edit-plan.md) for exact hashes and review history. No social-platform publication has occurred.
+
+Read [the production setup and commands](docs/production.md), then [the episode plan](episodes/save-the-moon/edit-plan.md) for actual progress and review results. Expected final files are not evidence of completion; all three real videos must be rendered and verified.
 
 ## Layout
 
 | Location | Purpose | In Git? |
 | --- | --- | --- |
-| `incoming/` | Temporary landing area for supplied files | Instructions only |
-| `library/catalog.csv` | Reusable asset descriptions, provenance, and usage notes | Yes |
-| `library/presets/v001/` | Versioned voice and sound-effect presets, with approval status | Yes |
-| `library/media/` | Shared audio, graphics, fonts, and other media | No |
-| `templates/episode/` | Starting documents for every episode | Yes |
-| `episodes/<slug>/episode.json` | Episode identity and source references | Yes |
-| `episodes/<slug>/edit-plan.md` | Timing, editorial decisions, and review checklist | Yes |
-| `episodes/<slug>/media/` | Episode originals and derived media | No |
-| `episodes/<slug>/project/` | Editor project files and supporting notes | Yes |
-| `episodes/<slug>/work/` | Temporary render files and caches | No |
-| `episodes/<slug>/exports/` | Review and final deliverables | No |
-| `episodes/<slug>/reports/` | Generated local inventories | No |
+| `incoming/` | Original delivery and isolated intake | Instructions only |
+| `config/voices.json` | Persistent character registry | Yes |
+| `config/sfx_presets.json` | Persistent reusable effect registry | Yes |
+| `schemas/` | JSON Schema contracts | Yes |
+| `library/catalog.csv` | Shared media provenance and usage notes | Yes |
+| `library/presets/v001/` | Preserved imported preset version | Yes |
+| `library/media/` | Reusable SFX, score and ambience | No |
+| `templates/episode/` | Compatible starter episode documents | Yes |
+| `episodes/<slug>/episode.json` | Episode identity and source hashes | Yes |
+| `episodes/<slug>/production.json` | Multilingual dialogue, source timing, cues, outputs and verification references | Yes |
+| `episodes/<slug>/edit-plan.md` | Decisions, changes and review findings | Yes |
+| `episodes/<slug>/media/` | Preserved sources and derived voice stems | No |
+| `episodes/<slug>/project/` | Editor notes/projects | Yes |
+| `episodes/<slug>/work/` | Model cache and temporary work | No |
+| `episodes/<slug>/exports/` | Full MP4s, editable bus stems and render reports | No |
+| `episodes/<slug>/reports/` | Inventories, transcripts and validation reports | No |
 
-## Get started
+## Quick start
 
-Python 3.9 or newer is required. The helper uses the standard library; there are no Python dependencies.
+Python 3.10+, FFmpeg/FFprobe and the small production validation dependency are required. Optional CPU transcription dependencies are needed for end-to-end audio verification. See [Ubuntu/macOS setup](docs/production.md#setup-on-ubuntu-or-macos).
 
 ```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-production.txt -r requirements-transcription.txt
 python3 tools/dino.py doctor
+.venv/bin/python tools/production.py episodes/save-the-moon/production.json status
+```
+
+Once the selected owner-confirmed free-tier key has quota:
+
+```sh
+HF_HOME="$PWD/episodes/save-the-moon/work/huggingface" \
+  .venv/bin/python -u tools/production.py episodes/save-the-moon/production.json build --live
+```
+
+`build` resumes retained stems, verifies dialogue, fits timing, mixes separate audio buses, stream-copies the silent picture and checks full exports. It stops on quota or failed checks. Generation without `--live` is dry-run. Keys are read privately from `.env` or an explicitly authorized `--env-file`; no billing is enabled or credential rotation performed.
+
+Workspace commands remain dependency-free:
+
+```sh
 python3 tools/dino.py init another-adventure --title "Dino's Next Adventure"
 python3 tools/dino.py inventory save-the-moon
 python3 tools/dino.py verify save-the-moon --report episodes/save-the-moon/reports/<inventory-file>.json
 ```
 
-`init` refuses to overwrite an existing episode. `inventory` records SHA-256 hashes, sizes, and media metadata when `ffprobe` is available. It inventories the episode's `media/` and the shared `library/media/`; it does not import files or extract archives. Each run writes a new report.
+`init` never overwrites an episode. Inventory/verification record SHA-256 and optional ffprobe metadata using project-relative paths. Preserve originals and derive new files separately. Media and model caches are excluded from Git and require a separate backup; a Git clone alone does not contain the footage, voices or exports. Never commit `.env`.
 
-For new deliveries, copy the supplied ZIP and MP4 into `incoming/` first, then follow [the workflow](docs/workflow.md). The Save the Moon sources are already under `episodes/save-the-moon/media/originals/`; the supplied root copies have also been retained locally.
+Run tests with `.venv/bin/python -m unittest discover -s tests -v`. Tests create synthetic fixtures and do not require episode media, Gemini keys, transcription models or paid requests; FFmpeg integration checks are skipped if FFmpeg/FFprobe are unavailable. See [the general workflow](docs/workflow.md) and [confirmed series decisions](docs/series.md).
 
-`ffprobe` and `ffmpeg` are optional for workspace setup. The helper searches PATH and conventional Homebrew locations. Set `DINO_FFPROBE` or `DINO_FFMPEG` to override their executable locations. An inventory without `ffprobe` records file integrity but cannot verify stream properties. Neither tool is bundled with this repository.
+The current English review uses an editable nine-cue orchestral score rather than a single repeating background loop. See [scene-based score and offline rendering](docs/production.md#current-english-review-scene-based-underscore-v002). English v007 is accepted. The owner has authorized matching Mandarin and Malaysian Malay editions using the same picture, FLH bumpers, scene score and overlay subtitle design.
 
-Run helper regression tests with `python3 -m unittest discover -s tests -v`. The kit's voice-generation API integration has not been validated; dry-run previews do not establish provider compatibility.
-
-## Project rules
-
-- Preserve original media; make derived files separately.
-- Keep episode-specific material out of the shared library until its reuse is confirmed.
-- Record source provenance, credits, and any known usage restrictions.
-- Use relative project paths so a copied workspace can be relinked.
-- Record approved settings and editorial decisions per episode; do not infer them from another episode.
-- Back up media separately. A Git clone contains plans and tooling, not the videos or shared assets.
-
-See [the editing workflow](docs/workflow.md) and [the series notes](docs/series.md).
+Distribution planning: [YouTube audio tracks and social-video preparation](docs/distribution.md). GitHub contains the production scripts, registries and manifests; media storage is separate, as described in [the storage assessment](docs/github-media-storage.md).

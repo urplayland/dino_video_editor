@@ -1,0 +1,1066 @@
+{
+  "schema_version": 1,
+  "title": "Dino Saves the Moon — scene score v002",
+  "duration_s": 70.927018,
+  "registry": "config/music_presets.json",
+  "seed": 20261025,
+  "output": "episodes/save-the-moon/media/derived/score-v002/underscore.wav",
+  "work_dir": "episodes/save-the-moon/media/derived/score-v002",
+  "target_integrated_lufs": -26,
+  "max_true_peak_db": -11.5,
+  "fade_out_s": 1.2,
+  "cues": [
+    {
+      "id": "moonlit-wonder",
+      "start_s": 0,
+      "end_s": 2.3,
+      "bpm": 80,
+      "mood": "gentle magical wonder",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 30
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "events": [
+            [
+              0,
+              72,
+              0.6,
+              2
+            ],
+            [
+              0.7,
+              76,
+              0.6,
+              0
+            ],
+            [
+              1.4,
+              79,
+              1.1,
+              0
+            ],
+            [
+              2.5,
+              76,
+              0.5,
+              -5
+            ]
+          ],
+          "velocity": 44
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            48,
+            60,
+            64,
+            67,
+            72,
+            67
+          ],
+          "velocity": 33,
+          "step_beats": 0.5
+        }
+      ],
+      "timing_basis": "Opening moonlit establishing picture; cloud movement begins around 2.3 s."
+    },
+    {
+      "id": "missing-moon",
+      "start_s": 2.3,
+      "end_s": 20.4,
+      "bpm": 64,
+      "mood": "eerie uncertainty; child-friendly and restrained",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52
+            ],
+            [
+              43,
+              50
+            ],
+            [
+              41,
+              48
+            ],
+            [
+              40,
+              47
+            ]
+          ],
+          "velocity": 36
+        },
+        {
+          "kind": "pad",
+          "instrument": "tremolo",
+          "chords": [
+            [
+              57,
+              64,
+              71
+            ],
+            [
+              55,
+              62,
+              69
+            ],
+            [
+              53,
+              60,
+              67
+            ],
+            [
+              56,
+              62,
+              68
+            ]
+          ],
+          "velocity": 25
+        },
+        {
+          "kind": "phrase",
+          "instrument": "musicbox",
+          "events": [
+            [
+              0,
+              81,
+              0.7,
+              -4
+            ],
+            [
+              3.5,
+              76,
+              0.7,
+              -6
+            ],
+            [
+              7.5,
+              72,
+              1,
+              -3
+            ],
+            [
+              11,
+              71,
+              1,
+              -5
+            ],
+            [
+              15.5,
+              76,
+              0.8,
+              -8
+            ]
+          ],
+          "velocity": 36
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "events": [
+            [
+              1,
+              57,
+              2,
+              -6
+            ],
+            [
+              6,
+              55,
+              2,
+              -8
+            ],
+            [
+              13,
+              52,
+              2,
+              -8
+            ],
+            [
+              17,
+              56,
+              1,
+              -5
+            ]
+          ],
+          "velocity": 31
+        }
+      ],
+      "timing_basis": "Cloud cover, opening question, searching calls and Moon asking for help; keep the voice windows sparse."
+    },
+    {
+      "id": "search-suspense",
+      "start_s": 20.4,
+      "end_s": 29.4,
+      "bpm": 92,
+      "mood": "curious search gathering tension",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              53,
+              60,
+              65
+            ],
+            [
+              40,
+              56,
+              62,
+              64
+            ]
+          ],
+          "velocity": 33
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            45,
+            52,
+            57,
+            60,
+            45,
+            52,
+            59,
+            64
+          ],
+          "velocity": 40,
+          "step_beats": 0.5,
+          "rise": 6,
+          "accents": [
+            3,
+            0,
+            -3,
+            0
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "events": [
+            [
+              0,
+              57,
+              0.75,
+              0
+            ],
+            [
+              1,
+              60,
+              0.75,
+              0
+            ],
+            [
+              2,
+              64,
+              1,
+              -2
+            ],
+            [
+              5,
+              59,
+              0.75,
+              0
+            ],
+            [
+              6,
+              62,
+              0.75,
+              0
+            ],
+            [
+              8,
+              68,
+              1,
+              2
+            ]
+          ],
+          "velocity": 36
+        },
+        {
+          "kind": "pattern",
+          "instrument": "drums",
+          "notes": [
+            76,
+            77,
+            76,
+            77
+          ],
+          "velocity": 23,
+          "step_beats": 2,
+          "offset_s": 1.2
+        }
+      ],
+      "timing_basis": "Wordless walking/search passage and approach to the Guardian."
+    },
+    {
+      "id": "guardian-challenge",
+      "start_s": 29.4,
+      "end_s": 37.8,
+      "bpm": 72,
+      "mood": "imposing Guardian; low mysterious warmth",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              38,
+              45,
+              50
+            ],
+            [
+              40,
+              47,
+              56
+            ],
+            [
+              45,
+              52,
+              60,
+              64
+            ]
+          ],
+          "velocity": 43
+        },
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              62,
+              65,
+              69
+            ],
+            [
+              62,
+              64,
+              68
+            ],
+            [
+              60,
+              64,
+              69
+            ]
+          ],
+          "velocity": 29
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "events": [
+            [
+              0,
+              50,
+              2.5,
+              0
+            ],
+            [
+              4,
+              52,
+              2,
+              -4
+            ]
+          ],
+          "velocity": 39
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "events": [
+            [
+              0,
+              38,
+              0.7,
+              0
+            ],
+            [
+              0.55,
+              45,
+              0.6,
+              -7
+            ]
+          ],
+          "velocity": 38
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "events": [
+            [
+              6.5,
+              56,
+              1.5,
+              -4
+            ]
+          ],
+          "velocity": 34
+        }
+      ],
+      "timing_basis": "Guardian entrance and two questions; no jump scare or percussion beneath the questions."
+    },
+    {
+      "id": "friendship",
+      "start_s": 37.8,
+      "end_s": 42.4,
+      "bpm": 80,
+      "mood": "warm shift as Dino explains friendship",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64
+            ],
+            [
+              53,
+              60,
+              69
+            ]
+          ],
+          "velocity": 32
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            48,
+            60,
+            64,
+            67,
+            53,
+            60,
+            65,
+            69
+          ],
+          "velocity": 30,
+          "step_beats": 0.5
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "events": [
+            [
+              0,
+              76,
+              1,
+              -4
+            ],
+            [
+              1.5,
+              79,
+              1,
+              -5
+            ],
+            [
+              3,
+              76,
+              1.5,
+              -5
+            ]
+          ],
+          "velocity": 34
+        }
+      ],
+      "timing_basis": "Because the moon is my friend; Guardian softens."
+    },
+    {
+      "id": "moon-trapped",
+      "start_s": 42.4,
+      "end_s": 49.4,
+      "bpm": 108,
+      "mood": "reveal and rising urgency",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              53,
+              59,
+              65
+            ],
+            [
+              40,
+              56,
+              62,
+              64
+            ]
+          ],
+          "velocity": 37,
+          "rise": 5
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            45,
+            52,
+            60,
+            64,
+            47,
+            52,
+            59,
+            64
+          ],
+          "velocity": 40,
+          "step_beats": 0.5,
+          "rise": 8
+        },
+        {
+          "kind": "pattern",
+          "instrument": "tremolo",
+          "notes": [
+            69,
+            76,
+            72,
+            76,
+            68,
+            76,
+            71,
+            76
+          ],
+          "velocity": 24,
+          "step_beats": 1,
+          "rise": 5
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "events": [
+            [
+              0,
+              45,
+              0.6,
+              -5
+            ],
+            [
+              4.5,
+              40,
+              0.6,
+              -3
+            ]
+          ],
+          "velocity": 29
+        }
+      ],
+      "timing_basis": "Guardian reveals Moon trapped behind the clouds; Dino sees her."
+    },
+    {
+      "id": "rescue-build",
+      "start_s": 49.4,
+      "end_s": 54.7,
+      "bpm": 120,
+      "mood": "teamwork lifts into a rescue crescendo",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              53,
+              60,
+              65
+            ],
+            [
+              43,
+              55,
+              60,
+              67
+            ],
+            [
+              43,
+              55,
+              59,
+              65
+            ]
+          ],
+          "velocity": 43,
+          "rise": 13,
+          "tail_s": 0.15
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            53,
+            60,
+            65,
+            69,
+            55,
+            62,
+            67,
+            71
+          ],
+          "velocity": 43,
+          "step_beats": 0.5,
+          "rise": 13
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "events": [
+            [
+              0,
+              53,
+              2,
+              -4
+            ],
+            [
+              3,
+              55,
+              2,
+              0
+            ],
+            [
+              6,
+              59,
+              2,
+              4
+            ]
+          ],
+          "velocity": 39
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            55,
+            60,
+            62,
+            67,
+            71,
+            74,
+            79,
+            83
+          ],
+          "velocity": 42,
+          "step_beats": 0.25,
+          "offset_s": 4.15,
+          "rise": 10
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "events": [
+            [
+              3.7,
+              43,
+              0.3,
+              -6
+            ],
+            [
+              4.1,
+              43,
+              0.3,
+              -3
+            ],
+            [
+              4.45,
+              43,
+              0.25,
+              0
+            ],
+            [
+              4.7,
+              43,
+              0.25,
+              2
+            ],
+            [
+              4.9,
+              43,
+              0.2,
+              4
+            ],
+            [
+              5.1,
+              43,
+              0.15,
+              5
+            ]
+          ],
+          "velocity": 39
+        }
+      ],
+      "timing_basis": "Help her together leads into the bright liberation gesture around 54.7 s."
+    },
+    {
+      "id": "moon-liberation",
+      "start_s": 54.7,
+      "end_s": 59.8,
+      "bpm": 120,
+      "mood": "bright major-key release and triumph",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ],
+            [
+              41,
+              53,
+              60,
+              65
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 53,
+          "rise": -5
+        },
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              36,
+              48
+            ],
+            [
+              41,
+              53
+            ],
+            [
+              36,
+              48
+            ]
+          ],
+          "velocity": 45
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "events": [
+            [
+              0,
+              60,
+              1.5,
+              5
+            ],
+            [
+              1.5,
+              64,
+              1,
+              3
+            ],
+            [
+              2.5,
+              67,
+              2,
+              3
+            ],
+            [
+              6,
+              67,
+              1,
+              0
+            ],
+            [
+              7,
+              72,
+              2,
+              0
+            ]
+          ],
+          "velocity": 50
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            48,
+            60,
+            64,
+            67,
+            72,
+            67,
+            64,
+            60
+          ],
+          "velocity": 43,
+          "step_beats": 0.5
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "events": [
+            [
+              0,
+              84,
+              1.5,
+              0
+            ],
+            [
+              3,
+              79,
+              1,
+              -5
+            ],
+            [
+              6,
+              84,
+              1,
+              0
+            ],
+            [
+              7.5,
+              88,
+              1,
+              -4
+            ]
+          ],
+          "velocity": 41
+        },
+        {
+          "kind": "hits",
+          "instrument": "drums",
+          "events": [
+            [
+              0,
+              49,
+              1.8,
+              -5
+            ]
+          ],
+          "velocity": 38
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "events": [
+            [
+              0,
+              36,
+              0.8,
+              0
+            ],
+            [
+              3.25,
+              43,
+              0.6,
+              -5
+            ]
+          ],
+          "velocity": 40
+        }
+      ],
+      "timing_basis": "Moon freed in the picture; initial musical peak precedes Dino saying The moon is free."
+    },
+    {
+      "id": "gratitude-resolution",
+      "start_s": 59.8,
+      "end_s": 70.927018,
+      "bpm": 80,
+      "mood": "gentle gratitude and a settled happy ending",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ],
+            [
+              41,
+              53,
+              60,
+              65
+            ],
+            [
+              43,
+              55,
+              59,
+              65
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 32
+        },
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              48
+            ],
+            [
+              53
+            ],
+            [
+              43
+            ],
+            [
+              48
+            ]
+          ],
+          "velocity": 29
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            48,
+            60,
+            64,
+            67,
+            72,
+            67,
+            64,
+            60
+          ],
+          "velocity": 28,
+          "step_beats": 1
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "events": [
+            [
+              0,
+              76,
+              1.5,
+              -3
+            ],
+            [
+              2,
+              79,
+              1,
+              -6
+            ],
+            [
+              3.5,
+              76,
+              1,
+              -6
+            ],
+            [
+              7,
+              77,
+              1,
+              -7
+            ],
+            [
+              9,
+              74,
+              1,
+              -5
+            ],
+            [
+              12.3,
+              72,
+              2,
+              0
+            ]
+          ],
+          "velocity": 33
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "events": [
+            [
+              0,
+              79,
+              1,
+              -5
+            ],
+            [
+              4,
+              76,
+              1,
+              -8
+            ],
+            [
+              8,
+              74,
+              1,
+              -8
+            ],
+            [
+              12.2,
+              72,
+              0.65,
+              0
+            ],
+            [
+              12.9,
+              76,
+              0.65,
+              0
+            ],
+            [
+              13.6,
+              79,
+              1,
+              0
+            ],
+            [
+              14.2,
+              84,
+              1.5,
+              -4
+            ]
+          ],
+          "velocity": 36
+        }
+      ],
+      "timing_basis": "Thank-you dialogue through 68.6 s, then a small resolving cadence and fade before the approved ending bumper."
+    }
+  ]
+}

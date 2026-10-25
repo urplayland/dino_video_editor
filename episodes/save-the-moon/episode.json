@@ -2,17 +2,67 @@
   "schema_version": 1,
   "slug": "save-the-moon",
   "title": "Dino Save the Moon",
-  "status": "sources_imported_awaiting_editorial_review",
+  "status": "latest_three_editions_selected_for_distribution_planning",
   "sources": [
     {
-      "path": "episodes/save-the-moon/media/originals/Dino_save_the_moon_20261021165509.mp4",
-      "sha256": "5d493def817a6c16617d275c20b659d7bc40157e7089c9f021342b83d9fb531b",
-      "original_name": "Dino_save_the_moon_20261021165509.mp4"
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/Dino_Original_Audio.wav",
+      "sha256": "b2fac8c6a6bb95f2060fd0ba2195d5e8f77442cea0bd12d8d2828a087b0d5430",
+      "original_name": "Dino_Original_Audio.wav"
     },
     {
-      "path": "episodes/save-the-moon/media/originals/Dino_Adventures_Audio_Kit.zip",
-      "sha256": "8c9396abc44525367a7fbca7c156881e2c42c19ac302a512f5fe73102da7de34",
-      "original_name": "Dino_Adventures_Audio_Kit.zip"
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/Dino_Saves_the_Moon_NO_AUDIO.mp4",
+      "sha256": "13a4c6e61bc3d986866d0c48cee202e2c88198fcf43a4a253affa901ff487a7f",
+      "original_name": "Dino_Saves_the_Moon_NO_AUDIO.mp4"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/dino_audio_handoff.zip",
+      "sha256": "d58b99bf3831a8b669d0c3f8680b935a69e4dbdca65e5122b369b214372d1baf",
+      "original_name": "dino_audio_handoff.zip"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/output/sfx/chime.wav",
+      "sha256": "650491c29737c625ab414298b1fddc09149cc4abad705d2c9031636b4e2133d7",
+      "original_name": "chime.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/output/sfx/footsteps.wav",
+      "sha256": "103f4b7d8f96097e4275eee88156cb30a76d8f6e7def3c70712340dd10bf8672",
+      "original_name": "footsteps.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/output/sfx/pop.wav",
+      "sha256": "f31bbf1cc17b4d8dfeaac2efa27872de3f7e4d7e82c0f12034147377e4542fd0",
+      "original_name": "pop.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/output/sfx/rumble.wav",
+      "sha256": "65fda787ecf784b52c46e01e174f40b27716428c508eaa5dcfde2e7d0e589409",
+      "original_name": "rumble.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/output/sfx/whoosh.wav",
+      "sha256": "299ea4bf79237cc5c776816a546e49a23abb5cffa5c633d41e38c0e52c492069",
+      "original_name": "whoosh.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/upload/Dino_save_the_moon_20261021165509(1).mp4",
+      "sha256": "5d493def817a6c16617d275c20b659d7bc40157e7089c9f021342b83d9fb531b",
+      "original_name": "Dino_save_the_moon_20261021165509(1).mp4"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/upload/Generated Audio October 25, 2026 - 2_31PM.wav",
+      "sha256": "ce70957c43a5492f044468d0bed39a462f294f058a917847710f3e92287bcc1a",
+      "original_name": "Generated Audio October 25, 2026 - 2_31PM.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/upload/Generated Audio October 25, 2026 - 2_50PM.wav",
+      "sha256": "df2d64badfcb07e66c58624c108eae37150cebb4c2ca8948a38fa2418bbc40b5",
+      "original_name": "Generated Audio October 25, 2026 - 2_50PM.wav"
+    },
+    {
+      "path": "episodes/save-the-moon/media/originals/handover-20261025/upload/Generated Audio October 25, 2026 - 3_23PM.wav",
+      "sha256": "4692ff86c153c4c6144120be98f9f034d85b0b2622f43e05579f0f50f555e7fd",
+      "original_name": "Generated Audio October 25, 2026 - 3_23PM.wav"
     }
   ],
   "shared_assets": [
@@ -24,11 +74,21 @@
   ],
   "export_settings": null,
   "audio_kit_cues": {
-    "path": "episodes/save-the-moon/media/originals/audio-kit-extracted/dino_audio_kit/episode.json",
+    "path": "episodes/save-the-moon/media/originals/handover-20261025/dino_audio_kit/episode.json",
     "status": "audition_examples_unverified"
   },
   "voice_presets": {
-    "path": "library/presets/v001/voices.json",
-    "status": "provisional_unapproved"
-  }
+    "path": "config/voices.json",
+    "status": "voice_selections_approved_styles_reconstructed"
+  },
+  "picture_master": "episodes/save-the-moon/media/originals/handover-20261025/Dino_Saves_the_Moon_NO_AUDIO.mp4",
+  "original_reference": "episodes/save-the-moon/media/originals/handover-20261025/upload/Dino_save_the_moon_20261021165509(1).mp4",
+  "source_audio": "episodes/save-the-moon/media/originals/handover-20261025/Dino_Original_Audio.wav",
+  "delivery_archive": {
+    "path": "episodes/save-the-moon/media/originals/dino-production-handover-20261025.zip",
+    "sha256": "750546b54d70cc0f2bfb15d663634292e31d1224dd09f25e61b615ccc0702878",
+    "original_filename": "unknown; Google Drive handover download",
+    "source": "Owner-provided Google Drive file 1yJ3_tyVnR1fEO_bESalDGgDlbZS4cwSn"
+  },
+  "production_manifest": "episodes/save-the-moon/production.json"
 }

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dino Adventures voices v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "characters"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "characters": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "display_name",
+          "model",
+          "voice",
+          "style",
+          "preset_version",
+          "approval_status",
+          "reference_wavs"
+        ],
+        "properties": {
+          "display_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "voice": {
+            "type": "string",
+            "minLength": 1
+          },
+          "style": {
+            "type": "object",
+            "required": [
+              "en",
+              "zh",
+              "ms"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ms": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "preset_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "approval_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference_wavs": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

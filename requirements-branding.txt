@@ -1,0 +1,2 @@
+# Unicode title-card text rasterization; no existing artwork is generated or redesigned.
+Pillow==12.3.0
