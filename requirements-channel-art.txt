@@ -1,0 +1,2 @@
+# Optional channel launch layouts; FFmpeg must have the librsvg decoder.
+fonttools==4.67.0

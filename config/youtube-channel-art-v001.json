@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "output_dir": "library/media/branding/youtube-launch-v001",
+  "logo": "library/media/branding/flh-v001/logo.png",
+  "background": "library/media/branding/youtube-launch-v001/source/banner-background.png",
+  "episode_still": "library/media/branding/youtube-launch-v001/source/episode-frame-1440.png",
+  "fonts": {
+    "heading": {"path": "library/media/branding/flh-v001/Outfit-800.ttf"},
+    "body": {"path": "library/media/branding/flh-v001/Nunito-700.ttf"},
+    "chinese": {"path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc", "index": 2}
+  },
+  "languages": {
+    "en": {"label": "English", "landscape_lines": ["Dino Saves", "the Moon"], "portrait_lines": ["Dino Saves", "the Moon"]},
+    "zh": {"label": "中文", "landscape_lines": ["迪诺", "救月亮"], "portrait_lines": ["迪诺救月亮"]},
+    "ms": {"label": "Bahasa Melayu", "landscape_lines": ["Dino", "Menyelamatkan", "Bulan"], "portrait_lines": ["Dino Menyelamatkan", "Bulan"]}
+  }
+}
