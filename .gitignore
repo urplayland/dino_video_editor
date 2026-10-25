@@ -2,13 +2,33 @@
 __pycache__/
 *.py[cod]
 .venv/
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .env
 .env.*
 !.env.example
 
-# Originals supplied at the repository root are retained locally.
-/*.mp4
-/*.zip
+# Media and delivery archives stay local or in the Drive archive, at any depth.
+*.mp4
+*.mov
+*.m4v
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.opus
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
 
 # Local media and generated work stay outside Git.
 /incoming/*
