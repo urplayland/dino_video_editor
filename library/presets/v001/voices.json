@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "model": "gemini-3.8-flash-tts",
+  "notes": "Append a new character under characters, with its own voice and en/zh/ms styles. Never overwrite approved character presets without deliberately versioning them. Styles here are approximations and should be replaced by the exact approved AI Studio strings when finalized.",
+  "characters": {
+    "dino": {"voice": "Puck", "style": {
+      "en": "A cute, curious, cheerful little boy dinosaur in a children's adventure. Playful and innocent, expressive but not exaggerated, natural American English.",
+      "zh": "A cute, curious little boy dinosaur. Natural clear Mandarin Chinese, playful and warm, youthful boyish voice.",
+      "ms": "A cute, cheerful curious little boy dinosaur. Speak natural Malaysian Bahasa Melayu with Malaysian pronunciation and rhythm, not Indonesian or English-influenced. Slightly slower, clearly articulated without exaggeration."
+    }},
+    "cloud": {"voice": "Charon", "style": {
+      "en": "Deep, warm, resonant masculine old gentleman voice of a wise magical Cloud Guardian. Calm, protective, powerful yet gentle, never frightening; natural American English.",
+      "zh": "Deep warm masculine old gentleman voice of a wise, gentle Cloud Guardian; calm and protective. Natural Mandarin Chinese pronunciation.",
+      "ms": "Deep warm masculine old gentleman voice of a wise and gentle Cloud Guardian. Natural Malaysian Bahasa Melayu, not Indonesian; slow, reassuring."
+    }},
+    "moon": {"voice": "Sulafat", "style": {
+      "en": "Sweet, gentle, warm feminine voice of a friendly magical Moon. Slightly youthful, soothing like a bedtime storyteller, softly grateful and joyful. Natural American English, never robotic.",
+      "zh": "Sweet gentle feminine voice of a friendly magical Moon, soothing and grateful; natural Mandarin Chinese pronunciation.",
+      "ms": "Sweet gentle feminine voice of a friendly magical Moon. Natural Malaysian Bahasa Melayu pronunciation, not Indonesian; clear, soothing and warm."
+    }}
+  }
+}

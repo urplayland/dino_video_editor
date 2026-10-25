@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "notes": "Reusable sound-effect presets. Add new entries here; their asset files belong in output/sfx or a future library of licensed WAV files.",
+  "effects": {
+    "whoosh": {"description": "Cloud entering or swirling", "source": "local_synth", "duration_s": 1.2, "default_gain_db": -8, "tags": ["cloud", "magic", "wind"]},
+    "chime": {"description": "Moon light and magical sparkle", "source": "local_synth", "duration_s": 2.4, "default_gain_db": -10, "tags": ["moon", "magic", "success"]},
+    "pop": {"description": "Dino surprise or cartoon reaction", "source": "local_synth", "duration_s": 0.35, "default_gain_db": -14, "tags": ["dino", "reaction"]},
+    "footsteps": {"description": "Light cartoon footsteps", "source": "local_synth", "duration_s": 2.0, "default_gain_db": -16, "tags": ["dino", "movement"]},
+    "rumble": {"description": "Gentle cloud guardian presence", "source": "local_synth", "duration_s": 2.5, "default_gain_db": -20, "tags": ["cloud", "ambient"]}
+  }
+}

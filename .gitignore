@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+
+# Originals supplied at the repository root are retained locally.
+/*.mp4
+/*.zip
+
+# Local media and generated work stay outside Git.
+/incoming/*
+!/incoming/README.md
+/library/media/*
+!/library/media/README.md
+/episodes/*/media/
+/episodes/*/work/
+/episodes/*/exports/
+/episodes/*/reports/

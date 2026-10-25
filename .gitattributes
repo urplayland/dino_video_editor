@@ -1,0 +1,6 @@
+# Keep portable text files consistent across macOS, Linux, and Windows.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
