@@ -3,7 +3,7 @@
 Prepared on the owner's request for next-day channel setup. The local delivery
 is `library/media/branding/youtube-launch-v001/`, outside Git. The Drive
 destination is `GDrive:Dino/FLH_YouTube_Launch_Kit_v001/`, alongside the episode
-archive. [Open the delivered folder](https://drive.google.com/drive/folders/1nvkNb6O4p_RJE-8QCekH68U4VxuQTv1d). It includes an approximately 35 MB all-in-one ZIP.
+archive. [Open the delivered folder](https://drive.google.com/drive/folders/1nvkNb6O4p_RJE-8QCekH68U4VxuQTv1d). All assets are delivered individually; the owner requested no ZIP.
 
 The channel uses Family Learning Hub as the umbrella brand and Dino Adventures
 as the first series. Existing owner-approved H/star artwork, Outfit/Nunito type
@@ -27,7 +27,7 @@ design, animation or TTS was generated.
 - `05_Editable_Source`: self-contained SVG layouts with outlined lettering,
   source art, config, colour palette and generation records. Font binaries are
   not redistributed. The 4K cover layouts do not add detail to the 720p film still.
-- Root README, per-file SHA-256 manifest and complete ZIP.
+- Root README and per-file SHA-256 manifest. No ZIP is needed.
 
 Rebuild into a **new output directory/version** after installing the optional
 `requirements-channel-art.txt` dependencies and providing the recorded source
