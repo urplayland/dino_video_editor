@@ -6,7 +6,21 @@ The owner retained English v007, Mandarin v009 and Malaysian Malay v007. `episod
 
 [YouTube's current documentation](https://support.google.com/youtube/answer/13338784?hl=en) supports uploading custom language audio tracks to both videos and Shorts for creators with Advanced features. Actual channel availability has not been checked. If available, use one video with three uploaded full mixes, corresponding subtitle tracks, and translated titles/descriptions. If unavailable, separate language videos remain the fallback.
 
-Prepare a new clean-picture master from the preserved uncaptioned story and approved FLH bumper clips. Upload one complete primary mix, then the other complete language mixes (dialogue, music, ambience, sound effects and bumper audio), each aligned to the full approximately 75.427-second timeline. Upload the three verified SRT files separately. Switching audio cannot remove or change subtitles already burned into an MP4, so the existing language-specific MP4s are not the clean multi-language picture master. No new animation or TTS generation is needed for this packaging.
+Use a clean-picture master from the preserved uncaptioned story and approved FLH bumper clips. The silent master is an editing/interchange asset; the primary upload copy includes the selected English audio with no burned subtitles. Add the other complete language mixes (dialogue, music, ambience, sound effects and bumper audio), each aligned to the full approximately 75.427-second timeline, and the three verified SRT files separately. Switching audio cannot remove or change subtitles already burned into an MP4, so the existing captioned language-specific MP4s remain separate viewing copies. No new animation or TTS generation is needed for this packaging.
+
+Reproduce the clean master and English primary copy with:
+
+```sh
+python3 tools/export_clean_master.py episodes/save-the-moon/clean-master.json
+```
+
+The exporter uses the unchanged original silent story and hash-verified approved bumpers. It preserves all 1,802 frames and checks every picture timestamp against all three selected releases. It refuses to overwrite existing outputs. The English primary copy uses stream copy for both video and selected final English audio; packet hashes and a full decode are checked. To package primary audio after a separately completed clean-master render:
+
+```sh
+python3 tools/export_clean_master.py episodes/save-the-moon/clean-master.json --package-primary-only
+```
+
+Drive's `02_After_Editing/00_Shared_Master/` contains both clean-picture variants. Language folders `en/`, `zh/` and `ms/` contain the corresponding full mixed WAV and full-timeline SRT. Use those packaged SRTs directly: the two-second opening offset is already included. The story-only subtitle files in the working tree use a different time origin and must not be substituted. SRT carries text and timing; the player controls its visual styling and placement.
 
 The current vertical episode fits [YouTube's up-to-three-minute Shorts format](https://support.google.com/youtube/answer/15424877?hl=en). This child-directed series should use the appropriate [Made for Kids audience setting](https://support.google.com/youtube/answer/9527654?hl=en); that affects platform features such as comments, not the already rendered logo ending.
 

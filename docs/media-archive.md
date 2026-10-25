@@ -13,6 +13,7 @@ Dino_Saves_the_Moon/
     original_audio.wav
     original_handover.zip
   02_After_Editing/
+    00_Shared_Master/  # silent clean picture + clean picture with English audio
     en/  # selected v007 MP4, matching SRT, full mixed WAV
     zh/  # selected v009 MP4, matching SRT, full mixed WAV
     ms/  # selected v007 MP4, matching SRT, full mixed WAV
@@ -28,6 +29,12 @@ music, ambience, effects, subtitles and FLH opening/ending. Each language has on
 current delivery set. The full mixed WAV is decoded from its selected final MP4
 into 48 kHz stereo PCM16, aligned to 75.427018 seconds; this does not restore
 detail lost in AAC compression. It includes the opening and ending audio.
+
+The shared clean-picture files retain approved FLH bumpers and have no fixed
+subtitles. The silent version is for editing; the English-audio version is a
+primary upload asset. Use the existing language-folder WAVs and full-timeline
+SRTs for multilingual audio/captions. See [distribution.md](distribution.md)
+for the reproducible export command and subtitle time origin.
 
 The remote manifest records sizes and SHA-256 hashes. Existing selected MP4s,
 SRTs and the source ZIP are moved within Drive, preserving file IDs and sharing

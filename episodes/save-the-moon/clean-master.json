@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "episode_manifest": "episodes/save-the-moon/episode.json",
+  "branding_manifest": "episodes/save-the-moon/branding.en.json",
+  "selection_manifest": "episodes/save-the-moon/distribution-selection.json",
+  "output": "episodes/save-the-moon/exports/dino_saves_the_moon_flh_clean_v001.mp4",
+  "report": "episodes/save-the-moon/reports/clean-master-v001/verification.json",
+  "primary_language": "en",
+  "primary_output": "episodes/save-the-moon/exports/dino_saves_the_moon_flh_clean_en_v001.mp4"
+}
