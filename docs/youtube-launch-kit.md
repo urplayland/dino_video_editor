@@ -41,7 +41,10 @@ The current setup guide explains the [Made for Kids watermark limitation and
 branding specifications](https://support.google.com/youtube/answer/10456525?hl=en),
 [thumbnail upload workflow and current dimensions](https://support.google.com/youtube/answer/72431?hl=en),
 and [custom multi-language audio eligibility](https://support.google.com/youtube/answer/13338784?hl=en).
-Account-specific controls and handle availability remain unverified. The kit
+The owner confirmed `@familylearninghub-flh` on 2026-10-26; its canonical URL is
+https://www.youtube.com/@familylearninghub-flh and is recorded in
+`config/channel-profile.json`. Cloud setup copy uses this handle rather than
+earlier candidate names. Account-specific controls remain unverified. The kit
 does not create a channel, register a handle, set an audience or publish a video.
 The owner performs these account actions during setup.
 

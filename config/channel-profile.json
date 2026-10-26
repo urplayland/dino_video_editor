@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "brand": "Family Learning Hub",
+  "youtube": {
+    "handle": "@familylearninghub-flh",
+    "url": "https://www.youtube.com/@familylearninghub-flh",
+    "status": "owner_confirmed",
+    "confirmed_date": "2026-10-26"
+  }
+}

@@ -22,6 +22,28 @@ python3 tools/export_clean_master.py episodes/save-the-moon/clean-master.json --
 
 Drive's `02_After_Editing/00_Shared_Master/` contains both clean-picture variants. Language folders `en/`, `zh/` and `ms/` contain the corresponding full mixed WAV and full-timeline SRT. Use those packaged SRTs directly: the two-second opening offset is already included. The story-only subtitle files in the working tree use a different time origin and must not be substituted. SRT carries text and timing; the player controls its visual styling and placement.
 
+The owner reports English SRT captions at the top of the Shorts player with a
+black box. The supplied SRT has no positioning directives. A separate TTML
+alternative requests a lower region ending at 90% picture height, white bold
+text, transparent background and a dark outline. It preserves all 17 packaged
+cue texts, explicit line breaks and timestamps. This is an author-style request,
+not a guarantee that YouTube Shorts or viewer accessibility settings honor it.
+Actual uploaded-player review remains required. Exact approved appearance is
+available in the existing burned-caption v007 video.
+
+```sh
+python3 tools/position_captions.py \
+  episodes/save-the-moon/exports/dino_saves_the_moon_en_flh_v007.srt \
+  episodes/save-the-moon/exports/dino_saves_the_moon_en_flh_positioned_v001.ttml \
+  --language en
+```
+
+Upload the TTML as a replacement caption track for the same video/language;
+keep the original SRT and videos. YouTube [supports TTML positioning and styling](https://support.google.com/youtube/answer/2734698?hl=en),
+but [viewer caption preferences](https://support.google.com/youtube/answer/100078?hl=en)
+can control appearance. Changing the viewer's black-box/background preference
+does not set a universal channel-wide caption style.
+
 The current vertical episode fits [YouTube's up-to-three-minute Shorts format](https://support.google.com/youtube/answer/15424877?hl=en). This child-directed series should use the appropriate [Made for Kids audience setting](https://support.google.com/youtube/answer/9527654?hl=en); that affects platform features such as comments, not the already rendered logo ending.
 
 ## Instagram/Facebook Reels and TikTok
