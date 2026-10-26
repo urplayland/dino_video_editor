@@ -1,10 +1,24 @@
 # Selected deliverables and platform preparation
 
-The owner retained English v007, Mandarin v009 and Malaysian Malay v007. `episodes/save-the-moon/distribution-selection.json` pins their paths/hashes. All are approximately 75.427 seconds, vertical 720×1280, nominal 24 fps with preserved variable picture timing. Each currently has its own language's subtitles burned into the picture. Original sources, full audio mixes, dialogue/SFX/music stems and editable subtitle files are kept outside Git. These three outputs remain the content baselines; no extra platform derivative or social upload has been made.
+The owner retained English v007, Mandarin v009 and Malaysian Malay v007. `episodes/save-the-moon/distribution-selection.json` pins their paths/hashes. All are approximately 75.427 seconds, vertical 720×1280, nominal 24 fps with preserved variable picture timing. Each has its own language's subtitles burned into the picture. Original sources, full audio mixes, dialogue/SFX/music stems and editable subtitle files are kept outside Git. These three outputs remain the content baselines. The owner has shared YouTube test uploads; this pipeline has not published videos or changed their visibility.
 
-## YouTube: one video with language tracks
+## Current permanent YouTube publishing structure
 
-[YouTube's current documentation](https://support.google.com/youtube/answer/13338784?hl=en) supports uploading custom language audio tracks to both videos and Shorts for creators with Advanced features. Actual channel availability has not been checked. If available, use one video with three uploaded full mixes, corresponding subtitle tracks, and translated titles/descriptions. If unavailable, separate language videos remain the fallback.
+Use one Family Learning Hub channel, `@familylearninghub-flh`, with three permanent playlists for this series: Dino Adventures — English, Dino Adventures — 中文 and Dino Adventures — Bahasa Melayu. Each episode is released as three separately voiced videos with embedded subtitles, each assigned to its matching language playlist. This is the owner's selected long-term plan, independent of advanced-feature access.
+
+Titles follow `{episode_title} | {series} | {language_label}`. Omit the repeated Family Learning Hub suffix; preserve the brand in the channel identity, existing artwork, opening/ending and description. For example: `Dino Saves the Moon | Dino Adventures | English`.
+
+Channel templates and language labels live in `config/channel-profile.json`. Episode-specific titles, copy and selected Drive IDs live in `episodes/save-the-moon/youtube-release.json`. Rebuild ready-to-paste copy and the exact upload checklist with:
+
+```sh
+python3 tools/prepare_youtube_copy.py episodes/save-the-moon/youtube-release.json
+```
+
+The setup kit points to the selected English v007, Mandarin v009 and Malay v007 MP4s. Their visible subtitle design is embedded in the picture; separate CC tracks are optional accessibility assets. The primary upload guide does not require an SRT/TTML import or language-track switching. Existing clean-picture tests and editing sources remain preserved; no automated deletion/replacement of published videos occurs.
+
+## Archived alternative: one video with language tracks
+
+[YouTube's documentation](https://support.google.com/youtube/answer/13338784?hl=en) supports uploading custom language audio tracks to both videos and Shorts for creators with Advanced features. This remains a possible alternate packaging workflow, not the default release plan. The owner reports no phone verification and restricted features on the current channel; this session has not independently inspected its account controls.
 
 Use a clean-picture master from the preserved uncaptioned story and approved FLH bumper clips. The silent master is an editing/interchange asset; the primary upload copy includes the selected English audio with no burned subtitles. Add the other complete language mixes (dialogue, music, ambience, sound effects and bumper audio), each aligned to the full approximately 75.427-second timeline, and the three verified SRT files separately. Switching audio cannot remove or change subtitles already burned into an MP4, so the existing captioned language-specific MP4s remain separate viewing copies. No new animation or TTS generation is needed for this packaging.
 

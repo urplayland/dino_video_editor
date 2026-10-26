@@ -13,6 +13,15 @@ the kit's `05_Editable_Source/generation-provenance.json`. All character art is
 from the original silent episode at decoded frame index 1440. No new character
 design, animation or TTS was generated.
 
+Updated 2026-10-26 for the permanent release plan: one FLH channel, three
+language playlists and three embedded-caption videos per episode. Video titles
+end with the language label rather than the channel name. The root README,
+setup guide, channel descriptions, episode copy, playlist descriptions and
+media links use this plan; `UPLOAD_CHECKLIST.txt` maps every title/playlist to
+the exact selected subtitled MP4. Existing artwork is unchanged. Clean masters
+and standalone subtitles remain archived rather than being the main upload
+recommendation. Files are updated individually in the same Drive folder.
+
 ## Delivery contents
 
 - `01_Channel_Branding`: 2560×1440 banner, 800×800 avatar and optional 150×150
@@ -21,8 +30,9 @@ design, animation or TTS was generated.
   3840×2160 landscape and 2160×3840 portrait; all six JPEGs are below 2 MB.
 - `03_Previews`: mobile/desktop banner crops, circular-avatar crop, complete
   artwork overview and validation results. These are review files, not uploads.
-- `04_Copy_And_Setup`: ready-to-paste trilingual channel/episode text, playlist
-  copy, current media download links, official references and
+- `04_Copy_And_Setup`: ready-to-paste trilingual channel/episode text, three
+  permanent language playlist descriptions, `UPLOAD_CHECKLIST.txt`, current
+  embedded-caption video download links, official references and
   `TOMORROW_START_HERE.txt` with the setup sequence.
 - `05_Editable_Source`: self-contained SVG layouts with outlined lettering,
   source art, config, colour palette and generation records. Font binaries are
@@ -47,6 +57,12 @@ https://www.youtube.com/@familylearninghub-flh and is recorded in
 earlier candidate names. Account-specific controls remain unverified. The kit
 does not create a channel, register a handle, set an audience or publish a video.
 The owner performs these account actions during setup.
+
+Publishing copy is reproducible with
+`python3 tools/prepare_youtube_copy.py episodes/save-the-moon/youtube-release.json`.
+The reusable channel/title rules are in `config/channel-profile.json`; the
+episode's actual titles, descriptions and Drive IDs are kept under its own
+episode directory.
 
 Original sources, existing selected videos and their sharing permissions remain
 unchanged. Cloud upload is authorised by the owner; all art, ZIPs and generated

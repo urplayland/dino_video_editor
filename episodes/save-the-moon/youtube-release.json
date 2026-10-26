@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "series": "Dino Adventures",
+  "selection_manifest": "episodes/save-the-moon/distribution-selection.json",
+  "status": "owner_selected_permanent_separate_language_workflow",
+  "releases": {
+    "en": {
+      "episode_title": "Dino Saves the Moon",
+      "drive_id": "1FJUBGEJMDqAyCtFAe4wnjdY-RiO3KPrS",
+      "description": "The moon is missing! Join Dino as he sets out to help his friend, with a little help from the Cloud Guardian. A gentle adventure about friendship and helping one another.\n\nEnglish audio with English on-screen subtitles. Choose the matching language playlist for more stories.\n\nProduced for Family Learning Hub.\nChannel: https://www.youtube.com/@familylearninghub-flh\nExplore more: https://familylearninghub.com\n\n#DinoAdventures #FamilyLearningHub #KidsStories",
+      "playlist_description": "Dino Adventures in English, with English dialogue and on-screen subtitles. Little adventures about friendship, kindness and helping one another. Episodes are arranged in story order."
+    },
+    "zh": {
+      "episode_title": "迪诺救月亮",
+      "drive_id": "1_vz-xrUe2E3nHQE8kfdG7jpFarAeoR1A",
+      "description": "月亮不见了！跟随迪诺一起寻找月亮，并在云爷爷的帮助下救出朋友。这是一个关于友谊与互相帮助的温暖小冒险。\n\n本片为中文配音、中文画面内字幕。请在中文播放列表中继续观看同系列故事。\n\nFamily Learning Hub 家庭学习中心出品。\n频道：https://www.youtube.com/@familylearninghub-flh\n更多内容：https://familylearninghub.com\n\n#迪诺 #家庭学习中心 #儿童故事",
+      "playlist_description": "Dino Adventures 中文故事，配有中文对白和画面内字幕。跟随迪诺认识友谊、善良与互相帮助。影片按故事顺序排列。"
+    },
+    "ms": {
+      "episode_title": "Dino Menyelamatkan Bulan",
+      "drive_id": "1RuQHswSz6yFQgQZcoQ1C29w6v277tU1a",
+      "description": "Bulan telah hilang! Ikuti Dino dalam pengembaraan untuk membantu kawannya, dengan bantuan Atuk Awan. Sebuah cerita tentang persahabatan dan sikap saling membantu.\n\nAudio Bahasa Melayu Malaysia dengan sari kata Bahasa Melayu pada skrin. Pilih senarai main Bahasa Melayu untuk menonton cerita dalam bahasa yang sama.\n\nDiterbitkan untuk Family Learning Hub.\nSaluran: https://www.youtube.com/@familylearninghub-flh\nKetahui lebih lanjut: https://familylearninghub.com\n\n#DinoAdventures #FamilyLearningHub #CeritaKanakKanak",
+      "playlist_description": "Dino Adventures dalam Bahasa Melayu Malaysia, dengan dialog dan sari kata pada skrin dalam Bahasa Melayu. Pengembaraan tentang persahabatan, kebaikan hati dan sikap saling membantu. Episod disusun mengikut urutan cerita."
+    }
+  }
+}

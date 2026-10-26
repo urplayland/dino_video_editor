@@ -6,5 +6,33 @@
     "url": "https://www.youtube.com/@familylearninghub-flh",
     "status": "owner_confirmed",
     "confirmed_date": "2026-10-26"
+  },
+  "publishing": {
+    "strategy": "separate_language_videos",
+    "subtitle_delivery": "embedded",
+    "video_title_template": "{episode_title} | {series} | {language_label}",
+    "playlist_title_template": "{series} — {language_label}",
+    "append_channel_name_to_video_titles": false,
+    "language_order": [
+      "en",
+      "zh",
+      "ms"
+    ],
+    "languages": {
+      "en": {
+        "label": "English"
+      },
+      "zh": {
+        "label": "中文"
+      },
+      "ms": {
+        "label": "Bahasa Melayu"
+      }
+    }
+  },
+  "profile_descriptions": {
+    "en": "Welcome to Family Learning Hub! Enjoy playful stories and little adventures with children and family. Join Dino Adventures to explore friendship, kindness and helping one another. Choose a language playlist: English, 中文 or Bahasa Melayu. Each episode has matching spoken dialogue and on-screen subtitles. Discover more at https://familylearninghub.com",
+    "zh": "欢迎来到 Family Learning Hub 家庭学习中心！和孩子一起享受有趣的故事与小小冒险。跟随 Dino Adventures 的迪诺，认识友谊、善良与互相帮助。请按语言选择 English、中文或 Bahasa Melayu 播放列表；每集影片都有对应语言的配音和画面内字幕。更多内容：https://familylearninghub.com",
+    "ms": "Selamat datang ke Family Learning Hub! Nikmati cerita yang menyeronokkan dan pengembaraan kecil bersama anak-anak dan keluarga. Ikuti Dino Adventures untuk meneroka persahabatan, kebaikan hati dan sikap saling membantu. Pilih senarai main English, 中文 atau Bahasa Melayu. Setiap episod mempunyai audio dan sari kata pada skrin dalam bahasa yang sepadan. Ketahui lebih lanjut di https://familylearninghub.com"
   }
 }
