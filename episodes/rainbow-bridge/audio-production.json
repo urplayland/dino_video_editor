@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "source_video": null,
+  "source_video_sha256": null,
+  "duration_s": null,
+  "sfx_plan": "episodes/rainbow-bridge/sfx-cues.json",
+  "sfx_registry": "library/presets/v002/sfx_presets.json",
+  "dialogue": {
+    "en": {
+      "path": null,
+      "sha256": null,
+      "status": "draft",
+      "provenance": null,
+      "license": null,
+      "provenance_report": null
+    },
+    "zh": {
+      "path": null,
+      "sha256": null,
+      "status": "draft",
+      "provenance": null,
+      "license": null,
+      "provenance_report": null
+    },
+    "ms": {
+      "path": null,
+      "sha256": null,
+      "status": "draft",
+      "provenance": null,
+      "license": null,
+      "provenance_report": null
+    }
+  },
+  "music": [],
+  "ambience": [],
+  "mix": {
+    "integrated_lufs": -16,
+    "true_peak_db": -2.5
+  },
+  "ducking": {
+    "music": {
+      "threshold": 0.025,
+      "ratio": 5,
+      "attack_ms": 15,
+      "release_ms": 350
+    },
+    "sfx": {
+      "threshold": 0.04,
+      "ratio": 3,
+      "attack_ms": 5,
+      "release_ms": 220
+    }
+  },
+  "output_dir": "episodes/rainbow-bridge/media/derived/audio-v001",
+  "exports": {
+    "en": "episodes/rainbow-bridge/exports/episode_en_audio_v001.mp4",
+    "zh": "episodes/rainbow-bridge/exports/episode_zh_audio_v001.mp4",
+    "ms": "episodes/rainbow-bridge/exports/episode_ms_audio_v001.mp4"
+  }
+}

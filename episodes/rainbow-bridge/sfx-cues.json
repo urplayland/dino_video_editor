@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "duration_s": null,
+  "scene_time_origin": "original picture master; fill after actual-video review",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "description": "Owner description: Dino walks near a broken rainbow bridge; Bunny waves for help across the river. Actual picture and timings not supplied."
+    }
+  ],
+  "cues": [
+    {
+      "id": "dino-walk",
+      "scene_id": "scene-01",
+      "preset_id": "dino_footstep",
+      "preset_version": "v001",
+      "timestamp_s": null,
+      "duration_s": null,
+      "gain_db": 0,
+      "status": "draft",
+      "loop": false,
+      "timing_basis": null,
+      "review_note": "Align real foot contacts after video review; duplicate/retime cues as necessary."
+    },
+    {
+      "id": "bunny-movement",
+      "scene_id": "scene-01",
+      "preset_id": "bunny_hop",
+      "preset_version": "v001",
+      "timestamp_s": null,
+      "duration_s": null,
+      "gain_db": 0,
+      "status": "draft",
+      "loop": false,
+      "timing_basis": null,
+      "review_note": "Only use if actual hop/tiny movement visible. Waving does not imply a hop."
+    },
+    {
+      "id": "river-bed",
+      "scene_id": "scene-01",
+      "preset_id": "river_ambience",
+      "preset_version": "v001",
+      "timestamp_s": null,
+      "duration_s": null,
+      "gain_db": 0,
+      "status": "draft",
+      "loop": true,
+      "timing_basis": null,
+      "review_note": "Set real scene duration after video inspection."
+    },
+    {
+      "id": "gentle-magic-bed",
+      "scene_id": "scene-01",
+      "preset_id": "magical_ambience",
+      "preset_version": "v001",
+      "timestamp_s": null,
+      "duration_s": null,
+      "gain_db": 0,
+      "status": "draft",
+      "loop": true,
+      "timing_basis": null,
+      "review_note": "Creative ambience proposal; review against actual picture."
+    }
+  ]
+}

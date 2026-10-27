@@ -33,3 +33,13 @@ Pending confirmation. Record destination, container, codecs, dimensions, aspect 
 
 | Date | Version | Changes / feedback | Approval |
 | --- | --- | --- | --- |
+
+## Shared SFX and music
+
+- `sfx-cues.json`: identify scenes and set cue times only after actual-video review.
+- `audio-production.json`: supply aligned EN/ZH/MS dialogue stem paths/checksums,
+  music/ambience sources and provenance, actual duration and picture checksum.
+- Keep unknown times/duration null and status draft; reviewed production rejects them.
+- Pin registry/preset versions and retain editable stems and review reports.
+- See `docs/sfx-and-mixing.md`; no episode media or provisional voices are approved
+  merely because a schema or FFmpeg check passes.

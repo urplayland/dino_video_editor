@@ -49,6 +49,10 @@ def init_episode(args):
     manifest = json.loads(manifest_path.read_text())
     manifest.update(slug=args.slug, title=args.title)
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
+    for name in ("sfx-cues.json", "audio-production.json"):
+        audio_config = destination / name
+        if audio_config.is_file():
+            audio_config.write_text(audio_config.read_text().replace("__EPISODE__", args.slug))
     for folder in ("media/originals", "media/derived", "work", "exports", "reports"):
         (destination / folder).mkdir(parents=True, exist_ok=True)
     print(f"Created episodes/{args.slug}")

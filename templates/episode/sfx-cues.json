@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "duration_s": null,
+  "scene_time_origin": "original picture master; fill after actual-video review",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "description": "Review the actual first scene before scheduling effects."
+    }
+  ],
+  "cues": []
+}

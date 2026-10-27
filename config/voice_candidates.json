@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "note": "Candidates are not loaded by the approved voice generator. No existing styles modified.",
+  "candidates": {
+    "bunny": {
+      "display_name": "Bunny",
+      "voice": "Leda",
+      "approval_status": "provisional_pending_owner_approval",
+      "language_styles": null,
+      "style_status": "not_supplied",
+      "reference_wavs": []
+    }
+  }
+}

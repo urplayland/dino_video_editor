@@ -300,6 +300,38 @@ def loudness_info(path):
     return json.loads(result[result.rfind('{'):])
 
 
+def master_audio(m, source, mix, movie):
+    """Master/mux an already assembled mix using the established production checks."""
+    ffmpeg = tool('ffmpeg')
+    duration = m['duration_s']
+    production = m.get('kind') == 'dubbing_production'
+    loudness = f'loudnorm=I={m["mix"]["integrated_lufs"]}:TP={m["mix"]["true_peak_db"]}:LRA=11'
+    analysis = run([ffmpeg, '-hide_banner', '-nostdin', '-i', str(mix), '-af', loudness+':print_format=json', '-f', 'null', '-']).stderr
+    measured = json.loads(analysis[analysis.rfind('{'):])
+    if any(not math.isfinite(float(measured[k])) for k in ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')):
+        raise ValueError('Cannot normalize silent or invalid audio.')
+    norm = loudness + ':linear=true:' + ':'.join(f'{k}={measured[v]}' for k,v in [('measured_I','input_i'),('measured_TP','input_tp'),('measured_LRA','input_lra'),('measured_thresh','input_thresh'),('offset','target_offset')])
+    video_codec = ['-c:v', 'copy'] if production else ['-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p']
+    run([ffmpeg, '-v', 'error', '-nostdin', '-n', '-ss', str(m['source_start_s']), '-i', str(source), '-i', str(mix),
+         '-t', str(duration), '-map', '0:v:0', '-map', '1:a:0', '-af', norm, *video_codec,
+         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', str(movie)], timeout=900)
+    info = probe(movie)
+    if abs(float(info['format']['duration'])-duration) > .15 or not any(s['codec_type']=='audio' for s in info['streams']):
+        raise ValueError('Export stream/duration validation failed.')
+    run([ffmpeg, '-v', 'error', '-nostdin', '-i', str(movie), '-f', 'null', '-'], timeout=900)
+    final_measurement = loudness_info(movie)
+    if not math.isfinite(float(final_measurement['input_i'])) or float(final_measurement['input_tp']) > -.8:
+        raise ValueError('Encoded audio is silent or exceeds the production peak margin.')
+    if production and abs(float(final_measurement['input_i']) - m['mix']['integrated_lufs']) > 1:
+        raise ValueError('Encoded integrated loudness differs from the target by over 1 LU.')
+    picture_hash = None
+    if production:
+        picture_hash = video_hash(source)
+        if video_hash(movie) != picture_hash:
+            raise ValueError('Encoded animation differs from the supplied silent picture master.')
+    return info, measured, final_measurement, picture_hash
+
+
 def render(m, voices, output):
     if m['status'] not in ('verified', 'approved') or any(c['status'] not in ('verified', 'approved') for c in m['dialogue']):
         raise ValueError('Render needs a verified transcript, timing, and manifest.')
@@ -386,31 +418,8 @@ def render(m, voices, output):
         for group in group_names:
             mixed_outputs += ['-map', f'[stem_{group}]', '-t', str(duration), '-c:a', 'pcm_s24le', str(Path(tmp)/(group+'.wav'))]
         run([ffmpeg, '-v', 'error', '-nostdin', '-n', *inputs, '-filter_complex', ';'.join(filters), *mixed_outputs], timeout=900)
-        loudness = f'loudnorm=I={m["mix"]["integrated_lufs"]}:TP={m["mix"]["true_peak_db"]}:LRA=11'
-        analysis = run([ffmpeg, '-hide_banner', '-nostdin', '-i', str(mix), '-af', loudness+':print_format=json', '-f', 'null', '-']).stderr
-        measured = json.loads(analysis[analysis.rfind('{'):])
-        if any(not math.isfinite(float(measured[k])) for k in ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')):
-            raise ValueError('Cannot normalize silent or invalid audio.')
-        norm = loudness + ':linear=true:' + ':'.join(f'{k}={measured[v]}' for k,v in [('measured_I','input_i'),('measured_TP','input_tp'),('measured_LRA','input_lra'),('measured_thresh','input_thresh'),('offset','target_offset')])
         movie = Path(tmp)/'review.mp4'
-        video_codec = ['-c:v', 'copy'] if production else ['-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p']
-        run([ffmpeg, '-v', 'error', '-nostdin', '-n', '-ss', str(m['source_start_s']), '-i', str(source), '-i', str(mix),
-             '-t', str(duration), '-map', '0:v:0', '-map', '1:a:0', '-af', norm, *video_codec,
-             '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', str(movie)], timeout=900)
-        info = probe(movie)
-        if abs(float(info['format']['duration'])-duration) > .15 or not any(s['codec_type']=='audio' for s in info['streams']):
-            raise ValueError('Export stream/duration validation failed.')
-        run([ffmpeg, '-v', 'error', '-nostdin', '-i', str(movie), '-f', 'null', '-'], timeout=900)
-        final_measurement = loudness_info(movie)
-        if not math.isfinite(float(final_measurement['input_i'])) or float(final_measurement['input_tp']) > -.8:
-            raise ValueError('Encoded audio is silent or exceeds the production peak margin.')
-        if production and abs(float(final_measurement['input_i']) - m['mix']['integrated_lufs']) > 1:
-            raise ValueError('Encoded integrated loudness differs from the target by over 1 LU.')
-        picture_hash = None
-        if production:
-            picture_hash = video_hash(source)
-            if video_hash(movie) != picture_hash:
-                raise ValueError('Encoded animation differs from the supplied silent picture master.')
+        info, measured, final_measurement, picture_hash = master_audio(m, source, mix, movie)
         info['format']['filename'] = output
         # Persist the editable mixed stem and reproducibility report alongside the render.
         stem_target = target.with_suffix('.mix.wav')

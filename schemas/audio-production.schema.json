@@ -1,0 +1,154 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "sample",
+        "draft",
+        "verified",
+        "approved"
+      ]
+    },
+    "source_video": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_video_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "duration_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "sfx_plan": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sfx_registry": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dialogue": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh",
+        "ms"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "sample",
+              "draft",
+              "verified",
+              "approved"
+            ]
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "status",
+          "provenance",
+          "license",
+          "provenance_report"
+        ]
+      }
+    },
+    "music": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ambience": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "mix": {
+      "type": "object",
+      "properties": {
+        "integrated_lufs": {
+          "type": "number",
+          "minimum": -30,
+          "maximum": -12
+        },
+        "true_peak_db": {
+          "type": "number",
+          "minimum": -6,
+          "maximum": -1
+        }
+      },
+      "required": [
+        "integrated_lufs",
+        "true_peak_db"
+      ]
+    },
+    "ducking": {
+      "type": "object",
+      "required": [
+        "music",
+        "sfx"
+      ]
+    },
+    "output_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exports": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh",
+        "ms"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "source_video",
+    "source_video_sha256",
+    "duration_s",
+    "sfx_plan",
+    "sfx_registry",
+    "dialogue",
+    "music",
+    "mix",
+    "ducking",
+    "output_dir",
+    "exports"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

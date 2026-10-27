@@ -64,3 +64,5 @@ Run tests with `.venv/bin/python -m unittest discover -s tests -v`. Tests create
 The current English review uses an editable nine-cue orchestral score rather than a single repeating background loop. See [scene-based score and offline rendering](docs/production.md#current-english-review-scene-based-underscore-v002). English v007 is accepted. The owner has authorized matching Mandarin and Malaysian Malay editions using the same picture, FLH bumpers, scene score and overlay subtitle design.
 
 Distribution: [one FLH channel, three permanent language playlists and separate subtitled releases](docs/distribution.md). Ready-to-paste channel/episode setup copy is documented in [the YouTube kit](docs/youtube-launch-kit.md). GitHub contains the production scripts, registries and manifests; media storage is separate, as described in [the storage assessment](docs/github-media-storage.md).
+
+Reusable SFX and common multilingual mixing: [production commands, registry/cue formats and independent verified acceptance output](docs/sfx-and-mixing.md). Episode 2 draft files are in `episodes/rainbow-bridge/`; unknown video timing is intentionally not renderable.

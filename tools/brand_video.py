@@ -268,8 +268,11 @@ def render(manifest, cfg):
         import production
         from subtitles import generate
         episode=dub.load(dub.relative(manifest['source_manifest'],True))
-        if production.language_manifest(episode,manifest['language'])!=original_report['manifest']:
-            raise ValueError('Subtitle dialogue does not match the selected rendered source.')
+        expected=production.language_manifest(episode,manifest['language'])
+        if original_report.get('manifest')!=expected:
+            expected_dialogue={key:expected[key] for key in ('language','duration_s','dialogue')}
+            if original_report.get('dialogue_manifest')!=expected_dialogue:
+                raise ValueError('Subtitle dialogue does not match the selected rendered source.')
         sub=dub.load(dub.relative(manifest['subtitles'],True))
         subtitle_provenance=generate(episode,sub)
     source_info = dub.probe(source)

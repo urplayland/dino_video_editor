@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "slug": "audio-system-verification",
+  "title": "Independent audio-system technical acceptance fixture",
+  "status": "synthetic_verification_not_episode",
+  "sources": [],
+  "shared_assets": [],
+  "export_settings": {
+    "purpose": "Synthetic engineering fixture only; no character speech",
+    "width": 320,
+    "height": 568,
+    "frame_rate": 24,
+    "video_codec": "H264",
+    "audio_codec": "AAC",
+    "sample_rate": 48000,
+    "channels": 2
+  }
+}

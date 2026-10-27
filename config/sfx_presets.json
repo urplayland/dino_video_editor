@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "notes": "Reusable sound-effect presets. Add new entries here; their asset files belong in output/sfx or a future library of licensed WAV files.",
+  "notes": "Append stable effect IDs. Pin cue preset_version; preserve old asset paths and versioned registry snapshots. No external samples are downloaded.",
   "effects": {
     "whoosh": {
       "description": "Cloud entering or swirling",
@@ -73,6 +73,546 @@
       "asset_path": "library/media/audio/sfx/kit-v001/rumble.wav",
       "license": "No separate license supplied; synthetic kit placeholder",
       "approval_status": "placeholder_pending_review"
+    },
+    "dino_footstep": {
+      "description": "Dino footstep; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/dino_footstep-v01.wav",
+      "duration_s": 0.35,
+      "default_gain_db": -12,
+      "tags": [
+        "dino",
+        "footstep"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/dino_footstep-v01.wav",
+          "duration_s": 0.35,
+          "generator": "dino_footstep",
+          "seed": 1729,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/dino_footstep-v02.wav",
+          "duration_s": 0.35,
+          "generator": "dino_footstep",
+          "seed": 1760,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/dino_footstep-v03.wav",
+          "duration_s": 0.35,
+          "generator": "dino_footstep",
+          "seed": 1791,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "bunny_hop": {
+      "description": "Bunny hop; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/bunny_hop-v01.wav",
+      "duration_s": 0.3,
+      "default_gain_db": -12,
+      "tags": [
+        "bunny",
+        "hop"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_hop-v01.wav",
+          "duration_s": 0.3,
+          "generator": "bunny_hop",
+          "seed": 1830,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_hop-v02.wav",
+          "duration_s": 0.3,
+          "generator": "bunny_hop",
+          "seed": 1861,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_hop-v03.wav",
+          "duration_s": 0.3,
+          "generator": "bunny_hop",
+          "seed": 1892,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "bunny_surprise": {
+      "description": "Bunny surprise; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/bunny_surprise-v01.wav",
+      "duration_s": 0.55,
+      "default_gain_db": -12,
+      "tags": [
+        "bunny",
+        "surprise"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_surprise-v01.wav",
+          "duration_s": 0.55,
+          "generator": "bunny_surprise",
+          "seed": 1931,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_surprise-v02.wav",
+          "duration_s": 0.55,
+          "generator": "bunny_surprise",
+          "seed": 1962,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/bunny_surprise-v03.wav",
+          "duration_s": 0.55,
+          "generator": "bunny_surprise",
+          "seed": 1993,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "magic_pop": {
+      "description": "Magic pop; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/magic_pop-v01.wav",
+      "duration_s": 0.28,
+      "default_gain_db": -12,
+      "tags": [
+        "magic",
+        "pop"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_pop-v01.wav",
+          "duration_s": 0.28,
+          "generator": "magic_pop",
+          "seed": 2032,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_pop-v02.wav",
+          "duration_s": 0.28,
+          "generator": "magic_pop",
+          "seed": 2063,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_pop-v03.wav",
+          "duration_s": 0.28,
+          "generator": "magic_pop",
+          "seed": 2094,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "magic_whoosh": {
+      "description": "Magic whoosh; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/magic_whoosh-v01.wav",
+      "duration_s": 1.25,
+      "default_gain_db": -12,
+      "tags": [
+        "magic",
+        "whoosh"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_whoosh-v01.wav",
+          "duration_s": 1.25,
+          "generator": "magic_whoosh",
+          "seed": 2133,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_whoosh-v02.wav",
+          "duration_s": 1.25,
+          "generator": "magic_whoosh",
+          "seed": 2164,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magic_whoosh-v03.wav",
+          "duration_s": 1.25,
+          "generator": "magic_whoosh",
+          "seed": 2195,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "puzzle_click": {
+      "description": "Puzzle click; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/puzzle_click-v01.wav",
+      "duration_s": 0.12,
+      "default_gain_db": -12,
+      "tags": [
+        "puzzle",
+        "click"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/puzzle_click-v01.wav",
+          "duration_s": 0.12,
+          "generator": "puzzle_click",
+          "seed": 2234,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/puzzle_click-v02.wav",
+          "duration_s": 0.12,
+          "generator": "puzzle_click",
+          "seed": 2265,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/puzzle_click-v03.wav",
+          "duration_s": 0.12,
+          "generator": "puzzle_click",
+          "seed": 2296,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "rainbow_restore": {
+      "description": "Rainbow restore; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/rainbow_restore-v01.wav",
+      "duration_s": 3.2,
+      "default_gain_db": -12,
+      "tags": [
+        "rainbow",
+        "restore"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/rainbow_restore-v01.wav",
+          "duration_s": 3.2,
+          "generator": "rainbow_restore",
+          "seed": 2335,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/rainbow_restore-v02.wav",
+          "duration_s": 3.2,
+          "generator": "rainbow_restore",
+          "seed": 2366,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/rainbow_restore-v03.wav",
+          "duration_s": 3.2,
+          "generator": "rainbow_restore",
+          "seed": 2397,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "soft_hug": {
+      "description": "Soft hug; original soft procedural sound, review against picture.",
+      "category": "sfx",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/soft_hug-v01.wav",
+      "duration_s": 1.4,
+      "default_gain_db": -12,
+      "tags": [
+        "soft",
+        "hug"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/soft_hug-v01.wav",
+          "duration_s": 1.4,
+          "generator": "soft_hug",
+          "seed": 2436,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/soft_hug-v02.wav",
+          "duration_s": 1.4,
+          "generator": "soft_hug",
+          "seed": 2467,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/soft_hug-v03.wav",
+          "duration_s": 1.4,
+          "generator": "soft_hug",
+          "seed": 2498,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "forest_ambience": {
+      "description": "Forest ambience; original soft procedural sound, review against picture.",
+      "category": "ambience",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/forest_ambience-v01.wav",
+      "duration_s": 12,
+      "default_gain_db": -18,
+      "tags": [
+        "forest",
+        "ambience"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/forest_ambience-v01.wav",
+          "duration_s": 12,
+          "generator": "forest_ambience",
+          "seed": 2537,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/forest_ambience-v02.wav",
+          "duration_s": 12,
+          "generator": "forest_ambience",
+          "seed": 2568,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/forest_ambience-v03.wav",
+          "duration_s": 12,
+          "generator": "forest_ambience",
+          "seed": 2599,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "river_ambience": {
+      "description": "River ambience; original soft procedural sound, review against picture.",
+      "category": "ambience",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/river_ambience-v01.wav",
+      "duration_s": 12,
+      "default_gain_db": -18,
+      "tags": [
+        "river",
+        "ambience"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/river_ambience-v01.wav",
+          "duration_s": 12,
+          "generator": "river_ambience",
+          "seed": 2638,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/river_ambience-v02.wav",
+          "duration_s": 12,
+          "generator": "river_ambience",
+          "seed": 2669,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/river_ambience-v03.wav",
+          "duration_s": 12,
+          "generator": "river_ambience",
+          "seed": 2700,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
+    },
+    "magical_ambience": {
+      "description": "Magical ambience; original soft procedural sound, review against picture.",
+      "category": "ambience",
+      "source": "procedural_v002",
+      "asset_path": "library/media/audio/sfx/procedural-v002/magical_ambience-v01.wav",
+      "duration_s": 12,
+      "default_gain_db": -18,
+      "tags": [
+        "magical",
+        "ambience"
+      ],
+      "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+      "provenance": {
+        "generator": "tools/sfx.py",
+        "method": "Original deterministic synthesis using Python standard library",
+        "third_party_samples": false
+      },
+      "preset_version": "v001",
+      "approval_status": "generated_pending_listening_review",
+      "variations": [
+        {
+          "id": "v01",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magical_ambience-v01.wav",
+          "duration_s": 12,
+          "generator": "magical_ambience",
+          "seed": 2739,
+          "pitch_scale": 0.94,
+          "gain_db": 0
+        },
+        {
+          "id": "v02",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magical_ambience-v02.wav",
+          "duration_s": 12,
+          "generator": "magical_ambience",
+          "seed": 2770,
+          "pitch_scale": 1,
+          "gain_db": 0
+        },
+        {
+          "id": "v03",
+          "asset_path": "library/media/audio/sfx/procedural-v002/magical_ambience-v03.wav",
+          "duration_s": 12,
+          "generator": "magical_ambience",
+          "seed": 2801,
+          "pitch_scale": 1.06,
+          "gain_db": 0
+        }
+      ]
     }
-  }
+  },
+  "registry_version": "v002"
 }

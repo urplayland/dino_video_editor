@@ -84,6 +84,11 @@ def assets(episode, registry):
     kit.ROOT=dub.relative(episode['output_dir'])/'kit-synth'
     for effect_id in sorted({x['effect'] for x in episode['sfx']}):
         effect=registry['effects'][effect_id]
+        if effect.get('variations'):
+            from sfx import ensure_asset
+            for variant in effect['variations']:
+                ensure_asset(effect,variant)
+            continue
         asset=dub.relative(effect['asset_path'])
         if asset.exists():
             continue
@@ -356,6 +361,9 @@ def build(manifest, episode, live, interval):
         invoke(['fit', '--lang', lang])
         invoke(['render', '--lang', lang])
         invoke(['verify-export', '--lang', lang, '--model', 'small.en' if lang == 'en' else 'small'])
+    if episode.get('shared_audio_manifest'):
+        from audio_production import build as mix_shared
+        mix_shared(dub.load(dub.relative(episode['shared_audio_manifest'],True)))
     print('Enabled language render commands succeeded. Full human listening/visual review remains separate from technical validation.')
 
 
@@ -365,7 +373,7 @@ def main():
     p.add_argument('--env-key', default='GEMINI_API_KEY', help='Explicitly select one authorized Gemini variable; no automatic rotation')
     p.add_argument('manifest')
     sub=p.add_subparsers(dest='command',required=True)
-    sub.add_parser('validate');sub.add_parser('assets');sub.add_parser('status')
+    sub.add_parser('validate');sub.add_parser('assets');sub.add_parser('status');sub.add_parser('mix-shared')
     b=sub.add_parser('build')
     b.add_argument('--live',action='store_true')
     b.add_argument('--interval',type=float,default=21)
@@ -397,6 +405,12 @@ def main():
             return
         if args.command=='build':
             build(args.manifest,episode,args.live,args.interval)
+            return
+        if args.command=='mix-shared':
+            from audio_production import build as mix_shared
+            if not episode.get('shared_audio_manifest'):
+                raise ValueError('Set shared_audio_manifest to the reviewed shared audio plan.')
+            mix_shared(dub.load(dub.relative(episode['shared_audio_manifest'],True)))
             return
         if args.command=='assets':
             assets(episode,dub.load(dub.relative(episode['sfx_registry'],True)))
