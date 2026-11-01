@@ -369,6 +369,8 @@ def render(m, voices, output):
             check = load(relative(cue['audio_verification_report'], True))
             if check.get('status') != 'passed_automated' or check.get('sha256') != record['sha256'] or check.get('expected_text') != cue.get('spoken_text',cue['text']):
                 raise ValueError('Audio verification is stale or failed; repeat the local verification.')
+            if check.get('asr_text_aliases',{})!=cue.get('asr_text_aliases',{}):
+                raise ValueError('ASR comparison aliases changed; repeat the local verification.')
             if cue.get('required_names') and (check.get('required_names')!=cue['required_names'] or check.get('name_checks_passed') is not True or check.get('name_asr_aliases',{})!=cue.get('name_asr_aliases',{})):
                 raise ValueError('Required character-name pronunciation check is missing or failed.')
         raw_audio = path.read_bytes()

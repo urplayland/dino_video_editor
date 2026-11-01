@@ -48,8 +48,10 @@ class DubbingTests(unittest.TestCase):
         self.addCleanup(self.silence.__exit__, None, None, None)
 
     def test_presets_and_request_contract(self):
-        self.assertEqual({k:v['voice'] for k,v in self.voices['characters'].items()},
-                         {'dino':'Puck','cloud':'Charon','moon':'Sulafat'})
+        # The registry grows across episodes; adding approved characters must
+        # preserve the original selections without imposing a fixed cast size.
+        expected = {'dino':'Puck','cloud':'Charon','moon':'Sulafat','bunny':'Leda'}
+        self.assertEqual({k:self.voices['characters'][k]['voice'] for k in expected}, expected)
         body = dub.payload(self.m['dialogue'][0], self.voices['characters']['dino'], 'en')
         part = body['contents'][0]['parts'][0]
         self.assertEqual(part['text'], 'Test fixture only.')

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "brand_config": "config/branding-logo-v004.json",
+  "existing_branding": true,
+  "language": "en",
+  "source_manifest": "episodes/rainbow-bridge/production.json",
+  "source_video": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_clean_v001.mp4",
+  "source_duration_s": 166.5,
+  "output": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_flh_v001.mp4",
+  "subtitles": "episodes/rainbow-bridge/subtitles.en.json"
+}

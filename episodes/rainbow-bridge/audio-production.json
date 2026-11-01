@@ -1,39 +1,67 @@
 {
   "schema_version": 1,
-  "status": "draft",
-  "source_video": null,
-  "source_video_sha256": null,
-  "duration_s": null,
+  "status": "verified",
+  "source_video": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+  "source_video_sha256": "5ff69c375be0168f24fe2a6eb1f5577dac83566b5798870fc2a50520bccdfb0e",
+  "duration_s": 166.5,
   "sfx_plan": "episodes/rainbow-bridge/sfx-cues.json",
   "sfx_registry": "library/presets/v002/sfx_presets.json",
   "dialogue": {
     "en": {
-      "path": null,
-      "sha256": null,
-      "status": "draft",
-      "provenance": null,
-      "license": null,
-      "provenance_report": null
+      "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.dialogue.wav",
+      "sha256": "52c04811fbba4559800e5f40196f39e50c74701ac80382695a2731c0b14ce7e2",
+      "status": "verified",
+      "provenance": "Gemini dialogue with per-line generation metadata and automated transcript checks; episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.json",
+      "license": "Gemini-generated dialogue; provider terms apply. No third-party recording imported.",
+      "provenance_report": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.json"
     },
     "zh": {
-      "path": null,
-      "sha256": null,
-      "status": "draft",
-      "provenance": null,
-      "license": null,
-      "provenance_report": null
+      "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.dialogue.wav",
+      "sha256": "7f66d89ca9c7b7177d63e486b459e456f22c56dfae7d0874300edef2d0bda047",
+      "status": "verified",
+      "provenance": "Gemini dialogue with per-line generation metadata and automated transcript checks; episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.json",
+      "license": "Gemini-generated dialogue; provider terms apply. No third-party recording imported.",
+      "provenance_report": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.json"
     },
     "ms": {
-      "path": null,
-      "sha256": null,
-      "status": "draft",
-      "provenance": null,
-      "license": null,
-      "provenance_report": null
+      "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.dialogue.wav",
+      "sha256": "f5d93ea8ac9486ed8fbf42468a784b74ff782d4c242cbbd43995b10fbf571ffd",
+      "status": "verified",
+      "provenance": "Gemini dialogue with per-line generation metadata and automated transcript checks; episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.json",
+      "license": "Gemini-generated dialogue; provider terms apply. No third-party recording imported.",
+      "provenance_report": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.json"
     }
   },
-  "music": [],
-  "ambience": [],
+  "music": [
+    {
+      "path": "episodes/rainbow-bridge/media/derived/background-v001/music.wav",
+      "sha256": "68badc108eefc99dd4cdc358251ecb3909ec59e9e5b1642082d20517042dc616",
+      "status": "verified",
+      "provenance": "Original offline MIDI arrangement with FluidR3 GM and original brand tag",
+      "license": "Original composition; FluidR3 GM MIT licence in library/licenses/fluidr3-gm.txt; original procedural brand tag",
+      "scene_id": "full-episode",
+      "timestamp_s": 0,
+      "duration_s": 166.5,
+      "gain_db": 0,
+      "timing_basis": "Full master soundtrack includes existing2s opening once, story, departure fade and new4.5s ending.",
+      "loop": false
+    }
+  ],
+  "ambience": [
+    {
+      "path": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+      "sha256": "7148f5ee7a8f30a29667e5d4c1bf1349d602275bc5e8db10464be285e2ca28fb",
+      "status": "verified",
+      "provenance": "Procedurally generated river and forest, source metadata in background-v001/ambience.json; gentle1s onset and1.3s departure fade aligned to existing picture fade",
+      "license": "LicenseRef-Project-Generated; no external samples",
+      "scene_id": "full-episode",
+      "timestamp_s": 0,
+      "duration_s": 166.5,
+      "gain_db": 0,
+      "timing_basis": "Full master soundtrack includes existing2s opening once, story, departure fade and new4.5s ending.",
+      "loop": false
+    }
+  ],
   "mix": {
     "integrated_lufs": -16,
     "true_peak_db": -2.5
@@ -54,8 +82,8 @@
   },
   "output_dir": "episodes/rainbow-bridge/media/derived/audio-v001",
   "exports": {
-    "en": "episodes/rainbow-bridge/exports/episode_en_audio_v001.mp4",
-    "zh": "episodes/rainbow-bridge/exports/episode_zh_audio_v001.mp4",
-    "ms": "episodes/rainbow-bridge/exports/episode_ms_audio_v001.mp4"
+    "en": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_clean_v001.mp4",
+    "zh": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_clean_v001.mp4",
+    "ms": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_clean_v001.mp4"
   }
 }

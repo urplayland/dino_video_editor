@@ -258,6 +258,59 @@ def guard_encoded_peak(movie,work,total,measurement):
     return target,record['after'],record
 
 
+def render_existing_picture(manifest, original_report, subtitle_provenance):
+    """Caption a complete branded master, preserving its audio and timeline."""
+    source=dub.relative(manifest['source_video'],True)
+    output=dub.relative(manifest['output'])
+    sub=dub.load(dub.relative(manifest['subtitles'],True))
+    if sub.get('packaged_offset_s')!=0 or sub.get('layout')!='overlay':
+        raise ValueError('Already branded masters require zero-offset overlay captions.')
+    inputs={'source_sha256':digest(source),'manifest':manifest,'subtitles':subtitle_provenance}
+    stamp=output.with_suffix('.json')
+    if output.exists() or stamp.exists():
+        if output.is_file() and stamp.is_file():
+            old=dub.load(stamp)
+            if all(old.get(k)==v for k,v in inputs.items()) and old.get('output_sha256')==digest(output):
+                return old
+        raise ValueError('Captioned output changed or incomplete; choose a new version.')
+    info=dub.probe(source)
+    video=next(s for s in info['streams'] if s['codec_type']=='video')
+    duration=manifest['source_duration_s']
+    if abs(float(info['format']['duration'])-duration)>.05:
+        raise ValueError('Already branded source duration differs from manifest.')
+    if original_report.get('output_sha256')!=inputs['source_sha256']:
+        raise ValueError('Caption source no longer matches its verification report.')
+    output.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='captioned-',dir=output.parent) as tmp:
+        movie=Path(tmp)/'captioned.mp4'
+        dub.run([dub.tool('ffmpeg'),'-v','error','-nostdin','-n','-i',str(source),
+            '-map','0:v:0','-map','0:a:0','-vf',caption_filter(manifest),
+            '-c:v','libx264','-preset','veryfast','-crf','18','-threads','2',
+            '-pix_fmt','yuv420p','-fps_mode:v','passthrough','-c:a','copy',
+            '-movflags','+faststart',str(movie)],timeout=1800)
+        final=dub.probe(movie)
+        rendered=next(s for s in final['streams'] if s['codec_type']=='video')
+        if any(rendered[k]!=video[k] for k in ('width','height','nb_frames')) or abs(float(final['format']['duration'])-duration)>.05:
+            raise ValueError('Caption rendering changed picture geometry, duration or frame count.')
+        def audio_hash(path):
+            return dub.run([dub.tool('ffmpeg'),'-v','error','-i',str(path),'-map','0:a:0','-c:a','copy','-f','hash','-hash','sha256','-']).stdout.strip()
+        if audio_hash(source)!=audio_hash(movie):
+            raise ValueError('Caption rendering changed the mastered audio packets.')
+        dub.run([dub.tool('ffmpeg'),'-v','error','-nostdin','-threads','2','-i',str(movie),'-f','null','-'],timeout=900)
+        measured=dub.loudness_info(movie)
+        if abs(float(measured['input_i'])+16)>1 or float(measured['input_tp'])>-.8:
+            raise ValueError('Captioned export fails loudness/peak checks.')
+        record=dict(inputs,status='technical_checks_passed_pending_owner_review',
+            output_sha256=digest(movie),duration_s=duration,expected_video_frames=int(video['nb_frames']),
+            actual_video_frames=int(rendered['nb_frames']),story_offset_s=0,
+            intro_duration_s=0,outro_duration_s=0,audio_packets_preserved=True,
+            encoded_audio_measurement=measured,picture_processing='Full-frame subtitle overlay only; existing opening and ending retained.',api_calls=0)
+        dub.write_new(output,movie.read_bytes())
+        dub.write_new(stamp,(json.dumps(record,indent=2,ensure_ascii=False)+'\n').encode())
+    print('Rendered captioned complete master:',manifest['output'])
+    return record
+
+
 def render(manifest, cfg):
     source = dub.relative(manifest['source_video'],True)
     original_report = dub.load(source.with_suffix('.json'))
@@ -275,6 +328,10 @@ def render(manifest, cfg):
                 raise ValueError('Subtitle dialogue does not match the selected rendered source.')
         sub=dub.load(dub.relative(manifest['subtitles'],True))
         subtitle_provenance=generate(episode,sub)
+    if manifest.get('existing_branding') is True:
+        if not subtitle_provenance:
+            raise ValueError('Already branded export mode requires verified subtitles.')
+        return render_existing_picture(manifest,original_report,subtitle_provenance)
     source_info = dub.probe(source)
     duration = float(source_info['format']['duration'])
     if abs(duration-manifest['source_duration_s']) > .01:

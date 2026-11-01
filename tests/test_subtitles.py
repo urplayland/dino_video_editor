@@ -60,6 +60,8 @@ class SubtitleTests(unittest.TestCase):
     def test_additional_traditional_forms_do_not_hide_word_changes(self):
         self.assertEqual(production.normalize_words('誰敢闖入雲霧山'),production.normalize_words('谁敢闯入云雾山'))
         self.assertEqual(production.normalize_words('去哪兒為什麼'),production.normalize_words('去哪儿为什么'))
+        self.assertEqual(production.normalize_words('出發吧！還差兩塊石頭'),production.normalize_words('出发吧！还差两块石头'))
+        self.assertNotEqual(production.normalize_words('四個腳'),production.normalize_words('四个角'))
         self.assertNotEqual(production.normalize_words('谁敢'),production.normalize_words('你敢'))
 
     def test_long_malay_comparison_keeps_frequent_letters(self):
@@ -67,6 +69,13 @@ class SubtitleTests(unittest.TestCase):
         heard=expected.replace('Kamukah','Kamuka')
         self.assertGreater(production.transcript_similarity(expected,heard),.99)
         self.assertLess(production.transcript_similarity(expected,'different speech'),.1)
+
+    def test_corner_homophone_is_scoped_to_its_reviewed_phrase(self):
+        cue={'asr_text_aliases':{'圆圆的没有脚':'圆圆的没有角'}}
+        expected=production.normalize_words('圆圆的，没有角。')
+        self.assertEqual(production.canonical_name_transcript(cue,'圓圓的沒有腳'),expected)
+        self.assertNotEqual(production.canonical_name_transcript({},'四個腳'),production.normalize_words('四个角'))
+        self.assertEqual(production.canonical_name_transcript(cue,'看看你的脚下'),'看看你的脚下')
 
     def test_verified_spoken_particle_preserves_original_tts_request(self):
         cue={'text':'月亮得救了！','spoken_text':'月亮得救啦！','spoken_text_evidence':['independent-ASR']}

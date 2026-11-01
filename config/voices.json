@@ -66,6 +66,28 @@
       "delivery_profiles": {
         "zh-natural-v002": "config/voice_direction.zh-v002.json"
       }
+    },
+    "bunny": {
+      "display_name": "Bunny",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Leda",
+      "preset_version": "v001",
+      "approval_status": "voice_selection_approved",
+      "approval_basis": "Owner approved keeping Leda and approved EP2 production plan; female Bunny, localized name 邦妮.",
+      "style_status": "production_direction_derived_from_approved_plan_pending_listening_review",
+      "style": {
+        "en": "A sweet, youthful girl rabbit talking naturally to her friend Dino in a children's adventure. Warm, expressive, clear conversational English. Gentle and hopeful, with authentic relief or curiosity; never shrill, babyish, robotic or a narrator. Speak only the supplied words.",
+        "zh": "保持Leda年轻女孩的声线，邦妮是一只温柔活泼的小兔子。像小朋友自然地和朋友聊天，亲切、清楚，随求助、好奇、开心自然变化。不要尖细装嗲、播音腔、逐字朗读或夸张拖音。迪诺读dí nuò，邦妮读bāng nī。只说给定台词，不加旁白。",
+        "ms": "A sweet youthful girl rabbit talking warmly and naturally to her friend Dino. Use natural Malaysian Bahasa Melayu pronunciation, vocabulary and rhythm, not Indonesian. Expressive hope, curiosity and relief without shrill cartoon delivery, baby talk or excessive pauses. Speak only the supplied dialogue."
+      },
+      "localized_names": {
+        "en": "Bunny",
+        "zh": "邦妮",
+        "ms": "Bunny"
+      },
+      "gender": "female",
+      "reference_wavs": [],
+      "emotional_variants": {}
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "brand_config": "config/branding-logo-v004.json",
+  "duration_s": 4.5,
+  "title": "THE END",
+  "series": "Dino Adventures",
+  "output": "episodes/rainbow-bridge/media/derived/ending-v001/end-card.mp4"
+}

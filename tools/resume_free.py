@@ -16,6 +16,8 @@ def main():
     parser.add_argument('manifest')
     parser.add_argument('--env-file',required=True)
     parser.add_argument('--keys',nargs='+',required=True,help='Explicit existing variables authorized by the owner; values are never logged')
+    parser.add_argument('--generate-only',action='store_true',help='Generate a selected language without mutating fitted manifests or rendering')
+    parser.add_argument('--lang',choices=('en','zh','ms','all'),default='all')
     args=parser.parse_args()
     try:
         episode=dub.load(dub.relative(args.manifest,True))
@@ -40,7 +42,8 @@ def main():
             seen.add(fingerprint)
             os.environ['DINO_CREDENTIAL_LABEL']='bursa-sim:'+name
             print(f'Resuming with owner-authorized free-tier variable {name}.',flush=True)
-            command=[sys.executable,str(Path(__file__).parent/'production.py'),args.manifest,'build','--live']
+            command=[sys.executable,'-u',str(Path(__file__).parent/'production.py'),args.manifest]
+            command+=['generate','--lang',args.lang,'--live'] if args.generate_only else ['build','--live']
             process=subprocess.Popen(command,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,bufsize=1)
             daily_quota=False
             for line in process.stdout:
@@ -49,7 +52,7 @@ def main():
                     daily_quota=True
             code=process.wait()
             if code==0:
-                print('All full language builds and encoded-dialogue checks finished.',flush=True)
+                print('Selected dialogue generation finished; local verification/rendering still required.' if args.generate_only else 'All full language builds and encoded-dialogue checks finished.',flush=True)
                 return
             if daily_quota:
                 print(f'{name}: daily free-tier quota exhausted; retained outputs; next explicitly authorized credential.',flush=True)

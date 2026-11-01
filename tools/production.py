@@ -110,7 +110,7 @@ def assets(episode, registry):
 
 def normalize_words(text):
     # ASR orthography may be traditional or use a homophonous third-person pronoun.
-    text = text.translate(str.maketrans({'誰':'谁','兒':'儿','麼':'么','闖':'闯','霧':'雾','謝':'谢','聽':'听','見':'见','嗎':'吗','為':'为','們':'们','幫':'帮','雲':'云','後':'后','諾':'诺','妳':'你','這':'这','裡':'里','來':'来','讓':'让','個':'个','說':'说','於':'于','與':'与','開':'开','關':'关','聲':'声','諒':'谅','他':'她'}))
+    text = text.translate(str.maketrans({'別':'别','擔':'担','橋':'桥','斷':'断','辦':'办','準':'准','備':'备','險':'险','發':'发','還':'还','兩':'两','塊':'块','頭':'头','沒':'没','腳':'脚','狀':'状','圓':'圆','誰':'谁','兒':'儿','麼':'么','闖':'闯','霧':'雾','謝':'谢','聽':'听','見':'见','嗎':'吗','為':'为','們':'们','幫':'帮','雲':'云','後':'后','諾':'诺','妳':'你','這':'这','裡':'里','來':'来','讓':'让','個':'个','說':'说','於':'于','與':'与','開':'开','關':'关','聲':'声','諒':'谅','他':'她'}))
     text = text.replace('迪诺','Dino')
     return ''.join(x.lower() for x in text if x.isalnum())
 
@@ -142,6 +142,12 @@ def canonical_name_transcript(cue, heard):
     for name in cue.get('required_names',[]):
         for alias in cue.get('name_asr_aliases',{}).get(name,[]):
             recognized=recognized.replace(alias,name)
+    # Explicit whole-phrase homophones are editorial ASR evidence, never global
+    # word substitutions. E.g. jiǎo can be recognized as 脚 instead of 角.
+    if cue.get('asr_text_aliases'):
+        recognized=normalize_words(recognized)
+        for alias,canonical in cue['asr_text_aliases'].items():
+            recognized=recognized.replace(normalize_words(alias),normalize_words(canonical))
     return recognized
 
 
@@ -168,7 +174,7 @@ def verify_audio(episode, lang, voices, model_size, existing_only=False):
         cached_path=report_dir/f'{lang}-{cue["id"]}-audio-check.json'
         if cached_path.is_file():
             cached=dub.load(cached_path)
-            if cached.get('status')=='passed_automated' and cached.get('sha256')==hashlib.sha256(data).hexdigest() and cached.get('expected_text')==transcript and cached.get('model')==model_size and (not cue.get('required_names') or (cached.get('required_names')==cue['required_names'] and cached.get('name_checks_passed') is True and cached.get('name_asr_aliases',{})==cue.get('name_asr_aliases',{}))):
+            if cached.get('status')=='passed_automated' and cached.get('sha256')==hashlib.sha256(data).hexdigest() and cached.get('expected_text')==transcript and cached.get('model')==model_size and cached.get('asr_text_aliases',{})==cue.get('asr_text_aliases',{}) and (not cue.get('required_names') or (cached.get('required_names')==cue['required_names'] and cached.get('name_checks_passed') is True and cached.get('name_asr_aliases',{})==cue.get('name_asr_aliases',{}))):
                 for row in episode['dialogue']:
                     if row['id']==cue['id']:
                         row.setdefault('audio',{}).setdefault(lang,{}).update(audio_review_status='verified_automated',audio_verification_report=cached_path.relative_to(dub.ROOT).as_posix(),gain_db=cached['suggested_gain_db'])
@@ -193,7 +199,7 @@ def verify_audio(episode, lang, voices, model_size, existing_only=False):
             raise ValueError('Generated audio is silent or unreadable.')
         gain=min(9,max(-12,-22-float(mean[1])), -3-float(peak[1]))
         report={'cue':cue['id'],'language':lang,'expected_text':transcript,'requested_text':cue['text'],'recognized_text':heard,'similarity':similarity,
-            'status':status,'required_names':cue.get('required_names',[]),'name_asr_aliases':cue.get('name_asr_aliases',{}),'comparison_transcript':comparison_transcript,'name_checks':name_checks,'name_checks_passed':names_passed,'sha256':hashlib.sha256(data).hexdigest(),'audio':info,'model':model_size,
+            'status':status,'required_names':cue.get('required_names',[]),'name_asr_aliases':cue.get('name_asr_aliases',{}),'asr_text_aliases':cue.get('asr_text_aliases',{}),'comparison_transcript':comparison_transcript,'name_checks':name_checks,'name_checks_passed':names_passed,'sha256':hashlib.sha256(data).hexdigest(),'audio':info,'model':model_size,
             'mean_dbfs':float(mean[1]),'peak_dbfs':float(peak[1]),'suggested_gain_db':round(gain,2),
             'limits':'ASR matching does not prove voice identity, natural pronunciation, acting quality, or human approval.'}
         output=report_dir/f'{lang}-{cue["id"]}-audio-check.json'
@@ -239,7 +245,7 @@ def fit_timeline(episode, lang):
 
 
 
-def verify_export_audio(episode, lang, model_size):
+def verify_export_audio(episode, lang, model_size, by_cue=False):
     if not verified_export(episode, lang):
         raise ValueError('No verified complete export exists for this language.')
     try:
@@ -250,22 +256,47 @@ def verify_export_audio(episode, lang, model_size):
     from difflib import SequenceMatcher
     model=WhisperModel(model_size,device='cpu',compute_type='int8',cpu_threads=min(8,os.cpu_count() or 4))
     source=dub.relative(episode['exports'][lang],True)
-    segments,_=model.transcribe(str(source),language=lang,beam_size=5,condition_on_previous_text=False,vad_filter=True,word_timestamps=True)
-    rows=[]
-    for segment in segments:
-        rows.append({'start_s':segment.start,'end_s':segment.end,'text':segment.text})
-        print(json.dumps(rows[-1],ensure_ascii=False),flush=True)
+    rows=[];cue_checks=[]
+    selected=language_manifest(episode,lang)['dialogue']
+    if by_cue:
+        # VAD on a complete music bed can omit short lines. Decode the ACTUAL
+        # final mix once, then independently recognize each known speech window.
+        # No reference transcript or prompt is passed into the recognizer.
+        from faster_whisper.audio import decode_audio
+        audio=decode_audio(str(source),sampling_rate=16000)
+        for i,cue in enumerate(selected):
+            start=max(0,cue['start_s']-.1)
+            end=min(episode['duration_s'],cue['end_s']+.12)
+            if i:start=max(start,(selected[i-1]['end_s']+cue['start_s'])/2)
+            if i+1<len(selected):end=min(end,(cue['end_s']+selected[i+1]['start_s'])/2)
+            segments,_=model.transcribe(audio[round(start*16000):round(end*16000)],language=lang,
+                beam_size=5,condition_on_previous_text=False,vad_filter=False,max_new_tokens=96)
+            text=' '.join(s.text.strip() for s in segments)
+            row={'cue':cue['id'],'start_s':start,'end_s':end,'text':text}
+            rows.append(row);print(json.dumps(row,ensure_ascii=False),flush=True)
+            expected_line=cue.get('spoken_text',cue['text'])
+            score=transcript_similarity(expected_line,canonical_name_transcript(cue,text))
+            names=check_required_names(cue,text)
+            cue_checks.append({'id':cue['id'],'similarity':score,'name_checks':names,
+                'passed':score>=.84 and all(n['passed'] for n in names)})
+    else:
+        segments,_=model.transcribe(str(source),language=lang,beam_size=5,condition_on_previous_text=False,vad_filter=True,word_timestamps=True)
+        for segment in segments:
+            rows.append({'start_s':segment.start,'end_s':segment.end,'text':segment.text})
+            print(json.dumps(rows[-1],ensure_ascii=False),flush=True)
     heard=' '.join(r['text'].strip() for r in rows)
     expected=' '.join(r.get('spoken_text',r['text']) for r in language_manifest(episode,lang)['dialogue'])
     comparison_transcript=heard
     for cue in language_manifest(episode,lang)['dialogue']:
         comparison_transcript=canonical_name_transcript(cue,comparison_transcript)
     similarity=transcript_similarity(expected,comparison_transcript)
-    status='passed_automated' if similarity>=.96 else 'needs_review'
+    status='passed_automated' if similarity>=.96 and all(c['passed'] for c in cue_checks) else 'needs_review'
     report={'status':status,'source':episode['exports'][lang],'output_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
         'model':model_size,'expected_text':expected,'recognized_text':heard,'comparison_transcript':comparison_transcript,'similarity':similarity,'segments':rows,
+        'mode':'cue_aligned_encoded_mix' if by_cue else 'continuous_vad_encoded_mix','cue_checks':cue_checks,
         'limits':'Independent ASR checks encoded mixed dialogue; this does not establish human accent/acting/music approval.'}
-    dest=dub.relative(episode['report_dir'])/f'{lang}-final-dialogue-check.json'
+    suffix='-cues' if by_cue else ''
+    dest=dub.relative(episode['report_dir'])/f'{lang}-final-dialogue{suffix}-check.json'
     dest.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
     if status!='passed_automated':
         raise ValueError(f'Final mixed dialogue needs review: similarity {similarity:.3f}. See {dest.relative_to(dub.ROOT)}.')
@@ -280,6 +311,21 @@ def mixed_check_valid(episode, lang):
         return False
     report=dub.load(path)
     return report.get('status')=='passed_automated' and report.get('output_sha256')==hashlib.sha256(movie.read_bytes()).hexdigest()
+
+
+def shared_content_check_valid(episode,lang):
+    """Final shared releases use verified source ASR plus encoded cue integrity."""
+    try:
+        common=dub.load(dub.relative(episode['shared_audio_manifest'],True))
+        final=dict(episode,exports=common['exports'])
+        if not verified_export(final,lang):return False
+        path=dub.relative(episode['report_dir']).parent/'final-mix-v001'/f'{lang}-waveform-integrity.json'
+        check=dub.load(path);movie=dub.relative(common['exports'][lang],True)
+        return (check.get('status')=='passed_automated'
+            and check.get('output_sha256')==hashlib.sha256(movie.read_bytes()).hexdigest()
+            and len(check.get('cues',[]))==len(language_manifest(episode,lang)['dialogue'])
+            and check.get('minimum_correlation',0)>=.95)
+    except (ValueError,OSError,KeyError,TypeError):return False
 
 
 def production_status(episode):
@@ -304,6 +350,11 @@ def production_status(episode):
         result['languages'][lang] = {'total_lines': len(active), 'generated': len(available),
             'audio_checked': len(verified), 'missing': missing, 'export_exists': export_exists,
             'export_technically_verified':technical, 'mixed_dialogue_checked':mixed_check_valid(episode,lang)}
+        if episode.get('shared_audio_manifest'):
+            row=result['languages'][lang]
+            row['working_export_mixed_dialogue_checked']=row['mixed_dialogue_checked']
+            row['mixed_dialogue_checked']=shared_content_check_valid(episode,lang)
+            row['final_audio_check']='independent source ASR plus actual encoded speech-waveform integrity; ASR spelling diagnostics retained separately'
     result['complete']=all(row['export_technically_verified'] and row['mixed_dialogue_checked'] and not row['missing'] for row in result['languages'].values())
     return result
 
@@ -313,8 +364,23 @@ def verified_export(episode, lang):
     if not target.exists():
         return False
     report = dub.load(target.with_suffix('.json'))
-    if report.get('manifest') != language_manifest(episode,lang) or report.get('output_sha256') != hashlib.sha256(target.read_bytes()).hexdigest():
+    expected=language_manifest(episode,lang)
+    if report.get('output_sha256') != hashlib.sha256(target.read_bytes()).hexdigest():
         raise ValueError('Existing export differs from current manifest or checksum; choose a new export version.')
+    if report.get('manifest')!=expected:
+        dialogue={key:expected[key] for key in ('language','duration_s','dialogue')}
+        pointer=episode.get('shared_audio_manifest')
+        if not pointer or report.get('dialogue_manifest')!=dialogue:
+            raise ValueError('Existing export differs from current manifest or dialogue; choose a new export version.')
+        shared=dub.load(dub.relative(pointer,True))
+        if shared['exports'].get(lang)!=episode['exports'][lang]:
+            raise ValueError('Export is not selected by the shared audio manifest.')
+        from audio_production import prepare
+        if report.get('shared_fingerprint')!=prepare(shared)['fingerprint']:
+            raise ValueError('Shared soundtrack differs from the verified export.')
+        mixed=target.with_suffix('.mix.wav')
+        if not mixed.is_file() or hashlib.sha256(mixed.read_bytes()).hexdigest()!=report.get('mixed_audio_sha256'):
+            raise ValueError('Shared premix changed after export.')
     source=dub.relative(episode['source_video'],True)
     if report.get('source_sha256') != hashlib.sha256(source.read_bytes()).hexdigest():
         raise ValueError('Picture master changed after export.')
@@ -350,7 +416,7 @@ def build(manifest, episode, live, interval):
         current=dub.load(dub.relative(manifest,True))
         if verified_export(current,lang):
             print(f'{lang}: existing export and provenance verified; skipping rebuild.')
-            if not mixed_check_valid(current,lang):
+            if not current.get('shared_audio_manifest') and not mixed_check_valid(current,lang):
                 invoke(['verify-export', '--lang', lang, '--model', 'small.en' if lang == 'en' else 'small'])
             continue
         command = ['generate', '--lang', lang, '--interval', str(interval)]
@@ -360,10 +426,15 @@ def build(manifest, episode, live, interval):
         invoke(['verify-audio', '--lang', lang, '--model', 'small.en' if lang == 'en' else 'small'])
         invoke(['fit', '--lang', lang])
         invoke(['render', '--lang', lang])
-        invoke(['verify-export', '--lang', lang, '--model', 'small.en' if lang == 'en' else 'small'])
+        if not episode.get('shared_audio_manifest'):
+            invoke(['verify-export', '--lang', lang, '--model', 'small.en' if lang == 'en' else 'small'])
     if episode.get('shared_audio_manifest'):
         from audio_production import build as mix_shared
-        mix_shared(dub.load(dub.relative(episode['shared_audio_manifest'],True)))
+        from link_shared_audio import link
+        shared=link(dub.relative(manifest,True),dub.relative(episode['shared_audio_manifest'],True))
+        mix_shared(shared)
+        from review_mix_integrity import review as review_content
+        review_content(dub.relative(manifest,True))
     print('Enabled language render commands succeeded. Full human listening/visual review remains separate from technical validation.')
 
 
@@ -389,6 +460,8 @@ def main():
             c.add_argument('--model',default='small')
             if command=='verify-audio':
                 c.add_argument('--existing-only',action='store_true',help='Check available stems without claiming the language is complete')
+            else:
+                c.add_argument('--by-cue',action='store_true',help='Recognize actual encoded mix at each fitted speech window without VAD omissions')
     args=p.parse_args()
     try:
         dub.load_env(Path(args.env_file), args.env_key)
@@ -437,7 +510,7 @@ def main():
                 if any(r['status']=='needs_review' for r in results):
                     raise ValueError('Generated dialogue check has discrepancies; review reports before rendering.')
             elif args.command=='verify-export':
-                verify_export_audio(episode,lang,args.model)
+                verify_export_audio(episode,lang,args.model,args.by_cue)
             elif args.command=='fit':
                 results=fit_timeline(episode,lang)
                 path.write_text(json.dumps(episode,indent=2,ensure_ascii=False)+'\n')

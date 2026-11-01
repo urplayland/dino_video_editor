@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "production_localization_based_on_approved_plan",
+  "characters": {
+    "dino": {
+      "en": "Dino",
+      "zh": "迪诺",
+      "ms": "Dino"
+    },
+    "bunny": {
+      "en": "Bunny",
+      "zh": "邦妮",
+      "ms": "Bunny"
+    }
+  },
+  "terms": [
+    {
+      "en": "circle",
+      "zh": "圆形",
+      "ms": "bulatan",
+      "corners": 0,
+      "color": {
+        "en": "pink",
+        "zh": "粉色",
+        "ms": "merah jambu"
+      }
+    },
+    {
+      "en": "triangle",
+      "zh": "三角形",
+      "ms": "segi tiga",
+      "corners": 3,
+      "color": {
+        "en": "cyan",
+        "zh": "青蓝色",
+        "ms": "biru sian"
+      }
+    },
+    {
+      "en": "square",
+      "zh": "正方形",
+      "ms": "segi empat sama",
+      "corners": 4,
+      "color": {
+        "en": "lavender",
+        "zh": "淡紫色",
+        "ms": "ungu muda"
+      }
+    }
+  ],
+  "note": "Preserve actual approved shape colors. Malay character name Bunny is retained, not newly asserted as owner-auditioned."
+}

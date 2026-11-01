@@ -1,14 +1,23 @@
 {
   "schema_version": 1,
-  "note": "Candidates are not loaded by the approved voice generator. No existing styles modified.",
+  "note": "Additional character selections are tracked here until complete language styles are available for the production voice registry. Selection approval and style readiness are separate.",
   "candidates": {
     "bunny": {
       "display_name": "Bunny",
       "voice": "Leda",
-      "approval_status": "provisional_pending_owner_approval",
+      "approval_status": "voice_selection_approved",
       "language_styles": null,
-      "style_status": "not_supplied",
-      "reference_wavs": []
+      "style_status": "production_direction_available_pending_listening_review",
+      "reference_wavs": [],
+      "approval_basis": "Owner explicitly approved keeping Bunny / 班尼 on Leda (丽娜) in this conversation.",
+      "approval_date": "2026-10-28",
+      "localized_names": {
+        "zh": "邦妮"
+      },
+      "gender": "female",
+      "name_status": "included_in_owner_approved_production_plan",
+      "production_registry": "config/voices.json",
+      "language_styles_reference": "config/voices.json#/characters/bunny/style"
     }
   }
 }

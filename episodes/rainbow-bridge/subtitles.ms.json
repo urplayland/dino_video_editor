@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "language": "ms",
+  "font_path": "library/media/branding/flh-v001/Nunito-700.ttf",
+  "font_name": "Nunito ExtraLight",
+  "font_size": 36,
+  "margin_bottom": 34,
+  "max_text_width": 610,
+  "packaged_offset_s": 0,
+  "ass_path": "episodes/rainbow-bridge/media/derived/subtitles-v001/ms.ass",
+  "story_srt_path": "episodes/rainbow-bridge/media/derived/subtitles-v001/ms.srt",
+  "packaged_srt_path": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_flh_v001.srt",
+  "report_path": "episodes/rainbow-bridge/reports/subtitles-v001/ms.json",
+  "layout": "overlay",
+  "outline_px": 2.5,
+  "shadow_px": 2
+}

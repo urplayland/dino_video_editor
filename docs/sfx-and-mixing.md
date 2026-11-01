@@ -4,8 +4,11 @@ This implementation extends the existing production pipeline. It consumes the
 already verified full `.dialogue.wav` stems from `tools/dub.py` and reuses that
 module's final mastering, encoded loudness/decode checks and video-packet hash
 verification. It never regenerates dialogue or uses the original mixed soundtrack.
-Approved character voices/styles remain unchanged. Bunny=Leda is provisional in
-`config/voice_candidates.json`, which is not loaded by the approved TTS generator.
+Existing character voices/styles remain unchanged. The owner approved Bunny (邦妮) =
+Leda on 2026-10-28; this selection is recorded in `config/voice_candidates.json`.
+The approved EP2 plan subsequently supplied the direction for production EN/ZH/MS
+styles in `config/voices.json`; these are newly written directions pending listening
+review, not recovered audition prompts. Existing character styles remain unchanged.
 
 ## Library and versioning
 

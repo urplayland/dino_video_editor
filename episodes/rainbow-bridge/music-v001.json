@@ -1,0 +1,1807 @@
+{
+  "schema_version": 1,
+  "title": "Broken Rainbow Bridge \u2014 dramatic scene score v001",
+  "duration_s": 166.5,
+  "registry": "config/music_presets.json",
+  "seed": 20261101,
+  "output": "episodes/rainbow-bridge/media/derived/score-v001/underscore.wav",
+  "work_dir": "episodes/rainbow-bridge/media/derived/score-v001",
+  "target_integrated_lufs": -25,
+  "max_true_peak_db": -10,
+  "fade_out_s": 0.65,
+  "cues": [
+    {
+      "id": "brand-space",
+      "start_s": 0,
+      "end_s": 2,
+      "bpm": 80,
+      "mood": "Keep existing short FLH tag separately; no competing underscore",
+      "layers": [],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "river-separation",
+      "start_s": 2,
+      "end_s": 8.5,
+      "bpm": 64,
+      "mood": "Gentle worry, wide river and a friend needing help",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              60
+            ]
+          ],
+          "velocity": 29,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "musicbox",
+          "velocity": 34,
+          "events": [
+            [
+              0.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              74,
+              0.7,
+              0
+            ],
+            [
+              3.0,
+              71,
+              0.7,
+              0
+            ],
+            [
+              4.5,
+              69,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "promise-to-help",
+      "start_s": 8.5,
+      "end_s": 12.1,
+      "bpm": 76,
+      "mood": "Warm reassuring answer",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 32,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 39,
+          "events": [
+            [
+              0.0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              76,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "broken-bridge-mystery",
+      "start_s": 12.1,
+      "end_s": 24.4,
+      "bpm": 68,
+      "mood": "Soft mystery and curiosity, no scary shock",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              60
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              40,
+              47,
+              55,
+              59
+            ]
+          ],
+          "velocity": 29,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            57,
+            64,
+            69,
+            71,
+            64,
+            60
+          ],
+          "velocity": 30,
+          "step_beats": 1,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "musicbox",
+          "velocity": 31,
+          "events": [
+            [
+              0,
+              81,
+              0.7,
+              0
+            ],
+            [
+              2,
+              79,
+              0.7,
+              0
+            ],
+            [
+              4,
+              76,
+              0.7,
+              0
+            ],
+            [
+              6,
+              74,
+              0.7,
+              0
+            ],
+            [
+              8,
+              76,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "circle-lesson",
+      "start_s": 24.4,
+      "end_s": 30.3,
+      "bpm": 76,
+      "mood": "Sparse round motif, make room to learn",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 24,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 35,
+          "events": [
+            [
+              0.0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              76,
+              0.7,
+              0
+            ],
+            [
+              3.0,
+              79,
+              0.7,
+              0
+            ],
+            [
+              4.5,
+              76,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "circle-discovery",
+      "start_s": 30.3,
+      "end_s": 38.2,
+      "bpm": 92,
+      "mood": "Playful forward motion",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ]
+          ],
+          "velocity": 28,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            64,
+            69,
+            64
+          ],
+          "velocity": 39,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 38,
+          "events": [
+            [
+              0.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              79,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              81,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              79,
+              0.7,
+              0
+            ],
+            [
+              5.0,
+              76,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "circle-fit",
+      "start_s": 38.2,
+      "end_s": 44.2,
+      "bpm": 84,
+      "mood": "One small success, not full magical restoration",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 32,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            64,
+            67,
+            72,
+            76,
+            72
+          ],
+          "velocity": 36,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 41,
+          "events": [
+            [
+              0.0,
+              79,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              84,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              83,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "encouragement",
+      "start_s": 44.2,
+      "end_s": 52.8,
+      "bpm": 86,
+      "mood": "Hopeful encouragement into the next puzzle",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ],
+            [
+              45,
+              52,
+              60,
+              64
+            ]
+          ],
+          "velocity": 29,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            67,
+            64,
+            67
+          ],
+          "velocity": 32,
+          "step_beats": 1,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 39,
+          "events": [
+            [
+              0.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              79,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              81,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "triangle-teaching",
+      "start_s": 52.8,
+      "end_s": 60.75,
+      "bpm": 78,
+      "mood": "Clear three-note motif, sparse under counting",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ]
+          ],
+          "velocity": 24,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 34,
+          "events": [
+            [
+              0.0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              1.3,
+              76,
+              0.7,
+              0
+            ],
+            [
+              2.6,
+              79,
+              0.7,
+              0
+            ],
+            [
+              3.9000000000000004,
+              72,
+              0.7,
+              0
+            ],
+            [
+              5.2,
+              76,
+              0.7,
+              0
+            ],
+            [
+              6.5,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "triangle-search",
+      "start_s": 60.75,
+      "end_s": 76.6,
+      "bpm": 100,
+      "mood": "Building search momentum and mild suspense",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              60
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              40,
+              47,
+              55,
+              59
+            ]
+          ],
+          "velocity": 31,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            64,
+            60,
+            64,
+            59,
+            65
+          ],
+          "velocity": 40,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 5,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            69,
+            76,
+            72,
+            76
+          ],
+          "velocity": 27,
+          "step_beats": 1,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 40,
+          "events": [
+            [
+              0.0,
+              81,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              79,
+              0.7,
+              0
+            ],
+            [
+              3.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              4.5,
+              74,
+              0.7,
+              0
+            ],
+            [
+              6.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              7.5,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "triangle-match",
+      "start_s": 76.6,
+      "end_s": 84.3,
+      "bpm": 92,
+      "mood": "Second satisfying answer, rising confidence",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 34,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            76
+          ],
+          "velocity": 38,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 43,
+          "events": [
+            [
+              0.0,
+              79,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              81,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              84,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              83,
+              0.7,
+              0
+            ],
+            [
+              5.0,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "one-more-shape",
+      "start_s": 84.3,
+      "end_s": 98,
+      "bpm": 76,
+      "mood": "Gentle new question; four-note square lesson",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 26,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 37,
+          "events": [
+            [
+              0.0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              74,
+              0.7,
+              0
+            ],
+            [
+              3.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              4.5,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 29,
+          "events": [
+            [
+              0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              2,
+              76,
+              0.7,
+              0
+            ],
+            [
+              4,
+              79,
+              0.7,
+              0
+            ],
+            [
+              6,
+              84,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "where-is-square",
+      "start_s": 98,
+      "end_s": 110.5,
+      "bpm": 104,
+      "mood": "Comic searching, pizzicato and low woodwind replies",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "cello",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              40,
+              47,
+              55,
+              59
+            ]
+          ],
+          "velocity": 25,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            57,
+            64,
+            60,
+            59,
+            59,
+            65,
+            62
+          ],
+          "velocity": 43,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "velocity": 40,
+          "events": [
+            [
+              0.0,
+              48,
+              0.7,
+              0
+            ],
+            [
+              1.4,
+              55,
+              0.7,
+              0
+            ],
+            [
+              2.8,
+              52,
+              0.7,
+              0
+            ],
+            [
+              4.199999999999999,
+              57,
+              0.7,
+              0
+            ],
+            [
+              5.6,
+              55,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "square-reveal-fit",
+      "start_s": 110.5,
+      "end_s": 124.25,
+      "bpm": 96,
+      "mood": "Playful discovery resolves, then anticipation for the final fit",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 33,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            64,
+            67,
+            72,
+            76,
+            79,
+            76,
+            72
+          ],
+          "velocity": 38,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 5,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 43,
+          "events": [
+            [
+              0.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              79,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              84,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              83,
+              0.7,
+              0
+            ],
+            [
+              5.0,
+              81,
+              0.7,
+              0
+            ],
+            [
+              6.25,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "magic-framework-build",
+      "start_s": 124.25,
+      "end_s": 134,
+      "bpm": 112,
+      "mood": "Progressive magic build, increasing energy and orchestration",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 39,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            64,
+            67,
+            72,
+            76,
+            79
+          ],
+          "velocity": 39,
+          "step_beats": 0.25,
+          "gate": 0.65,
+          "rise": 12,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "tremolo",
+          "notes": [
+            48,
+            55,
+            52,
+            59
+          ],
+          "velocity": 26,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 10,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "velocity": 38,
+          "events": [
+            [
+              0.0,
+              60,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              64,
+              0.7,
+              0
+            ],
+            [
+              3.0,
+              67,
+              0.7,
+              0
+            ],
+            [
+              4.5,
+              69,
+              0.7,
+              0
+            ],
+            [
+              6.0,
+              71,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "velocity": 42,
+          "events": [
+            [
+              2.5,
+              43,
+              0.5,
+              0
+            ],
+            [
+              5.0,
+              43,
+              0.5,
+              3
+            ],
+            [
+              7.8,
+              47,
+              0.7,
+              6
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "bridge-restoration-peak",
+      "start_s": 134,
+      "end_s": 141.9,
+      "bpm": 112,
+      "mood": "Strongest warm full orchestral release at solid bridge restoration",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 47,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            84
+          ],
+          "velocity": 45,
+          "step_beats": 0.5,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "velocity": 48,
+          "events": [
+            [
+              0,
+              60,
+              0.7,
+              0
+            ],
+            [
+              1,
+              64,
+              0.7,
+              0
+            ],
+            [
+              2,
+              67,
+              0.7,
+              0
+            ],
+            [
+              3,
+              72,
+              0.7,
+              0
+            ],
+            [
+              4,
+              71,
+              0.7,
+              0
+            ],
+            [
+              5,
+              67,
+              0.7,
+              0
+            ],
+            [
+              6,
+              72,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 44,
+          "events": [
+            [
+              0.0,
+              84,
+              0.7,
+              0
+            ],
+            [
+              1.3,
+              83,
+              0.7,
+              0
+            ],
+            [
+              2.6,
+              81,
+              0.7,
+              0
+            ],
+            [
+              3.9000000000000004,
+              79,
+              0.7,
+              0
+            ],
+            [
+              5.2,
+              76,
+              0.7,
+              0
+            ],
+            [
+              6.5,
+              79,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "velocity": 49,
+          "events": [
+            [
+              0,
+              48,
+              1,
+              0
+            ],
+            [
+              3.8,
+              43,
+              0.7,
+              -3
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "bunny-relief",
+      "start_s": 141.9,
+      "end_s": 149.8,
+      "bpm": 86,
+      "mood": "Bright relief, less density so Bunny can celebrate",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              64,
+              67
+            ],
+            [
+              41,
+              48,
+              60,
+              65
+            ]
+          ],
+          "velocity": 31,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 42,
+          "events": [
+            [
+              0.0,
+              79,
+              0.7,
+              0
+            ],
+            [
+              1.25,
+              81,
+              0.7,
+              0
+            ],
+            [
+              2.5,
+              84,
+              0.7,
+              0
+            ],
+            [
+              3.75,
+              79,
+              0.7,
+              0
+            ],
+            [
+              5.0,
+              76,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            67,
+            64,
+            67
+          ],
+          "velocity": 30,
+          "step_beats": 1,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "reunion-hug",
+      "start_s": 149.8,
+      "end_s": 157.75,
+      "bpm": 72,
+      "mood": "Warm emotional reunion with gentle strings and flute",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 35,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 40,
+          "events": [
+            [
+              0.0,
+              76,
+              0.7,
+              0
+            ],
+            [
+              1.2,
+              79,
+              0.7,
+              0
+            ],
+            [
+              2.4,
+              81,
+              0.7,
+              0
+            ],
+            [
+              3.5999999999999996,
+              79,
+              0.7,
+              0
+            ],
+            [
+              4.8,
+              76,
+              0.7,
+              0
+            ],
+            [
+              6.0,
+              72,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 27,
+          "step_beats": 1,
+          "gate": 0.65,
+          "rise": 0,
+          "end_offset_s": -0.3,
+          "accents": [
+            3,
+            -3,
+            0,
+            -2
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "next-adventure",
+      "start_s": 157.75,
+      "end_s": 162,
+      "bpm": 88,
+      "mood": "Optimistic departure, settle through existing fade",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 30,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 39,
+          "events": [
+            [
+              0,
+              72,
+              0.7,
+              0
+            ],
+            [
+              1,
+              76,
+              0.7,
+              0
+            ],
+            [
+              2,
+              79,
+              0.7,
+              0
+            ],
+            [
+              3,
+              84,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    },
+    {
+      "id": "the-end-resolution",
+      "start_s": 162,
+      "end_s": 166.5,
+      "bpm": 80,
+      "mood": "Complete final cadence, leave room for familiar brand tag",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              60,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              64,
+              67
+            ]
+          ],
+          "velocity": 29,
+          "tail_s": 0.6
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 35,
+          "events": [
+            [
+              0,
+              79,
+              0.7,
+              0
+            ],
+            [
+              1,
+              76,
+              0.7,
+              0
+            ],
+            [
+              2,
+              74,
+              0.7,
+              0
+            ],
+            [
+              3,
+              72,
+              0.7,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "harp",
+          "velocity": 31,
+          "events": [
+            [
+              0.0,
+              60,
+              0.7,
+              0
+            ],
+            [
+              0.75,
+              64,
+              0.7,
+              0
+            ],
+            [
+              1.5,
+              67,
+              0.7,
+              0
+            ],
+            [
+              2.25,
+              72,
+              0.7,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Editorial music placement after source master contact-sheet and v5 scene review; not an asserted scripted action time. Full mix listening review pending."
+    }
+  ]
+}

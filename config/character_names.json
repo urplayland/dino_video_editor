@@ -38,6 +38,15 @@
       "pinyin": "yún yé ye",
       "ms_status": "owner_confirmed",
       "ms": "Atuk Awan"
+    },
+    "bunny": {
+      "zh": "邦妮",
+      "pinyin": "bāng nī",
+      "en": "Bunny",
+      "ms": "Bunny",
+      "gender": "female",
+      "zh_status": "included_in_owner_approved_ep2_plan",
+      "ms_status": "retained_existing_character_name_in_production_plan"
     }
   },
   "notes": "Final owner choice supersedes the briefly proposed 露娜. Do not add dialogue just to introduce names."

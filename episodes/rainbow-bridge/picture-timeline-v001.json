@@ -1,0 +1,424 @@
+{
+  "status": "complete_master_frame_ranges_verified_imported_scene_estimates_retained",
+  "fps": 24,
+  "segments": [
+    {
+      "scene": "Scene01",
+      "filename": "EP2_Scene01_REBOOT_BunnyAsks_6p5s.mp4",
+      "source_frames": [
+        0,
+        156
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 0,
+      "main_cut_end_s": 6.5,
+      "start_seconds": 2,
+      "end_seconds": 8.5
+    },
+    {
+      "scene": "Scene02",
+      "filename": "EP2_Scene02_REBOOT_DinoReassures_6p58s.mp4",
+      "source_frames": [
+        0,
+        90
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 6.5,
+      "main_cut_end_s": 10.25,
+      "start_seconds": 8.5,
+      "end_seconds": 12.25
+    },
+    {
+      "scene": "Scene04",
+      "filename": "EP2_Scene04_REBOOT_APPROVED_DinoDiscovery_6p625s.mp4",
+      "source_frames": [
+        0,
+        159
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 10.08333,
+      "main_cut_end_s": 16.70833,
+      "start_seconds": 12.08333,
+      "end_seconds": 18.70833
+    },
+    {
+      "scene": "Scene05",
+      "filename": "EP2_Scene05_APPROVED_BunnyResponse_6p7s.mp4",
+      "source_frames": [
+        0,
+        144
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 16.54167,
+      "main_cut_end_s": 22.54167,
+      "start_seconds": 18.54167,
+      "end_seconds": 24.54167
+    },
+    {
+      "scene": "Scene06",
+      "filename": "EP2_Scene06_APPROVED_CircleLesson_NoGlow_8s.mp4",
+      "source_frames": [
+        0,
+        144
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 22.375,
+      "main_cut_end_s": 28.375,
+      "start_seconds": 24.375,
+      "end_seconds": 30.375
+    },
+    {
+      "scene": "Scene07",
+      "filename": "EP2_Scene07_APPROVED_FindCircleStone_4p7s.mp4",
+      "source_frames": [
+        0,
+        114
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 28.20833,
+      "main_cut_end_s": 32.95833,
+      "start_seconds": 30.20833,
+      "end_seconds": 34.95833
+    },
+    {
+      "scene": "Scene08",
+      "filename": "EP2_Scene08_APPROVED_PickUpCircleStone_3p2s.mp4",
+      "source_frames": [
+        0,
+        77
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 32.95833,
+      "main_cut_end_s": 36.16667,
+      "start_seconds": 34.95833,
+      "end_seconds": 38.16667
+    },
+    {
+      "scene": "Scene09",
+      "filename": "EP2_Scene09_APPROVED_FlatCirclePlacement_8s.mp4",
+      "source_frames": [
+        0,
+        144
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 36.16667,
+      "main_cut_end_s": 42.16667,
+      "start_seconds": 38.16667,
+      "end_seconds": 44.16667
+    },
+    {
+      "scene": "Scene10",
+      "filename": "EP2_Scene10_APPROVED_BunnyEncourages_6s.mp4",
+      "source_frames": [
+        24,
+        144
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 42.0,
+      "main_cut_end_s": 47.0,
+      "start_seconds": 44.0,
+      "end_seconds": 49.0
+    },
+    {
+      "scene": "Scene11A",
+      "filename": "EP2_Scene11A_APPROVED_TriangleDiscovery_4s.mp4",
+      "source_frames": [
+        0,
+        96
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 46.83333,
+      "main_cut_end_s": 50.83333,
+      "start_seconds": 48.83333,
+      "end_seconds": 52.83333
+    },
+    {
+      "scene": "Scene11B",
+      "filename": "EP2_Scene11B_APPROVED_TriangleObservation_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 50.83333,
+      "main_cut_end_s": 58.75,
+      "start_seconds": 52.83333,
+      "end_seconds": 60.75
+    },
+    {
+      "scene": "Scene12",
+      "filename": "EP2_Scene12_APPROVED_DiscoverTriangleStone_8s.mp4",
+      "source_frames": [
+        0,
+        192
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 58.75,
+      "main_cut_end_s": 66.75,
+      "start_seconds": 60.75,
+      "end_seconds": 68.75
+    },
+    {
+      "scene": "Scene13",
+      "filename": "EP2_Scene13_APPROVED_DinoApproachesTriangle_8s.mp4",
+      "source_frames": [
+        0,
+        192
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 66.75,
+      "main_cut_end_s": 74.75,
+      "start_seconds": 68.75,
+      "end_seconds": 76.75
+    },
+    {
+      "scene": "Scene15",
+      "filename": "EP2_Scene15_APPROVED_FlatTrianglePlacement_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 74.58333,
+      "main_cut_end_s": 82.5,
+      "start_seconds": 76.58333,
+      "end_seconds": 84.5
+    },
+    {
+      "scene": "Scene16",
+      "filename": "EP2_Scene16_APPROVED_BunnyOneMoreShape_6s.mp4",
+      "source_frames": [
+        0,
+        144
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 82.33333,
+      "main_cut_end_s": 88.33333,
+      "start_seconds": 84.33333,
+      "end_seconds": 90.33333
+    },
+    {
+      "scene": "Scene17",
+      "filename": "EP2_Scene17_APPROVED_DinoIntroducesSquare_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 88.16667,
+      "main_cut_end_s": 96.08333,
+      "start_seconds": 90.16667,
+      "end_seconds": 98.08333
+    },
+    {
+      "scene": "Scene18",
+      "filename": "EP2_Scene18_APPROVED_SearchingForSquare_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 95.91667,
+      "main_cut_end_s": 103.83333,
+      "start_seconds": 97.91667,
+      "end_seconds": 105.83333
+    },
+    {
+      "scene": "Scene19",
+      "filename": "EP2_Scene19_APPROVED_BunnyLookUnderYourFoot_6s.mp4",
+      "source_frames": [
+        0,
+        120
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 103.66667,
+      "main_cut_end_s": 108.66667,
+      "start_seconds": 105.66667,
+      "end_seconds": 110.66667
+    },
+    {
+      "scene": "Scene20",
+      "filename": "EP2_Scene20_APPROVED_SquareDiscovery_7p4s.mp4",
+      "source_frames": [
+        0,
+        154
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 108.5,
+      "main_cut_end_s": 114.91667,
+      "start_seconds": 110.5,
+      "end_seconds": 116.91667
+    },
+    {
+      "scene": "Scene21",
+      "filename": "EP2_Scene21_APPROVED_FlatSquarePlacement_8s.mp4",
+      "source_frames": [
+        0,
+        179
+      ],
+      "transition_from_previous_seconds": 0.16667,
+      "main_cut_start_s": 114.75,
+      "main_cut_end_s": 122.20833,
+      "start_seconds": 116.75,
+      "end_seconds": 124.20833
+    },
+    {
+      "scene": "22A_to_22B",
+      "filename": "EP2_22A_to_22B_APPROVED_MagicGlow_Transition_9p75s.mp4",
+      "source_frames": [
+        0,
+        234
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 122.20833,
+      "main_cut_end_s": 131.95833,
+      "start_seconds": 124.20833,
+      "end_seconds": 133.95833
+    },
+    {
+      "scene": "Scene23",
+      "filename": "EP2_Scene23_APPROVED_BridgeRestored_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 131.95833,
+      "main_cut_end_s": 139.875,
+      "start_seconds": 133.95833,
+      "end_seconds": 141.875
+    },
+    {
+      "scene": "Scene24",
+      "filename": "EP2_Scene24_APPROVED_BunnyReactsToRestoredBridge_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 139.875,
+      "main_cut_end_s": 147.79167,
+      "start_seconds": 141.875,
+      "end_seconds": 149.79167
+    },
+    {
+      "scene": "Scene25",
+      "filename": "EP2_Scene25_ACCEPTED_ReunionHug_8s.mp4",
+      "source_frames": [
+        0,
+        190
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 147.79167,
+      "main_cut_end_s": 155.70833,
+      "start_seconds": 149.79167,
+      "end_seconds": 157.70833
+    },
+    {
+      "scene": "Scene26",
+      "filename": "EP2_Scene26_APPROVED_LeftWalk_FreezeFade_4p25s.mp4",
+      "source_frames": [
+        0,
+        102
+      ],
+      "transition_from_previous_seconds": 0,
+      "main_cut_start_s": 155.70833,
+      "main_cut_end_s": 159.95833,
+      "start_seconds": 157.70833,
+      "end_seconds": 161.95833
+    }
+  ],
+  "total_duration_estimate": 159.95833,
+  "transitions": [
+    {
+      "from": "Scene02",
+      "to": "Scene04",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene04",
+      "to": "Scene05",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene05",
+      "to": "Scene06",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene06",
+      "to": "Scene07",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene09",
+      "to": "Scene10",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene10",
+      "to": "Scene11A",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene13",
+      "to": "Scene15",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene15",
+      "to": "Scene16",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene16",
+      "to": "Scene17",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene17",
+      "to": "Scene18",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene18",
+      "to": "Scene19",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene19",
+      "to": "Scene20",
+      "duration_seconds": 0.16666666666666666
+    },
+    {
+      "from": "Scene20",
+      "to": "Scene21",
+      "duration_seconds": 0.16666666666666666
+    }
+  ],
+  "notes": [
+    "Scene14 intentionally omitted",
+    "Scene21 cut at frame 179 (out exclusive) to match scene22 first frame",
+    "Original guide audio only; final dubbing still pending",
+    "No raw footage overwritten"
+  ],
+  "source": "Imported v5 estimates; actual new complete-film time starts2s earlier for opening. One-frame overall rounding discrepancy must be reviewed at actual cuts.",
+  "duration_s": 166.5,
+  "ending": {
+    "start_s": 162,
+    "end_s": 166.5,
+    "source": "episodes/rainbow-bridge/media/derived/ending-v001/end-card.mp4"
+  },
+  "verified_master_frame_ranges": {
+    "source_picture_including_existing_opening": [
+      0,
+      3888
+    ],
+    "new_the_end_card": [
+      3888,
+      3996
+    ]
+  },
+  "verified_frames": 3996,
+  "scene_estimate_limit": "Imported scene endpoints are reference estimates with a one-frame aggregate rounding discrepancy; production preserves the full verified source frame range and aligns speech to actual reference audio."
+}

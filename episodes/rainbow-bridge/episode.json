@@ -1,9 +1,53 @@
 {
   "schema_version": 1,
   "slug": "rainbow-bridge",
-  "title": "Episode 2 \u2014 working label: broken rainbow bridge",
-  "status": "awaiting_sources",
-  "sources": [],
-  "shared_assets": [],
-  "export_settings": null
+  "title": "Dino and the Broken Rainbow Bridge",
+  "status": "rendered_pending_owner_listening_review",
+  "sources": [
+    {
+      "path": "episodes/rainbow-bridge/media/originals/hq-20261101/EP2_No_Audio_HQ_No_End_Card.mp4",
+      "role": "original_silent_picture",
+      "duration_s": 162,
+      "sha256": "03241b4cda44ca8eca45c2329434edaa9b1d0b98dd93a8ffad43c38eb08216c0"
+    },
+    {
+      "path": "episodes/rainbow-bridge/media/originals/hq-20261101/EP2_With_Guide_Audio_HQ_No_End_Card.mp4",
+      "role": "mixed_original_guide_not_clean_audio",
+      "duration_s": 162.021333,
+      "sha256": "e1132f789452e1a24909fd0ce5e4648ca70037a16d9ba58b3a748939adc4a2db"
+    }
+  ],
+  "shared_assets": [
+    "config/voices.json",
+    "config/music_presets.json",
+    "library/presets/v002/sfx_presets.json"
+  ],
+  "export_settings": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "duration_s": 166.5,
+    "source_video": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+    "source_video_sha256": "5ff69c375be0168f24fe2a6eb1f5577dac83566b5798870fc2a50520bccdfb0e",
+    "subtitle_layout": "overlay_white_dark_outline_shadow",
+    "mix_integrated_lufs": -16,
+    "true_peak_db": -2.5
+  },
+  "plan_approval": "Owner approved 2026-11-01; score must have distinct dramatic sections comparable to Dino Saves the Moon.",
+  "deliverables": {
+    "en": {
+      "file": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_flh_v001.mp4",
+      "sha256": "34b416af7a648511d14afe2758334680c6ff387d45fb93a694b077dca4661996"
+    },
+    "zh": {
+      "file": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_flh_v001.mp4",
+      "sha256": "32c1f3a6715b6937b5fee7c4e87c27a230d4d09ebc43297b327ba62d387b0d4c"
+    },
+    "ms": {
+      "file": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_flh_v001.mp4",
+      "sha256": "bd4dbf9a3c584c4eb61b9179a1b51027d79e0adc313c98c13af7bb85f4216fe4"
+    }
+  },
+  "delivery_folder": "https://drive.google.com/drive/folders/1Q0j3gqCKIXFsBMP2efOeA23s7aUE5Tav",
+  "review_status": "Technical acceptance passed; owner accent/acting/music listening pending. See reports/delivery-qa.json and retained ASR diagnostics."
 }

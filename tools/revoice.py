@@ -18,7 +18,11 @@ def identity(cue,char,lang):
 
 def matching_take(folder,cue,fingerprint):
     candidates=[]
-    for path in folder.glob('take-*/'+cue['id']+'.json'):
+    # --regenerate writes to the canonical path when this line had never been
+    # generated. Recover that completed first take instead of requesting it again.
+    paths=[folder/(cue['id']+'.json'),*folder.glob('take-*/'+cue['id']+'.json')]
+    for path in paths:
+        if not path.is_file():continue
         record=dub.load(path)
         if record.get('fingerprint')!=fingerprint:continue
         audio=dub.relative(record['output'],True)
@@ -26,7 +30,7 @@ def matching_take(folder,cue,fingerprint):
     return max(candidates,key=lambda r:r['created_at']) if candidates else None
 
 
-def run(manifest,lang,env_file,keys,live,interval,line=None):
+def run(manifest,lang,env_file,keys,live,interval,line=None,character=None):
     path=dub.relative(manifest,True);episode=dub.load(path);voices=dub.load(dub.relative(episode['voice_registry'],True))
     production.allowed_languages(episode,lang);production.validate(episode,voices)
     preflight=episode['api_preflight']
@@ -45,7 +49,8 @@ def run(manifest,lang,env_file,keys,live,interval,line=None):
             used.add(digest);os.environ['DINO_CREDENTIAL_LABEL']='owner-authorized:'+keys[key_index]
             print('Using authorized free-tier variable',keys[key_index],flush=True);return
         raise ValueError('Selected free-tier credentials exhausted/unavailable; completed takes retained.')
-    selected=[cue for cue in production.language_manifest(episode,lang)['dialogue'] if line is None or cue['id']==line]
+    selected=[cue for cue in production.language_manifest(episode,lang)['dialogue']
+              if (line is None or cue['id']==line) and (character is None or cue['character']==character)]
     if not selected:raise ValueError('Unknown selected line.')
     for original in selected:
         current=dub.load(path);m=production.language_manifest(current,lang);cue=next(x for x in m['dialogue'] if x['id']==original['id']);char=voices['characters'][cue['character']]
@@ -75,8 +80,8 @@ def run(manifest,lang,env_file,keys,live,interval,line=None):
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('manifest');p.add_argument('--lang',required=True,choices=('en','zh','ms'));p.add_argument('--env-file',default='.env');p.add_argument('--keys',nargs='+',required=True);p.add_argument('--line');p.add_argument('--live',action='store_true');p.add_argument('--interval',type=float,default=21);a=p.parse_args()
-    try:run(a.manifest,a.lang,a.env_file,a.keys,a.live,a.interval,a.line)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('manifest');p.add_argument('--lang',required=True,choices=('en','zh','ms'));p.add_argument('--env-file',default='.env');p.add_argument('--keys',nargs='+',required=True);p.add_argument('--line');p.add_argument('--character',help='Retake only this character, preserving all other takes');p.add_argument('--live',action='store_true');p.add_argument('--interval',type=float,default=21);a=p.parse_args()
+    try:run(a.manifest,a.lang,a.env_file,a.keys,a.live,a.interval,a.line,a.character)
     except (ValueError,OSError,KeyError) as e:p.exit(1,f'Error: {e}\n')
 
 if __name__=='__main__':main()
