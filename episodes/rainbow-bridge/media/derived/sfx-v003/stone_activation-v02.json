@@ -1,0 +1,24 @@
+{
+  "fingerprint": "5eb760efe7fb93850c5c8d21e2d8bff23c661d04a34a21d9a00ee3525d9e2801",
+  "sha256": "1ec2f2398bb8741ec44ccd6d264e74eba01c720d7f327fef00a28b596897d082",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v02",
+      "asset_path": "episodes/rainbow-bridge/media/derived/sfx-v003/stone_activation-v02.wav",
+      "duration_s": 1.25,
+      "generator": "rainbow_restore",
+      "seed": 2026110301,
+      "pitch_scale": 1,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Existing project-original procedural recipe with episode-specific duration/pitch; no external samples or generation service",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

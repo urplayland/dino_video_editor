@@ -1,6 +1,8 @@
 # Dino Adventures — multilingual dubbing production
 
-A reusable post-production workspace for Family Learning Hub's Dino Adventures series. The current goal is the **entire 70.927-second Dino Saves the Moon episode** in English, Mandarin Chinese and Malaysian Bahasa Melayu. The earlier prototype stopping point has been cancelled.
+A reusable post-production workspace for Family Learning Hub's Dino Adventures series, with separate English, Mandarin Chinese and Malaysian Bahasa Melayu releases. Each story uses the same Story Bible/guidelines/status, Editing, Final Product and Publishing structure. Start with [the series registry](config/series.json), [EP1 index](episodes/save-the-moon/EPISODE_INDEX.md) or [EP2 index](episodes/rainbow-bridge/EPISODE_INDEX.md).
+
+EP2's current full finals are ENv001/ZHv002/MSv002. Shared small assets are pinned in Git; full footage/mixes and large runtime assets stay in verified Drive storage. Cross-root consolidation awaits the owner's access choice because existing private and collaborative folders have different members. No YouTube publication is automated by this repository.
 
 The complete handover is now imported locally, including the original mixed-audio MP4, a silent picture master, original audio, kit scripts/presets, effects and audition recordings. The animation is preserved. Approved voices remain **Dino=Puck, Cloud Guardian=Charon, Moon=Sulafat**, using `gemini-3.8-flash-tts`.
 
@@ -18,12 +20,12 @@ Read [the production setup and commands](docs/production.md), then [the episode 
 | `schemas/` | JSON Schema contracts | Yes |
 | `library/catalog.csv` | Shared media provenance and usage notes | Yes |
 | `library/presets/v001/` | Preserved imported preset version | Yes |
-| `library/media/` | Reusable SFX, score and ambience | No |
+| `library/media/` | Explicit small SFX/branding/reference assets; large runtime assets remain external | Selected allowlist only |
 | `templates/episode/` | Compatible starter episode documents | Yes |
 | `episodes/<slug>/episode.json` | Episode identity and source hashes | Yes |
 | `episodes/<slug>/production.json` | Multilingual dialogue, source timing, cues, outputs and verification references | Yes |
 | `episodes/<slug>/edit-plan.md` | Decisions, changes and review findings | Yes |
-| `episodes/<slug>/media/` | Preserved sources and derived voice stems | No |
+| `episodes/<slug>/media/` | Preserved sources and derived voice stems; a few pinned ending/SFX/MIDI assets | Selected allowlist only |
 | `episodes/<slug>/project/` | Editor notes/projects | Yes |
 | `episodes/<slug>/work/` | Model cache and temporary work | No |
 | `episodes/<slug>/exports/` | Full MP4s, editable bus stems and render reports | No |
@@ -57,7 +59,9 @@ python3 tools/dino.py inventory save-the-moon
 python3 tools/dino.py verify save-the-moon --report episodes/save-the-moon/reports/<inventory-file>.json
 ```
 
-`init` never overwrites an episode. Inventory/verification record SHA-256 and optional ffprobe metadata using project-relative paths. Preserve originals and derive new files separately. Media and model caches are excluded from Git and require a separate backup; a Git clone alone does not contain the footage, voices or exports. Never commit `.env`.
+`init` never overwrites an episode and fills its status/template identity. Inventory/verification record SHA-256 and optional ffprobe metadata using project-relative paths. Preserve originals and derive new files separately. Large media/model caches require a separate verified backup; a Git clone contains only the curated small-media set, not footage/full takes/final exports. Never commit `.env`.
+
+Validate the small immutable Git assets with `python3 tools/check_git_assets.py`; refresh story indexes with `python3 tools/episode_index.py`. Restore existing media without generation using `python3 tools/dino.py pull --manifest <verified-restore-manifest.json>`; this uses an already authenticated rclone remote, copies by Drive ID, checks size/SHA256 and refuses to overwrite changed files. Complete source offloading waits for full restore mappings and recovery tests, not merely an upload success. See [the unified storage design](docs/unified-series-storage-proposal.md).
 
 Run tests with `.venv/bin/python -m unittest discover -s tests -v`. Tests create synthetic fixtures and do not require episode media, Gemini keys, transcription models or paid requests; FFmpeg integration checks are skipped if FFmpeg/FFprobe are unavailable. See [the general workflow](docs/workflow.md) and [confirmed series decisions](docs/series.md).
 

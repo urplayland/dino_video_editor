@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "series": "Dino Adventures",
+  "unified_root_access": "pending_owner_choice_private_or_existing_collaborators",
+  "private_root": "1rnP1qvd2bm3JYTuqtoskPGeOWM40mPM9",
+  "shared_source_root": "1wOs05ILi2Pzba6vMt1eB1ja1cSplfsHa",
+  "episodes": [
+    {
+      "number": 1,
+      "slug": "save-the-moon",
+      "title": "Dino Saves the Moon",
+      "manifest": "episodes/save-the-moon/episode.json",
+      "status_file": "episodes/save-the-moon/episode-status.json",
+      "drive": {
+        "root": "1wJTManR5zTMW1bzZSSWCJNKvTWWcQRAm",
+        "editing": "1as3CKhKHurLtgZORDql0cZlymMcPK4c_",
+        "final_product": "1gmJTIamkthcesjww1F3RUkZvm8rW1ZEV",
+        "videos": "1etNclPr2hJlDeLQbMC4hnq9dNVTmiggj",
+        "subtitles": "1jUywxEAZsbDGgDu3nG3dHWDr2wil3eYK",
+        "audio": "1ncnDq6sqpMuu-fiziP49w6-dHEJi8d1O",
+        "publishing": "1K93MaTm41z2Am89orYlYTs2l8KmepmGD"
+      }
+    },
+    {
+      "number": 2,
+      "slug": "rainbow-bridge",
+      "title": "Dino and the Broken Rainbow Bridge",
+      "manifest": "episodes/rainbow-bridge/episode.json",
+      "status_file": "episodes/rainbow-bridge/episode-status.json",
+      "drive": {
+        "root": "12q8LbbYkgs5hFuO00_PFWlSjum3gyyV4",
+        "editing": "1Cq8LoPniYBSdwMMQIHxgxTmF21oD1sz8",
+        "final_product": "1XW0jJFadQ2FSofsezIKG8_grjA70Apqw",
+        "videos": "10IrRbRO2RoY_oP3h-nU7VsCkQdZamUyO",
+        "subtitles": "1j0tQs8qS_PxJksWS7UG7DKyuA407ENgb",
+        "audio": "1DWOX7n6tVoCC4S48u0i3-lPat7ly0c39",
+        "publishing": "1qC3hJHK2mdYk50KmeMFTkJQ4meMaYeyy"
+      }
+    }
+  ],
+  "unassigned_episodes": [
+    {
+      "number": 3,
+      "drive_root": "1T58FoHY1wfVxjJf208CVEIv67o6nkLnk",
+      "title": null,
+      "status": "source_not_yet_established",
+      "drive": {
+        "editing": "1waZ_5wnk6SZe6xp09R34oi_jcanFIJQH",
+        "final_product": "14rF-jwYCYJNjtCSJXWG2Lbzl6LppWH6b",
+        "publishing": "1OyIqne67guI3HtIAfEaPmfoPlSG_F6yh"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fingerprint": "b0cecc5c7b45020159365d2f74cada4da3c4bbe8c41e49cb03cbf413192abe56",
+  "sha256": "60b5fc444c24a0ce75da1d2464527df1a16487f8cb7fcaaec1efbc1c64d4c045",
+  "settings": {
+    "schema_version": 1,
+    "brand_config": "config/branding-logo-v004.json",
+    "duration_s": 4.5,
+    "title": "THE END",
+    "series": "Dino Adventures",
+    "output": "episodes/rainbow-bridge/media/derived/ending-v001/end-card.mp4"
+  },
+  "frames": 108,
+  "status": "rendered_pending_owner_visual_review"
+}

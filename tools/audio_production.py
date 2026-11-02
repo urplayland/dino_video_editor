@@ -49,11 +49,12 @@ def validate(manifest, production=False):
         raise ValueError('Common ducking requires EN, ZH and MS dialogue inputs.')
     dub.relative(manifest['sfx_plan']);dub.relative(manifest['sfx_registry'])
     work=dub.relative(manifest['output_dir'])
-    if not re.fullmatch(r'episodes/[a-z0-9-]+/media/derived/[a-zA-Z0-9_/-]+',manifest['output_dir']):
-        raise ValueError('Working stems must stay in episode media/derived/.')
+    namespace=r'(?:episodes/[a-z0-9-]+|tests/fixtures/audio-system-verification)'
+    if not re.fullmatch(namespace+r'/media/derived/[a-zA-Z0-9_/-]+',manifest['output_dir']):
+        raise ValueError('Working stems must stay in episode media/derived/ or the exact engineering fixture.')
     for lang,path in manifest['exports'].items():
         dub.relative(path)
-        if lang not in manifest['dialogue'] or not re.fullmatch(r'episodes/[a-z0-9-]+/exports/[^/]+\.mp4',path):raise ValueError('Invalid language export path.')
+        if lang not in manifest['dialogue'] or not re.fullmatch(namespace+r'/exports/[^/]+\.mp4',path):raise ValueError('Invalid language export path.')
     if set(manifest['exports'])!={'en','zh','ms'}:raise ValueError('Three exports are required.')
     from production import validate_schema
     validate_schema(manifest, 'audio-production')

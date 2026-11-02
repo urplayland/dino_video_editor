@@ -4,8 +4,9 @@ Immutable snapshot of config/sfx_presets.json at this release. Five legacy IDs
 and their existing paths/gains remain intact. Eleven new stable IDs (the ten
 requested effects plus magical_ambience) each have three procedural variations.
 
-The audio assets and per-file generation/checksum sidecars live outside Git in
-library/media/audio/sfx/procedural-v002/. Reproduce using tools/sfx.py. No external
+The audio assets and per-file generation/checksum sidecars live in
+library/media/audio/sfx/procedural-v002/. The owner now selected this small
+versioned set for Git via library/presets/git-assets-v001.json. Reproduce using tools/sfx.py. No external
 samples, paid APIs, downloads or GPU are used. New sounds are technically
 validated; creative listening approval is distinct and is not fabricated.
 

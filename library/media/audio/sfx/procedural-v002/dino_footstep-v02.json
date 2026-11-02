@@ -1,0 +1,24 @@
+{
+  "fingerprint": "03699cb56033fa51b1ec1b5c8528ba870a3647f96745b611301eaffc9bf17be1",
+  "sha256": "b1366da79ca4f398fda21e9e28cb0db512d7d65475d64a8f4522e8c8a32801e4",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v02",
+      "asset_path": "library/media/audio/sfx/procedural-v002/dino_footstep-v02.wav",
+      "duration_s": 0.35,
+      "generator": "dino_footstep",
+      "seed": 1760,
+      "pitch_scale": 1,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

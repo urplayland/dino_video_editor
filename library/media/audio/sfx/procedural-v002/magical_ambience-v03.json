@@ -1,0 +1,24 @@
+{
+  "fingerprint": "d1b0db93d8396f348f8ba3b83e63c1749cac406a00dfe018dd87f51db62df37f",
+  "sha256": "a511dc8d075315712680e7492aefdd508935899486fbe5a0c2cb93f3bb292593",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v03",
+      "asset_path": "library/media/audio/sfx/procedural-v002/magical_ambience-v03.wav",
+      "duration_s": 12,
+      "generator": "magical_ambience",
+      "seed": 2801,
+      "pitch_scale": 1.06,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

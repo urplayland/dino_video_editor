@@ -1,0 +1,24 @@
+{
+  "fingerprint": "a5e22755b4633264e95af27c43c0274069a558cb026d51412652b2b3ee6ef21c",
+  "sha256": "11b3b296856e37e3b6e8b68c5cf91e464541b822c8207981ca13f6e71c37aeb7",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v03",
+      "asset_path": "library/media/audio/sfx/procedural-v002/soft_hug-v03.wav",
+      "duration_s": 1.4,
+      "generator": "soft_hug",
+      "seed": 2498,
+      "pitch_scale": 1.06,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

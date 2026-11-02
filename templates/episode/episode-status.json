@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "episode_number": null,
+  "slug": "__EPISODE__",
+  "title": null,
+  "status": "awaiting_sources",
+  "language_status": {
+    "en": {
+      "production": "not_started",
+      "published_url": null
+    },
+    "zh": {
+      "production": "not_started",
+      "published_url": null
+    },
+    "ms": {
+      "production": "not_started",
+      "published_url": null
+    }
+  }
+}

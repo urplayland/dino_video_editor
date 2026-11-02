@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "episode_number": 1,
+  "slug": "save-the-moon",
+  "title": "Dino Saves the Moon",
+  "status": "owner_selected_manual_upload",
+  "language_status": {
+    "en": {
+      "production": "ready_for_manual_upload",
+      "selected_video": "episodes/save-the-moon/exports/dino_saves_the_moon_en_flh_v007.mp4",
+      "published_url": null
+    },
+    "zh": {
+      "production": "ready_for_manual_upload",
+      "selected_video": "episodes/save-the-moon/exports/dino_saves_the_moon_zh_flh_v009.mp4",
+      "published_url": null
+    },
+    "ms": {
+      "production": "ready_for_manual_upload",
+      "selected_video": "episodes/save-the-moon/exports/dino_saves_the_moon_ms_flh_v007.mp4",
+      "published_url": null
+    }
+  },
+  "channel_routing": "pending_owner_clarification_one_channel_playlists_vs_separate_channels",
+  "notes": "Source video/acting approvals remain documented in edit-plan.md; no claim of upload or new listening approval."
+}

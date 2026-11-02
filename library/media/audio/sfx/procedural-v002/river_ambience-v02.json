@@ -1,0 +1,24 @@
+{
+  "fingerprint": "3ac607dc4f0df3bff140d83605f07fdcc46ef1090e45dc6fdb6447b0f476ee20",
+  "sha256": "fc01a5ef87de4ec245d2539a2124020cb4867132eae4af06e3ad3ee6a41ebfc3",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v02",
+      "asset_path": "library/media/audio/sfx/procedural-v002/river_ambience-v02.wav",
+      "duration_s": 12,
+      "generator": "river_ambience",
+      "seed": 2669,
+      "pitch_scale": 1,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

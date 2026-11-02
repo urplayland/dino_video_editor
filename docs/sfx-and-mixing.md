@@ -157,7 +157,7 @@ This runs the complete production engine, not a separate mock mixer. It creates 
 12-second synthetic video card, separate detector-tone fixtures for the three
 language slots, a local diagnostic underscore, and cues exercising all eleven
 new effect IDs. It exports three MP4s, editable full premixes, exact common buses
-and acceptance/provenance reports under `episodes/audio-system-verification/`.
+and acceptance/provenance reports under `tests/fixtures/audio-system-verification/`.
 The tones are explicitly test signals, not character voices or fabricated film
 dialogue. No Episode 1 footage or audio is needed, modified or uploaded. The fixture
 is a repeatable engineering acceptance artifact, not a substitute Episode 2 film.
@@ -166,7 +166,7 @@ To resume without regenerating its source fixtures:
 
 ```sh
 .venv/bin/python tools/audio_production.py \
-  episodes/audio-system-verification/media/derived/fixture-v001/audio-production.json build
+  tests/fixtures/audio-system-verification/media/derived/fixture-v001/audio-production.json build
 ```
 
 The existing branding/subtitle workflow accepts explicit verified dialogue

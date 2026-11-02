@@ -1,0 +1,24 @@
+{
+  "fingerprint": "75616fca30bc5dd4cb96113546857418ed45327b0669f9f9998b52505c359d69",
+  "sha256": "44c76fde056bbdbbccb916d7bc9e686f9147409511f98c8dd14f831d4b400df5",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v01",
+      "asset_path": "library/media/audio/sfx/procedural-v002/forest_ambience-v01.wav",
+      "duration_s": 12,
+      "generator": "forest_ambience",
+      "seed": 2537,
+      "pitch_scale": 0.94,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

@@ -1,0 +1,19 @@
+{
+  "fingerprint": "8a17ce43faed04e71d47e91ef675b460bca6567eea5be6f5b1e3bb4d62009cdc",
+  "sha256": "19c9ae3e6cc6b624ff4c3fdd5ae2650aca0d9917c4e2223ec9aa42095f102bda",
+  "settings": {
+    "schema_version": 1,
+    "brand_config": "config/branding-logo-v004.json",
+    "duration_s": 4.5,
+    "title": "\u5267\u7ec8",
+    "series": "\u8fea\u8bfa\u5386\u9669\u8bb0",
+    "output": "episodes/rainbow-bridge/media/derived/ending-v002/zh/end-card.mp4",
+    "language": "zh",
+    "title_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+    "title_font_index": 2,
+    "series_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+    "series_font_index": 2
+  },
+  "frames": 108,
+  "status": "rendered_pending_owner_visual_review"
+}

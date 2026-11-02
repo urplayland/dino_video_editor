@@ -14,7 +14,7 @@ import audio_production
 
 def create(version):
     if not version.isalnum():raise ValueError('Use an alphanumeric verification version.')
-    base='episodes/audio-system-verification'
+    base='tests/fixtures/audio-system-verification'
     source=dub.relative(base+'/media/derived/fixture-'+version)
     if source.exists():raise ValueError('Fixture exists; use a new version or rebuild its saved audio manifest.')
     source.mkdir(parents=True)

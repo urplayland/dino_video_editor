@@ -1,0 +1,24 @@
+{
+  "fingerprint": "17937e397ceae0cd3c0919e91d4dd87a5b50b4f9a6d2940e95d8d0d4936610c7",
+  "sha256": "be6f3f4b9002e1db426297a7ae8232d5c059b099311fd690904d121ca491f671",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v02",
+      "asset_path": "library/media/audio/sfx/procedural-v002/bunny_surprise-v02.wav",
+      "duration_s": 0.55,
+      "generator": "bunny_surprise",
+      "seed": 1962,
+      "pitch_scale": 1,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

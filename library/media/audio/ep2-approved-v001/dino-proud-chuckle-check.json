@@ -1,0 +1,18 @@
+{
+  "status": "passed_technical_nonverbal",
+  "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+  "expected_text": "Ha-ha!",
+  "recognized_text": null,
+  "required_names": [],
+  "name_checks_passed": true,
+  "audio": {
+    "duration_s": 1.0,
+    "sample_rate": 24000,
+    "channels": 1,
+    "sample_width": 2
+  },
+  "mean_dbfs": -19.7,
+  "peak_dbfs": -3.9,
+  "suggested_gain_db": -2.3,
+  "limits": "Actual voice/acting remains owner listening review. Nonverbal chuckle has no story transcript; request marker is phonation, not new dialogue."
+}

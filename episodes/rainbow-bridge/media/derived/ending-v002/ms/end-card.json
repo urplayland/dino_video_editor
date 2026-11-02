@@ -1,0 +1,15 @@
+{
+  "fingerprint": "0d5d06d743860736770b21a6650806e1ffc6f2ff9b1eaa78e2d4ec946ae23d6e",
+  "sha256": "b2341a8a9c3d4c181db8cb485d54ba9369f5e5aa8bd229b30331a82a39f66339",
+  "settings": {
+    "schema_version": 1,
+    "brand_config": "config/branding-logo-v004.json",
+    "duration_s": 4.5,
+    "title": "TAMAT",
+    "series": "Pengembaraan Dino",
+    "output": "episodes/rainbow-bridge/media/derived/ending-v002/ms/end-card.mp4",
+    "language": "ms"
+  },
+  "frames": 108,
+  "status": "rendered_pending_owner_visual_review"
+}

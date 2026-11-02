@@ -53,6 +53,11 @@ def init_episode(args):
         audio_config = destination / name
         if audio_config.is_file():
             audio_config.write_text(audio_config.read_text().replace("__EPISODE__", args.slug))
+    status_path = destination / "episode-status.json"
+    if status_path.is_file():
+        status = json.loads(status_path.read_text())
+        status.update(slug=args.slug, title=args.title)
+        status_path.write_text(json.dumps(status, indent=2) + "\n")
     for folder in ("media/originals", "media/derived", "work", "exports", "reports"):
         (destination / folder).mkdir(parents=True, exist_ok=True)
     print(f"Created episodes/{args.slug}")
@@ -177,6 +182,15 @@ def main():
     verification.add_argument('slug')
     verification.add_argument('--report', required=True)
     verification.set_defaults(run=verify)
+    pull = commands.add_parser('pull', help='Restore exact media from a checksum/Drive-ID manifest; no generation')
+    pull.add_argument('--manifest', required=True)
+    pull.add_argument('--destination-root', default=str(ROOT))
+    pull.add_argument('--remote', default='GDrive:')
+    pull.add_argument('--only', action='append')
+    def restore_media(args):
+        from media_restore import restore
+        print(json.dumps(restore(args.manifest,args.destination_root,args.remote,args.only)))
+    pull.set_defaults(run=restore_media)
     args = parser.parse_args()
     try:
         args.run(args)

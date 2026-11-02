@@ -2,7 +2,7 @@
 
 ## Current organization proposal —2026-11-02
 
-Owner requests one consistent home for all stories/episodes, demos and publishing materials, plus a small reusable Git asset set and on-demand media restoration from Drive before further server offloading. Inspection found EP1/channel kit under Drive Dino, EP2/EP3/characters/ideas under Dino_Stories, and an engineering audio-verification fixture under repository episodes. Concrete proposed layout, asset sizes, provenance/licence follow-up, sharing/restore safeguards and migration order: [unified-series-storage-proposal.md](unified-series-storage-proposal.md). This is a proposal for review, not an executed media migration; no assets added to Git and no further source/server media deletion in this inspection. Existing approved episodes, voices and relative production paths remain unchanged.
+Owner requests one consistent home for all stories/episodes, existing Dino directories and publishing materials, plus a small reusable Git asset set and on-demand media restoration from Drive before further server offloading. Inspection found EP1/channel kit under Drive Dino, EP2/EP3/characters/ideas under Dino_Stories, and an engineering audio-verification fixture under repository episodes. Concrete proposed layout, asset sizes, provenance/licence follow-up, sharing/restore safeguards and migration order: [unified-series-storage-proposal.md](unified-series-storage-proposal.md). This is a proposal for review, not an executed media migration; no assets added to Git and no further source/server media deletion in this inspection. Existing approved episodes, voices and relative production paths remain unchanged.
 
 ## Confirmed
 

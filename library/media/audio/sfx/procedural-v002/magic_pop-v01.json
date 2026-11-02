@@ -1,0 +1,24 @@
+{
+  "fingerprint": "185c31107f10dc9b518d2694c596ddf3040cd6aa61db6ec2fb83bcf8b51627fa",
+  "sha256": "2d9c121c757bff047291105d6865a075cf9c93f6209bfd33dc2e9ea91092b857",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v01",
+      "asset_path": "library/media/audio/sfx/procedural-v002/magic_pop-v01.wav",
+      "duration_s": 0.28,
+      "generator": "magic_pop",
+      "seed": 2032,
+      "pitch_scale": 0.94,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed_automated",
+  "sha256": "e8afb5da7bdab3591e8e4792577b1525a100a31ce88d38e64327190596dfa4f5",
+  "expected_text": "Dino, look under your foot!",
+  "recognized_text": "Dino, look under your foot!",
+  "required_names": [
+    "Dino"
+  ],
+  "name_checks_passed": true,
+  "audio": {
+    "duration_s": 2.48,
+    "sample_rate": 24000,
+    "channels": 1,
+    "sample_width": 2
+  },
+  "mean_dbfs": -12.4,
+  "peak_dbfs": -0.5,
+  "suggested_gain_db": -9.6,
+  "limits": "Actual voice/acting remains owner listening review. Nonverbal chuckle has no story transcript; request marker is phonation, not new dialogue."
+}

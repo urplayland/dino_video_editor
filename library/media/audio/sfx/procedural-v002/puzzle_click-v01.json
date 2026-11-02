@@ -1,0 +1,24 @@
+{
+  "fingerprint": "cc4ef8e09fa41316ad8956a60eb319f442873281a152637548726cdd48bf5c1b",
+  "sha256": "22688a34a80a2e1902b86c058b0bad9103e4acb347a13e17211faa36a91b3b3f",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v01",
+      "asset_path": "library/media/audio/sfx/procedural-v002/puzzle_click-v01.wav",
+      "duration_s": 0.12,
+      "generator": "puzzle_click",
+      "seed": 2234,
+      "pitch_scale": 0.94,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

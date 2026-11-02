@@ -1,0 +1,24 @@
+{
+  "fingerprint": "23836558ba1a7c8387e1dc6301671f748980a532515776b14617da1284804536",
+  "sha256": "53d5b1441d7d838aaa26d85ea97a772e078184b7a8fd245f5012f9577ee83d5d",
+  "recipe": {
+    "generator_version": "procedural-v002",
+    "generator_source_sha256": "a1cd9ad86f76a8e3e8171e4de479e6145e2d5ae52774235a0decd2d353596ea6",
+    "variant": {
+      "id": "v01",
+      "asset_path": "library/media/audio/sfx/procedural-v002/rainbow_restore-v01.wav",
+      "duration_s": 3.2,
+      "generator": "rainbow_restore",
+      "seed": 2335,
+      "pitch_scale": 0.94,
+      "gain_db": 0
+    }
+  },
+  "provenance": {
+    "generator": "tools/sfx.py",
+    "method": "Original deterministic synthesis using Python standard library",
+    "third_party_samples": false
+  },
+  "license": "LicenseRef-Project-Generated; no external recordings or samples; no public-domain claim.",
+  "approval_status": "generated_pending_listening_review"
+}

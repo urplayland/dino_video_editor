@@ -1,0 +1,41 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice_version": "v001",
+  "request": {
+    "contents": [
+      {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Dino, look under your foot!",
+            "speech_metadata": {
+              "style": "A sweet, youthful girl rabbit talking naturally to her friend Dino in a children's adventure. Warm, expressive, clear conversational English. Gentle and hopeful, with authentic relief or curiosity; never shrill, babyish, robotic or a narrator. Speak only the supplied words. Act this as a genuine sudden happy discovery, not a calm suggestion: Bunny has just spotted the missing square under her friend's foot! A bright delighted smile, a little eager breath, lively upward pitch on Dino and look, playful urgency and clear emphasis on FOOT. Warm youthful feminine Leda identity, no shrill squeal, no narrator or flat reading. Say exactly Dino, look under your foot! Pronounce Dino DEE-noh with a clear initial D, and FOOT (singular), never food. Natural quick excited conversational rhythm, roughly2seconds, short internal pause only. No extra words or laughter in this line."
+            }
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "responseModalities": [
+        "AUDIO"
+      ],
+      "speechConfig": {
+        "voiceConfig": {
+          "voice": "Leda"
+        }
+      }
+    }
+  },
+  "fingerprint": "f073364cf12e48864ff7f2f321477ff2f0194d9df921e8c80148350fd111c9ae",
+  "sha256": "e8afb5da7bdab3591e8e4792577b1525a100a31ce88d38e64327190596dfa4f5",
+  "character": "bunny",
+  "language": "en",
+  "status": "generated_pending_listening_review",
+  "output": "episodes/rainbow-bridge/media/derived/retakes-v004/en/bunny-under-foot.wav",
+  "credential_label": "owner-authorized:GEMINI_API_KEY",
+  "created_at": "2026-11-02T01:11:26.133539+00:00",
+  "duration_s": 2.48,
+  "sample_rate": 24000,
+  "channels": 1,
+  "sample_width": 2
+}

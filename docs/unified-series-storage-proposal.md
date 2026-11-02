@@ -1,12 +1,12 @@
 # Proposed unified series storage
 
-Status: inspection and proposal requested by the owner,2026-11-02. This document does not approve a migration or assert that all media is backed up. No media moved, added to Git or deleted in this inspection.
+Status: approved logical structure,2026-11-02. EP1/EP2 internal layouts and small Git assets are being implemented. Cross-root consolidation is blocked on the owner access choice: EP1/channel assets are private; Dino_Stories has two additional writers. A test move lost those writers and was immediately rolled back. No source offloading is approved as complete until full recovery manifests/tests exist.
 
 ## Observed split
 
 - Drive Dino(id1rnP1qvd2bm3JYTuqtoskPGeOWM40mPM9) holds Dino_Saves_the_Moon and FLH_YouTube_Launch_Kit_v001.
 - Drive Dino_Stories(id1wOs05ILi2Pzba6vMt1eB1ja1cSplfsHa) holds Characters,EP2,EP3,Story_Ideas. The two roots have different observed sharing states; audit actual permissions before merging parents. Do not silently enlarge access.
-- Repository episodes/save-the-moon and episodes/rainbow-bridge are actual episode configurations with established relative paths. episodes/audio-system-verification is an engineering fixture, not evidence of a separate story. The owner's separately mentioned demo/demo story has not yet been identified; do not rename it or assign an episode number by assumption.
+- Repository episodes/save-the-moon and episodes/rainbow-bridge are actual episode configurations with established relative paths. tests/fixtures/audio-system-verification is an engineering fixture, not evidence of a separate story. The owner clarified the word was Dino, not demo. No demo-story category or demo approval status is introduced.
 - Existing helpers/templates already support reusable registries, episode manifests, audio cues, final selection, publishing copy and channel artwork. Extend these rather than introduce another app/project.
 - Current checkout totals roughly11GB including6.7GB EP1,2.9GB EP2,320MB library,296MB incoming and424MB virtualenv. These are observed local folder sizes, not a verified cleanup allowance. Original sources must not be removed merely because another file has the same name.
 
@@ -27,7 +27,7 @@ Dino_Adventures/
     EP01_Save_the_Moon/
       00_START_HERE.md
       01_Editing/           # source picture, editable audio/subtitles, production inputs
-      02_Final_Product/     # selected EN/ZH/MS only
+      02_Final_Product/     # Videos,Subtitles,Audio,Clean_Master
       03_Publishing/        # episode covers, copy, checklist, website handoff
     EP02_Broken_Bridge/
       # exactly the same three subfolders and entry guide
@@ -36,7 +36,7 @@ Dino_Adventures/
   Story_Ideas/              # unassigned ideas, before an actual episode exists
 ```
 
-Each real story has one home. A story prototype/demo is a status of that story, not another project root or another publishing kit. Use draft/demo/review/approved/released only with evidence. Engineering demos belong under tests/fixtures, and reusable starter instructions under templates/episode. Retain helper/test compatibility when moving the existing engineering fixture.
+Each real story has one home. Use draft/review/approved/released only with evidence. Engineering fixtures belong under tests/fixtures, and reusable starter instructions under templates/episode. Preserve helper/test compatibility.
 
 Episode-specific cover/title/description files from the old channel launch kit belong under EP1/03_Publishing. Only channel-wide identity/setup stays in Library/Branding/Channel. EP2 keeps its own covers/copy under its own03_Publishing. Do not duplicate global channel setup in every episode.
 
@@ -77,4 +77,4 @@ https://docs.github.com/en/repositories/working-with-files/managing-large-files/
 6. Test recovery into a separate empty directory and run existing configuration/media checks without paid generation. A successful upload is not proof of recovery. Only then offload the verified server media copies and caches. Canonical original bytes remain protected in the verified archive; do not delete source material based on filename/status guesses.
 7. Keep Git checkout and the selected small Git assets locally. Runtime secrets stay out of Git and must be handled separately; never delete.env or account credentials as generic cleanup. Virtualenvs and model caches are rebuildable from pinned setup instructions; scope cleanup to this workspace, not other server projects.
 
-No Drive merge or source offload has been performed as part of this proposal. Episode1/2 released media and voice identities are unchanged. The FLH website addition remains a separate later task.
+Within-access-group internal moves preserve file IDs/content and access roles. Top-level cross-access merge and full server offloading remain pending. Episode1/2 released media and voice identities are unchanged. The FLH website addition remains a separate later task.
