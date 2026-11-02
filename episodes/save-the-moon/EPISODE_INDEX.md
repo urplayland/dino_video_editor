@@ -27,8 +27,8 @@ Status: owner_selected_manual_upload
 
 [Episode covers, upload copy/checklist and website handoff](https://drive.google.com/drive/folders/1K93MaTm41z2Am89orYlYTs2l8KmepmGD)
 
-Three separate language videos are prepared. Channel routing is pending clarification: the earlier record is one FLH channel/three playlists; current owner wording mentions separate channels. No invented channel URLs and no automated YouTube publication. Upload using the confirmed account for that language.
+Owner confirmed one Family Learning Hub channel (@familylearninghub-flh) with three language playlists: Dino Adventures — English, Dino Adventures — 中文, Dino Adventures — Bahasa Melayu. Upload each separate language video to its matching playlist. This pipeline does not publish automatically.
 
 Final MP4s already contain matching visible subtitles; standalone SRT/ASS are editable/accessibility assets. Original source/video identities and acting are unchanged.
 
-Shared voice/branding/SFX definitions are referenced from config/ and library/. Runtime secrets and large media are not in Git. Cross-root Drive consolidation waits for the owner access choice; folder links above remain the actual current locations.
+Shared voice/branding/SFX definitions are referenced from config/ and library/. Runtime secrets and large media are not in Git. Drive is consolidated under Dino_Stories with the two existing creator editors retained, as expressly authorized. Folder links above are the actual current locations.

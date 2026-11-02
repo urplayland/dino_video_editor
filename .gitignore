@@ -42,7 +42,7 @@ __pycache__/
 
 /work/
 
-# Small owner-selected media only. Canonical registry: library/presets/git-assets-v001.json.
+# Small owner-selected media only. Current registry: library/presets/git-assets-v002.json.
 !/library/media/
 /library/media/*
 !/episodes/rainbow-bridge/media/
@@ -185,3 +185,15 @@ __pycache__/
 /tests/fixtures/*/media/
 /tests/fixtures/*/exports/
 /tests/fixtures/*/reports/
+
+# Current EP2 localized ending labels with shared English series branding.
+!/episodes/rainbow-bridge/media/derived/ending-v003/
+/episodes/rainbow-bridge/media/derived/ending-v003/*
+!/episodes/rainbow-bridge/media/derived/ending-v003/zh/
+/episodes/rainbow-bridge/media/derived/ending-v003/zh/*
+!/episodes/rainbow-bridge/media/derived/ending-v003/zh/end-card.mp4
+!/episodes/rainbow-bridge/media/derived/ending-v003/zh/end-card.json
+!/episodes/rainbow-bridge/media/derived/ending-v003/ms/
+/episodes/rainbow-bridge/media/derived/ending-v003/ms/*
+!/episodes/rainbow-bridge/media/derived/ending-v003/ms/end-card.mp4
+!/episodes/rainbow-bridge/media/derived/ending-v003/ms/end-card.json

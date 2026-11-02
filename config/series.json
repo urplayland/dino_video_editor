@@ -1,9 +1,7 @@
 {
   "schema_version": 1,
   "series": "Dino Adventures",
-  "unified_root_access": "pending_owner_choice_private_or_existing_collaborators",
-  "private_root": "1rnP1qvd2bm3JYTuqtoskPGeOWM40mPM9",
-  "shared_source_root": "1wOs05ILi2Pzba6vMt1eB1ja1cSplfsHa",
+  "unified_root_access": "owner_approved_existing_dino_stories_creators",
   "episodes": [
     {
       "number": 1,
@@ -50,5 +48,10 @@
         "publishing": "1OyIqne67guI3HtIAfEaPmfoPlSG_F6yh"
       }
     }
-  ]
+  ],
+  "drive_root": "1wOs05ILi2Pzba6vMt1eB1ja1cSplfsHa",
+  "drive_root_name": "Dino_Stories",
+  "episodes_folder": "1HpeaI5h4EaZAgBrhTxPFtKhgzORV7FVt",
+  "library_folder": "1DQfqo_JesYlMRGpc_d47ghczlXqCPpAu",
+  "publishing_strategy": "one_channel_three_language_playlists"
 }

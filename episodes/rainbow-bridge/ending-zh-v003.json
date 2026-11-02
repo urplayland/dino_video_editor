@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "brand_config": "config/branding-logo-v004.json",
+  "duration_s": 4.5,
+  "title": "完",
+  "series": "Dino Adventures",
+  "output": "episodes/rainbow-bridge/media/derived/ending-v003/zh/end-card.mp4",
+  "language": "zh",
+  "title_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+  "title_font_index": 2,
+  "series_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+  "series_font_index": 2
+}

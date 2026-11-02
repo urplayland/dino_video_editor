@@ -13,8 +13,8 @@
       "has_burned_subtitles": true
     },
     "zh": {
-      "file": "episodes/rainbow-bridge/exports/Final_v002/zh/Dino_EP2_ZH_Final_v002.mp4",
-      "sha256": "934c4157676a9bce4d2aea450a1b96eaa43433d2c40d5b82ecee12d9a2141021",
+      "file": "episodes/rainbow-bridge/exports/Final_v003/zh/Dino_EP2_ZH_Final_v003.mp4",
+      "sha256": "191a2404655410bf5be0f1f8ead12990b9f16303b6f1989b391a40adbdb7f586",
       "duration_s": 166.5,
       "width": 720,
       "height": 1280,
@@ -22,8 +22,8 @@
       "has_burned_subtitles": true
     },
     "ms": {
-      "file": "episodes/rainbow-bridge/exports/Final_v002/ms/Dino_EP2_MS_Final_v002.mp4",
-      "sha256": "dade08ca282cccb3982ba72ff73bb5048ec7a96870f02ca3803c303b5584c5a4",
+      "file": "episodes/rainbow-bridge/exports/Final_v003/ms/Dino_EP2_MS_Final_v003.mp4",
+      "sha256": "31d1745d899bc4d9a3ed23a0a29c5f3cabf947779a8fc8f0984c3c2beb51c89b",
       "duration_s": 166.5,
       "width": 720,
       "height": 1280,
@@ -33,5 +33,5 @@
   },
   "social_media_uploaded": false,
   "website_added": false,
-  "note": "English performance owner-approved; localized creative review remains separate from technical verification. No platform publishing performed."
+  "note": "Owner-selected full episodes; current endings keep Dino Adventures in English, Chinese 完 and Malay TAMAT. Audio and subtitle timing unchanged. No social publishing performed."
 }

@@ -12,15 +12,15 @@
     },
     "zh": {
       "production": "ready_for_manual_upload",
-      "selected_video": "episodes/rainbow-bridge/exports/Final_v002/zh/Dino_EP2_ZH_Final_v002.mp4",
+      "selected_video": "episodes/rainbow-bridge/exports/Final_v003/zh/Dino_EP2_ZH_Final_v003.mp4",
       "published_url": null
     },
     "ms": {
       "production": "ready_for_manual_upload",
-      "selected_video": "episodes/rainbow-bridge/exports/Final_v002/ms/Dino_EP2_MS_Final_v002.mp4",
+      "selected_video": "episodes/rainbow-bridge/exports/Final_v003/ms/Dino_EP2_MS_Final_v003.mp4",
       "published_url": null
     }
   },
-  "channel_routing": "pending_owner_clarification_one_channel_playlists_vs_separate_channels",
+  "channel_routing": "one_flh_channel_three_language_playlists",
   "notes": "Source video/acting approvals remain documented in edit-plan.md; no claim of upload or new listening approval."
 }

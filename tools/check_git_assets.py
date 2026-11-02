@@ -34,7 +34,7 @@ def validate(manifest,root=ROOT):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('manifest',nargs='?',default='library/presets/git-assets-v001.json')
+    parser.add_argument('manifest',nargs='?',default='library/presets/git-assets-v002.json')
     args=parser.parse_args()
     try:print(json.dumps(validate(ROOT/args.manifest)))
     except (ValueError,OSError,KeyError) as exc:parser.exit(1,f'Error: {exc}\n')

@@ -6,7 +6,7 @@ Preserve original filenames where possible. Reference files by repository-relati
 
 Large media payload is ignored by Git and needs a separate verified backup.
 Owner-selected small immutable assets are now explicitly pinned by
-`library/presets/git-assets-v001.json`; only those paths are allowed through
+`library/presets/git-assets-v002.json`; only those paths are allowed through
 the ignore rules. Run `python3 tools/check_git_assets.py` before committing.
 This storage selection does not change creative approval or provider/licence
 metadata. Fonts and the large soundfont remain separately restored assets.

@@ -28,7 +28,9 @@
       "ms": {
         "label": "Bahasa Melayu"
       }
-    }
+    },
+    "channel_strategy": "one_channel_three_language_playlists",
+    "owner_reconfirmed_date": "2026-11-02"
   },
   "profile_descriptions": {
     "en": "Welcome to Family Learning Hub! Enjoy playful stories and little adventures with children and family. Join Dino Adventures to explore friendship, kindness and helping one another. Choose a language playlist: English, 中文 or Bahasa Melayu. Each episode has matching spoken dialogue and on-screen subtitles. Discover more at https://familylearninghub.com",

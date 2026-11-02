@@ -1,0 +1,15 @@
+{
+  "fingerprint": "123a88248b8b3e4c725a6afcadd8481393b2cf3a11b1755f1b23ca6f2c51e1e0",
+  "sha256": "ed2fe493b2f22fc2e2872f41469c76537901a4a8938223194376f04be1283aa5",
+  "settings": {
+    "schema_version": 1,
+    "brand_config": "config/branding-logo-v004.json",
+    "duration_s": 4.5,
+    "title": "TAMAT",
+    "series": "Dino Adventures",
+    "output": "episodes/rainbow-bridge/media/derived/ending-v003/ms/end-card.mp4",
+    "language": "ms"
+  },
+  "frames": 108,
+  "status": "rendered_pending_owner_visual_review"
+}

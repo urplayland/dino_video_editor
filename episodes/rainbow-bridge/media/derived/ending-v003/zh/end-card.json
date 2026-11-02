@@ -1,0 +1,19 @@
+{
+  "fingerprint": "8b744af0e5cf3dd1263d6623be654e5116353253914454cdf80e3c8f623c5a35",
+  "sha256": "5554bff12edbc1c92ca6b42eb893f87767db3b6088bb6a99266c31787f993880",
+  "settings": {
+    "schema_version": 1,
+    "brand_config": "config/branding-logo-v004.json",
+    "duration_s": 4.5,
+    "title": "\u5b8c",
+    "series": "Dino Adventures",
+    "output": "episodes/rainbow-bridge/media/derived/ending-v003/zh/end-card.mp4",
+    "language": "zh",
+    "title_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+    "title_font_index": 2,
+    "series_font_path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+    "series_font_index": 2
+  },
+  "frames": 108,
+  "status": "rendered_pending_owner_visual_review"
+}

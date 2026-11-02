@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "brand_config": "config/branding-logo-v004.json",
+  "duration_s": 4.5,
+  "title": "TAMAT",
+  "series": "Dino Adventures",
+  "output": "episodes/rainbow-bridge/media/derived/ending-v003/ms/end-card.mp4",
+  "language": "ms"
+}
