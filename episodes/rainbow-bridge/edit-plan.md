@@ -165,3 +165,17 @@ Delivered Publishing_Kit_v001 under EP2/02_After_Editing: six covers, previews/Q
 
 Kit: https://drive.google.com/drive/folders/1qC3hJHK2mdYk50KmeMFTkJQ4meMaYeyy
 List: https://drive.google.com/file/d/1pzQ0fwL1H8vpmN7ENDafYJcpsuRGWoHZ/view
+
+## Drive organization inspection/proposal — 2026-11-02
+
+Owner reports EP2 is confusing and asks for clearer placement. Inspected root metadata and recursive inventory:743 file/export entries, approximately4.649GB. Before_Editing is empty while original HQ chunks are under After; references/Footages are loose at root; current localizedv002 videos live in Final_v001 alongside historical material.13 exact-MD5 duplicate groups observed, including identical190,824,642byte clean silent masters in initial production and current kit; none removed. Native Story Bible is retained as a Google Doc. Concrete proposed mappings and safeguards recorded in organization-plan-v001.md. This pass is inspection/planning only; no Drive moves, renames, deletion or website changes performed.
+
+## Owner-selected simple Drive layout completed —2026-11-02
+
+Owner rejected99_Archive and After_Editing naming: keep00_START_HERE,01_Editing,02_Final_Product and03_Publishing_Kit; remove obsolete production/review/final versions. Executed31 metadata-only moves/renames with source/destination parent readback. Current final and publishing folder IDs remain stable. Editing retains original scene sources/reference frames/HQ chunks, native Story Bible, original guides, extracted raw audio/source Workspace, selected takes, current stems/subtitles, clean masters/end cards and source/QA metadata. Raw source folders were rescued from old Production before removal; original alternative scene takes are retained under Original_Footage/Alternate_Source_Takes.
+
+Verified all743 prior file entries preserved by ID/size/available hashes after moves, before cleanup. Matched exact removal inventory, then moved three obsolete trees to recoverable Drive Trash using explicit drive-use-trash=true;71 derivative files/1,611,359,367bytes removed from the active workspace. Empty old After_Editing container removed only after empty listing. No permanent deletion, original loss, re-encode, voice generation or website/social publication.
+
+Final readback677 files/3,037,958,491bytes:672 prior file IDs retained,667 unchanged contents/available hashes, five guide updates and five newly uploaded guides/current indexes/report verified. Native Story Bible ID/type preserved with no content writes. Exactly three movies in Final_Product, unchanged from verified current ENv001/ZHv002/MSv002. Root contains only the requested four entries. Current indexes match all actual paths/hash values excluding themselves. Updated archive URL to EP2 root and publishing guides to Editing/Clean_Masters. Four publishing-copy tests pass.
+
+Automatic approval rejected overwriting historical manifest/cleanup records. Safe alternative completed: retained their existing bytes and added new CURRENT_FILE_INDEX.json/ORGANIZATION_REPORT.json. No blocker remains. Audits under reports/organization-v001; full current layout and links in organization-plan-v001.md. Root guide: https://drive.google.com/file/d/1XJmtJLROn3CROVw-2iU6ucbu8WPOCVC2/view . FLH website remains deferred.

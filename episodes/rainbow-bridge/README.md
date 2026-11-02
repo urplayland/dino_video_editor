@@ -2,6 +2,8 @@
 
 Current release: EN finalv001, BC/ZH finalv002 and BM/MS finalv002, with localized ending cards. See final-production-v001.md and [series release list](../../docs/series-release-list.md). Historical v001 build notes below describe earlier staging; use the pinned distribution-selection.json for publishing. The website addition remains pending.
 
+Current Drive folders:01_Editing,02_Final_Product,03_Publishing_Kit. [Start here](https://drive.google.com/file/d/1XJmtJLROn3CROVw-2iU6ucbu8WPOCVC2/view). Obsolete production/review versions removed from the active workspace; source material retained. See organization-plan-v001.md for the verified layout and audits. Repository media paths below are local reproduction paths and were not renamed by the Drive organization.
+
 The owner approved the production plan on2026-11-01, including differentiated dramatic music comparable to Dino Saves the Moon. Preserve Episode1 and all source footage. Working plan: production-plan-2026-11-01.md; review log: edit-plan.md.
 
 ## Sources and picture

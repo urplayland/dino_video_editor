@@ -35,6 +35,8 @@ def write_handoff(selected):
     (root/'WEBSITE_HANDOFF.json').write_text(json.dumps(handoff,ensure_ascii=False,indent=2)+'\n')
     text='''# Dino Adventures — release list
 
+Current Drive structure: 01_Editing (sources, current stems/subtitles, clean masters), 02_Final_Product (only the three current captioned movies), 03_Publishing_Kit (covers and upload copy). Original sources retained; obsolete production/review versions removed from the active workspace at the owner's request. Root00_START_HERE.md is the main entry point.
+
 ## EP1 — Dino Saves the Moon
 
 Existing episode; no rework. Reuse the current FLH avatar/banner and the three permanent language playlists.
@@ -71,7 +73,9 @@ Nothing was published to YouTube, social media or the FLH website. Do not create
 5. Add each to its existing language playlist after Dino Saves the Moon. Reuse the established FLH channel branding.
 6. After publishing, put the actual YouTube URLs into WEBSITE_HANDOFF.json and add EP2 in the Family Learning Hub project later. Null URLs mean not supplied; Drive download URLs are not video-player embed URLs.
 
-00_Shared_Master holds the subtitle-free English-audio master and a verified silent-master download link for editing. These are alternate-workflow assets, not the default three-language upload files. Its shared ending remains English; the ready-to-upload BC/BM finals have their translated endings.
+The Drive layout is 01_Editing, 02_Final_Product and 03_Publishing_Kit. Clean masters live separately in 01_Editing/Clean_Masters:
+https://drive.google.com/drive/folders/1ZsfBoSEoFN5OOqDkj_feQMT7uHoQHvTO
+The local package stages these under00_Shared_Master. These are editing/alternate-workflow assets, not the default three-language upload files. Their shared ending remains English; the ready-to-upload BC/BM finals have their translated endings. Old review/production versions were removed from the active Drive workspace at the owner's request; raw sources remain in Editing.
 
 05_Editable_Source contains outlined SVG layouts, the actual EP2 still, settings and source notes. Portrait2160x3840 and landscape3840x2160 JPEGs are each under2MB. Artwork layout sizes do not increase the source film detail. Choose a cover/upload option supported by your account; no account feature access was tested or changed.
 

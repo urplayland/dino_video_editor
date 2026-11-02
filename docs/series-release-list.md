@@ -1,5 +1,7 @@
 # Dino Adventures — release list
 
+Current Drive structure: 01_Editing (sources, current stems/subtitles, clean masters), 02_Final_Product (only the three current captioned movies), 03_Publishing_Kit (covers and upload copy). Original sources retained; obsolete production/review versions removed from the active workspace at the owner's request. Root00_START_HERE.md is the main entry point.
+
 ## EP1 — Dino Saves the Moon
 
 Existing episode; no rework. Reuse the current FLH avatar/banner and the three permanent language playlists.
