@@ -52,3 +52,9 @@ Final_Product: https://drive.google.com/drive/folders/1XW0jJFadQ2FSofsezIKG8_grj
 Publishing_Kit: https://drive.google.com/drive/folders/1qC3hJHK2mdYk50KmeMFTkJQ4meMaYeyy
 
 Family Learning Hub website addition remains pending, and actual published YouTube URLs remain unknown/null until supplied or verified.
+
+## Local storage policy and cleanup follow-up
+
+The owner selected one adopted asset per category while keeping originals/publishing materials, and identified uploaded Drive files as backups. Local obsolete derived renders and backed-up packaging copies were cleaned:351 files/3,060,474,442bytes. Current selected videos, canonical original/raw files and current production dependencies remain. Current final hashes and referenced input existence/size/mtime were verified afterward.
+
+Drive-side removal of26 further old mix/section caches and duplicate settings was rejected by automatic approval for insufficiently explicit Drive-deletion authorization after the backup instruction. That command did not execute. All677 Drive file entries, their paths and available hashes remain identical. This follow-up is complete for local storage; the separate proposed Drive pruning needs owner confirmation. Audit: reports/cleanup-v002/final-verification.json.
