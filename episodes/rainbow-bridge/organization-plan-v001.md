@@ -60,3 +60,9 @@ The owner selected one adopted asset per category while keeping originals/publis
 Drive-side removal of26 further old mix/section caches and duplicate settings was rejected by automatic approval for insufficiently explicit Drive-deletion authorization after the backup instruction. That command did not execute. All677 Drive file entries, their paths and available hashes remain identical. This follow-up is complete for local storage; the separate proposed Drive pruning needs owner confirmation. Audit: reports/cleanup-v002/final-verification.json.
 
 Subsequent explicit yes authorized that exact Drive pruning. Completed26-file/239,224,895byte removal to recoverable Trash after fresh ID/path/hash checks.651 files remain:648 contents unchanged and three current guide/index updates verified. Original sources, current final media and publishing materials retained; historical records untouched. Current indexes updated to actual paths. No remaining blocker. Latest audit: reports/cleanup-v002/authorized-drive-verification.json.
+
+## Further server-only cleanup
+
+Owner then authorized remaining redundant server copies/obsolete exports while keeping GDrive as backup. Removed1,537 local staging/derived/copy files totaling6,494,671,325bytes; raw canonical originals and326 protected files retained. Fixed classification of six retired output MP4 references without changing frozen production manifests. One local copy of each selected final remains, along with exact current rebuild inputs. Backed-up exported stems and the clean EN primary can be restored from Drive or rebuilt from retained inputs; their outputs are not required to stay cached.
+
+Drive stayed byte/path/ID-identical across this pass:651 file entries verified. Three local final SHA256s remain pinned and full production manifest validation passes. Current layout/Drive URLs above still apply. Audit: reports/server-cleanup-v003/final-verification.json. This does not authorize further Drive deletions.
