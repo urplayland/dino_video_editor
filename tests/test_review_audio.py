@@ -4,10 +4,16 @@ from pathlib import Path
 import unittest
 import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
-from review_audio import active_bounds, duck_envelope
+from review_audio import active_bounds, duck_envelope, review_options
 
 
 class ReviewAudioTests(unittest.TestCase):
+    def test_versioned_compact_review_keeps_old_default(self):
+        self.assertEqual(review_options({}), ('v002',720,23,'fast'))
+        self.assertEqual(review_options({'output_version':'v003','review_video':{'width':540,'crf':28,'preset':'veryfast'}}),('v003',540,28,'veryfast'))
+        for bad in ({'output_version':'../v003'}, {'review_video':{'width':541}}, {'review_video':{'crf':50}}):
+            with self.assertRaises(ValueError): review_options(bad)
+
     def test_phrase_reduction_and_overlap_do_not_double_duck(self):
         env = duck_envelope(4000, [(1,2),(1.5,2.5)], 8, rate=1000)
         self.assertAlmostEqual(float(env[1700]), 10**(-8/20), places=6)

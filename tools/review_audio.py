@@ -9,6 +9,7 @@ import copy
 import hashlib
 import json
 from pathlib import Path
+import re
 import subprocess
 
 import dub
@@ -21,6 +22,23 @@ from brand_video import caption_filter, decoded_audio
 from review_mix_integrity import similarity
 
 RATE = 48000
+
+
+def review_options(cfg):
+    version = cfg.get('output_version', 'v002')
+    if not re.fullmatch(r'v\d{3}', version):
+        raise ValueError('Review version must be v followed by three digits.')
+    options = cfg.get('review_video', {})
+    width = options.get('width', 720)
+    if width not in (360, 540, 720):
+        raise ValueError('Review width must be360,540 or720.')
+    crf = options.get('crf', 23)
+    if not isinstance(crf, int) or not 18 <= crf <= 32:
+        raise ValueError('Review CRF must be an integer from18 to32.')
+    preset = options.get('preset', 'fast')
+    if preset not in ('fast', 'veryfast'):
+        raise ValueError('Unsupported review encoding preset.')
+    return version, width, crf, preset
 
 
 def sha(path):
@@ -85,6 +103,7 @@ def build(config_path):
     cfg = dub.load(config_path)
     if cfg.get('schema_version') != 1 or cfg.get('language') != 'en':
         raise ValueError('This review is explicitly English only.')
+    version, width, crf, preset = review_options(cfg)
     episode = dub.load(dub.relative(cfg['episode'], True))
     selected = production.language_manifest(episode, 'en')
     source = dub.relative(cfg['dialogue_source']['path'], True)
@@ -99,6 +118,8 @@ def build(config_path):
         dub.relative(cfg['ambience'], True), dub.relative(cfg['original_music'], True),
         dub.relative(episode['source_video'], True), Path(__file__),
         Path(scene_score.__file__), Path(subtitles.__file__)]
+    dependencies.extend([dub.relative(cfg['sfx_registry'], True),
+        Path(sfx.__file__), dub.relative(cfg['subtitle_settings'], True)])
     inputs = {str(p.relative_to(dub.ROOT)): sha(p) for p in dependencies}
     immutable_json(stamp, {'config_sha256': identity, 'inputs': inputs})
     original = read_pcm(source); count = round(episode['duration_s'] * RATE)
@@ -129,7 +150,7 @@ def build(config_path):
     for a, b in zip(rows, rows[1:]):
         if a['end_s'] > b['start_s']:
             raise ValueError('Revised speech overlaps: ' + a['id'])
-    dialogue = dest / 'Dino_EP2_EN_Dialogue_Only_v002.wav'
+    dialogue = dest / f'Dino_EP2_EN_Dialogue_Only_{version}.wav'
     if not dialogue.exists(): timeline(tracks, dialogue, episode['duration_s'])
     # Subtitle edges are remeasured from the final assembled audio, not old windows.
     final_dialogue = read_pcm(dialogue)
@@ -142,22 +163,22 @@ def build(config_path):
     for cue, row in zip(revised['dialogue'], rows):
         cue['audio']['en'].update(start_s=row['start_s'], end_s=row['end_s'])
     settings = dub.load(dub.relative(cfg['subtitle_settings'], True))
-    settings.update(ass_path=(dest/'Dino_EP2_EN_v002.ass').relative_to(dub.ROOT).as_posix(),
-        story_srt_path=(dest/'Dino_EP2_EN_v002.srt').relative_to(dub.ROOT).as_posix(),
-        packaged_srt_path=(dest/'Dino_EP2_EN_v002.srt').relative_to(dub.ROOT).as_posix(),
+    settings.update(ass_path=(dest/f'Dino_EP2_EN_{version}.ass').relative_to(dub.ROOT).as_posix(),
+        story_srt_path=(dest/f'Dino_EP2_EN_{version}.srt').relative_to(dub.ROOT).as_posix(),
+        packaged_srt_path=(dest/f'Dino_EP2_EN_{version}.srt').relative_to(dub.ROOT).as_posix(),
         report_path=(work/'subtitles.json').relative_to(dub.ROOT).as_posix())
     subtitles.generate(revised, settings)
     immutable_json(work/'subtitle-settings.json', settings)
-    immutable_json(dest/'Dino_EP2_EN_Dialogue_Timeline_v002.json', {
+    immutable_json(dest/f'Dino_EP2_EN_Dialogue_Timeline_{version}.json', {
         'source_audio_sha256': sha(dialogue), 'timing_authority': 'Final dialogue PCM energy bounds, 25ms lead /45ms tail; not word-level forced alignment.',
         'generation': 'No new generation; pitch-preserving pacing edits to existing Puck/Leda takes.', 'cues': rows})
-    md = ['# EP2 English dialogue v002', '', 'Full-film clock, existing 2s opening included once. Final spoken-audio bounds; no generation calls.', '',
+    md = [f'# EP2 English dialogue {version}', '', 'Full-film clock, existing 2s opening included once. Final spoken-audio bounds; no generation calls.', '',
         '| Cue | Voice | In | Out | Spoken words |', '|---|---|---|---|---|']
     for row in rows:
         md.append(f'| {row["id"]} | {row["character"]} | {subtitles.stamp(row["start_s"])} | {subtitles.stamp(row["end_s"])} | {row["text"]} |')
     md += ['', 'All 27 speaker assignments checked against actual picture samples. Triangle discovery intentionally speaks over the stone cutaway. Acting/accent remain subject to human listening; tempo/gain edits do not create a newly acted performance.']
     text = '\n'.join(md)+'\n'
-    target = dest/'Dino_EP2_EN_Dialogue_Timeline_v002.md'
+    target = dest/f'Dino_EP2_EN_Dialogue_Timeline_{version}.md'
     if not target.exists(): dub.write_new(target, text.encode())
     scene_score.render(dub.relative(cfg['score'], True))
     plan = dub.load(dub.relative(cfg['score'], True))
@@ -188,9 +209,9 @@ def build(config_path):
     effects *= duck_envelope(count, intervals, automation['sfx_duck_db'])[:,None]
     stems = {'BGM':music, 'Ambience':ambience, 'SFX':effects}
     for name, samples in stems.items():
-        path = dest/f'Dino_EP2_EN_{name}_v002.wav'
+        path = dest/f'Dino_EP2_EN_{name}_{version}.wav'
         if not path.exists(): write_pcm(path, samples)
-    immutable_json(dest/'Dino_EP2_EN_Music_Automation_v002.json', {
+    immutable_json(dest/f'Dino_EP2_EN_Music_Automation_{version}.json', {
         'schema_version':1, 'duration_s':episode['duration_s'], 'language':'en',
         'roadmap':cfg['roadmap'], 'score_plan':plan, 'speech_intervals':intervals,
         'automation':automation, 'attack_s':.15, 'release_s':.3,
@@ -200,33 +221,37 @@ def build(config_path):
     premix = work/'premix.wav'
     if not premix.exists():
         timeline([dict(path=p.relative_to(dub.ROOT).as_posix(),timestamp_s=0,duration_s=episode['duration_s'],gain_db=0)
-            for p in [dialogue]+[dest/f'Dino_EP2_EN_{k}_v002.wav' for k in stems]], premix, episode['duration_s'], float_output=True)
-    clean = work/'clean-v002.mp4'
+            for p in [dialogue]+[dest/f'Dino_EP2_EN_{k}_{version}.wav' for k in stems]], premix, episode['duration_s'], float_output=True)
+    clean = work/f'clean-{version}.mp4'
     if not clean.exists():
         info, analysis, measurement, picture_hash = dub.master_audio(selected,
             dub.relative(episode['source_video'],True), premix, clean)
         immutable_json(work/'mastering.json',dict(analysis=analysis, measurement=measurement,picture_hash=picture_hash))
-    movie = dest/'Dino_EP2_EN_Integrated_Review_v002.mp4'
+    movie = dest/f'Dino_EP2_EN_Integrated_Review_{version}.mp4'
     if not movie.exists():
         graph = caption_filter({'subtitles':(work/'subtitle-settings.json').relative_to(dub.ROOT).as_posix()})
+        if width != 720:
+            graph += f',scale={width}:{width*16//9}'
         dub.run([dub.tool('ffmpeg'),'-v','error','-nostdin','-n','-i',str(clean),'-vf',graph,
-            '-c:v','libx264','-preset','fast','-crf','23','-threads','2','-pix_fmt','yuv420p',
+            '-c:v','libx264','-preset',preset,'-crf',str(crf),'-threads','2','-pix_fmt','yuv420p',
             '-c:a','copy','-movflags','+faststart',str(movie)],timeout=1800)
     dub.run([dub.tool('ffmpeg'),'-v','error','-nostdin','-threads','2','-i',str(movie),'-f','null','-'],timeout=900)
     info = dub.probe(movie)
     video = next(s for s in info['streams'] if s['codec_type']=='video')
-    if int(video['nb_frames']) != 3996 or abs(float(video['duration'])-166.5)>.001:
+    if (int(video['nb_frames']) != 3996 or abs(float(video['duration'])-166.5)>.001
+            or video['width'] != width or video['height'] != width*16//9):
         raise ValueError('Picture duration/frame count changed.')
     a,b = decoded_audio(dialogue,0,episode['duration_s']),decoded_audio(movie,0,episode['duration_s'])
     checks = [dict(id=r['id'],**similarity(a[round(r['start_s']*8000):round(r['end_s']*8000)],
         b[round(r['start_s']*8000):round(r['end_s']*8000)])) for r in rows]
     measured = dub.loudness_info(movie)
-    immutable_json(dest/'QUALITY_REVIEW_v002.json',{
+    immutable_json(dest/f'QUALITY_REVIEW_{version}.json',{
         'status':'technical_pass_creative_listening_pending' if min(r['correlation'] for r in checks)>=.95 else 'needs_dialogue_balance_review',
         'dialogue_checks':checks, 'loudness':measured, 'frame_count':3996,'duration_s':166.5,
-        'picture':'Source video packets unchanged before subtitle burn; full-frame caption overlay only.',
+        'picture':'Source video packets unchanged before subtitle burn; full-frame captions and configured review scaling only.',
+        'review_encoding':dict(width=width,height=width*16//9,crf=crf,preset=preset),
         'limitations':'Offline frame/ASR/waveform checks do not establish human acting, accent or music taste approval. No new TTS acting generated.',
-        'files':{p.name:dict(bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(dest.iterdir()) if p.is_file() and p.name!='QUALITY_REVIEW_v002.json'}})
+        'files':{p.name:dict(bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(dest.iterdir()) if p.is_file() and p.name!=f'QUALITY_REVIEW_{version}.json'}})
     print('English review rendered:', movie, flush=True)
 
 

@@ -1,6 +1,6 @@
 # Episode 2 audio edit plan
 
-Active production state (2026-11-02): English integrated review v002 is rendered and technically verified on the existing166.5s/3996frame picture. Existing opening/accepted4.5s ending retained. Owner requested English approval first; ZH/MS final revisions are on hold. Prior three-language v001 outputs and originals remain untouched. Owner listening/creative approval remains pending. Earlier missing-source/provisional notes below are historical and superseded by dated updates.
+Active production state (2026-11-02): English compact sync review v003 is delivered and technically verified on the existing166.5s/3996frame picture; the v002 full-resolution review remains retained. Existing opening/accepted4.5s ending retained. Owner requested English approval first; ZH/MS final revisions are on hold. Prior three-language v001 outputs and originals remain untouched. Owner listening/creative approval remains pending. Earlier missing-source/provisional notes below are historical and superseded by dated updates.
 
 Owner-described scene: Dino walking near a broken rainbow bridge, Bunny waving across a river. This description is not verified footage.
 
@@ -84,3 +84,17 @@ Delivered individual files (no ZIP) to EP2/02_After_Editing/Review_EN_v002:
 https://drive.google.com/drive/folders/1qnU1jR1Dc8XBEylH4vlTgUSSIZK0KAAW
 Movie: https://drive.google.com/file/d/1_lMX2bs66OyCLKGYYwY1PuxU1IG90KZr/view
 Four independent48kHz/stereo24bit WAV stems, final27-line timeline JSON/MD, SRT/ASS, automation manifest and25-row music cue CSV, exact-timecode changelog, settings/score/SFX plans, licence notice and quality/hash reports accompany the movie. Drive plugin listing and separate remote size/MD5 readback verify all20 selected final files; see ignored reports/review-en-v002/drive-delivery-verification.json. No social publishing. Creative listening/emotional acting approval remains with the owner; existing Puck/Leda takes received pacing edits, not a newly generated performance. ZH/MS final revisions remain deferred until English approval.
+
+## English v003 sync review requested — 2026-11-02
+
+Owner reported early triangle/under-foot dialogue, missing stone-activation sync and inaudible/unmatched magic reconstruction effects. Owner then narrowed delivery to a compressed review before any final-quality export. Preserve accepted picture/ending and approved voices; no generation calls. Reviewed12fps facial strips for49.8–52.5s and106.7–109.7s, original24fps stone crop124.5–129s, and bridge phases130.5–138.5s. Triangle first clear opening50.1–50.2s; Bunny later speech group107.15–109.3s. New entries50.125 and107.125s delay v002 by0.875 and0.825s. Captions and ducking follow the final moved speech.
+
+Individual stone activation marks125.000,126.625 and128.125s now each receive a distinct ascending original procedural chime. These are separate from earlier physical placement cues. Flash whoosh peaks around129.875s; gentle construction-air131.125–138.625s plus framework chime131.417s, stronger solid-bridge magic134.417s and resolving tail137.792s cover the visible build. The previous restoration tone was buried beneath the score (preset−12dB plus cue−3dB); raise its cue by12dB and check actual mixed audibility/headroom. New episode-specific procedural variants reuse the existing generator/metadata/licence rules and remain pending listening approval; no existing approved registry edited.
+
+review-en-v003.json selects independent v003 paths and540x960/CRF28/veryfast review encoding. Existing renderer now supports explicit versioned output names and validated compact encoding options, preserving old defaults. v002 files retained. This is an English sync review; ZH/MS and final-quality output deferred.
+
+English v003 compact review completed:540x960/24fps,166.5s/3996frames,35,057,860bytes. Actual final speech bounds50.1374–52.0562 and107.1250–109.1321s; captions and8dB music ducking follow these moved lines. Reviewed encoded mouth/caption, three activation and construction phase frames. Complete decode passed; final AAC unchanged through subtitle/review-scale encode; minimum27-line waveform correlation0.982074; actual−16.16LUFS/−2.31dBTP.67 regression tests pass. In the isolated buses, activation chimes sit8–12dB above BGM for their short events; construction SFX about1–5dB above BGM across framework/solid phases, resolving lower afterward. These measurements verify the previously buried effects are present, not human listening approval.
+
+Uploaded only six requested review files, individually/no ZIP: compact MP4, exact change log, dialogue timeline MD, SRT, ASS and QA JSON. Separate stems, editable automation and episode-specific original procedural assets retained locally for the later final. All six remote file sizes/MD5 verified; reports/review-en-v003/drive-verification.json. No new generation calls, no final high-quality EN production export, no ZH/MS revisions.
+Review folder: https://drive.google.com/drive/folders/1bBaeqWxjxz_PiUZLE87scEf1PrQMSo2y
+Movie: https://drive.google.com/file/d/1MpeIX4-WXpaYpa_RZfqrBmXsCB1D5pGz/view
