@@ -23,6 +23,8 @@ Current follow-up — 2026-11-02:
 - One Family Learning Hub channel, three language playlists. Channel profile, episode statuses and indexes agree. No automatic social publishing.
 - EP2 English stays v001; ZH/MS v003 endings use Dino Adventures with 完/TAMAT. Full decode, unchanged audio and exact story-frame preservation verified; new final files and current download guides are on Drive. v002 inputs remain in Production/Source_Video_Inputs.
 - The small Git registry is now v002:100 files/30,704,692bytes including both current localized ending cards.78 regression tests passed.
-- Complete original/current-runtime source backup and restoration mapping are in progress. Original sources remain on the server under AGENTS.md; only reproducible or precisely backed-up derived media may be removed. Historical Drive manifests remain unchanged.
+- Complete retained source/current-runtime recovery mapping now covers750 paths/3,911,727,339 logical bytes, including all six selected films. Existing remote SHA256/size matched local files.353 unique missing blobs were uploaded; three representative EP1/EP2/shared files were restored by Drive ID into an isolated directory and checksum verified. The restore manifest is in Library/Restore_Manifests; see docs/restore-media.md.
+- Removed143 precisely Drive-backed local derived files/2,141,160,273bytes after recovery checks. Original footage, incoming originals and raw voice takes remain under AGENTS.md.100 Git assets still validate. The server is not Git-only.
+- An additional approximately1.45GB of unmapped old generated movies remains. Automatic approval rejected permanent deletion because backup/obsolete scope was insufficiently established. The operation did not execute; no workaround used. Further deletion needs explicit owner approval or verified recovery coverage. Historical Drive manifests remain unchanged.
 
 Audit records are ignored under work/unified-storage and work/unified-finish.
