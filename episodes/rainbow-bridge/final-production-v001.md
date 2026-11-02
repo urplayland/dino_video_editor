@@ -18,3 +18,16 @@ English words/timing/sound are unchanged from approval. Canonical Chinese names 
 [Final folder](https://drive.google.com/drive/folders/1XW0jJFadQ2FSofsezIKG8_grjA70Apqw) contains three MP4s individually (no ZIP), full SRT/ASS, editable stems, dialogue/music automation, QA and selected source voices. Original source backup and HQ footage remain untouched. Metadata/source hashes and cleanup audits are in ignored reports/final-v001. Confirmed reusable approved voice assets live in library/, with stable index JSON.
 
 Four old published review MP4s were moved to recoverable Drive Trash after final/source checksum verification. All602 other prior files were preserved unchanged; old notes/audio were archived, not deleted. Source footage/audio, raw generations, selected WAVs, registries, scripts and Git history remain. No episode was posted to social media.
+
+## Current localized endings — v002, 2026-11-02
+
+BC now ends with **剧终 / 迪诺历险记**; BM with **TAMAT / Pengembaraan Dino**. Family Learning Hub, logo, website, colours and approved motion graphics remain. English stays v001. No voice generation or paid service was used.
+
+```sh
+.venv/bin/python tools/localize_ending.py episodes/rainbow-bridge/final-ending-zh-v002.json
+.venv/bin/python tools/localize_ending.py episodes/rainbow-bridge/final-ending-ms-v002.json
+```
+
+Restore the referenced v001 final and existing branding/fonts first. The helper checks its source SHA, copies the picture through frame3866, and replaces only the last GOP from161.125s, with the translated card starting162s. Every video presentation timestamp, audio packet and audio timestamp remains identical. Both complete outputs decoded successfully; rendered cards were visually checked in the final movies.71 regression tests pass. Existing dialogue/subtitle files and stems still apply unchanged.
+
+[BC final v002](https://drive.google.com/file/d/1hR3Caw1G2DBJ-OMUtjjc9K6fuhuZmRjE/view) and [BM final v002](https://drive.google.com/file/d/1qEJGQoPmRU4f3GRNhDsdn21esnFF91sz/view) are beside English in the final folder. Previous localized finals and metadata are retained in Previous_Final_Versions. Localized_Ending_Cards contains the editable card settings and separate animation exports. Remote readback verified all60 prior files by ID/size/MD5 and every new upload. Audit: reports/ending-localization-v002/delivery-verification.json.

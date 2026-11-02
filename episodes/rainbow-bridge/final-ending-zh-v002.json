@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "language": "zh",
+  "source_final": {
+    "path": "episodes/rainbow-bridge/exports/Final_v001/zh/Dino_EP2_ZH_Final_v001.mp4",
+    "sha256": "4c0fe19c294f776c47f65e4d753b05d42d30453acd9c339030444f6a7ee9e39b"
+  },
+  "story_end_s": 162,
+  "ending_settings": "episodes/rainbow-bridge/ending-zh-v002.json",
+  "work_dir": "episodes/rainbow-bridge/media/derived/ending-splice-v002-copyts/zh",
+  "output": "episodes/rainbow-bridge/exports/Final_v002/zh/Dino_EP2_ZH_Final_v002.mp4",
+  "report": "episodes/rainbow-bridge/exports/Final_v002/zh/ENDING_QA_ZH_v002.json"
+}

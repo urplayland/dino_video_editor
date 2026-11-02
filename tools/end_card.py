@@ -15,7 +15,11 @@ def render(settings):
     cfg = dub.load(dub.relative(settings['brand_config'], True))
     target = dub.relative(settings['output'])
     target.parent.mkdir(parents=True, exist_ok=True)
-    identity = hashlib.sha256(json.dumps({'settings': settings, 'brand': cfg}, sort_keys=True).encode()).hexdigest()
+    provenance = {'settings': settings, 'brand': cfg}
+    for name in ('title_font_path','series_font_path'):
+        if settings.get(name):
+            provenance[name+'_sha256'] = hashlib.sha256(dub.relative(settings[name],True).read_bytes()).hexdigest()
+    identity = hashlib.sha256(json.dumps(provenance, sort_keys=True).encode()).hexdigest()
     report = target.with_suffix('.json')
     if target.exists():
         old = dub.load(report)
@@ -25,8 +29,12 @@ def render(settings):
     logo = Image.open(dub.relative(cfg['assets']['logo.png']['path'], True)).convert('RGBA')
     heading = str(dub.relative(cfg['assets']['Outfit-800.ttf']['path'], True))
     body = str(dub.relative(cfg['assets']['Nunito-700.ttf']['path'], True))
-    title_font = ImageFont.truetype(heading, 102)
-    series_font = ImageFont.truetype(body, 31)
+    title_path = str(dub.relative(settings['title_font_path'],True)) if settings.get('title_font_path') else heading
+    series_path = str(dub.relative(settings['series_font_path'],True)) if settings.get('series_font_path') else body
+    title_font = ImageFont.truetype(title_path, settings.get('title_font_size',102), index=settings.get('title_font_index',0))
+    series_font = ImageFont.truetype(series_path, settings.get('series_font_size',31), index=settings.get('series_font_index',0))
+    if title_font.getlength(settings.get('title','THE END'))>620 or series_font.getlength(settings.get('series','Dino Adventures'))>620:
+        raise ValueError('Localized ending text exceeds its safe width.')
     brand_font = ImageFont.truetype(heading, 32)
     website_font = ImageFont.truetype(body, 26)
     palette = cfg['playful_palette']
