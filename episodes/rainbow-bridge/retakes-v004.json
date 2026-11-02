@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "kind": "multilingual_production",
+  "status": "verified",
+  "title": "Dino and the Broken Rainbow Bridge",
+  "languages": [
+    "en"
+  ],
+  "source_video": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+  "original_reference": "episodes/rainbow-bridge/media/originals/hq-20261101/EP2_With_Guide_Audio_HQ_No_End_Card.mp4",
+  "source_start_s": 0,
+  "duration_s": 166.5,
+  "voice_registry": "config/voices.json",
+  "sfx_registry": "library/presets/v002/sfx_presets.json",
+  "original_audio": "replace",
+  "output_dir": "episodes/rainbow-bridge/media/derived/retakes-v004",
+  "report_dir": "episodes/rainbow-bridge/reports/review-en-v004/retakes",
+  "transcript_evidence": [
+    "episodes/rainbow-bridge/reports/transcription-original.small.en.json",
+    "episodes/rainbow-bridge/reports/transcription-original.medium.json",
+    "episodes/rainbow-bridge/reports/transcription-focused.log",
+    "episodes/rainbow-bridge/reports/transcription-focused-tail.json"
+  ],
+  "source_verification_status": "machine_transcripts_compared_actual_picture_review_focused_gaps_checked",
+  "human_review_status": "Voice acting, accent and new music pending owner listening review; source transcript is machine/picture reviewed, not claimed human-certified.",
+  "api_preflight": {
+    "owner_confirmed_billing_disabled": true,
+    "owner_authorized_free_key_pool": true,
+    "authorized_key_variables": [
+      "GEMINI_API_KEY",
+      "GEMINI_API_KEY_B",
+      "GEMINI_API_KEY_C",
+      "GEMINI_API_KEY_F",
+      "GEMINI_API_KEY_H",
+      "GEMINI_API_KEY_I",
+      "GEMINI_API_KEY_S",
+      "GEMINI_API_KEY_T",
+      "GEMINI_API_KEY_D"
+    ],
+    "model_metadata_verified": true,
+    "first_english_line_succeeded": true,
+    "on_quota_exhaustion": "stop_for_daily_quota_or_resume_explicit_previously_authorized_free_credentials; never enable billing",
+    "owner_authorization": "2026-11-02: owner explicitly requested regenerated excited Bunny clue and appropriate Dino laughs/reactions; existing free-tier-only authorization retained, no billing."
+  },
+  "mix": {
+    "integrated_lufs": -16,
+    "true_peak_db": -2.5
+  },
+  "score": {
+    "music_path": "episodes/rainbow-bridge/media/derived/score-v001/underscore.wav",
+    "ambience_path": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+    "plan": "episodes/rainbow-bridge/music-v001.json"
+  },
+  "dialogue": [
+    {
+      "id": "dino-proud-chuckle",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 83,
+      "end_s": 84.15,
+      "text": {
+        "en": "Ha-ha!",
+        "zh": "Ha-ha!",
+        "ms": "Ha-ha!"
+      },
+      "source_verification": "New nonverbal reaction explicitly requested by owner2026-11-02; picture review shows open-mouth smiling hands-on-hips83.0-84.4s. Not original story dialogue.",
+      "delivery_style": "Keep Puck's recognisable cute youthful boy voice. Perform one very short natural warm breathy chuckle with two little connected pulses, an amused proud smile after solving a shape. About0.7to0.9seconds, not a long laugh, cackle, shout or narrated imitation of laughter. The supplied ha-ha is a vocalization, smile and actually chuckle it rather than reciting letters or words. No additional dialogue.",
+      "audio": {
+        "en": {
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-v004/en/dino-proud-chuckle.wav",
+          "audio_review_status": "pending",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/review-en-v004/retakes/dino-proud-chuckle-check.json"
+        }
+      },
+      "nonverbal_note": "Language-neutral phonation marker required by shared schema. EN generation only, no ZH/MS requests."
+    },
+    {
+      "id": "bunny-under-foot",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 107.125,
+      "end_s": 109.55,
+      "text": {
+        "en": "Dino, look under your foot!",
+        "zh": "迪诺，看看你的脚下！",
+        "ms": "Dino, tengok bawah kaki awak!"
+      },
+      "source_verification": "Focused ASR102.38–110.22s separates preceding Dino question and Bunny reminder; current Bunny close-up105.67–110.67s.",
+      "audio": {
+        "en": {
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-v004/en/bunny-under-foot.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/review-en-v004/retakes/bunny-under-foot-check.json"
+        }
+      },
+      "required_names": [
+        "Dino"
+      ],
+      "delivery_style": "Act this as a genuine sudden happy discovery, not a calm suggestion: Bunny has just spotted the missing square under her friend's foot! A bright delighted smile, a little eager breath, lively upward pitch on Dino and look, playful urgency and clear emphasis on FOOT. Warm youthful feminine Leda identity, no shrill squeal, no narrator or flat reading. Say exactly Dino, look under your foot! Pronounce Dino DEE-noh with a clear initial D, and FOOT (singular), never food. Natural quick excited conversational rhythm, roughly2seconds, short internal pause only. No extra words or laughter in this line."
+    }
+  ],
+  "beds": [],
+  "sfx": [],
+  "exports": {
+    "en": "episodes/rainbow-bridge/exports/Review_EN_v004/retake-check.mp4",
+    "zh": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.mp4",
+    "ms": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.mp4"
+  },
+  "mandarin_direction_profile": "config/voice_direction.zh-v002.json; actual EP1 per-cue natural delivery reused, original takes preserved.",
+  "mandarin_asr_note": "Only two shape-teaching cues allow whole-phrase orthographic homophones: jiǎo 脚/角 and tā 他/它. Raw ASR text is retained; subtitles remain requested canonical text. This is not a global substitution, lowered threshold or pronunciation approval.",
+  "shared_audio_manifest": "episodes/rainbow-bridge/audio-production.json",
+  "usage_note": "Generation-only selection of two requested performances, not a full-episode render manifest. Render the integrated episode with review-en-v004.json. The unchanged ZH/MS export references exist only for the established schema; no other-language generation or export is selected."
+}

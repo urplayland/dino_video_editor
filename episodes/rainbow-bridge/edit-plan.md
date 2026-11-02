@@ -1,6 +1,6 @@
 # Episode 2 audio edit plan
 
-Active production state (2026-11-02): English compact sync review v003 is delivered and technically verified on the existing166.5s/3996frame picture; the v002 full-resolution review remains retained. Existing opening/accepted4.5s ending retained. Owner requested English approval first; ZH/MS final revisions are on hold. Prior three-language v001 outputs and originals remain untouched. Owner listening/creative approval remains pending. Earlier missing-source/provisional notes below are historical and superseded by dated updates.
+Active production state (2026-11-02): English compact performance review v004 is delivered and technically verified on the existing166.5s/3996frame picture; the v002 full-resolution review remains retained. Existing opening/accepted4.5s ending retained. Owner requested English approval first; ZH/MS final revisions are on hold. Prior three-language v001 outputs and originals remain untouched. Owner listening/creative approval remains pending. Earlier missing-source/provisional notes below are historical and superseded by dated updates.
 
 Owner-described scene: Dino walking near a broken rainbow bridge, Bunny waving across a river. This description is not verified footage.
 
@@ -98,3 +98,20 @@ English v003 compact review completed:540x960/24fps,166.5s/3996frames,35,057,860
 Uploaded only six requested review files, individually/no ZIP: compact MP4, exact change log, dialogue timeline MD, SRT, ASS and QA JSON. Separate stems, editable automation and episode-specific original procedural assets retained locally for the later final. All six remote file sizes/MD5 verified; reports/review-en-v003/drive-verification.json. No new generation calls, no final high-quality EN production export, no ZH/MS revisions.
 Review folder: https://drive.google.com/drive/folders/1bBaeqWxjxz_PiUZLE87scEf1PrQMSo2y
 Movie: https://drive.google.com/file/d/1MpeIX4-WXpaYpa_RZfqrBmXsCB1D5pGz/view
+
+## English v004 performance review requested — 2026-11-02
+
+Owner accepted the overall v003 feel and explicitly requested regenerating the flat Bunny under-foot clue with excited delivery, plus appropriate Dino laugh/reaction sounds where picture shows him smiling hands-on-hips. This is new authorization for these specific performance generations, superseding the earlier no-new-generation hold within that scope; existing free-tier-only/billing-disabled restriction persists. Preserve v003 edit, corrected sync, approved Puck/Leda voices, music and magic effects; compact English review first.
+
+Reviewed actual reaction picture strips:83.0–84.4s has open-mouth proud hands-on-hips smile after triangle,123.1–124.8s happy smile after final stone. Circle placement42–44s has no comparable laugh, so do not add one there. Generate one short reusable Puck chuckle and place restrained instances at83.000 and123.167s; no extra story words. Newly directed Leda clue retains the exact words “Dino, look under your foot!” and107.125s entry, with a sudden delighted discovery, eager smile/playful urgency, clear D and FOOT.
+
+Two successful live free-tier requests: Leda2.480s raw/2.158s padded speech; Puck1.000s raw/0.533s padded chuckle. Primary key succeeded for Bunny, then returned confirmed daily quota exhaustion for chuckle; existing owner-authorized unbilled pool variable B completed that one request. No paid billing or unapproved keys. Local medium recognizer transcribes the new Bunny words exactly, including Dino and foot; raw request/style/metadata/hashes retained under retakes-v004. Nonverbal reaction is technically checked as a vocalization, not falsely certified by speech ASR or creative approval.
+
+review_audio.py now accepts verified per-cue replacement takes, checks exact voice/model/request/transcript/file provenance and keeps nonverbal reaction events separate from27 learning-caption cues. dub.master_audio optionally burns/scales the compact review directly while retaining loudness/decode checks; ordinary production still defaults to video stream copy and packet identity. Direct mode avoids a redundant full-resolution intermediate. All originals and v003 remain retained.
+
+English v004 completed and delivered:35,058,144bytes,540x960/24fps,166.5s/3996frames. New Bunny final speech107.125–109.2469s, independently recognized from the final AAC as “Dino look under your foot”; exact source take recognition also matches. Puck reactions83.000–83.5333s and123.1667–123.700s remain separate nonverbal events in the timeline JSON and editable within the vocal stem. Encoded reaction/caption frames reviewed; full FFmpeg decode and69 tests pass. Actual−16.15LUFS/−2.22dBTP, minimum27-spoken-cue waveform correlation0.982344, reaction correlations0.988737/0.989946. These are technical checks; owner must listen for the desired excitement and natural chuckling.
+
+Uploaded individually/no ZIP to Review_EN_v004: integrated MP4, exact change log, timeline MD/JSON, SRT/ASS and QA; New_Voice_Takes contains both raw source WAVs, exact request metadata and corresponding verification records. All13 remote sizes/MD5 values match local files; reports/review-en-v004/drive-verification.json. Full editable stems/automation remain local. No paid billing, no new animation, no ZH/MS or final high-quality production export.
+Folder: https://drive.google.com/drive/folders/1hWxdBs0aNbep6ORFJmRvLRxKwuTZIWyh
+Movie: https://drive.google.com/file/d/1P13E3WNlqCgkzMuL9i_YLH8bJ_sOpMuQ/view
+Bunny standalone: https://drive.google.com/file/d/1hdtHKg5r00bl0lryEqmxcJ2Vi5z0Pful/view

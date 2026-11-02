@@ -300,7 +300,7 @@ def loudness_info(path):
     return json.loads(result[result.rfind('{'):])
 
 
-def master_audio(m, source, mix, movie):
+def master_audio(m, source, mix, movie, video_filter=None, video_options=None):
     """Master/mux an already assembled mix using the established production checks."""
     ffmpeg = tool('ffmpeg')
     duration = m['duration_s']
@@ -311,7 +311,13 @@ def master_audio(m, source, mix, movie):
     if any(not math.isfinite(float(measured[k])) for k in ('input_i', 'input_tp', 'input_lra', 'input_thresh', 'target_offset')):
         raise ValueError('Cannot normalize silent or invalid audio.')
     norm = loudness + ':linear=true:' + ':'.join(f'{k}={measured[v]}' for k,v in [('measured_I','input_i'),('measured_TP','input_tp'),('measured_LRA','input_lra'),('measured_thresh','input_thresh'),('offset','target_offset')])
-    video_codec = ['-c:v', 'copy'] if production else ['-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p']
+    if video_filter is not None:
+        if not isinstance(video_filter, str) or not video_filter.strip():
+            raise ValueError('An explicit review video filter is required.')
+        video_codec = ['-vf', video_filter, '-c:v', 'libx264',
+                       *(video_options or ['-crf', '23']), '-pix_fmt', 'yuv420p']
+    else:
+        video_codec = ['-c:v', 'copy'] if production else ['-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p']
     run([ffmpeg, '-v', 'error', '-nostdin', '-n', '-ss', str(m['source_start_s']), '-i', str(source), '-i', str(mix),
          '-t', str(duration), '-map', '0:v:0', '-map', '1:a:0', '-af', norm, *video_codec,
          '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-movflags', '+faststart', str(movie)], timeout=900)
@@ -327,7 +333,7 @@ def master_audio(m, source, mix, movie):
     picture_hash = None
     if production:
         picture_hash = video_hash(source)
-        if video_hash(movie) != picture_hash:
+        if video_filter is None and video_hash(movie) != picture_hash:
             raise ValueError('Encoded animation differs from the supplied silent picture master.')
     return info, measured, final_measurement, picture_hash
 

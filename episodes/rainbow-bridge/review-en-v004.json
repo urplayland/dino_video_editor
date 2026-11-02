@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "episode": "episodes/rainbow-bridge/production.json",
+  "dialogue_source": {
+    "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.dialogue.wav",
+    "sha256": "52c04811fbba4559800e5f40196f39e50c74701ac80382695a2731c0b14ce7e2"
+  },
+  "work_dir": "episodes/rainbow-bridge/media/derived/review-en-v004",
+  "delivery_dir": "episodes/rainbow-bridge/exports/Review_EN_v004",
+  "score": "episodes/rainbow-bridge/music-v002.json",
+  "sfx_plan": "episodes/rainbow-bridge/sfx-cues-v003.json",
+  "sfx_registry": "episodes/rainbow-bridge/sfx-presets-v003.json",
+  "ambience": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+  "original_music": "episodes/rainbow-bridge/media/derived/background-v001/music.wav",
+  "subtitle_settings": "episodes/rainbow-bridge/subtitles.en.json",
+  "roadmap": "EP2_EN_Music_Emotion_Cue_Sheet_v001.md; Drive 1NSxHEnxZNn6GOibiOsI-6vsILTSHx1mn",
+  "automation": {
+    "music_duck_db": 8,
+    "ambience_duck_db": 2,
+    "sfx_duck_db": 5
+  },
+  "dialogue_edits": {
+    "bunny-bridge": {
+      "emotion": "Worried, asking a trusted friend",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-help": {
+      "emotion": "Hopeful request",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-reassure": {
+      "emotion": "Warm reassurance",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-three-shapes": {
+      "emotion": "Curious discovery",
+      "reason": "Tighten deliberate discovery pauses without changing pitch or words.",
+      "tempo": 1.05
+    },
+    "dino-fix-bridge": {
+      "emotion": "Tentative hope",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-really": {
+      "emotion": "Surprised curiosity",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-hope": {
+      "emotion": "Hopeful relief",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-how": {
+      "emotion": "Curious question",
+      "reason": "Give circle teaching response more breathing space at the picture change.",
+      "tempo": 1.02
+    },
+    "dino-circle": {
+      "emotion": "Small delighted discovery",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-no-corners": {
+      "emotion": "Clear gentle explanation",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-two-more": {
+      "emotion": "Joy and encouragement",
+      "reason": "Lighter celebration pace; leave more space before next lesson.",
+      "tempo": 1.055,
+      "gain_db": 0.8
+    },
+    "dino-triangle": {
+      "emotion": "Curious recognition",
+      "reason": "Owner identified voice ahead of mouth.12fps close-up review: head lifts/first clear mouth opening50.1-50.2s; delay entry0.875s from v002.",
+      "start_s": 50.125
+    },
+    "dino-three-corners": {
+      "emotion": "Clear learning emphasis",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-find-one": {
+      "emotion": "Eager to explore",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-triangle-stone": {
+      "emotion": "Delighted discovery over stone cutaway",
+      "reason": "Slightly more immediate discovery; voice intentionally over stone cutaway.",
+      "tempo": 1.025
+    },
+    "bunny-great-job": {
+      "emotion": "Warm encouragement",
+      "reason": "Clearer encouragement before final challenge.",
+      "tempo": 1.04,
+      "gain_db": 1
+    },
+    "bunny-one-more": {
+      "emotion": "Hopeful anticipation",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-square": {
+      "emotion": "Curious recognition",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-four-corners": {
+      "emotion": "Clear explanation",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "dino-where-square": {
+      "emotion": "Playful puzzlement",
+      "reason": "Finish the question nearer the Dino shot; separate the clue handoff.",
+      "tempo": 1.035,
+      "start_s": 104.0
+    },
+    "bunny-under-foot": {
+      "emotion": "Excited delighted discovery and eager helpful reminder",
+      "reason": "Owner requested genuinely excited Leda retake: happy discovery/playful urgency, not flat reading. Exact words independently verified including Dino and foot. Keep corrected107.125s entry.",
+      "start_s": 107.125,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-v004/en/bunny-under-foot.wav",
+        "sha256": "e8afb5da7bdab3591e8e4792577b1525a100a31ce88d38e64327190596dfa4f5",
+        "verification_report": "episodes/rainbow-bridge/reports/review-en-v004/retakes/bunny-under-foot-check.json",
+        "character": "bunny"
+      },
+      "gain_db": -9.6,
+      "tempo": 1
+    },
+    "dino-here-it-is": {
+      "emotion": "Pleased discovery",
+      "reason": "Begin after the transition into Dino discovery shot, not on the picture cut.",
+      "start_s": 110.85,
+      "tempo": 1.02
+    },
+    "dino-found-square": {
+      "emotion": "Small success",
+      "reason": "Speaker and cue midpoint visually checked; retain natural teaching/request pace."
+    },
+    "bunny-you-did-it": {
+      "emotion": "Excited relief",
+      "reason": "Brighter celebration pace and clarity after restoration, retaining the Wow reaction.",
+      "tempo": 1.04,
+      "gain_db": 1
+    },
+    "bunny-thanks": {
+      "emotion": "Warm sincere gratitude",
+      "reason": "Let Bunny arrival begin before warm thanks; preserve unhurried performance.",
+      "start_s": 150.0
+    },
+    "dino-next-adventure": {
+      "emotion": "Cheerful invitation",
+      "reason": "Make final invitation a little more buoyant without changing voice.",
+      "tempo": 1.025
+    },
+    "bunny-lets-go": {
+      "emotion": "Bright eager reply",
+      "reason": "Prompt final reply before departure completes; no speech over The End.",
+      "start_s": 159.75,
+      "tempo": 1.03,
+      "gain_db": 0.6
+    }
+  },
+  "output_version": "v004",
+  "review_video": {
+    "width": 540,
+    "crf": 28,
+    "preset": "veryfast"
+  },
+  "direct_review_master": true,
+  "vocal_reactions": [
+    {
+      "id": "dino-triangle-proud-chuckle",
+      "start_s": 83,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-v004/en/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "episodes/rainbow-bridge/reports/review-en-v004/retakes/dino-proud-chuckle-check.json",
+        "character": "dino"
+      },
+      "gain_db": -4.3,
+      "timing_basis": "Actual open-mouth hands-on-hips proud smile around83.0-84.4s. Short nonverbal chuckle, no new story words."
+    },
+    {
+      "id": "dino-square-happy-chuckle",
+      "start_s": 123.1666666667,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-v004/en/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "episodes/rainbow-bridge/reports/review-en-v004/retakes/dino-proud-chuckle-check.json",
+        "character": "dino"
+      },
+      "gain_db": -5.8,
+      "timing_basis": "Actual open-mouth happy smile after last stone123.1-124.8s; short softer chuckle before separate stone-glow sequence125s."
+    }
+  ]
+}
