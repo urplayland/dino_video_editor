@@ -150,3 +150,18 @@ BC: https://drive.google.com/file/d/1hR3Caw1G2DBJ-OMUtjjc9K6fuhuZmRjE/view
 BM: https://drive.google.com/file/d/1qEJGQoPmRU4f3GRNhDsdn21esnFF91sz/view
 
 Same final folder holds ENv001/ZHv002/MSv002. Prior ZH/MS finals and their delivery metadata moved intact into Previous_Final_Versions; no source or older final deleted. Separate ending clips/settings and updated QA/README uploaded individually. Readback verified new movie SHA256/size, all10 support files MD5/size, and all60 prior final/source files unchanged by ID/MD5/size despite archival path changes. Exactly three current MP4s remain at folder top. Detailed audit under reports/ending-localization-v002/delivery-verification.json.
+
+## Publishing kit and release list — 2026-11-02
+
+Owner authorized preparing the EP1-equivalent publishing materials and putting them in the list; the Family Learning Hub website addition is explicitly deferred. No YouTube/social publication, playlist mutation or website deployment authorized or performed here.
+
+Prepared six FLH-style EP2 covers: EN/ZH/MS, portrait2160x3840 and landscape3840x2160, each under2MB. Reused channel_art.py with optional covers-only mode; official logo, existing approved decorative background and actual silent-master frame3552 at148s. All six exported covers inspected in a contact sheet; lettering readable, correct source characters, no sampled face obstruction. No AI image/video generation, voice calls or paid services. Source SVGs embed artwork and outlined existing fonts; source notes record provenance without inventing a new licence.
+
+Pinned current ENv001/ZHv002/MSv002 SHA256s in distribution-selection.json. youtube-release.json contains three-language titles/descriptions/hashtags and final Drive IDs. prepare_youtube_copy.py now optionally accepts a later-episode filename prefix and archive URL, preserving EP1 defaults. A regression verifies EP2 never receives EP1's archive link or first-episode filenames.72 full regression tests passed. Existing FLH avatar/banner and three permanent language playlists reused; EP2 is listed after EP1 rather than in new playlists.
+
+Verified original166.5s silent picture master checksum, complete decode and all3996 presentation timestamps against all three current finals. Reused export_clean_master.package_primary to stream-copy the latest approved EN soundtrack onto that subtitle-free picture; exact audio packet hashes and PTS/DTS match. Both clean masters uploaded, old sources untouched. Their shared ending remains English; BC/BM ready-to-upload captioned finals retain translated endings. prepare_publishing.py reproduces verification, EN packaging, copy, release list and deferred website handoff.
+
+Delivered Publishing_Kit_v001 under EP2/02_After_Editing: six covers, previews/QA, ready-to-paste copy/checklist, selected final links, clean master/primary, outlined SVGs/settings/still/source notes, RELEASE_LIST.md and WEBSITE_HANDOFF.json. Website status explicitly pending; published YouTube URLs remain null rather than using Drive download URLs as embeds. All39 payload files (424,079,954bytes) verified by exact remote path set, size and MD5; FILE_MANIFEST.json uploaded separately. No ZIP. Audit: reports/publishing-kit-v001/drive-verification.json. Latest release list is also tracked in docs/series-release-list.md. Owner review of localized acting and new covers remains distinct from technical checks.
+
+Kit: https://drive.google.com/drive/folders/1qC3hJHK2mdYk50KmeMFTkJQ4meMaYeyy
+List: https://drive.google.com/file/d/1pzQ0fwL1H8vpmN7ENDafYJcpsuRGWoHZ/view

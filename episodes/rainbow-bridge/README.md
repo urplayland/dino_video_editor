@@ -1,5 +1,7 @@
 # Dino and the Broken Rainbow Bridge — production
 
+Current release: EN finalv001, BC/ZH finalv002 and BM/MS finalv002, with localized ending cards. See final-production-v001.md and [series release list](../../docs/series-release-list.md). Historical v001 build notes below describe earlier staging; use the pinned distribution-selection.json for publishing. The website addition remains pending.
+
 The owner approved the production plan on2026-11-01, including differentiated dramatic music comparable to Dino Saves the Moon. Preserve Episode1 and all source footage. Working plan: production-plan-2026-11-01.md; review log: edit-plan.md.
 
 ## Sources and picture

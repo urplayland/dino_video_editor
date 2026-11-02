@@ -77,17 +77,18 @@ def build(config_path):
     logo = cfg['logo']
     background = cfg['background']
     still = cfg['episode_still']
-    banner = rect(0, 0, 2560, 1440, 0, cream)+image(background, 0, 0, 2560, 1440, 'xMidYMid slice')
-    banner += image(logo, 565, 567, 290, 290)
-    banner += text('Family Learning Hub', 910, 643, 86, maximum=1080)
-    banner += text('Stories, learning & little adventures', 914, 713, 45, face='body', maximum=1055)
-    banner += text('English · 中文 · Bahasa Melayu', 916, 772, 35, face='body', maximum=1030)
-    banner += rect(912, 804, 660, 63, 31, '#1899D6')+rect(912, 798, 660, 63, 31, blue)
-    banner += text('familylearninghub.com', 960, 841, 38, '#FFFFFF', 'body', maximum=565)
-    render('channel-banner-2560x1440', svg(2560, 1440, banner), out/'channel-banner-2560x1440.png', 6_000_000)
-    profile = rect(0, 0, 800, 800, 0, cream)+image(logo, 120, 120, 560, 560)
-    render('channel-avatar-800', svg(800, 800, profile), out/'channel-avatar-800.png', 2_000_000)
-    render('optional-watermark-150', svg(150, 150, image(logo, 0, 0, 150, 150)), out/'optional-watermark-150.png', 1_000_000)
+    if not cfg.get("covers_only", False):
+        banner = rect(0, 0, 2560, 1440, 0, cream)+image(background, 0, 0, 2560, 1440, 'xMidYMid slice')
+        banner += image(logo, 565, 567, 290, 290)
+        banner += text('Family Learning Hub', 910, 643, 86, maximum=1080)
+        banner += text('Stories, learning & little adventures', 914, 713, 45, face='body', maximum=1055)
+        banner += text('English · 中文 · Bahasa Melayu', 916, 772, 35, face='body', maximum=1030)
+        banner += rect(912, 804, 660, 63, 31, '#1899D6')+rect(912, 798, 660, 63, 31, blue)
+        banner += text('familylearninghub.com', 960, 841, 38, '#FFFFFF', 'body', maximum=565)
+        render('channel-banner-2560x1440', svg(2560, 1440, banner), out/'channel-banner-2560x1440.png', 6_000_000)
+        profile = rect(0, 0, 800, 800, 0, cream)+image(logo, 120, 120, 560, 560)
+        render('channel-avatar-800', svg(800, 800, profile), out/'channel-avatar-800.png', 2_000_000)
+        render('optional-watermark-150', svg(150, 150, image(logo, 0, 0, 150, 150)), out/'optional-watermark-150.png', 1_000_000)
     for lang, localized in cfg['languages'].items():
         body = rect(0, 0, 3840, 2160, 0, cream)
         body += image(background, 0, 0, 3840, 2160, 'xMidYMid slice')
@@ -110,17 +111,19 @@ def build(config_path):
             portrait += text(line, 150, 3420+index*200, 175, maximum=1850)
         render('episode-cover-'+lang+'-2160x3840', svg(2160, 3840, portrait), covers/('episode-cover-'+lang+'-2160x3840.jpg'), 2_000_000)
     # Crop previews use the same exported banner. Guides are never upload assets.
-    input_banner = out/'channel-banner-2560x1440.png'
-    for name, graph in [('banner-mobile-safe-preview', 'crop=1544:422:508:509'), ('banner-desktop-preview', 'crop=2560:422:0:509')]:
-        target = review/(name+'.png')
-        dub.run([dub.tool('ffmpeg'), '-v', 'error', '-n', '-i', str(input_banner), '-vf', graph, '-frames:v', '1', str(target)], timeout=120)
+    if not cfg.get("covers_only", False):
+        input_banner = out/'channel-banner-2560x1440.png'
+        for name, graph in [('banner-mobile-safe-preview', 'crop=1544:422:508:509'), ('banner-desktop-preview', 'crop=2560:422:0:509')]:
+            target = review/(name+'.png')
+            dub.run([dub.tool('ffmpeg'), '-v', 'error', '-n', '-i', str(input_banner), '-vf', graph, '-frames:v', '1', str(target)], timeout=120)
     report = {'schema_version': 1, 'config': config_path, 'banner_upload_size': [2560, 1440],
               'conservative_safe_region': {'x': 508, 'y': 509, 'width': 1544, 'height': 422},
               'essential_content_bounds': [565, 555, 1995, 870],
               'logo': 'Existing owner-approved H/star logo, unmodified',
               'font_export': 'Real Outfit/Nunito/Noto SC glyph outlines; no generated lettering',
-              'episode_art': 'Actual original silent-master frame index 1440; not regenerated characters',
-              'production_method': 'Generated background + native SVG logo/type layouts + FFmpeg exports',
+              'episode_art': cfg.get('episode_art_provenance', 'Actual original silent-master frame index 1440; not regenerated characters'),
+              'production_method': 'Existing supplied background + native SVG logo/type layouts + FFmpeg exports',
+              'covers_only': cfg.get('covers_only', False),
               'files': [str(p.relative_to(root)) for p in sorted(out.glob('*'))]+[str(p.relative_to(root)) for p in sorted(covers.glob('*'))]}
     (review/'art-validation.json').write_text(json.dumps(report, indent=2)+'\n')
     print('Built', len(report['files']), 'upload assets and editable SVG sources.')

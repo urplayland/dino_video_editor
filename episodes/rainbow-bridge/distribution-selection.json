@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "current_final_delivery_pinned_for_publishing_preparation",
+  "selection_date": "2026-11-02",
+  "media": {
+    "en": {
+      "file": "episodes/rainbow-bridge/exports/Final_v001/en/Dino_EP2_EN_Final_v001.mp4",
+      "sha256": "155ddb38929797dec7076ee7dbc4fbbbd423481a6be072313e86b9ee34332e43",
+      "duration_s": 166.5,
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    },
+    "zh": {
+      "file": "episodes/rainbow-bridge/exports/Final_v002/zh/Dino_EP2_ZH_Final_v002.mp4",
+      "sha256": "934c4157676a9bce4d2aea450a1b96eaa43433d2c40d5b82ecee12d9a2141021",
+      "duration_s": 166.5,
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    },
+    "ms": {
+      "file": "episodes/rainbow-bridge/exports/Final_v002/ms/Dino_EP2_MS_Final_v002.mp4",
+      "sha256": "dade08ca282cccb3982ba72ff73bb5048ec7a96870f02ca3803c303b5584c5a4",
+      "duration_s": 166.5,
+      "width": 720,
+      "height": 1280,
+      "nominal_frame_rate": "24/1",
+      "has_burned_subtitles": true
+    }
+  },
+  "social_media_uploaded": false,
+  "website_added": false,
+  "note": "English performance owner-approved; localized creative review remains separate from technical verification. No platform publishing performed."
+}

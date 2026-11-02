@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "series": "Dino Adventures",
+  "selection_manifest": "episodes/rainbow-bridge/distribution-selection.json",
+  "copy_filename_prefix": "episode-02",
+  "archive_url": "https://drive.google.com/drive/folders/1aPn9i-_mUwN8sfABOh3bJJRooDt5GYk2",
+  "status": "prepared_not_published",
+  "releases": {
+    "en": {
+      "episode_title": "Dino and the Broken Rainbow Bridge",
+      "drive_id": "1Wllle4v2sebb3PhaqHrgxd4ohtjDiJ6X",
+      "description": "Bunny needs help across a broken rainbow bridge! Join Dino and Bunny as they discover circles, triangles and squares, and work towards restoring the bridge. A gentle adventure about shapes, friendship and helping one another.\n\nEnglish audio with English on-screen subtitles.\n\nProduced for Family Learning Hub.\nChannel: https://www.youtube.com/@familylearninghub-flh\nExplore more: https://familylearninghub.com\n\n#DinoAdventures #FamilyLearningHub #LearningShapes",
+      "playlist_description": "Dino Adventures in English, with English dialogue and on-screen subtitles. Little adventures about friendship, kindness and helping one another. Episodes are arranged in story order."
+    },
+    "zh": {
+      "episode_title": "迪诺与断裂的彩虹桥",
+      "drive_id": "1hR3Caw1G2DBJ-OMUtjjc9K6fuhuZmRjE",
+      "description": "彩虹桥断了，河对岸的邦妮需要帮助！跟随迪诺和邦妮一起寻找圆形、三角形和正方形，想办法修好彩虹桥。这是一个认识形状、友谊与互相帮助的温暖小冒险。\n\n中文配音，配有中文画面内字幕。\n\nFamily Learning Hub 家庭学习中心出品。\n频道：https://www.youtube.com/@familylearninghub-flh\n更多内容：https://familylearninghub.com\n\n#迪诺 #认识形状 #儿童故事",
+      "playlist_description": "Dino Adventures 中文故事，配有中文对白和画面内字幕。跟随迪诺认识友谊、善良与互相帮助。影片按故事顺序排列。"
+    },
+    "ms": {
+      "episode_title": "Dino dan Jambatan Pelangi yang Rosak",
+      "drive_id": "1qEJGQoPmRU4f3GRNhDsdn21esnFF91sz",
+      "description": "Bunny memerlukan bantuan di seberang jambatan pelangi yang rosak! Ikuti Dino dan Bunny mencari bulatan, segi tiga dan segi empat sama untuk membaiki jambatan. Sebuah pengembaraan tentang bentuk, persahabatan dan sikap saling membantu.\n\nAudio Bahasa Melayu Malaysia dengan sari kata Bahasa Melayu pada skrin.\n\nDiterbitkan untuk Family Learning Hub.\nSaluran: https://www.youtube.com/@familylearninghub-flh\nKetahui lebih lanjut: https://familylearninghub.com\n\n#DinoAdventures #FamilyLearningHub #BelajarBentuk",
+      "playlist_description": "Dino Adventures dalam Bahasa Melayu Malaysia, dengan dialog dan sari kata pada skrin dalam Bahasa Melayu. Pengembaraan tentang persahabatan, kebaikan hati dan sikap saling membantu. Episod disusun mengikut urutan cerita."
+    }
+  }
+}

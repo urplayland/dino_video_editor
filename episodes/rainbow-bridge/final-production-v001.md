@@ -31,3 +31,14 @@ BC now ends with **剧终 / 迪诺历险记**; BM with **TAMAT / Pengembaraan Di
 Restore the referenced v001 final and existing branding/fonts first. The helper checks its source SHA, copies the picture through frame3866, and replaces only the last GOP from161.125s, with the translated card starting162s. Every video presentation timestamp, audio packet and audio timestamp remains identical. Both complete outputs decoded successfully; rendered cards were visually checked in the final movies.71 regression tests pass. Existing dialogue/subtitle files and stems still apply unchanged.
 
 [BC final v002](https://drive.google.com/file/d/1hR3Caw1G2DBJ-OMUtjjc9K6fuhuZmRjE/view) and [BM final v002](https://drive.google.com/file/d/1qEJGQoPmRU4f3GRNhDsdn21esnFF91sz/view) are beside English in the final folder. Previous localized finals and metadata are retained in Previous_Final_Versions. Localized_Ending_Cards contains the editable card settings and separate animation exports. Remote readback verified all60 prior files by ID/size/MD5 and every new upload. Audit: reports/ending-localization-v002/delivery-verification.json.
+
+## Publishing preparation
+
+[EP2 publishing kit](https://drive.google.com/drive/folders/1qC3hJHK2mdYk50KmeMFTkJQ4meMaYeyy) contains six EP1-style covers, three-language upload copy, final-file selection/checklist and a deferred FLH website handoff. The release list tracks EP2 after EP1 in each existing language playlist; no platform or website changes were made. Reuse channel branding rather than recreating it.
+
+```sh
+.venv/bin/python episodes/rainbow-bridge/prepare_publishing.py
+.venv/bin/python tools/channel_art.py episodes/rainbow-bridge/youtube-art-v001.json
+```
+
+The cover builder refuses existing image outputs; choose a new output directory for a new version, or restore the existing six exports. The artwork uses actual clean-master frame3552/148s with existing FLH assets and outlined fonts, not regenerated characters. prepare_publishing validates pinned final SHA256 values, exact picture timestamps against the original clean master and packages current EN audio without subtitles or re-encoding. Old pre-review clean-audio exports are not selected. The clean master retains the approved English ending; the BC/BM captioned releases use translated endings.

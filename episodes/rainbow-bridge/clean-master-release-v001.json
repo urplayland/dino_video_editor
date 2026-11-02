@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "selection_manifest": "episodes/rainbow-bridge/distribution-selection.json",
+  "output": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+  "report": "episodes/rainbow-bridge/reports/publishing-kit-v001/clean-picture-qa.json",
+  "primary_language": "en",
+  "primary_output": "episodes/rainbow-bridge/exports/Publishing_Kit_v001/00_Shared_Master/Dino_EP2_EN_Clean_Primary_Final_v001.mp4",
+  "source_sha256": "5ff69c375be0168f24fe2a6eb1f5577dac83566b5798870fc2a50520bccdfb0e"
+}

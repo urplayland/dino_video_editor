@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "output_dir": "episodes/rainbow-bridge/exports/Publishing_Kit_v001",
+  "logo": "library/media/branding/flh-v001/logo.png",
+  "background": "library/media/branding/youtube-launch-v001/source/banner-background.png",
+  "episode_still": "episodes/rainbow-bridge/exports/Publishing_Kit_v001/05_Editable_Source/episode-frame-3552.png",
+  "fonts": {
+    "heading": {
+      "path": "library/media/branding/flh-v001/Outfit-800.ttf"
+    },
+    "body": {
+      "path": "library/media/branding/flh-v001/Nunito-700.ttf"
+    },
+    "chinese": {
+      "path": "library/media/branding/flh-v001/NotoSansCJK-Bold.ttc",
+      "index": 2
+    }
+  },
+  "languages": {
+    "en": {
+      "label": "English",
+      "landscape_lines": [
+        "Dino and the",
+        "Broken",
+        "Rainbow Bridge"
+      ],
+      "portrait_lines": [
+        "Dino and the Broken",
+        "Rainbow Bridge"
+      ]
+    },
+    "zh": {
+      "label": "中文",
+      "landscape_lines": [
+        "迪诺与",
+        "断裂的彩虹桥"
+      ],
+      "portrait_lines": [
+        "迪诺与断裂的彩虹桥"
+      ]
+    },
+    "ms": {
+      "label": "Bahasa Melayu",
+      "landscape_lines": [
+        "Dino dan",
+        "Jambatan Pelangi",
+        "yang Rosak"
+      ],
+      "portrait_lines": [
+        "Dino dan Jambatan",
+        "Pelangi yang Rosak"
+      ]
+    }
+  },
+  "covers_only": true,
+  "episode_art_provenance": "Actual EP2 silent picture master frame3552 at148.000s. Dino and Bunny reunited on the repaired bridge; no character/animation regeneration."
+}

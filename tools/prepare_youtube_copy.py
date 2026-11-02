@@ -18,6 +18,10 @@ def prepare(profile_path, release_path, kit_path, dry_run=False):
     languages = publishing['language_order']
     if set(languages) != set(episode['releases']):
         raise ValueError('Episode and channel languages differ.')
+    copy_prefix = episode.get('copy_filename_prefix', 'first-episode')
+    if not copy_prefix or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-_' for c in copy_prefix):
+        raise ValueError('Invalid episode copy filename prefix.')
+    archive_url = episode.get('archive_url', 'https://drive.google.com/drive/folders/1wJTManR5zTMW1bzZSSWCJNKvTWWcQRAm')
     files, checklist, playlists, downloads = {}, [], [], []
     for language in languages:
         spec = episode['releases'][language]
@@ -33,13 +37,13 @@ def prepare(profile_path, release_path, kit_path, dry_run=False):
         playlist = publishing['playlist_title_template'].format(series=episode['series'], language_label=label)
         url = 'https://drive.google.com/file/d/'+spec['drive_id']+'/view'
         name = Path(media['file']).name
-        files['04_Copy_And_Setup/first-episode-'+language+'.txt'] = 'TITLE\n'+title+'\n\nDESCRIPTION\n'+spec['description']+'\n'
+        files['04_Copy_And_Setup/'+copy_prefix+'-'+language+'.txt'] = 'TITLE\n'+title+'\n\nDESCRIPTION\n'+spec['description']+'\n'
         playlists.append('NAME\n'+playlist+'\n\nDESCRIPTION\n'+spec['playlist_description'])
         checklist.append(f'{label}\nTitle: {title}\nPlaylist: {playlist}\nVideo: {name}\nDownload: {url}\nContains: matching full audio + embedded subtitles\nCover: 02_Episode_Covers/episode-cover-{language}-2160x3840.jpg')
         downloads.append(f'{label} — READY TO UPLOAD, WITH EMBEDDED SUBTITLES\n{name}\n{url}\nSHA-256: {media["sha256"]}')
     files['04_Copy_And_Setup/playlist-copy.txt'] = 'PERMANENT LANGUAGE PLAYLISTS — ONE FAMILY LEARNING HUB CHANNEL\n\n'+'\n\n---\n\n'.join(playlists)+'\n\nUse one matching playlist per video. Append future episodes in story order. Feature these three playlists on the channel Home tab. No extra mixed-language playlist is needed for this publishing plan.\n'
     files['04_Copy_And_Setup/UPLOAD_CHECKLIST.txt'] = 'READY-TO-UPLOAD CHECKLIST\n\nChannel: '+profile['brand']+'\nHandle: '+profile['youtube']['handle']+'\nChannel URL: '+profile['youtube']['url']+'\n\n'+'\n\n---\n\n'.join(checklist)+'\n\nStart each upload as Private while reviewing. Check the existing embedded subtitle layout with player CC off, so an extra caption layer does not hide it. Separate CC files remain optional accessibility assets; they do not determine the visible embedded design. No custom-thumbnail upload or audio-track switch is needed to make these videos understandable. Choose the correct audience setting, add each video to its matching playlist, and publish only when ready.\n\nExisting YouTube links may point to earlier clean-picture tests. Do not delete them as a cleanup step. A new encoded source must be uploaded separately; this kit does not replace footage behind an existing YouTube link.\n'
-    files['04_Copy_And_Setup/media-download-links.txt'] = 'CURRENT PUBLISHING CHOICE — THREE SEPARATE LANGUAGE VIDEOS\n\n'+'\n\n'.join(downloads)+'\n\nARCHIVE / EDITING SOURCES\nOriginal sources, clean picture masters, full WAVs and SRT/TTML files remain in the episode archive:\nhttps://drive.google.com/drive/folders/1wJTManR5zTMW1bzZSSWCJNKvTWWcQRAm\nUse the three MP4s above for this release. The clean master and standalone caption files are editing/alternate-workflow assets.\n'
+    files['04_Copy_And_Setup/media-download-links.txt'] = 'CURRENT PUBLISHING CHOICE — THREE SEPARATE LANGUAGE VIDEOS\n\n'+'\n\n'.join(downloads)+'\n\nARCHIVE / EDITING SOURCES\nOriginal sources, clean picture masters, full WAVs and SRT/TTML files remain in the episode archive:\n'+archive_url+'\nUse the three MP4s above for this release. The clean master and standalone caption files are editing/alternate-workflow assets.\n'
     files['04_Copy_And_Setup/channel-profile-en.txt'] = 'CHANNEL NAME\n'+profile['brand']+'\n\nCONFIRMED YOUTUBE HANDLE\n'+profile['youtube']['handle']+'\n\nCHANNEL URL\n'+profile['youtube']['url']+'\n\nWEBSITE LINK LABEL\nFamily Learning Hub\n\nWEBSITE LINK\nhttps://familylearninghub.com\n\nCHANNEL DESCRIPTION — paste only the paragraph below\n'+profile['profile_descriptions']['en']+'\n'
     files['04_Copy_And_Setup/channel-profile-zh.txt'] = '频道名称（中文翻译）\n家庭学习中心\n\n频道简介（中文翻译）\n'+profile['profile_descriptions']['zh']+'\n'
     files['04_Copy_And_Setup/channel-profile-ms.txt'] = 'NAMA SALURAN\nFamily Learning Hub\n\nPENERANGAN SALURAN\n'+profile['profile_descriptions']['ms']+'\n'

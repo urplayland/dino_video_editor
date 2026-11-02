@@ -45,5 +45,17 @@ class YoutubeCopyTests(unittest.TestCase):
             self.assertIn('04_Copy_And_Setup/UPLOAD_CHECKLIST.txt',outputs)
             self.assertFalse((root/'kit').exists())
 
+    def test_later_episode_uses_own_copy_names_and_archive(self):
+        with tempfile.TemporaryDirectory() as tmp,patch.object(dub,'ROOT',Path(tmp)):
+            root=Path(tmp);_,episode,_=self.fixture(root)
+            episode.update(copy_filename_prefix='episode-02',archive_url='https://drive.google.com/drive/folders/ep2')
+            (root/'release.json').write_text(json.dumps(episode))
+            outputs=prepare('profile.json','release.json','kit',True)
+            self.assertIn('04_Copy_And_Setup/episode-02-en.txt',outputs)
+            self.assertNotIn('04_Copy_And_Setup/first-episode-en.txt',outputs)
+            links=outputs['04_Copy_And_Setup/media-download-links.txt']
+            self.assertIn('/folders/ep2',links)
+            self.assertNotIn('1wJTManR5zTMW1bzZSSWCJNKvTWWcQRAm',links)
+
 
 if __name__=='__main__':unittest.main()
