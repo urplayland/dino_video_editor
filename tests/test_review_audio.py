@@ -34,6 +34,7 @@ class ReviewAudioTests(unittest.TestCase):
             spec=dict(path='take.wav',sha256=digest,character='bunny',verification_report='check.json')
             with patch.object(dub,'ROOT',root):
                 self.assertGreater(len(take_pcm(spec,cue['text'],voices)),1000)
+                with self.assertRaises(ValueError):take_pcm(spec,cue['text'],voices,language='ms')
                 with self.assertRaises(ValueError):take_pcm(spec,'Changed transcript',voices)
                 with self.assertRaises(ValueError):take_pcm(spec,cue['text'],voices,nonverbal=True)
                 record['request']['generationConfig']['speechConfig']['voiceConfig']['voice']='Puck'
@@ -41,6 +42,14 @@ class ReviewAudioTests(unittest.TestCase):
                 with self.assertRaises(ValueError):take_pcm(spec,cue['text'],voices)
                 with wav.open('ab') as stream:stream.write(b'changed')
                 with self.assertRaises(ValueError):take_pcm(spec,cue['text'],voices)
+
+    def test_finalization_rejects_changed_approved_audio_before_encoding(self):
+        import finalize_approved
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);source=root/'approved.mp4';source.write_bytes(b'Changed approved source fixture')
+            config=root/'final.json';config.write_text(json.dumps(dict(schema_version=1,owner_approval='Test fixture approval',approved_review=dict(path='approved.mp4',sha256='0'*64))))
+            with patch.object(dub,'ROOT',root):
+                with self.assertRaisesRegex(ValueError,'checksum changed'):finalize_approved.finalize(config)
 
     @unittest.skipUnless(shutil.which('ffmpeg') and shutil.which('ffprobe'), 'FFmpeg required')
     def test_direct_review_master_keeps_audio_checks_without_picture_copy(self):

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "kind": "multilingual_production",
+  "status": "verified",
+  "title": "Dino and the Broken Rainbow Bridge",
+  "languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "source_video": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+  "original_reference": "episodes/rainbow-bridge/media/originals/hq-20261101/EP2_With_Guide_Audio_HQ_No_End_Card.mp4",
+  "source_start_s": 0,
+  "duration_s": 166.5,
+  "voice_registry": "config/voices.json",
+  "sfx_registry": "library/presets/v002/sfx_presets.json",
+  "original_audio": "replace",
+  "output_dir": "episodes/rainbow-bridge/media/derived/retakes-final-v001",
+  "report_dir": "episodes/rainbow-bridge/reports/final-v001/retakes",
+  "transcript_evidence": [
+    "episodes/rainbow-bridge/reports/transcription-original.small.en.json",
+    "episodes/rainbow-bridge/reports/transcription-original.medium.json",
+    "episodes/rainbow-bridge/reports/transcription-focused.log",
+    "episodes/rainbow-bridge/reports/transcription-focused-tail.json"
+  ],
+  "source_verification_status": "machine_transcripts_compared_actual_picture_review_focused_gaps_checked",
+  "human_review_status": "Voice acting, accent and new music pending owner listening review; source transcript is machine/picture reviewed, not claimed human-certified.",
+  "api_preflight": {
+    "owner_confirmed_billing_disabled": true,
+    "owner_authorized_free_key_pool": true,
+    "authorized_key_variables": [
+      "GEMINI_API_KEY",
+      "GEMINI_API_KEY_B",
+      "GEMINI_API_KEY_C",
+      "GEMINI_API_KEY_F",
+      "GEMINI_API_KEY_H",
+      "GEMINI_API_KEY_I",
+      "GEMINI_API_KEY_S",
+      "GEMINI_API_KEY_T",
+      "GEMINI_API_KEY_D"
+    ],
+    "model_metadata_verified": true,
+    "first_english_line_succeeded": true,
+    "on_quota_exhaustion": "stop_for_daily_quota_or_resume_explicit_previously_authorized_free_credentials; never enable billing",
+    "owner_authorization": "Owner approved English v0042026-11-02 and authorized completing Mandarin/Malaysian Malay finals. Existing free-tier-only/unbilled pool authorization retained. Targeted localization performance/timing retakes only."
+  },
+  "mix": {
+    "integrated_lufs": -16,
+    "true_peak_db": -2.5
+  },
+  "score": {
+    "music_path": "episodes/rainbow-bridge/media/derived/score-v001/underscore.wav",
+    "ambience_path": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+    "plan": "episodes/rainbow-bridge/music-v001.json"
+  },
+  "dialogue": [
+    {
+      "id": "dino-fix-bridge",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 16.25,
+      "end_s": 18.65,
+      "text": {
+        "en": "Maybe they can help us fix the bridge.",
+        "zh": "也许它们能帮我们修好桥。",
+        "ms": "Mungkin ini boleh baiki jambatan."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "ms": {
+          "delivery_style": "Hopeful sudden idea about fixing the bridge, reassuring and curious. Keep the approved Puck youthful boy identity and clear natural Malaysian Bahasa Melayu, never Indonesian or narrator reading. Natural lively connected phrasing without long pauses. Target approximately2.4seconds, keep every supplied word, no added speech, no rushing syllables unnaturally.",
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/dino-fix-bridge.wav",
+          "audio_review_status": "pending"
+        }
+      }
+    },
+    {
+      "id": "dino-triangle",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 49.25,
+      "end_s": 52.5,
+      "text": {
+        "en": "Look! That's a triangle!",
+        "zh": "看！那是三角形！",
+        "ms": "Tengok! Itu segi tiga!"
+      },
+      "source_verification": "Focused source transcription49–52.12s resolves words omitted in whole-film ASR; triangle shown.",
+      "audio": {
+        "ms": {
+          "delivery_style": "Bright delighted recognition while pointing at the triangle. Keep the approved Puck youthful boy identity and clear natural Malaysian Bahasa Melayu, never Indonesian or narrator reading. Natural lively connected phrasing without long pauses. Target approximately2.0seconds, keep every supplied word, no added speech, no rushing syllables unnaturally.",
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/dino-triangle.wav",
+          "audio_review_status": "pending"
+        }
+      },
+      "final_selection_note": "The generated Malay candidate was rejected for shape-word pronunciation. Final uses the correctly verified original source, delayed and conservatively stretched10percent total."
+    },
+    {
+      "id": "dino-where-square",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 104.15,
+      "end_s": 105.55,
+      "text": {
+        "en": "Where is the square?",
+        "zh": "正方形在哪里呢？",
+        "ms": "Mana segi empat sama itu?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "ms": {
+          "delivery_style": "Curious playful puzzle question, gently wondering where the square is. Keep the approved Puck youthful boy identity and clear natural Malaysian Bahasa Melayu, never Indonesian or narrator reading. Natural lively connected phrasing without long pauses. Target approximately2.0seconds, keep every supplied word, no added speech, no rushing syllables unnaturally.",
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/dino-where-square.wav",
+          "audio_review_status": "pending"
+        }
+      }
+    },
+    {
+      "id": "bunny-under-foot",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 106,
+      "end_s": 110.2,
+      "text": {
+        "en": "Dino, look under your foot!",
+        "zh": "迪诺，看看你的脚下！",
+        "ms": "Dino, tengok bawah kaki awak!"
+      },
+      "source_verification": "Focused ASR102.38–110.22s separates preceding Dino question and Bunny reminder; current Bunny close-up105.67–110.67s.",
+      "audio": {
+        "zh": {
+          "delivery_style": "自然清晰的普通话小女孩，刚发现线索，带着开心的笑意、惊喜，轻快地提醒朋友，不是平淡念稿，不尖叫不装嗲。特别注意人名：迪读dí，清楚上扬的第二声；诺读nuò，清楚下降的第四声，保留完整的uo韵母。两个字连起来是dí-nuò，绝对不要读成英语DEE-no或Dino，也不能变成依诺或比诺。人名清楚说完，短暂停顿，再雀跃地说看看你的脚下。保持Leda年轻女孩声线，整句约2.1秒，清楚连贯，不加新词或笑声。只说给定的中文台词。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/zh/take-20261102T015118899522Z/bunny-under-foot.wav",
+          "audio_review_status": "pending",
+          "required_names": [
+            "迪诺"
+          ]
+        },
+        "ms": {
+          "delivery_style": "Bunny has suddenly spotted the hidden shape, a warm excited Malaysian girl eagerly reminding her friend. Keep Leda recognisable, natural Malaysian Malay. Say the name Dino with a clearly VOICED soft D consonant /d/, DEE-no, never a breathy unvoiced T and never Tino. Do not shout the name. Then flow immediately into tengok bawah kaki awak with bright smiling surprise and helpful urgency. Whole supplied line in one quick flowing breath, approximately2seconds, no theatrical pause or stretched vowels, no extra words or laugh. Clear consonants, natural Malaysian pronunciation, not Indonesian, not flat reading.",
+          "required_names": [
+            "Dino"
+          ],
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/take-20261102T015838021119Z/bunny-under-foot.wav",
+          "audio_review_status": "pending"
+        }
+      }
+    },
+    {
+      "id": "dino-next-adventure",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 157.8,
+      "end_s": 159.7,
+      "text": {
+        "en": "Ready for our next adventure?",
+        "zh": "准备好再去冒险了吗？",
+        "ms": "Sedia nak mengembara lagi?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "ms": {
+          "delivery_style": "Puck is a friendly excited little boy inviting his friend to the next adventure. Bright natural Malaysian conversational question, quick connected phrasing with a smiling upward lilt, about1.6to1.9seconds. No narration, no theatrical pauses, no extra words; retain Puck's recognisable youthful identity. Malaysian pronunciation, not Indonesian.",
+          "audio_path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/take-20261102T014721451502Z/dino-next-adventure.wav",
+          "audio_review_status": "pending"
+        }
+      }
+    }
+  ],
+  "beds": [],
+  "sfx": [],
+  "exports": {
+    "en": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.mp4",
+    "zh": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.mp4",
+    "ms": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.mp4"
+  },
+  "mandarin_direction_profile": "config/voice_direction.zh-v002.json; actual EP1 per-cue natural delivery reused, original takes preserved.",
+  "mandarin_asr_note": "Only two shape-teaching cues allow whole-phrase orthographic homophones: jiǎo 脚/角 and tā 他/它. Raw ASR text is retained; subtitles remain requested canonical text. This is not a global substitution, lowered threshold or pronunciation approval.",
+  "shared_audio_manifest": "episodes/rainbow-bridge/audio-production.json",
+  "production_languages": [
+    "zh",
+    "ms"
+  ],
+  "usage_note": "Generation-only localization retake candidates, not a full episode export recipe. Final selections are frozen in final-zh-v001.json and final-ms-v001.json. Never enable billing. All rejected candidates remain as source history."
+}

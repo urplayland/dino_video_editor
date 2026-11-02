@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "language": "ms",
+  "episode": "episodes/rainbow-bridge/production-final-v001.json",
+  "dialogue_source": {
+    "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.dialogue.wav",
+    "sha256": "f5d93ea8ac9486ed8fbf42468a784b74ff782d4c242cbbd43995b10fbf571ffd"
+  },
+  "work_dir": "episodes/rainbow-bridge/media/derived/final-v001/ms",
+  "delivery_dir": "episodes/rainbow-bridge/exports/Final_v001/ms",
+  "score": "episodes/rainbow-bridge/music-v002.json",
+  "sfx_plan": "episodes/rainbow-bridge/sfx-cues-v003.json",
+  "sfx_registry": "episodes/rainbow-bridge/sfx-presets-v003.json",
+  "ambience": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+  "original_music": "episodes/rainbow-bridge/media/derived/background-v001/music.wav",
+  "subtitle_settings": "episodes/rainbow-bridge/subtitles.ms.json",
+  "roadmap": "EP2_EN_Music_Emotion_Cue_Sheet_v001.md; Drive 1NSxHEnxZNn6GOibiOsI-6vsILTSHx1mn",
+  "automation": {
+    "music_duck_db": 8,
+    "ambience_duck_db": 2,
+    "sfx_duck_db": 5
+  },
+  "dialogue_edits": {
+    "bunny-bridge": {
+      "emotion": "Worried, asking a trusted friend",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-help": {
+      "emotion": "Hopeful request",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-reassure": {
+      "emotion": "Warm reassurance",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-three-shapes": {
+      "emotion": "Curious discovery",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-fix-bridge": {
+      "emotion": "Tentative hope",
+      "reason": "Verified targeted localized retake for natural picture timing, appropriate emotion and correct words/names.",
+      "tempo": 1,
+      "gain_db": -5.7,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/dino-fix-bridge.wav",
+        "sha256": "54dcac76ad0ce4d13e3543c93dd17135e4bc2b2050bc501e2e488f00b8dfbd2a",
+        "verification_report": "episodes/rainbow-bridge/reports/final-v001/retakes/ms-dino-fix-bridge-check.json",
+        "character": "dino",
+        "language": "ms"
+      }
+    },
+    "bunny-really": {
+      "emotion": "Surprised curiosity",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 18.85
+    },
+    "bunny-hope": {
+      "emotion": "Hopeful relief",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 20.05
+    },
+    "bunny-how": {
+      "emotion": "Curious question",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 22
+    },
+    "dino-circle": {
+      "emotion": "Small delighted discovery",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 24.6
+    },
+    "dino-no-corners": {
+      "emotion": "Clear gentle explanation",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 27.3
+    },
+    "bunny-two-more": {
+      "emotion": "Joy and encouragement",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "dino-triangle": {
+      "emotion": "Curious recognition",
+      "reason": "Keep original correctly pronounced verified segi tiga take; new candidate rejected for pronunciation regression. Source had no prior stretch; total10percent maximum, delayed entry matches the approved mouth group.",
+      "tempo": 1.1,
+      "gain_db": 0,
+      "start_s": 50.125
+    },
+    "dino-three-corners": {
+      "emotion": "Clear learning emphasis",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-find-one": {
+      "emotion": "Eager to explore",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-triangle-stone": {
+      "emotion": "Delighted discovery over stone cutaway",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-great-job": {
+      "emotion": "Warm encouragement",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "bunny-one-more": {
+      "emotion": "Hopeful anticipation",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-square": {
+      "emotion": "Curious recognition",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-four-corners": {
+      "emotion": "Clear explanation",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 93.45
+    },
+    "dino-where-square": {
+      "emotion": "Playful puzzlement",
+      "reason": "Verified targeted localized retake for natural picture timing, appropriate emotion and correct words/names.",
+      "tempo": 1,
+      "gain_db": -4.8,
+      "start_s": 104,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/dino-where-square.wav",
+        "sha256": "2a138155ba3de03693583c7c39fc63f14cdf6403839e395b60daa41498dc279b",
+        "verification_report": "episodes/rainbow-bridge/reports/final-v001/retakes/ms-dino-where-square-check.json",
+        "character": "dino",
+        "language": "ms"
+      }
+    },
+    "bunny-under-foot": {
+      "emotion": "Excited delighted discovery and eager helpful reminder",
+      "reason": "Verified targeted localized retake for natural picture timing, appropriate emotion and correct words/names.",
+      "tempo": 1,
+      "gain_db": -8.6,
+      "start_s": 107.125,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/take-20261102T015838021119Z/bunny-under-foot.wav",
+        "sha256": "8cf73e50a290aded7130cc6ded5798ce5357774f03fc1a95fe12954a27fe4400",
+        "verification_report": "episodes/rainbow-bridge/reports/final-v001/retakes/ms-bunny-under-foot-check.json",
+        "character": "bunny",
+        "language": "ms"
+      }
+    },
+    "dino-here-it-is": {
+      "emotion": "Pleased discovery",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 110.85
+    },
+    "dino-found-square": {
+      "emotion": "Small success",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 114.3
+    },
+    "bunny-you-did-it": {
+      "emotion": "Excited relief",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "bunny-thanks": {
+      "emotion": "Warm sincere gratitude",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 150
+    },
+    "dino-next-adventure": {
+      "emotion": "Cheerful invitation",
+      "reason": "Verified targeted localized retake for natural picture timing, appropriate emotion and correct words/names.",
+      "tempo": 1,
+      "gain_db": -6.2,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/ms/take-20261102T014721451502Z/dino-next-adventure.wav",
+        "sha256": "371182a453b79c8f2877e1b685126b5e51b9f62ee0f8bcaaa86a9beaf74676d8",
+        "verification_report": "episodes/rainbow-bridge/reports/final-v001/retakes/ms-dino-next-adventure-check.json",
+        "character": "dino",
+        "language": "ms"
+      }
+    },
+    "bunny-lets-go": {
+      "emotion": "Bright eager reply",
+      "reason": "Reuse verified Malaysian source with standardized shape terms. Do not compound original fitting beyond10percent.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 159.8
+    }
+  },
+  "output_version": "v001",
+  "review_video": {
+    "width": 720,
+    "crf": 18,
+    "preset": "fast"
+  },
+  "direct_review_master": true,
+  "vocal_reactions": [
+    {
+      "id": "dino-triangle-proud-chuckle",
+      "start_s": 83,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "library/media/audio/ep2-approved-v001/dino-proud-chuckle-check.json",
+        "character": "dino",
+        "language": "en"
+      },
+      "gain_db": -4.3,
+      "timing_basis": "Actual open-mouth hands-on-hips proud smile around83.0-84.4s. Short nonverbal chuckle, no new story words."
+    },
+    {
+      "id": "dino-square-happy-chuckle",
+      "start_s": 123.1666666667,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "library/media/audio/ep2-approved-v001/dino-proud-chuckle-check.json",
+        "character": "dino",
+        "language": "en"
+      },
+      "gain_db": -5.8,
+      "timing_basis": "Actual open-mouth happy smile after last stone123.1-124.8s; short softer chuckle before separate stone-glow sequence125s."
+    }
+  ],
+  "export_label": "Final",
+  "shared_sfx_raw": {
+    "path": "episodes/rainbow-bridge/media/derived/review-en-v004/sfx.raw.wav",
+    "sha256": "8e17fced473a0f042ae991d9312c41a80878d44d161c2554139f83f3a12d893e"
+  }
+}

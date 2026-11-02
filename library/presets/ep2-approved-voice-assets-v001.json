@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "bunny-under-foot",
+      "character": "bunny",
+      "voice": "Leda",
+      "language": "en",
+      "path": "library/media/audio/ep2-approved-v001/bunny-under-foot.wav",
+      "sha256": "e8afb5da7bdab3591e8e4792577b1525a100a31ce88d38e64327190596dfa4f5",
+      "metadata": "library/media/audio/ep2-approved-v001/bunny-under-foot.json",
+      "verification_report": "library/media/audio/ep2-approved-v001/bunny-under-foot-check.json",
+      "approval_status": "owner_approved",
+      "approval_basis": "Owner approved English v0042026-11-02 and requested final.",
+      "license": "Gemini-generated voice; provider terms apply. Original request and source metadata preserved unchanged."
+    },
+    {
+      "id": "dino-proud-chuckle",
+      "character": "dino",
+      "voice": "Puck",
+      "language": "nonverbal",
+      "path": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.wav",
+      "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+      "metadata": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.json",
+      "verification_report": "library/media/audio/ep2-approved-v001/dino-proud-chuckle-check.json",
+      "approval_status": "owner_approved",
+      "approval_basis": "Owner approved English v0042026-11-02 and requested final.",
+      "license": "Gemini-generated voice; provider terms apply. Original request and source metadata preserved unchanged."
+    }
+  ]
+}

@@ -1,0 +1,1166 @@
+{
+  "schema_version": 1,
+  "kind": "multilingual_production",
+  "status": "verified",
+  "title": "Dino and the Broken Rainbow Bridge",
+  "languages": [
+    "en",
+    "zh",
+    "ms"
+  ],
+  "source_video": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+  "original_reference": "episodes/rainbow-bridge/media/originals/hq-20261101/EP2_With_Guide_Audio_HQ_No_End_Card.mp4",
+  "source_start_s": 0,
+  "duration_s": 166.5,
+  "voice_registry": "config/voices.json",
+  "sfx_registry": "library/presets/v002/sfx_presets.json",
+  "original_audio": "replace",
+  "output_dir": "episodes/rainbow-bridge/media/derived/production-v001",
+  "report_dir": "episodes/rainbow-bridge/reports/production-v001",
+  "transcript_evidence": [
+    "episodes/rainbow-bridge/reports/transcription-original.small.en.json",
+    "episodes/rainbow-bridge/reports/transcription-original.medium.json",
+    "episodes/rainbow-bridge/reports/transcription-focused.log",
+    "episodes/rainbow-bridge/reports/transcription-focused-tail.json"
+  ],
+  "source_verification_status": "machine_transcripts_compared_actual_picture_review_focused_gaps_checked",
+  "human_review_status": "English v004 approved by owner2026-11-02. Final localized natural wording/timing adapted for the same picture; owner will view all finals.",
+  "api_preflight": {
+    "owner_confirmed_billing_disabled": true,
+    "owner_authorized_free_key_pool": true,
+    "authorized_key_variables": [
+      "GEMINI_API_KEY",
+      "GEMINI_API_KEY_B",
+      "GEMINI_API_KEY_C",
+      "GEMINI_API_KEY_F",
+      "GEMINI_API_KEY_H",
+      "GEMINI_API_KEY_I",
+      "GEMINI_API_KEY_S",
+      "GEMINI_API_KEY_T",
+      "GEMINI_API_KEY_D"
+    ],
+    "model_metadata_verified": true,
+    "first_english_line_succeeded": true,
+    "on_quota_exhaustion": "stop_for_daily_quota_or_resume_explicit_previously_authorized_free_credentials; never enable billing",
+    "owner_authorization": "Persistent prior free-tier key authorization and EP2 plan approval2026-11-01."
+  },
+  "mix": {
+    "integrated_lufs": -16,
+    "true_peak_db": -2.5
+  },
+  "score": {
+    "music_path": "episodes/rainbow-bridge/media/derived/score-v001/underscore.wav",
+    "ambience_path": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+    "plan": "episodes/rainbow-bridge/music-v001.json"
+  },
+  "dialogue": [
+    {
+      "id": "bunny-bridge",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 3.05,
+      "end_s": 6.35,
+      "text": {
+        "en": "Dino! The bridge is broken!",
+        "zh": "迪诺！桥断了！",
+        "ms": "Dino! Jambatan itu dah rosak!"
+      },
+      "source_verification": "Focused source ASR resolves opening name Dino; whole-film models missed the initial name. Bridge sentence agrees across models; Bunny on opposite bank.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-bridge-audio-check.json",
+          "gain_db": -5.6,
+          "start_s": 3.05,
+          "end_s": 5.1768
+        },
+        "zh": {
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-bridge-audio-check.json",
+          "gain_db": -10.2,
+          "start_s": 3.05,
+          "end_s": 5.6444
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-bridge-audio-check.json",
+          "gain_db": -8.5,
+          "start_s": 3.05,
+          "end_s": 6.036
+        }
+      }
+    },
+    {
+      "id": "bunny-help",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 6.65,
+      "end_s": 8.25,
+      "text": {
+        "en": "Can you help me?",
+        "zh": "你能帮帮我吗？",
+        "ms": "Boleh tolong saya?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-help-audio-check.json",
+          "gain_db": -4.9,
+          "start_s": 6.65,
+          "end_s": 7.8949
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-help-audio-check.json",
+          "gain_db": -10.5,
+          "start_s": 6.65,
+          "end_s": 8.255
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-help-audio-check.json",
+          "gain_db": -7.1,
+          "start_s": 6.65,
+          "end_s": 8.059
+        }
+      }
+    },
+    {
+      "id": "dino-reassure",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 8.85,
+      "end_s": 12.05,
+      "text": {
+        "en": "Don't worry, Bunny. I'll find a way.",
+        "zh": "别担心，邦妮。我来想办法。",
+        "ms": "Jangan risau, Bunny. Saya akan cari jalan."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-reassure-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 8.85,
+          "end_s": 11.1747
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 邦妮读作bāng nī，是女生的名字。保持自然聊天的语气。 本句约3.2秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190359939566Z/dino-reassure.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-reassure-audio-check.json",
+          "gain_db": -2.6,
+          "start_s": 8.85,
+          "end_s": 11.1515
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-reassure-audio-check.json",
+          "gain_db": -6.7,
+          "start_s": 8.85,
+          "end_s": 12.1948
+        }
+      }
+    },
+    {
+      "id": "dino-three-shapes",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 12.65,
+      "end_s": 15.95,
+      "text": {
+        "en": "Bunny, look! Three shapes!",
+        "zh": "邦妮，你看！三个形状！",
+        "ms": "Bunny, tengok! Tiga bentuk!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-three-shapes-audio-check.json",
+          "gain_db": -5.8,
+          "start_s": 12.65,
+          "end_s": 15.28
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。 邦妮读作bāng nī，是女生的名字。保持自然聊天的语气。 本句约3.3秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190420939836Z/dino-three-shapes.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-three-shapes-audio-check.json",
+          "gain_db": -6.5,
+          "start_s": 12.65,
+          "end_s": 14.8951
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-three-shapes-audio-check.json",
+          "gain_db": -3.6,
+          "start_s": 12.65,
+          "end_s": 15.5663
+        }
+      }
+    },
+    {
+      "id": "dino-fix-bridge",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 16.25,
+      "end_s": 18.65,
+      "text": {
+        "en": "Maybe they can help us fix the bridge.",
+        "zh": "也许它们能帮我们修好桥。",
+        "ms": "Mungkin ini boleh baiki jambatan."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-fix-bridge-audio-check.json",
+          "gain_db": -2.9,
+          "start_s": 16.25,
+          "end_s": 18.5891
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约2.4秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190502940330Z/dino-fix-bridge.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-fix-bridge-audio-check.json",
+          "gain_db": -7.4,
+          "start_s": 16.25,
+          "end_s": 18.7913
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-fix-bridge-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 16.25,
+          "end_s": 19.5268
+        }
+      }
+    },
+    {
+      "id": "bunny-really",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 18.85,
+      "end_s": 19.75,
+      "text": {
+        "en": "Really?",
+        "zh": "真的吗？",
+        "ms": "Betulkah?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-really-audio-check.json",
+          "gain_db": -5.8,
+          "start_s": 18.85,
+          "end_s": 19.8835
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-really-audio-check.json",
+          "gain_db": -6.2,
+          "start_s": 18.8513,
+          "end_s": 19.7563
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-really-audio-check.json",
+          "gain_db": -8.0,
+          "start_s": 19.5868,
+          "end_s": 20.6732
+        }
+      }
+    },
+    {
+      "id": "bunny-hope",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 20.0,
+      "end_s": 22.15,
+      "text": {
+        "en": "Oh, I hope so!",
+        "zh": "希望可以！",
+        "ms": "Harap-harap boleh!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-hope-audio-check.json",
+          "gain_db": -2.9,
+          "start_s": 20.0,
+          "end_s": 21.6139
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-hope-audio-check.json",
+          "gain_db": -8.5,
+          "start_s": 20.0,
+          "end_s": 21.0192
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-hope-audio-check.json",
+          "gain_db": -9.5,
+          "start_s": 20.7332,
+          "end_s": 22.4459
+        }
+      }
+    },
+    {
+      "id": "bunny-how",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 22.35,
+      "end_s": 24.2,
+      "text": {
+        "en": "But how do we use them?",
+        "zh": "可是，要怎么用呢？",
+        "ms": "Tapi, macam mana nak gunakannya?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-how-audio-check.json",
+          "gain_db": -4.9,
+          "start_s": 22.35,
+          "end_s": 24.2633
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-how-audio-check.json",
+          "gain_db": -9.0,
+          "start_s": 22.35,
+          "end_s": 24.3115
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-how-audio-check.json",
+          "gain_db": -4.6,
+          "start_s": 22.5059,
+          "end_s": 24.9822
+        }
+      }
+    },
+    {
+      "id": "dino-circle",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 24.5,
+      "end_s": 26.55,
+      "text": {
+        "en": "Oh, a circle!",
+        "zh": "啊，圆形！",
+        "ms": "Oh, bulatan!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-circle-audio-check.json",
+          "gain_db": -7.0,
+          "start_s": 24.5,
+          "end_s": 26.3201
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约2.1秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190523940172Z/dino-circle.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-circle-audio-check.json",
+          "gain_db": 0.2,
+          "start_s": 24.5,
+          "end_s": 26.2702
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-circle-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 25.0422,
+          "end_s": 27.6398
+        }
+      }
+    },
+    {
+      "id": "dino-no-corners",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 26.9,
+      "end_s": 29.9,
+      "text": {
+        "en": "It's round with no corners.",
+        "zh": "圆圆的，没有角。",
+        "ms": "Bentuknya bulat, tak ada bucu."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-no-corners-audio-check.json",
+          "gain_db": -4.5,
+          "start_s": 26.9,
+          "end_s": 29.308
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约3.0秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190544940247Z/dino-no-corners.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-no-corners-audio-check.json",
+          "gain_db": -4.1,
+          "asr_text_aliases": {
+            "圆圆的没有脚": "圆圆的没有角"
+          },
+          "start_s": 26.9,
+          "end_s": 28.8765
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-no-corners-audio-check.json",
+          "gain_db": -6.1,
+          "start_s": 27.6998,
+          "end_s": 30.7853
+        }
+      }
+    },
+    {
+      "id": "bunny-two-more",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 45,
+      "end_s": 48.6,
+      "text": {
+        "en": "Yay! One shape done! Two more to go!",
+        "zh": "耶！完成一个了！还差两个！",
+        "ms": "Yay! Satu dah siap! Tinggal dua lagi!"
+      },
+      "source_verification": "Focused source transcription44.98–48.12s, low no-speech probability; actual Bunny encouragement shot.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-two-more-audio-check.json",
+          "gain_db": -6.1,
+          "start_s": 45,
+          "end_s": 48.8404
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-two-more-audio-check.json",
+          "gain_db": -10.2,
+          "start_s": 45,
+          "end_s": 48.1598
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-two-more-audio-check.json",
+          "gain_db": -10.4,
+          "start_s": 45,
+          "end_s": 48.569
+        }
+      }
+    },
+    {
+      "id": "dino-triangle",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 49.25,
+      "end_s": 52.5,
+      "text": {
+        "en": "Look! That's a triangle!",
+        "zh": "看！那是三角形！",
+        "ms": "Tengok! Itu segi tiga!"
+      },
+      "source_verification": "Focused source transcription49–52.12s resolves words omitted in whole-film ASR; triangle shown.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-triangle-audio-check.json",
+          "gain_db": -3.1,
+          "start_s": 49.25,
+          "end_s": 51.226
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约3.2秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190605940322Z/dino-triangle.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-triangle-audio-check.json",
+          "gain_db": -2.7,
+          "start_s": 49.25,
+          "end_s": 51.2105
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-triangle-audio-check.json",
+          "gain_db": -5.1,
+          "start_s": 49.25,
+          "end_s": 51.9539
+        }
+      }
+    },
+    {
+      "id": "dino-three-corners",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 53.05,
+      "end_s": 56.3,
+      "text": {
+        "en": "A triangle has three corners.",
+        "zh": "三角形有三个角。",
+        "ms": "Segi tiga ada tiga bucu."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-three-corners-audio-check.json",
+          "gain_db": -3.8,
+          "start_s": 53.05,
+          "end_s": 56.0755
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约3.2秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190626940399Z/dino-three-corners.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-three-corners-audio-check.json",
+          "gain_db": -4.4,
+          "start_s": 53.05,
+          "end_s": 55.5559
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-three-corners-audio-check.json",
+          "gain_db": -3.1,
+          "start_s": 53.05,
+          "end_s": 56.4079
+        }
+      }
+    },
+    {
+      "id": "dino-find-one",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 56.85,
+      "end_s": 58.75,
+      "text": {
+        "en": "Let's find one!",
+        "zh": "我们去找找！",
+        "ms": "Jom cari satu!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-find-one-audio-check.json",
+          "gain_db": -1.5,
+          "start_s": 56.85,
+          "end_s": 58.1911
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约1.9秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190647940467Z/dino-find-one.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-find-one-audio-check.json",
+          "gain_db": -4.5,
+          "start_s": 56.85,
+          "end_s": 58.121
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-find-one-audio-check.json",
+          "gain_db": -6.5,
+          "start_s": 56.85,
+          "end_s": 57.9945
+        }
+      }
+    },
+    {
+      "id": "dino-triangle-stone",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 65.15,
+      "end_s": 68.7,
+      "text": {
+        "en": "Oh, a triangle stone!",
+        "zh": "啊，一块三角形石头！",
+        "ms": "Oh, batu segi tiga!"
+      },
+      "source_verification": "Focused ASR65.12–68.62s adds Oh/a, both whole-film ASR recognize triangle stone; actual triangle discovery shot.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-triangle-stone-audio-check.json",
+          "gain_db": 0.3,
+          "start_s": 65.15,
+          "end_s": 67.67
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约3.5秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190708940551Z/dino-triangle-stone.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-triangle-stone-audio-check.json",
+          "gain_db": -4.4,
+          "start_s": 65.15,
+          "end_s": 67.7451
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-triangle-stone-audio-check.json",
+          "gain_db": -5.1,
+          "start_s": 65.15,
+          "end_s": 67.6145
+        }
+      }
+    },
+    {
+      "id": "bunny-great-job",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 86.1,
+      "end_s": 87.95,
+      "text": {
+        "en": "Great job, Dino!",
+        "zh": "迪诺，真棒！",
+        "ms": "Bagus, Dino!"
+      },
+      "source_verification": "Focused ASR86.12–87.64s and actual Bunny reaction shot; quiet source phrase identified in focused transcription.",
+      "audio": {
+        "zh": {
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-great-job-audio-check.json",
+          "gain_db": -6.8,
+          "start_s": 86.1,
+          "end_s": 87.5718
+        },
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-great-job-audio-check.json",
+          "gain_db": -10.4,
+          "start_s": 86.1,
+          "end_s": 87.9861
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-great-job-audio-check.json",
+          "gain_db": -5.1,
+          "start_s": 86.1,
+          "end_s": 87.47
+        }
+      }
+    },
+    {
+      "id": "bunny-one-more",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 88.3,
+      "end_s": 90.05,
+      "text": {
+        "en": "Just one more shape!",
+        "zh": "只差一个形状了！",
+        "ms": "Tinggal satu bentuk lagi!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-one-more-audio-check.json",
+          "gain_db": -5.8,
+          "start_s": 88.3,
+          "end_s": 90.1088
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-one-more-audio-check.json",
+          "gain_db": -8.6,
+          "start_s": 88.3,
+          "end_s": 89.8467
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-one-more-audio-check.json",
+          "gain_db": -8.5,
+          "start_s": 88.3,
+          "end_s": 90.055
+        }
+      }
+    },
+    {
+      "id": "dino-square",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 90.8,
+      "end_s": 92.75,
+      "text": {
+        "en": "Look, a square!",
+        "zh": "看，正方形！",
+        "ms": "Tengok, segi empat sama!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-square-audio-check.json",
+          "gain_db": -0.6,
+          "start_s": 90.8,
+          "end_s": 92.6244
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约2.0秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190729940661Z/dino-square.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-square-audio-check.json",
+          "gain_db": -2.8,
+          "start_s": 90.8,
+          "end_s": 92.6129
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-square-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 90.8,
+          "end_s": 93.2882
+        }
+      }
+    },
+    {
+      "id": "dino-four-corners",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 93,
+      "end_s": 95,
+      "text": {
+        "en": "It has four corners.",
+        "zh": "它有四个角。",
+        "ms": "Ada empat bucu."
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-four-corners-audio-check.json",
+          "gain_db": -4.5,
+          "start_s": 93,
+          "end_s": 95.0048
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约2.0秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190750940775Z/dino-four-corners.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-four-corners-audio-check.json",
+          "gain_db": -5.7,
+          "asr_text_aliases": {
+            "它有四个脚": "它有四个角",
+            "他有四个脚": "它有四个角",
+            "他有四个角": "它有四个角"
+          },
+          "start_s": 93,
+          "end_s": 94.7843
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-four-corners-audio-check.json",
+          "gain_db": -1.8,
+          "start_s": 93.3482,
+          "end_s": 95.3532
+        }
+      }
+    },
+    {
+      "id": "dino-where-square",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 104.15,
+      "end_s": 105.55,
+      "text": {
+        "en": "Where is the square?",
+        "zh": "正方形在哪里呢？",
+        "ms": "Mana segi empat sama itu?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-where-square-audio-check.json",
+          "gain_db": -3.4,
+          "start_s": 104.15,
+          "end_s": 106.0572
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约1.4秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190811940816Z/dino-where-square.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-where-square-audio-check.json",
+          "gain_db": -3.8,
+          "start_s": 104.15,
+          "end_s": 106.0583
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-where-square-audio-check.json",
+          "gain_db": -2.9,
+          "start_s": 104.15,
+          "end_s": 107.282
+        }
+      }
+    },
+    {
+      "id": "bunny-under-foot",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 106,
+      "end_s": 110.2,
+      "text": {
+        "en": "Dino, look under your foot!",
+        "zh": "迪诺，看看你的脚下！",
+        "ms": "Dino, tengok bawah kaki awak!"
+      },
+      "source_verification": "Focused ASR102.38–110.22s separates preceding Dino question and Bunny reminder; current Bunny close-up105.67–110.67s.",
+      "audio": {
+        "zh": {
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-under-foot-audio-check.json",
+          "gain_db": -7.0,
+          "start_s": 106.1183,
+          "end_s": 108.5233
+        },
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-under-foot-audio-check.json",
+          "gain_db": -8.4,
+          "start_s": 106.1172,
+          "end_s": 108.1728
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-under-foot-audio-check.json",
+          "gain_db": -8.1,
+          "start_s": 107.342,
+          "end_s": 109.453
+        }
+      }
+    },
+    {
+      "id": "dino-here-it-is",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 110.65,
+      "end_s": 112.85,
+      "text": {
+        "en": "Oh, here it is!",
+        "zh": "哦，在这里！",
+        "ms": "Oh, di sini rupanya!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-here-it-is-audio-check.json",
+          "gain_db": 0.1,
+          "start_s": 110.65,
+          "end_s": 112.0299
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约2.2秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190832940902Z/dino-here-it-is.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-here-it-is-audio-check.json",
+          "gain_db": -5.1,
+          "start_s": 110.65,
+          "end_s": 111.8526
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-here-it-is-audio-check.json",
+          "gain_db": -7.3,
+          "start_s": 110.65,
+          "end_s": 113.9978
+        }
+      }
+    },
+    {
+      "id": "dino-found-square",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 113,
+      "end_s": 114.4,
+      "text": {
+        "en": "A square!",
+        "zh": "正方形！",
+        "ms": "Segi empat sama!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-found-square-audio-check.json",
+          "gain_db": -3.2,
+          "start_s": 113,
+          "end_s": 114.1728
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约1.4秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/take-20261101T190914941179Z/dino-found-square.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-found-square-audio-check.json",
+          "gain_db": -5.6,
+          "start_s": 113,
+          "end_s": 114.0838
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-found-square-audio-check.json",
+          "gain_db": -5.7,
+          "start_s": 114.0578,
+          "end_s": 116.018
+        }
+      }
+    },
+    {
+      "id": "bunny-you-did-it",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 143.65,
+      "end_s": 147.6,
+      "text": {
+        "en": "Wow! Dino, you did it!",
+        "zh": "哇！迪诺，你成功了！",
+        "ms": "Wah! Dino, awak berjaya!"
+      },
+      "source_verification": "Focused tail source ASR143.62–147.42s, avg_logprob -0.484, no_speech_prob0.059; actual Bunny reaction after bridge restored. Whole-film ASR omitted this quiet line.",
+      "audio": {
+        "zh": {
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-you-did-it-audio-check.json",
+          "gain_db": -10.2,
+          "start_s": 143.65,
+          "end_s": 146.5197
+        },
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-you-did-it-audio-check.json",
+          "gain_db": -9.2,
+          "start_s": 143.65,
+          "end_s": 146.4615
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-you-did-it-audio-check.json",
+          "gain_db": -9.4,
+          "start_s": 143.65,
+          "end_s": 146.964
+        }
+      }
+    },
+    {
+      "id": "bunny-thanks",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 149.9,
+      "end_s": 151.7,
+      "text": {
+        "en": "Thank you, Dino!",
+        "zh": "谢谢你，迪诺！",
+        "ms": "Terima kasih, Dino!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "zh": {
+          "required_names": [
+            "迪诺"
+          ],
+          "name_asr_aliases": {
+            "迪诺": [
+              "狄诺",
+              "敌诺",
+              "迪懦",
+              "狄懦",
+              "敌懦"
+            ]
+          },
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-thanks-audio-check.json",
+          "gain_db": -8.0,
+          "start_s": 149.9,
+          "end_s": 151.5669
+        },
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-thanks-audio-check.json",
+          "gain_db": -9.1,
+          "start_s": 149.9,
+          "end_s": 151.6699
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-thanks-audio-check.json",
+          "gain_db": -8.9,
+          "start_s": 149.9,
+          "end_s": 151.43
+        }
+      }
+    },
+    {
+      "id": "dino-next-adventure",
+      "character": "dino",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 157.8,
+      "end_s": 159.7,
+      "text": {
+        "en": "Ready for our next adventure?",
+        "zh": "准备好再去冒险了吗？",
+        "ms": "Sedia nak mengembara lagi?"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-dino-next-adventure-audio-check.json",
+          "gain_db": -3.5,
+          "start_s": 157.8,
+          "end_s": 159.6172
+        },
+        "zh": {
+          "delivery_style": "用自然、亲切的日常华语演动画里的对话，像角色正在和朋友说话，不是念稿。语句连贯，轻重和语气随情绪自然变化；不要播音腔、译制腔、逐字重读、夸张拖音或长停顿。只说给定台词，不加旁白。 保留Puck小男孩声线：天真活泼、清楚轻快，有真实的小朋友情绪，不刻意装嗲，不用尖细夸张的卡通腔。 主角中文名是迪诺，读作 dí nuò：迪是第二声，诺是第四声。声母 d 要清楚，不能读成依诺、伊诺或比诺，也不要使用英文 Dino 的读法。月亮就叫月亮，云爷爷是 Cloud Guardian 的中文名字。  本句约1.9秒，以自然连贯的节奏说完，避免额外停顿；不要为了时长机械赶字。",
+          "audio_path": "episodes/rainbow-bridge/media/derived/production-v001/zh/dino-next-adventure.wav",
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-dino-next-adventure-audio-check.json",
+          "gain_db": -6.4,
+          "start_s": 157.8,
+          "end_s": 159.483
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-dino-next-adventure-audio-check.json",
+          "gain_db": -5.9,
+          "start_s": 157.8,
+          "end_s": 160.3431
+        }
+      },
+      "localization_note": "Natural Malaysian children's equivalent of Ready for our next adventure; shorter connected wording to fit the approved closing picture without rushed syllables."
+    },
+    {
+      "id": "bunny-lets-go",
+      "character": "bunny",
+      "voice_version": "v001",
+      "status": "verified",
+      "start_s": 159.8,
+      "end_s": 160.95,
+      "text": {
+        "en": "Let's go!",
+        "zh": "出发吧！",
+        "ms": "Jom!"
+      },
+      "source_verification": "Independent small.en and medium source transcripts agree; speaker/action checked against current scene picture.",
+      "audio": {
+        "en": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/en-bunny-lets-go-audio-check.json",
+          "gain_db": -6.7,
+          "start_s": 159.8,
+          "end_s": 160.955
+        },
+        "zh": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/zh-bunny-lets-go-audio-check.json",
+          "gain_db": -8.0,
+          "start_s": 159.8,
+          "end_s": 160.4941
+        },
+        "ms": {
+          "audio_review_status": "verified_automated",
+          "audio_verification_report": "episodes/rainbow-bridge/reports/production-v001/ms-bunny-lets-go-audio-check.json",
+          "gain_db": -3.0,
+          "start_s": 160.4031,
+          "end_s": 161.0235
+        }
+      }
+    }
+  ],
+  "beds": [],
+  "sfx": [],
+  "exports": {
+    "en": "episodes/rainbow-bridge/exports/dino_broken_bridge_en_dialogue_v001.mp4",
+    "zh": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.mp4",
+    "ms": "episodes/rainbow-bridge/exports/dino_broken_bridge_ms_dialogue_v001.mp4"
+  },
+  "mandarin_direction_profile": "config/voice_direction.zh-v002.json; actual EP1 per-cue natural delivery reused, original takes preserved.",
+  "mandarin_asr_note": "Only two shape-teaching cues allow whole-phrase orthographic homophones: jiǎo 脚/角 and tā 他/它. Raw ASR text is retained; subtitles remain requested canonical text. This is not a global substitution, lowered threshold or pronunciation approval.",
+  "shared_audio_manifest": "episodes/rainbow-bridge/audio-production.json"
+}

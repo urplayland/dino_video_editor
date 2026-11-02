@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "owner_approval": "Owner approved English v004 in latest message2026-11-02 and requested English final without further creative edits.",
+  "approved_review": {
+    "path": "episodes/rainbow-bridge/media/derived/approved-audio-v001/en-approved-v004.m4a",
+    "sha256": "3ead38474c60b1241ac9cb487d7da0801f13c359e9b84f69dc9b049d15d62aed"
+  },
+  "picture_master": {
+    "path": "episodes/rainbow-bridge/media/derived/picture-v001/EP2_Clean_Visual_Master_v001.mp4",
+    "sha256": "5ff69c375be0168f24fe2a6eb1f5577dac83566b5798870fc2a50520bccdfb0e"
+  },
+  "approved_ass": {
+    "path": "episodes/rainbow-bridge/exports/Review_EN_v004/Dino_EP2_EN_v004.ass",
+    "sha256": "8c965363db7ace0646a7f665d376d3ddb4cfe3989c57734854ba47053d170e61"
+  },
+  "approved_srt": {
+    "path": "episodes/rainbow-bridge/exports/Review_EN_v004/Dino_EP2_EN_v004.srt",
+    "sha256": "fe289c99e5b9e3bf844934b7ab4466be592a55c106b7828c10ee96ab7d56fb38"
+  },
+  "subtitle_settings": "episodes/rainbow-bridge/subtitles.en.json",
+  "duration_s": 166.5,
+  "work_dir": "episodes/rainbow-bridge/media/derived/final-v001/en-approved-audio",
+  "output": "episodes/rainbow-bridge/exports/Final_v001/en/Dino_EP2_EN_Final_v001.mp4",
+  "report": "episodes/rainbow-bridge/reports/final-v001/FINAL_QA_EN_APPROVED_AUDIO.json",
+  "approval_source_review_sha256": "e24070a3c5dc634aa5f2e3163664ee3dde6fe230be0b1134b781c28f300c5ebb"
+}

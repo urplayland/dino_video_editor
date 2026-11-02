@@ -1,6 +1,6 @@
 # Episode 2 audio edit plan
 
-Active production state (2026-11-02): English compact performance review v004 is delivered and technically verified on the existing166.5s/3996frame picture; the v002 full-resolution review remains retained. Existing opening/accepted4.5s ending retained. Owner requested English approval first; ZH/MS final revisions are on hold. Prior three-language v001 outputs and originals remain untouched. Owner listening/creative approval remains pending. Earlier missing-source/provisional notes below are historical and superseded by dated updates.
+Active production state (2026-11-02): Final_v001 English, Mandarin Chinese and Malaysian Malay are complete, full-resolution720x1280/24fps/166.5s/3996frames and verified on Drive. English uses the owner-approved v004 audio unchanged. Localized finals are ready for owner viewing. Four old cloud review videos were moved to recoverable Trash; all other files/voice sources preserved and notes/audio archived. Earlier statuses below are historical.
 
 Owner-described scene: Dino walking near a broken rainbow bridge, Bunny waving across a river. This description is not verified footage.
 
@@ -115,3 +115,25 @@ Uploaded individually/no ZIP to Review_EN_v004: integrated MP4, exact change log
 Folder: https://drive.google.com/drive/folders/1hWxdBs0aNbep6ORFJmRvLRxKwuTZIWyh
 Movie: https://drive.google.com/file/d/1P13E3WNlqCgkzMuL9i_YLH8bJ_sOpMuQ/view
 Bunny standalone: https://drive.google.com/file/d/1hdtHKg5r00bl0lryEqmxcJ2Vi5z0Pful/view
+
+## Three final editions authorized — 2026-11-02
+
+Owner approved v004 and requested the full English final, completed Mandarin/Malaysian Malay finals, and cleanup of previous REVIEW versions (explicitly clarified not source materials). English uses the exact approved v004 audio and corrected picture/subtitles; no voice/animation regeneration for EN. Other languages reuse verified original27-line source takes with corrected mouth/action entry references, approved Puck/Leda identities and common nonverbal chuckles. Adapt timings/ducking by each language, retain natural standardized Chinese names and Malaysian shape terms. Necessary targeted retakes remain free-tier only. Final full-resolution outputs and readback must pass before cloud reviews are removed; preserve raw materials, selected takes, cue manifests, code and reusable assets.
+
+Local disk had159MB available; authorized removal of seven obsolete review-only MP4s/intermediate video copies freed838,269,048bytes (exact inventory/bytes/SHA under reports/final-v001/local-review-cleanup-before-finals.json). No audio, original, selected take, approved v004 review, source master or config deleted. Cloud cleanup deferred until final delivery verification.
+
+## Final delivery / localization / cleanup completed — 2026-11-02
+
+English final is164,051,789bytes; Mandarin164,038,926bytes; Malaysian Malay164,046,486bytes. All are720x1280/24fps,3996frames/166.5s, complete FFmpeg decode passed. English copies exact approved AAC (later extracted unchanged into approved-audio-v001/en-approved-v004.m4a so no review-video dependency remains). Actual EN−16.15LUFS/−2.22dBTP, ZH−16.11/−2.12, MS−16.11/−2.33. All27 final subtitle midpoints per language and ending frames reviewed: full-picture white outline/shadow, no separate panel or sampled character obstruction. Localized final speech waveform correlations minimum ZH0.991960/MS0.980879; both common Puck chuckles present.70 regression tests pass, including wrong-language takes and approved-source checksum rejection.
+
+ZH new Leda clue has strict independent迪诺 name/text checks (both cached recognizers confirm after a controlled pronunciation retake). MS selected new Puck repair idea/question/closing and Leda clue all pass word checks; the corrected clue clearly recognizes Dino rather than Tino. A new triangle candidate regressed the shape word, so preserve the correctly verified original segi tiga take with at most10percent total stretching and the corrected50.125s entry. Other already-stretched source takes are not compressed again. Final Malay invitation is the faithful natural shorter Sedia nak mengembara lagi?, fitting before Jom. Canonical Chinese names迪诺/邦妮 and Malay shape terms bulatan/segi tiga/segi empat sama/bucu remain standardized. Rejected candidates retained as sources; no paid calls/billing, no animation regeneration or released EP1 rework.
+
+Existing review_audio.py now selects configured EN/ZH/MS outputs, final labels and shared raw SFX with per-language ducking. finalize_approved.py promotes approved audio at full picture resolution without remixing. Frozen configs final-en/zh/ms-v001.json are the reproduction commands; production-final-v001.json is their localized text/source-selection input rather than a distribution manifest. Confirmed reusable English Leda/Puck voice assets were copied and checksum verified into library/media/audio/ep2-approved-v001 and indexed in library/presets/ep2-approved-voice-assets-v001.json; original takes/approved voice styles unchanged.
+
+Final Drive folder: https://drive.google.com/drive/folders/1XW0jJFadQ2FSofsezIKG8_grjA70Apqw
+EN: https://drive.google.com/file/d/1Wllle4v2sebb3PhaqHrgxd4ohtjDiJ6X/view
+ZH: https://drive.google.com/file/d/10mN1tRXO1nWT1sH2FxQX76P9aC0Xlx9M/view
+MS: https://drive.google.com/file/d/11dk3H7b4PTle8_yf465AYjDQeM871eCG/view
+Three MP4s at folder top; subtitles/SRT/ASS, four independent stems per language, timing/automation and QA under Audio_Subtitles_and_Manifests. Source_Voice_Takes retains the moved English raw takes, selected localization raw WAV/request/checks and exact approved English M4A; older source backup Production_v001 and HQ originals untouched. All60 final/source files verified by remote size/MD5, plus FILE_MANIFEST and cleanup report.
+
+User-authorized cleanup inventoried exact targets and used Drive Trash explicitly (never permanent delete). Only four Review_EN_v001-v004 MP4 IDs removed; five remaining note/audio folders moved into Retained_Audio_and_Review_Notes. Readback confirmed all602 other prior files preserved by ID, size and MD5, and all60 final/source files unchanged. Local obsolete review MP4s and re-creatable old mix caches cleaned; exact approved AAC, all raw takes, stems, originals, presets and code retained. Audits under reports/final-v001/{drive-verification,cleanup-verification,cloud-review-trash-plan,local-review-cleanup-before-finals}.json. No social publishing.

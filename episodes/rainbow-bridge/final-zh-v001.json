@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "language": "zh",
+  "episode": "episodes/rainbow-bridge/production-final-v001.json",
+  "dialogue_source": {
+    "path": "episodes/rainbow-bridge/exports/dino_broken_bridge_zh_dialogue_v001.dialogue.wav",
+    "sha256": "7f66d89ca9c7b7177d63e486b459e456f22c56dfae7d0874300edef2d0bda047"
+  },
+  "work_dir": "episodes/rainbow-bridge/media/derived/final-v001/zh",
+  "delivery_dir": "episodes/rainbow-bridge/exports/Final_v001/zh",
+  "score": "episodes/rainbow-bridge/music-v002.json",
+  "sfx_plan": "episodes/rainbow-bridge/sfx-cues-v003.json",
+  "sfx_registry": "episodes/rainbow-bridge/sfx-presets-v003.json",
+  "ambience": "episodes/rainbow-bridge/media/derived/background-v001/ambience-faded.wav",
+  "original_music": "episodes/rainbow-bridge/media/derived/background-v001/music.wav",
+  "subtitle_settings": "episodes/rainbow-bridge/subtitles.zh.json",
+  "roadmap": "EP2_EN_Music_Emotion_Cue_Sheet_v001.md; Drive 1NSxHEnxZNn6GOibiOsI-6vsILTSHx1mn",
+  "automation": {
+    "music_duck_db": 8,
+    "ambience_duck_db": 2,
+    "sfx_duck_db": 5
+  },
+  "dialogue_edits": {
+    "bunny-bridge": {
+      "emotion": "Worried, asking a trusted friend",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-help": {
+      "emotion": "Hopeful request",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-reassure": {
+      "emotion": "Warm reassurance",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-three-shapes": {
+      "emotion": "Curious discovery",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-fix-bridge": {
+      "emotion": "Tentative hope",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-really": {
+      "emotion": "Surprised curiosity",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-hope": {
+      "emotion": "Hopeful relief",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-how": {
+      "emotion": "Curious question",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-circle": {
+      "emotion": "Small delighted discovery",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-no-corners": {
+      "emotion": "Clear gentle explanation",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-two-more": {
+      "emotion": "Joy and encouragement",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "dino-triangle": {
+      "emotion": "Curious recognition",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 50.125
+    },
+    "dino-three-corners": {
+      "emotion": "Clear learning emphasis",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-find-one": {
+      "emotion": "Eager to explore",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-triangle-stone": {
+      "emotion": "Delighted discovery over stone cutaway",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-great-job": {
+      "emotion": "Warm encouragement",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "bunny-one-more": {
+      "emotion": "Hopeful anticipation",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-square": {
+      "emotion": "Curious recognition",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-four-corners": {
+      "emotion": "Clear explanation",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "dino-where-square": {
+      "emotion": "Playful puzzlement",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 104
+    },
+    "bunny-under-foot": {
+      "emotion": "Excited delighted discovery and eager helpful reminder",
+      "reason": "New excited Leda clue; canonical迪诺 pronunciation verified, corrected mouth entry retained.",
+      "tempo": 0.98,
+      "gain_db": -6.9,
+      "start_s": 107.125,
+      "source_take": {
+        "path": "episodes/rainbow-bridge/media/derived/retakes-final-v001/zh/take-20261102T015118899522Z/bunny-under-foot.wav",
+        "sha256": "6ff28b61552fba6906f36cf2679571a55ec5f29998e649c8667d217791ab6f5e",
+        "verification_report": "episodes/rainbow-bridge/reports/final-v001/retakes/zh-bunny-under-foot-check.json",
+        "character": "bunny",
+        "language": "zh"
+      }
+    },
+    "dino-here-it-is": {
+      "emotion": "Pleased discovery",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 110.85
+    },
+    "dino-found-square": {
+      "emotion": "Small success",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-you-did-it": {
+      "emotion": "Excited relief",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0.8
+    },
+    "bunny-thanks": {
+      "emotion": "Warm sincere gratitude",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 150
+    },
+    "dino-next-adventure": {
+      "emotion": "Cheerful invitation",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0
+    },
+    "bunny-lets-go": {
+      "emotion": "Bright eager reply",
+      "reason": "Reuse verified natural localized source; preserve words and existing conservative fitting.",
+      "tempo": 1,
+      "gain_db": 0,
+      "start_s": 159.75
+    }
+  },
+  "output_version": "v001",
+  "review_video": {
+    "width": 720,
+    "crf": 18,
+    "preset": "fast"
+  },
+  "direct_review_master": true,
+  "vocal_reactions": [
+    {
+      "id": "dino-triangle-proud-chuckle",
+      "start_s": 83,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "library/media/audio/ep2-approved-v001/dino-proud-chuckle-check.json",
+        "character": "dino",
+        "language": "en"
+      },
+      "gain_db": -4.3,
+      "timing_basis": "Actual open-mouth hands-on-hips proud smile around83.0-84.4s. Short nonverbal chuckle, no new story words."
+    },
+    {
+      "id": "dino-square-happy-chuckle",
+      "start_s": 123.1666666667,
+      "phonation": "Ha-ha!",
+      "source_take": {
+        "path": "library/media/audio/ep2-approved-v001/dino-proud-chuckle.wav",
+        "sha256": "1cc9c65e971c3f1325f9141c2295aed2912869749a4f55996b768d698cb0045d",
+        "verification_report": "library/media/audio/ep2-approved-v001/dino-proud-chuckle-check.json",
+        "character": "dino",
+        "language": "en"
+      },
+      "gain_db": -5.8,
+      "timing_basis": "Actual open-mouth happy smile after last stone123.1-124.8s; short softer chuckle before separate stone-glow sequence125s."
+    }
+  ],
+  "export_label": "Final",
+  "shared_sfx_raw": {
+    "path": "episodes/rainbow-bridge/media/derived/review-en-v004/sfx.raw.wav",
+    "sha256": "8e17fced473a0f042ae991d9312c41a80878d44d161c2554139f83f3a12d893e"
+  }
+}

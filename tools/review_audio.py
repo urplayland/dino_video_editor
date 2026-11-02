@@ -52,7 +52,7 @@ def read_pcm(path):
     return np.frombuffer(result.stdout, dtype='<f4').reshape(-1, 2).copy()
 
 
-def take_pcm(spec, expected_text, voices, nonverbal=False):
+def take_pcm(spec, expected_text, voices, nonverbal=False, language='en'):
     """Load a newly generated take only with matching voice/transcript provenance."""
     path = dub.relative(spec['path'], True)
     if sha(path) != spec['sha256']:
@@ -64,7 +64,7 @@ def take_pcm(spec, expected_text, voices, nonverbal=False):
     if (char.get('approval_status') != 'voice_selection_approved'
             or check.get('status') != state or check.get('sha256') != spec['sha256']
             or check.get('expected_text') != expected_text or record.get('sha256') != spec['sha256']
-            or record.get('character') != spec['character'] or record.get('language') != 'en'
+            or record.get('character') != spec['character'] or record.get('language') != spec.get('language',language)
             or record.get('model') != char['model'] or record.get('voice_version') != char['preset_version']
             or record['request']['generationConfig']['speechConfig']['voiceConfig']['voice'] != char['voice']
             or record['request']['contents'][0]['parts'][0]['text'] != expected_text):
@@ -125,12 +125,17 @@ def immutable_json(path, value):
 def build(config_path):
     import numpy as np
     cfg = dub.load(config_path)
-    if cfg.get('schema_version') != 1 or cfg.get('language') != 'en':
-        raise ValueError('This review is explicitly English only.')
+    if cfg.get('schema_version') != 1 or cfg.get('language') not in ('en','zh','ms'):
+        raise ValueError('Select a configured EN, ZH or MS export.')
+    language = cfg['language']
+    prefix = 'Dino_EP2_' + language.upper()
+    label = cfg.get('export_label', 'Integrated_Review')
+    if label not in ('Integrated_Review','Final'):
+        raise ValueError('Unsupported export label.')
     version, width, crf, preset = review_options(cfg)
     episode = dub.load(dub.relative(cfg['episode'], True))
     voices = dub.load(dub.relative(episode['voice_registry'], True))
-    selected = production.language_manifest(episode, 'en')
+    selected = production.language_manifest(episode, language)
     source = dub.relative(cfg['dialogue_source']['path'], True)
     if sha(source) != cfg['dialogue_source']['sha256']:
         raise ValueError('Dialogue source checksum changed.')
@@ -164,7 +169,7 @@ def build(config_path):
         tempo = dub.number(edit.get('tempo', 1), 'dialogue tempo', .95, 1.10)
         start = dub.number(edit.get('start_s', cue['start_s']), 'dialogue start', 0, episode['duration_s'])
         gain = dub.number(edit.get('gain_db', 0), 'dialogue edit gain', -24 if edit.get('source_take') else -6, 6)
-        pcm = (take_pcm(edit['source_take'], cue['text'], voices) if edit.get('source_take') else
+        pcm = (take_pcm(edit['source_take'], cue['text'], voices, language=language) if edit.get('source_take') else
                original[round(cue['start_s'] * RATE):round(cue['end_s'] * RATE)])
         clip = work / (cue['id'] + '.wav')
         if not clip.exists():
@@ -192,7 +197,7 @@ def build(config_path):
             raise ValueError('Duplicate dialogue/reaction ID.')
         cue_ids.add(reaction['id'])
         start = dub.number(reaction['start_s'], 'reaction start', 0, episode['duration_s'])
-        pcm = take_pcm(reaction['source_take'], reaction['phonation'], voices, nonverbal=True)
+        pcm = take_pcm(reaction['source_take'], reaction['phonation'], voices, nonverbal=True, language=language)
         end = start + len(pcm)/RATE
         if end > episode['duration_s'] or any(start < row['end_s'] and end > row['start_s'] for row in rows):
             raise ValueError('Vocal reaction overlaps spoken dialogue or ending.')
@@ -201,7 +206,7 @@ def build(config_path):
         gain = dub.number(reaction.get('gain_db',0), 'reaction gain', -30, 6)
         reactions.append(dict(reaction, end_s=round(end,4), path=clip.relative_to(dub.ROOT).as_posix(),
             timestamp_s=start, duration_s=len(pcm)/RATE, gain_db=gain))
-    dialogue = dest / f'Dino_EP2_EN_Dialogue_Only_{version}.wav'
+    dialogue = dest / f'{prefix}_Dialogue_Only_{version}.wav'
     if not dialogue.exists(): timeline(tracks+reactions, dialogue, episode['duration_s'])
     # Subtitle edges are remeasured from the final assembled audio, not old windows.
     final_dialogue = read_pcm(dialogue)
@@ -210,27 +215,27 @@ def build(config_path):
         lead, tail = active_bounds(final_dialogue[lo:hi])
         row.update(start_s=round(lo/RATE+lead, 4), end_s=round(lo/RATE+tail, 4))
     revised = copy.deepcopy(episode)
-    revised['languages'] = ['en']
+    revised['languages'] = [language]
     for cue, row in zip(revised['dialogue'], rows):
-        cue['audio']['en'].update(start_s=row['start_s'], end_s=row['end_s'])
+        cue['audio'][language].update(start_s=row['start_s'], end_s=row['end_s'])
     settings = dub.load(dub.relative(cfg['subtitle_settings'], True))
-    settings.update(ass_path=(dest/f'Dino_EP2_EN_{version}.ass').relative_to(dub.ROOT).as_posix(),
-        story_srt_path=(dest/f'Dino_EP2_EN_{version}.srt').relative_to(dub.ROOT).as_posix(),
-        packaged_srt_path=(dest/f'Dino_EP2_EN_{version}.srt').relative_to(dub.ROOT).as_posix(),
+    settings.update(ass_path=(dest/f'{prefix}_{version}.ass').relative_to(dub.ROOT).as_posix(),
+        story_srt_path=(dest/f'{prefix}_{version}.srt').relative_to(dub.ROOT).as_posix(),
+        packaged_srt_path=(dest/f'{prefix}_{version}.srt').relative_to(dub.ROOT).as_posix(),
         report_path=(work/'subtitles.json').relative_to(dub.ROOT).as_posix())
     subtitles.generate(revised, settings)
     immutable_json(work/'subtitle-settings.json', settings)
-    immutable_json(dest/f'Dino_EP2_EN_Dialogue_Timeline_{version}.json', {
+    immutable_json(dest/f'{prefix}_Dialogue_Timeline_{version}.json', {
         'source_audio_sha256': sha(dialogue), 'timing_authority': 'Final dialogue PCM energy bounds, 25ms lead /45ms tail; not word-level forced alignment.',
         'generation': 'Existing Puck/Leda takes plus explicitly selected, verified retakes/reactions if configured. This renderer makes no generation calls.',
         'vocal_reactions':reactions, 'cues': rows})
-    md = [f'# EP2 English dialogue {version}', '', 'Full-film clock, existing 2s opening included once. Final spoken-audio bounds. Vocal reactions are separately listed in the JSON, not new story dialogue.', '',
+    md = [f'# EP2 {language.upper()} dialogue {version}', '', 'Full-film clock, existing 2s opening included once. Final spoken-audio bounds. Vocal reactions are separately listed in the JSON, not new story dialogue.', '',
         '| Cue | Voice | In | Out | Spoken words |', '|---|---|---|---|---|']
     for row in rows:
         md.append(f'| {row["id"]} | {row["character"]} | {subtitles.stamp(row["start_s"])} | {subtitles.stamp(row["end_s"])} | {row["text"]} |')
     md += ['', 'All 27 speaker assignments checked against actual picture samples. Triangle discovery intentionally speaks over the stone cutaway. Acting/accent remain subject to human listening; tempo/gain edits do not create a newly acted performance.']
     text = '\n'.join(md)+'\n'
-    target = dest/f'Dino_EP2_EN_Dialogue_Timeline_{version}.md'
+    target = dest/f'{prefix}_Dialogue_Timeline_{version}.md'
     if not target.exists(): dub.write_new(target, text.encode())
     scene_score.render(dub.relative(cfg['score'], True))
     plan = dub.load(dub.relative(cfg['score'], True))
@@ -255,16 +260,18 @@ def build(config_path):
     for cue in cues:
         effect = registry['effects'][cue['preset_id']]
         sfx.ensure_asset(effect, sfx.select_variation(effect, cue))
-    raw_sfx = work/'sfx.raw.wav'
+    raw_sfx = dub.relative(cfg['shared_sfx_raw']['path'],True) if cfg.get('shared_sfx_raw') else work/'sfx.raw.wav'
+    if cfg.get('shared_sfx_raw') and sha(raw_sfx) != cfg['shared_sfx_raw']['sha256']:
+        raise ValueError('Shared source SFX checksum changed.')
     if not raw_sfx.exists(): timeline(cues, raw_sfx, episode['duration_s'])
     effects = read_pcm(raw_sfx)
     effects *= duck_envelope(count, intervals, automation['sfx_duck_db'])[:,None]
     stems = {'BGM':music, 'Ambience':ambience, 'SFX':effects}
     for name, samples in stems.items():
-        path = dest/f'Dino_EP2_EN_{name}_{version}.wav'
+        path = dest/f'{prefix}_{name}_{version}.wav'
         if not path.exists(): write_pcm(path, samples)
-    immutable_json(dest/f'Dino_EP2_EN_Music_Automation_{version}.json', {
-        'schema_version':1, 'duration_s':episode['duration_s'], 'language':'en',
+    immutable_json(dest/f'{prefix}_Music_Automation_{version}.json', {
+        'schema_version':1, 'duration_s':episode['duration_s'], 'language':language,
         'roadmap':cfg['roadmap'], 'score_plan':plan, 'speech_intervals':intervals,
         'automation':automation, 'attack_s':.15, 'release_s':.3,
         'stems':'BGM, ambience and SFX files include their own automation; do not apply ducking twice.',
@@ -273,10 +280,10 @@ def build(config_path):
     premix = work/'premix.wav'
     if not premix.exists():
         timeline([dict(path=p.relative_to(dub.ROOT).as_posix(),timestamp_s=0,duration_s=episode['duration_s'],gain_db=0)
-            for p in [dialogue]+[dest/f'Dino_EP2_EN_{k}_{version}.wav' for k in stems]], premix, episode['duration_s'], float_output=True)
+            for p in [dialogue]+[dest/f'{prefix}_{k}_{version}.wav' for k in stems]], premix, episode['duration_s'], float_output=True)
     clean = work/f'clean-{version}.mp4'
     direct = cfg.get('direct_review_master', False)
-    movie = dest/f'Dino_EP2_EN_Integrated_Review_{version}.mp4'
+    movie = dest/f'{prefix}_{label}_{version}.mp4'
     graph = caption_filter({'subtitles':(work/'subtitle-settings.json').relative_to(dub.ROOT).as_posix()})
     if width != 720:
         graph += f',scale={width}:{width*16//9}'
@@ -313,7 +320,7 @@ def build(config_path):
         'review_encoding':dict(width=width,height=width*16//9,crf=crf,preset=preset),
         'limitations':'Offline frame/ASR/waveform checks do not establish human acting, accent or music taste approval. Generated performance requests are retained with selected takes; renderer never calls TTS.',
         'files':{p.name:dict(bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(dest.iterdir()) if p.is_file() and p.name!=f'QUALITY_REVIEW_{version}.json'}})
-    print('English review rendered:', movie, flush=True)
+    print(language.upper(), label, 'rendered:', movie, flush=True)
 
 
 if __name__ == '__main__':
