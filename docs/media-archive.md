@@ -1,5 +1,11 @@
 # Episode media archive
 
+Current EP1 navigation is in [EPISODE_INDEX.md](../episodes/save-the-moon/EPISODE_INDEX.md).
+The episode now uses01_Editing,02_Final_Product/{Videos,Subtitles,Audio,Clean_Master}
+and03_Publishing, preserving original file IDs and media bytes. The tree below is
+the historical delivery layout, not the current path map. Owner-authorized obsolete
+server caches have since been removed; originals and selected inputs remain.
+
 The owner-requested Google Drive archive is `GDrive:Dino/Dino_Saves_the_Moon/`.
 This is a source/delivery archive, not a social-media publication. Media stays
 outside Git; production scripts and configuration remain in this repository.

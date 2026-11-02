@@ -1,5 +1,12 @@
 # FLH YouTube launch kit
 
+Current organization: episode-specific covers/copy have moved to EP1/03_Publishing;
+channel-wide material is under the private Dino/Library/Branding/Channel folder.
+Existing file/folder IDs are retained. Use the current [EP1 index](../episodes/save-the-moon/EPISODE_INDEX.md)
+or [series index](series-index.md); the staging/delivery paths below describe the
+earlier kit package. Root access consolidation and channel routing are pending
+owner confirmation; no three channel URLs are asserted here.
+
 Prepared on the owner's request for next-day channel setup. The local delivery
 is `library/media/branding/youtube-launch-v001/`, outside Git. The Drive
 destination is `GDrive:Dino/FLH_YouTube_Launch_Kit_v001/`, alongside the episode

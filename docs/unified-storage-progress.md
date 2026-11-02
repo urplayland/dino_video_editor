@@ -14,6 +14,8 @@ Implemented:
 - Narrow ignore allowlist/checksum validator added; unrelated media/work credentials still ignored. Engineering fixture source lives in tests/fixtures, with helper/docs updated. Reusable episode template now includes Bible/guidelines/status/index and init fills identity correctly.
 - `tools/dino.py pull` restores from a repository-path/Drive-ID/size/SHA256 manifest using an existing authenticated rclone remote. It validates paths, refuses changed existing destinations, stages downloads and atomically installs verified bytes. A real1505byte final SRT was restored into a separate empty tree by stable Drive ID; no existing source overwritten. Restore manifests are ignored metadata, not proof that every current input has already been mapped.
 -78 regression tests passed, including checksum/path/credential/ignore protections and corrupt-download/no-overwrite tests. Pinned assets are separately checksum verified.
+- A clean local Git clone verified all96 pinned assets and excludes large original/export media and.env. The relocated engineering fixture was actually rendered through all three synthetic language outputs; the mixer accepts only the explicit test-fixture namespace in addition to its existing episode namespaces. Generated fixture/download/mix staging caches were removed after validation, not archived as stories.
+- Final cloud readback preserved all716 pre-existing files by ID:710 byte/hash-identical and six intended current-guide/index updates. All six selected EP1/EP2 movies retain pinned SHA256s. Three new complete mixes and all new status/Bible-reference/guideline/index documents verified by remote SHA256/size. Mutable current indexes match actual paths and hashes; historical manifests untouched.
 
 Pending external choices:
 
