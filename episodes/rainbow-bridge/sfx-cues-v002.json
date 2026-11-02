@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "duration_s": 166.5,
+  "review_scope": "2026-11-02 actual full-film sampled picture/action review; owner listening approval remains pending.",
+  "scenes": [
+    {
+      "id": "Scene01",
+      "description": "EP2_Scene01_REBOOT_BunnyAsks_6p5s.mp4"
+    },
+    {
+      "id": "Scene02",
+      "description": "EP2_Scene02_REBOOT_DinoReassures_6p58s.mp4"
+    },
+    {
+      "id": "Scene04",
+      "description": "EP2_Scene04_REBOOT_APPROVED_DinoDiscovery_6p625s.mp4"
+    },
+    {
+      "id": "Scene05",
+      "description": "EP2_Scene05_APPROVED_BunnyResponse_6p7s.mp4"
+    },
+    {
+      "id": "Scene06",
+      "description": "EP2_Scene06_APPROVED_CircleLesson_NoGlow_8s.mp4"
+    },
+    {
+      "id": "Scene07",
+      "description": "EP2_Scene07_APPROVED_FindCircleStone_4p7s.mp4"
+    },
+    {
+      "id": "Scene08",
+      "description": "EP2_Scene08_APPROVED_PickUpCircleStone_3p2s.mp4"
+    },
+    {
+      "id": "Scene09",
+      "description": "EP2_Scene09_APPROVED_FlatCirclePlacement_8s.mp4"
+    },
+    {
+      "id": "Scene10",
+      "description": "EP2_Scene10_APPROVED_BunnyEncourages_6s.mp4"
+    },
+    {
+      "id": "Scene11A",
+      "description": "EP2_Scene11A_APPROVED_TriangleDiscovery_4s.mp4"
+    },
+    {
+      "id": "Scene11B",
+      "description": "EP2_Scene11B_APPROVED_TriangleObservation_8s.mp4"
+    },
+    {
+      "id": "Scene12",
+      "description": "EP2_Scene12_APPROVED_DiscoverTriangleStone_8s.mp4"
+    },
+    {
+      "id": "Scene13",
+      "description": "EP2_Scene13_APPROVED_DinoApproachesTriangle_8s.mp4"
+    },
+    {
+      "id": "Scene15",
+      "description": "EP2_Scene15_APPROVED_FlatTrianglePlacement_8s.mp4"
+    },
+    {
+      "id": "Scene16",
+      "description": "EP2_Scene16_APPROVED_BunnyOneMoreShape_6s.mp4"
+    },
+    {
+      "id": "Scene17",
+      "description": "EP2_Scene17_APPROVED_DinoIntroducesSquare_8s.mp4"
+    },
+    {
+      "id": "Scene18",
+      "description": "EP2_Scene18_APPROVED_SearchingForSquare_8s.mp4"
+    },
+    {
+      "id": "Scene19",
+      "description": "EP2_Scene19_APPROVED_BunnyLookUnderYourFoot_6s.mp4"
+    },
+    {
+      "id": "Scene20",
+      "description": "EP2_Scene20_APPROVED_SquareDiscovery_7p4s.mp4"
+    },
+    {
+      "id": "Scene21",
+      "description": "EP2_Scene21_APPROVED_FlatSquarePlacement_8s.mp4"
+    },
+    {
+      "id": "22A_to_22B",
+      "description": "EP2_22A_to_22B_APPROVED_MagicGlow_Transition_9p75s.mp4"
+    },
+    {
+      "id": "Scene23",
+      "description": "EP2_Scene23_APPROVED_BridgeRestored_8s.mp4"
+    },
+    {
+      "id": "Scene24",
+      "description": "EP2_Scene24_APPROVED_BunnyReactsToRestoredBridge_8s.mp4"
+    },
+    {
+      "id": "Scene25",
+      "description": "EP2_Scene25_ACCEPTED_ReunionHug_8s.mp4"
+    },
+    {
+      "id": "Scene26",
+      "description": "EP2_Scene26_APPROVED_LeftWalk_FreezeFade_4p25s.mp4"
+    },
+    {
+      "id": "INTRO",
+      "description": "Existing FLH opening"
+    },
+    {
+      "id": "OUTRO",
+      "description": "New THE END card"
+    },
+    {
+      "id": "full-episode",
+      "description": "Shared full-film audio bed span, not an additional story scene."
+    }
+  ],
+  "cues": [
+    {
+      "id": "circle-contact",
+      "scene_id": "Scene09",
+      "preset_id": "puzzle_click",
+      "preset_version": "v001",
+      "timestamp_s": 42,
+      "gain_db": -2,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "circle-small-reward",
+      "scene_id": "Scene09",
+      "preset_id": "magic_pop",
+      "preset_version": "v001",
+      "timestamp_s": 42.25,
+      "gain_db": -7,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "triangle-contact",
+      "scene_id": "Scene15",
+      "preset_id": "puzzle_click",
+      "preset_version": "v001",
+      "timestamp_s": 80.25,
+      "gain_db": -1,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "triangle-small-reward",
+      "scene_id": "Scene15",
+      "preset_id": "magic_pop",
+      "preset_version": "v001",
+      "timestamp_s": 80.5,
+      "gain_db": -6,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "square-contact",
+      "scene_id": "Scene21",
+      "preset_id": "puzzle_click",
+      "preset_version": "v001",
+      "timestamp_s": 120.5,
+      "gain_db": 0,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "final-stone-reward",
+      "scene_id": "Scene21",
+      "preset_id": "magic_pop",
+      "preset_version": "v001",
+      "timestamp_s": 120.8,
+      "gain_db": -5,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "restoration-whoosh",
+      "scene_id": "Scene23",
+      "preset_id": "magic_whoosh",
+      "preset_version": "v001",
+      "timestamp_s": 129.45,
+      "gain_db": -5,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "rainbow-restoration",
+      "scene_id": "Scene23",
+      "preset_id": "rainbow_restore",
+      "preset_version": "v001",
+      "timestamp_s": 134.7,
+      "gain_db": -3,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "reunion-hug",
+      "scene_id": "Scene25",
+      "preset_id": "soft_hug",
+      "preset_version": "v001",
+      "timestamp_s": 153.1,
+      "gain_db": -7,
+      "status": "verified",
+      "timing_basis": "Actual sampled picture review: stone lowered at42/80/120s; sockets glow128s, flash130s, bridge construction132-137s, hug153s. Sampling precision 0.5-1s; not frame-perfect Foley approval."
+    },
+    {
+      "id": "reunion-step-0",
+      "scene_id": "Scene25",
+      "preset_id": "bunny_hop",
+      "preset_version": "v001",
+      "timestamp_s": 150.6,
+      "gain_db": -9,
+      "status": "verified",
+      "timing_basis": "Actual picture at150-152s shows Bunny crossing toward stationary Dino. Use light Bunny movement, not Dino footsteps; exact foot-contact listening approval pending."
+    },
+    {
+      "id": "reunion-step-1",
+      "scene_id": "Scene25",
+      "preset_id": "bunny_hop",
+      "preset_version": "v001",
+      "timestamp_s": 151.1,
+      "gain_db": -9,
+      "status": "verified",
+      "timing_basis": "Actual picture at150-152s shows Bunny crossing toward stationary Dino. Use light Bunny movement, not Dino footsteps; exact foot-contact listening approval pending."
+    },
+    {
+      "id": "reunion-step-2",
+      "scene_id": "Scene25",
+      "preset_id": "bunny_hop",
+      "preset_version": "v001",
+      "timestamp_s": 151.6,
+      "gain_db": -9,
+      "status": "verified",
+      "timing_basis": "Actual picture at150-152s shows Bunny crossing toward stationary Dino. Use light Bunny movement, not Dino footsteps; exact foot-contact listening approval pending."
+    },
+    {
+      "id": "reunion-step-3",
+      "scene_id": "Scene25",
+      "preset_id": "bunny_hop",
+      "preset_version": "v001",
+      "timestamp_s": 152.1,
+      "gain_db": -9,
+      "status": "verified",
+      "timing_basis": "Actual picture at150-152s shows Bunny crossing toward stationary Dino. Use light Bunny movement, not Dino footsteps; exact foot-contact listening approval pending."
+    },
+    {
+      "id": "departure-step-0",
+      "scene_id": "Scene26",
+      "preset_id": "dino_footstep",
+      "preset_version": "v001",
+      "timestamp_s": 159.8,
+      "gain_db": -8,
+      "status": "verified",
+      "timing_basis": "Actual departure shown between159-161s after final exchange; move early footstep from158.9 to159.8s. Conservative approximate Foley timing."
+    },
+    {
+      "id": "departure-step-1",
+      "scene_id": "Scene26",
+      "preset_id": "dino_footstep",
+      "preset_version": "v001",
+      "timestamp_s": 160.20000000000002,
+      "gain_db": -8,
+      "status": "verified",
+      "timing_basis": "Actual departure shown between159-161s after final exchange; move early footstep from158.9 to159.8s. Conservative approximate Foley timing."
+    },
+    {
+      "id": "departure-step-2",
+      "scene_id": "Scene26",
+      "preset_id": "dino_footstep",
+      "preset_version": "v001",
+      "timestamp_s": 160.60000000000002,
+      "gain_db": -8,
+      "status": "verified",
+      "timing_basis": "Actual departure shown between159-161s after final exchange; move early footstep from158.9 to159.8s. Conservative approximate Foley timing."
+    },
+    {
+      "id": "socket-glow-air",
+      "scene_id": "Scene23",
+      "preset_id": "magic_whoosh",
+      "preset_version": "v001",
+      "timestamp_s": 127.8,
+      "gain_db": -11,
+      "status": "verified",
+      "timing_basis": "Soft air swell at visible socket activation around128s, before white flash130s."
+    }
+  ]
+}

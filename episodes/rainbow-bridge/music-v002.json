@@ -1,0 +1,2383 @@
+{
+  "schema_version": 1,
+  "title": "Broken Bridge \u2014 English narrative score v002",
+  "duration_s": 166.5,
+  "registry": "config/music_presets.json",
+  "seed": 20261102,
+  "output": "episodes/rainbow-bridge/media/derived/score-v002/underscore.wav",
+  "work_dir": "episodes/rainbow-bridge/media/derived/score-v002",
+  "target_integrated_lufs": -24.5,
+  "max_true_peak_db": -11,
+  "fade_out_s": 0.5,
+  "cues": [
+    {
+      "id": "approved-opening",
+      "start_s": 0,
+      "end_s": 2,
+      "bpm": 80,
+      "mood": "Existing opening music retained",
+      "layers": [],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "broken-bridge-concern",
+      "start_s": 2,
+      "end_s": 8.8,
+      "bpm": 64,
+      "mood": "Gentle concern, sparse unanswered harmony",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              45,
+              52,
+              60,
+              64
+            ]
+          ],
+          "velocity": 21,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 29,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              74,
+              0.65,
+              0
+            ],
+            [
+              2,
+              76,
+              0.65,
+              0
+            ],
+            [
+              4,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "promise-and-shapes",
+      "start_s": 8.8,
+      "end_s": 18.8,
+      "bpm": 78,
+      "mood": "Reassurance becomes curiosity",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 25,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            67,
+            64,
+            69
+          ],
+          "velocity": 27,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 30,
+          "offset_s": 3,
+          "events": [
+            [
+              0.0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1.5,
+              76,
+              0.65,
+              0
+            ],
+            [
+              3.0,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4.5,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "hope-and-circle-lesson",
+      "start_s": 18.8,
+      "end_s": 29.5,
+      "bpm": 80,
+      "mood": "Gentle connected learning theme, space for rapid dialogue",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 23,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 26,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 32,
+          "offset_s": 6,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "circle-search",
+      "start_s": 29.5,
+      "end_s": 35,
+      "bpm": 88,
+      "mood": "Quest begins with a light pulse",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ]
+          ],
+          "velocity": 25,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            64,
+            60,
+            67
+          ],
+          "velocity": 39,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 39,
+          "offset_s": 1,
+          "events": [
+            [
+              0,
+              76,
+              0.65,
+              0
+            ],
+            [
+              1,
+              74,
+              0.65,
+              0
+            ],
+            [
+              2,
+              72,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "circle-pickup-and-placement",
+      "start_s": 35,
+      "end_s": 42.08,
+      "bpm": 94,
+      "mood": "Growing confidence as circle is carried and lowered",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 29,
+          "rise": 5,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            76
+          ],
+          "velocity": 37,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 6,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 44,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              74,
+              0.65,
+              0
+            ],
+            [
+              2,
+              76,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4,
+              81,
+              0.65,
+              0
+            ],
+            [
+              5,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "bass",
+          "notes": [
+            48,
+            55,
+            53,
+            55
+          ],
+          "velocity": 31,
+          "step_beats": 2,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "circle-small-success",
+      "start_s": 42.08,
+      "end_s": 45,
+      "bpm": 92,
+      "mood": "Small earned success, not final victory",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 30,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 48,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              84,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "harp",
+          "velocity": 37,
+          "offset_s": 0.1,
+          "events": [
+            [
+              0.0,
+              60,
+              0.65,
+              0
+            ],
+            [
+              0.5,
+              67,
+              0.65,
+              0
+            ],
+            [
+              1.0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1.5,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "bunny-circle-celebration",
+      "start_s": 45,
+      "end_s": 49.2,
+      "bpm": 86,
+      "mood": "Happy response, settle under Bunny",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 25,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            64,
+            67,
+            64
+          ],
+          "velocity": 31,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "triangle-lesson",
+      "start_s": 49.2,
+      "end_s": 58.3,
+      "bpm": 84,
+      "mood": "Familiar learning motif in a new instrumental color",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 24,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            67,
+            64,
+            69
+          ],
+          "velocity": 29,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 34,
+          "offset_s": 2,
+          "events": [
+            [
+              0.0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1.5,
+              76,
+              0.65,
+              0
+            ],
+            [
+              3.0,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4.5,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "triangle-mystery",
+      "start_s": 58.3,
+      "end_s": 65.15,
+      "bpm": 90,
+      "mood": "Gentle unanswered search, never frightening",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 26,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            64,
+            60,
+            62
+          ],
+          "velocity": 36,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "velocity": 33,
+          "offset_s": 1,
+          "events": [
+            [
+              0.0,
+              60,
+              0.65,
+              0
+            ],
+            [
+              1.5,
+              62,
+              0.65,
+              0
+            ],
+            [
+              3.0,
+              64,
+              0.65,
+              0
+            ],
+            [
+              4.5,
+              67,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "triangle-discovery-and-approach",
+      "start_s": 65.15,
+      "end_s": 76.8,
+      "bpm": 98,
+      "mood": "Stone discovery opens into purposeful progress",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 29,
+          "rise": 5,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            76
+          ],
+          "velocity": 39,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 2.8,
+          "rise": 7,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 45,
+          "offset_s": 2.8,
+          "events": [
+            [
+              0,
+              76,
+              0.65,
+              0
+            ],
+            [
+              1,
+              79,
+              0.65,
+              0
+            ],
+            [
+              2,
+              81,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4,
+              76,
+              0.65,
+              0
+            ],
+            [
+              5,
+              74,
+              0.65,
+              0
+            ],
+            [
+              6,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "bass",
+          "notes": [
+            48,
+            55,
+            53,
+            55
+          ],
+          "velocity": 32,
+          "step_beats": 2,
+          "gate": 0.55,
+          "offset_s": 2.8,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "triangle-lowering",
+      "start_s": 76.8,
+      "end_s": 80.25,
+      "bpm": 100,
+      "mood": "Small anticipatory rise toward contact",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 33,
+          "rise": 7,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            62,
+            65,
+            67,
+            71
+          ],
+          "velocity": 43,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 7,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            67,
+            71,
+            74,
+            79
+          ],
+          "velocity": 40,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "triangle-second-success",
+      "start_s": 80.25,
+      "end_s": 86.1,
+      "bpm": 96,
+      "mood": "Confident success, leave room for next encouragement",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 32,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 48,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              84,
+              0.65,
+              0
+            ],
+            [
+              4,
+              81,
+              0.65,
+              0
+            ],
+            [
+              5,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 39,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "encouragement-and-square",
+      "start_s": 86.1,
+      "end_s": 95.2,
+      "bpm": 86,
+      "mood": "Warm encouragement and clear final shape lesson",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 26,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            64,
+            67,
+            69
+          ],
+          "velocity": 30,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 34,
+          "offset_s": 4,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "square-playful-puzzle",
+      "start_s": 95.2,
+      "end_s": 104.15,
+      "bpm": 102,
+      "mood": "Playful mystery with forward motion",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 27,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            57,
+            64,
+            60,
+            67
+          ],
+          "velocity": 42,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 5,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "bassoon",
+          "velocity": 37,
+          "offset_s": 0,
+          "events": [
+            [
+              0.0,
+              60,
+              0.65,
+              0
+            ],
+            [
+              1.5,
+              64,
+              0.65,
+              0
+            ],
+            [
+              3.0,
+              62,
+              0.65,
+              0
+            ],
+            [
+              4.5,
+              67,
+              0.65,
+              0
+            ],
+            [
+              6.0,
+              65,
+              0.65,
+              0
+            ],
+            [
+              7.5,
+              64,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            69,
+            72,
+            76,
+            74
+          ],
+          "velocity": 32,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 4,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "bunnys-clue-and-square-discovery",
+      "start_s": 104.15,
+      "end_s": 114.3,
+      "bpm": 84,
+      "mood": "Sparse clue exchange, no hit across speaker handoff",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 24,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 27,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 36,
+          "offset_s": 8.3,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "last-stone-effort",
+      "start_s": 114.3,
+      "end_s": 120.5,
+      "bpm": 96,
+      "mood": "Restrained effort toward final stone contact",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              45,
+              52,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 31,
+          "rise": 5,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "pizzicato",
+          "notes": [
+            60,
+            64,
+            67,
+            71
+          ],
+          "velocity": 42,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 4,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "bass",
+          "notes": [
+            48,
+            53,
+            55,
+            55
+          ],
+          "velocity": 32,
+          "step_beats": 2,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 40,
+          "offset_s": 1,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              74,
+              0.65,
+              0
+            ],
+            [
+              2,
+              76,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "all-shapes-ready",
+      "start_s": 120.5,
+      "end_s": 127.75,
+      "bpm": 100,
+      "mood": "Success remains expectant; bridge is not complete yet",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 33,
+          "rise": 5,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            84
+          ],
+          "velocity": 42,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 8,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 42,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              76,
+              0.65,
+              0
+            ],
+            [
+              1,
+              79,
+              0.65,
+              0
+            ],
+            [
+              2,
+              81,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "bass",
+          "notes": [
+            48,
+            53,
+            50,
+            55
+          ],
+          "velocity": 34,
+          "step_beats": 2,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "socket-glow-and-white-flash",
+      "start_s": 127.75,
+      "end_s": 131,
+      "bpm": 104,
+      "mood": "Anticipatory magical lift begins with visible glow",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ]
+          ],
+          "velocity": 36,
+          "rise": 12,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            64,
+            67,
+            72,
+            76,
+            79,
+            84,
+            88
+          ],
+          "velocity": 46,
+          "step_beats": 0.25,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 14,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "tremolo",
+          "notes": [
+            60,
+            64,
+            67,
+            71
+          ],
+          "velocity": 32,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 10,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "bridge-construction-crescendo",
+      "start_s": 131,
+      "end_s": 136.6,
+      "bpm": 112,
+      "mood": "Largest crescendo tracks rebuilding, arrives with solid bridge",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 42,
+          "rise": 20,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76,
+            79,
+            84
+          ],
+          "velocity": 52,
+          "step_beats": 0.25,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 12,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "strings",
+          "notes": [
+            60,
+            64,
+            67,
+            72
+          ],
+          "velocity": 36,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 9,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "velocity": 59,
+          "offset_s": 0.5,
+          "events": [
+            [
+              0,
+              60,
+              0.65,
+              0
+            ],
+            [
+              1,
+              64,
+              0.65,
+              0
+            ],
+            [
+              2,
+              67,
+              0.65,
+              0
+            ],
+            [
+              3,
+              72,
+              0.65,
+              0
+            ],
+            [
+              4,
+              76,
+              0.65,
+              0
+            ],
+            [
+              5,
+              79,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "bass",
+          "notes": [
+            48,
+            50,
+            55,
+            48
+          ],
+          "velocity": 45,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "velocity": 57,
+          "events": [
+            [
+              4.7,
+              48,
+              0.8,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "restoration-victory-and-release",
+      "start_s": 136.6,
+      "end_s": 143.65,
+      "bpm": 104,
+      "mood": "Complete bridge payoff, gradually release before Bunny",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 44,
+          "rise": -13,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "horn",
+          "velocity": 61,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              84,
+              0.65,
+              0
+            ],
+            [
+              4,
+              79,
+              0.65,
+              0
+            ],
+            [
+              5,
+              76,
+              0.65,
+              0
+            ],
+            [
+              6,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 49,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              84,
+              0.65,
+              0
+            ],
+            [
+              1,
+              83,
+              0.65,
+              0
+            ],
+            [
+              2,
+              81,
+              0.65,
+              0
+            ],
+            [
+              3,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4,
+              76,
+              0.65,
+              0
+            ],
+            [
+              5,
+              74,
+              0.65,
+              0
+            ],
+            [
+              6,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 44,
+          "step_beats": 0.5,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": -12,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "hits",
+          "instrument": "timpani",
+          "velocity": 58,
+          "events": [
+            [
+              0,
+              48,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "bunny-gratitude",
+      "start_s": 143.65,
+      "end_s": 152,
+      "bpm": 74,
+      "mood": "Warm simple tenderness, no victory hit over thanks",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ],
+            [
+              50,
+              57,
+              62,
+              65
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 26,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 35,
+          "offset_s": 1,
+          "events": [
+            [
+              0.0,
+              76,
+              0.65,
+              0
+            ],
+            [
+              1.2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              2.4,
+              81,
+              0.65,
+              0
+            ],
+            [
+              3.5999999999999996,
+              79,
+              0.65,
+              0
+            ],
+            [
+              4.8,
+              76,
+              0.65,
+              0
+            ],
+            [
+              6.0,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 26,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "friendship-and-next-adventure",
+      "start_s": 152,
+      "end_s": 157.75,
+      "bpm": 82,
+      "mood": "Relief and affectionate friendship",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 28,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "flute",
+          "velocity": 39,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              72,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              79,
+              0.65,
+              0
+            ],
+            [
+              3,
+              81,
+              0.65,
+              0
+            ],
+            [
+              4,
+              79,
+              0.65,
+              0
+            ],
+            [
+              5,
+              76,
+              1.2,
+              0
+            ]
+          ]
+        },
+        {
+          "kind": "pattern",
+          "instrument": "harp",
+          "notes": [
+            60,
+            67,
+            72,
+            76
+          ],
+          "velocity": 29,
+          "step_beats": 1,
+          "gate": 0.55,
+          "offset_s": 0,
+          "rise": 0,
+          "end_offset_s": -0.35,
+          "accents": [
+            3,
+            -2,
+            0,
+            -3
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "departure-cadence",
+      "start_s": 157.75,
+      "end_s": 162,
+      "bpm": 84,
+      "mood": "Hopeful closing exchange into accepted end card",
+      "layers": [
+        {
+          "kind": "pad",
+          "instrument": "strings",
+          "chords": [
+            [
+              41,
+              48,
+              57,
+              65
+            ],
+            [
+              43,
+              50,
+              59,
+              62
+            ],
+            [
+              48,
+              55,
+              60,
+              64
+            ]
+          ],
+          "velocity": 27,
+          "rise": 0,
+          "tail_s": 0.4
+        },
+        {
+          "kind": "phrase",
+          "instrument": "celesta",
+          "velocity": 35,
+          "offset_s": 0,
+          "events": [
+            [
+              0,
+              79,
+              0.65,
+              0
+            ],
+            [
+              1,
+              76,
+              0.65,
+              0
+            ],
+            [
+              2,
+              74,
+              0.65,
+              0
+            ],
+            [
+              3,
+              72,
+              1.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    },
+    {
+      "id": "accepted-ending",
+      "start_s": 162,
+      "end_s": 166.5,
+      "bpm": 80,
+      "mood": "Accepted ending music reused exactly before mastering",
+      "layers": [],
+      "timing_basis": "Supplied emotion roadmap plus actual picture review 2026-11-02; full film clock includes opening."
+    }
+  ]
+}
