@@ -28,3 +28,7 @@ Current follow-up — 2026-11-02:
 - Owner subsequently reviewed the23 superseded EP1 exports and explicitly approved deletion. After fresh selected-final Drive hash checks and per-candidate generated-output SHA256 checks, removed exactly23local MP4s/1,458,133,521bytes. The previous automatic-approval scope blocker is resolved. No originals, raw takes, protected recovery inputs or Drive files removed; historical manifests and sidecar reports retained.
 
 Audit records are ignored under work/unified-storage and work/unified-finish.
+
+Latest bounded local cleanup — 2026-11-02:
+
+Owner approved six enumerated intermediate/old-export categories. Removed151 files/2,038,760,488bytes after fresh remote hash checks for all six selected final videos and current-input/Git/recovery-set exclusions. Includes EP1 branding intermediate MP4s, both episodes' old complete mix WAVs, EP2 superseded localized Final_v001, review screenshots and one abandoned temp movie. Retained all original sources/raw takes/subtitles/MIDI/reusable assets and textual reports. Drive unchanged. This does not make the server Git-only; remaining original source/runtime materials are intentionally preserved. Audit: ignored work/remaining-cleanup-v001.
