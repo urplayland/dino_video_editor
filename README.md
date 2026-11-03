@@ -70,3 +70,5 @@ The current English review uses an editable nine-cue orchestral score rather tha
 Distribution: [one FLH channel, three permanent language playlists and separate subtitled releases](docs/distribution.md). Ready-to-paste channel/episode setup copy is documented in [the YouTube kit](docs/youtube-launch-kit.md). GitHub contains the production scripts, registries and manifests; media storage is separate, as described in [the storage assessment](docs/github-media-storage.md).
 
 Reusable SFX and common multilingual mixing: [production commands, registry/cue formats and independent verified acceptance output](docs/sfx-and-mixing.md). Episode 2 draft files are in `episodes/rainbow-bridge/`; unknown video timing is intentionally not renderable.
+
+GitHub/Drive ownership and the bounded Drive cleanup handoff are documented in [storage responsibilities](docs/storage-responsibilities.md).

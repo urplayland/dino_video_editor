@@ -32,3 +32,7 @@ Audit records are ignored under work/unified-storage and work/unified-finish.
 Latest bounded local cleanup — 2026-11-02:
 
 Owner approved six enumerated intermediate/old-export categories. Removed151 files/2,038,760,488bytes after fresh remote hash checks for all six selected final videos and current-input/Git/recovery-set exclusions. Includes EP1 branding intermediate MP4s, both episodes' old complete mix WAVs, EP2 superseded localized Final_v001, review screenshots and one abandoned temp movie. Retained all original sources/raw takes/subtitles/MIDI/reusable assets and textual reports. Drive unchanged. This does not make the server Git-only; remaining original source/runtime materials are intentionally preserved. Audit: ignored work/remaining-cleanup-v001.
+
+GitHub/Drive ownership audit — 2026-11-03:
+
+Confirmed pushed main9c14728 and the100asset registry, all750recovery entries and six selected final Drive files. Added docs/storage-responsibilities.md and docs/drive-cleanup-prompt.md. A166-entry,26,535,085byte candidate manifest is on Drive, with immutable Git content evidence and protected-ID exclusions. No Drive deletion/move executed; owner will hand off the explicit list to another ChatGPT session. Keep fonts/soundfont and recovery-linked files within Project_Source; never remove that folder wholesale.
