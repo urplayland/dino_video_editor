@@ -96,9 +96,17 @@ Timing fitting trims only near-silent edges, retains breathing room, allows no m
 
 Music is ducked under dialogue. Separate timeline-length dialogue, music, ambience and SFX WAV buses plus a floating-point premix are retained alongside each render. All original mixed audio is excluded; only the silent picture master and explicitly selected dialogue-free assets are used.
 
-Working output settings are H.264 picture stream copy, AAC stereo 48 kHz/192 kbps, MP4 faststart, -16 LUFS integrated target and -1.5 dBTP normalization target. These are documented production working choices, not claims of a platform-specific delivery certification. Export checks include full decode, duration/streams, encoded audio loudness/peak margin and exact picture-packet hash equality against the silent master. Per-export JSON records the manifest, hashes, trims, FFmpeg version and measured results. Failed checks do not result in a claimed completed episode.
+### Future final exports: owner instruction, 2026-11-04
 
-Expected final MP4s:
+Shared owner guideline for both Milo and Dino: [Videos/Production_Guidelines.md](https://drive.google.com/file/d/1mfEJlUVYEakgr9LQ2Zs200RG9WFLil8M/view). Read that shared Drive reference before future production; the series-specific implementation details below remain local technical documentation.
+
+For future Dino and Milo episodes, deliver final masters without additional lossy compression. Render edited finals directly from the editing timeline to uncompressed video with PCM audio, such as an uncompressed MOV. Let YouTube/Facebook perform their own platform encoding. Do not default final delivery to H.264/H.265 video or AAC audio, and do not make a compressed MP4 and then convert it into an uncompressed master. Keep the original resolution and frame rate. Verify the actual video/audio codecs, complete decoding, timing, subtitles, loudness and peaks before delivery. A file extension or high bitrate alone does not establish an uncompressed export.
+
+Already compressed source footage cannot regain lost detail; this instruction prevents additional lossy encoding during final delivery. The owner explicitly exempted the current Milo EP01 releases: keep their existing files and uploads, with no re-export or replacement for this change. Existing render helpers must be adapted before they are used for future final deliveries; their current compressed settings do not override this instruction.
+
+Historical working output settings were H.264 picture stream copy, AAC stereo 48 kHz/192 kbps, MP4 faststart, -16 LUFS integrated target and -1.5 dBTP normalization target. These describe earlier outputs, not the future final-export policy above. Historical export checks include full decode, duration/streams, encoded audio loudness/peak margin and exact picture-packet hash equality against the silent master. Per-export JSON records the manifest, hashes, trims, FFmpeg version and measured results. Failed checks do not result in a claimed completed episode.
+
+Historical expected MP4s:
 
 - `episodes/save-the-moon/exports/dino_saves_the_moon_en.mp4`
 - `episodes/save-the-moon/exports/dino_saves_the_moon_zh.mp4`

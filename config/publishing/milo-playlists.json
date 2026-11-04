@@ -1,0 +1,38 @@
+{
+  "channel_id": "UC-73PZi4C7akIkRCMdN793Q",
+  "created_at": "2026-11-04T03:43:55.826745+00:00",
+  "visibility": "public",
+  "reference": "Existing Dino Adventures language playlists",
+  "playlists": [
+    {
+      "language": "en",
+      "title": "Milo — English",
+      "description": "Milo in English, with English dialogue and on-screen subtitles. Join Milo, a cheerful, curious young fox, for playful learning adventures and everyday discoveries. Episodes are arranged in story order.",
+      "status": "verified",
+      "privacyStatus": "public",
+      "id": "PLAEqHPh1_joQ",
+      "action": "created",
+      "url": "https://www.youtube.com/playlist?list=PLAEqHPh1_joQ"
+    },
+    {
+      "language": "zh",
+      "title": "Milo — 中文",
+      "description": "Milo 中文故事，配有中文对白和画面内字幕。跟随开朗好奇的小狐狸 Milo，在轻松有趣的冒险中学习，发现日常生活中的小惊喜。影片按故事顺序排列。",
+      "status": "verified",
+      "privacyStatus": "public",
+      "action": "created",
+      "id": "PLeK6uunOqryU",
+      "url": "https://www.youtube.com/playlist?list=PLeK6uunOqryU"
+    },
+    {
+      "language": "ms",
+      "title": "Milo — Bahasa Melayu",
+      "description": "Milo dalam Bahasa Melayu Malaysia, dengan dialog dan sari kata pada skrin dalam Bahasa Melayu. Ikuti Milo, seekor musang kecil yang ceria dan suka meneroka, dalam pengembaraan pembelajaran yang menyeronokkan serta penemuan dalam kehidupan seharian. Episod disusun mengikut urutan cerita.",
+      "privacyStatus": "public",
+      "status": "verified",
+      "id": "PLPd_pogA29_I",
+      "action": "created",
+      "url": "https://www.youtube.com/playlist?list=PLPd_pogA29_I"
+    }
+  ]
+}

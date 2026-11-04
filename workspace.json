@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "title": "Family Learning Hub Video Production",
+  "shared_guideline": "shared/Production_Guidelines.md",
+  "drive_root_folder_id": "12jdhrReV5W21MHhFMv1Vma1CJhjO-5rR",
+  "series": {
+    "dino": {"path": "series/dino", "drive_folder_id": "1wOs05ILi2Pzba6vMt1eB1ja1cSplfsHa"},
+    "milo": {"path": "series/milo", "drive_folder_id": "1ZN7wAiMWHuJmoQVghzijlIA9HO9q4akv"}
+  },
+  "publishing": {
+    "tools": "tools/publishing",
+    "policy": "config/publishing/youtube-policy.json",
+    "credentials": "secrets",
+    "playlist_assignment": "manual"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "title": "Milo Series EP01 — Let's Learn Shapes!",
+  "language": "zh",
+  "voice": "Achernar",
+  "voice_approval": "Owner selected Achernar and requested formal EN/ZH/MS production after approving English v002.",
+  "model": "gemini-3.8-flash-tts",
+  "style": "Milo是一只可爱的小男孩狐狸。使用Achernar音色，说自然清晰的普通话。声音轻柔、甜甜的、年轻，有好奇心，像带着微笑跟小朋友说话。轻快可爱，有小小的惊喜，不要尖叫，不要刻意夹嗓子，不要成人播音腔，不要拖长字音。短句清楚自然，保持同一角色。只读提供的台词，不要添加内容。",
+  "duration_s": 50.291666666666664,
+  "intro_s": 2,
+  "outro_s": 2.5,
+  "lines": [
+    {
+      "id": "everywhere",
+      "source_start_s": 0.1,
+      "source_end_s": 1.95,
+      "text": "到处都有形状！"
+    },
+    {
+      "id": "triangle",
+      "source_start_s": 2.88,
+      "source_end_s": 5.1,
+      "text": "这是三角形。"
+    },
+    {
+      "id": "square",
+      "source_start_s": 8.3,
+      "source_end_s": 11.2,
+      "text": "看！正方形！"
+    },
+    {
+      "id": "sign",
+      "source_start_s": 15.66,
+      "source_end_s": 17.85,
+      "text": "看看那个牌子！"
+    },
+    {
+      "id": "oval",
+      "source_start_s": 18.08,
+      "source_end_s": 20.1,
+      "text": "这是椭圆形。"
+    },
+    {
+      "id": "wow-door",
+      "source_start_s": 21.84,
+      "source_end_s": 22.55,
+      "text": "哇！"
+    },
+    {
+      "id": "door",
+      "source_start_s": 23.06,
+      "source_end_s": 24.5,
+      "text": "看看这扇门。"
+    },
+    {
+      "id": "rectangle",
+      "source_start_s": 24.7,
+      "source_end_s": 27.0,
+      "text": "这是长方形。"
+    },
+    {
+      "id": "wow-star",
+      "source_start_s": 28.24,
+      "source_end_s": 29.5,
+      "text": "哇！"
+    },
+    {
+      "id": "star-look",
+      "source_start_s": 30.06,
+      "source_end_s": 31.65,
+      "text": "看那颗星星！"
+    },
+    {
+      "id": "star-shape",
+      "source_start_s": 31.9,
+      "source_end_s": 34.0,
+      "text": "这是星形。"
+    },
+    {
+      "id": "wow-kite",
+      "source_start_s": 36.04,
+      "source_end_s": 36.9,
+      "text": "哇！"
+    },
+    {
+      "id": "kite",
+      "source_start_s": 37.24,
+      "source_end_s": 38.7,
+      "text": "看那个风筝！"
+    },
+    {
+      "id": "diamond-look",
+      "source_start_s": 39.32,
+      "source_end_s": 39.95,
+      "text": "看！"
+    },
+    {
+      "id": "diamond",
+      "source_start_s": 40.38,
+      "source_end_s": 42.15,
+      "text": "菱形！"
+    },
+    {
+      "id": "wow-recap",
+      "source_start_s": 42.96,
+      "source_end_s": 44.05,
+      "text": "哇！"
+    },
+    {
+      "id": "recap",
+      "source_start_s": 44.48,
+      "source_end_s": 47.1,
+      "text": "找到六种形状啦！"
+    },
+    {
+      "id": "goodbye",
+      "source_start_s": 47.44,
+      "source_end_s": 48.65,
+      "text": "我们下次见！"
+    },
+    {
+      "id": "bye",
+      "source_start_s": 48.84,
+      "source_end_s": 50.18,
+      "text": "拜拜！"
+    }
+  ],
+  "groups": [
+    {
+      "id": "everywhere",
+      "line_indices": [
+        0
+      ],
+      "text": "到处都有形状！"
+    },
+    {
+      "id": "triangle",
+      "line_indices": [
+        1
+      ],
+      "text": "这是三角形。"
+    },
+    {
+      "id": "square",
+      "line_indices": [
+        2
+      ],
+      "text": "看！正方形！"
+    },
+    {
+      "id": "sign",
+      "line_indices": [
+        3
+      ],
+      "text": "看看那个牌子！"
+    },
+    {
+      "id": "oval",
+      "line_indices": [
+        4
+      ],
+      "text": "这是椭圆形。"
+    },
+    {
+      "id": "wow-door",
+      "line_indices": [
+        5
+      ],
+      "text": "哇！"
+    },
+    {
+      "id": "door",
+      "line_indices": [
+        6
+      ],
+      "text": "看看这扇门。"
+    },
+    {
+      "id": "rectangle",
+      "line_indices": [
+        7
+      ],
+      "text": "这是长方形。"
+    },
+    {
+      "id": "wow-star",
+      "line_indices": [
+        8
+      ],
+      "text": "哇！"
+    },
+    {
+      "id": "star-look",
+      "line_indices": [
+        9
+      ],
+      "text": "看那颗星星！"
+    },
+    {
+      "id": "star-shape",
+      "line_indices": [
+        10
+      ],
+      "text": "这是星形。"
+    },
+    {
+      "id": "wow-kite",
+      "line_indices": [
+        11
+      ],
+      "text": "哇！"
+    },
+    {
+      "id": "kite",
+      "line_indices": [
+        12
+      ],
+      "text": "看那个风筝！"
+    },
+    {
+      "id": "diamond-look",
+      "line_indices": [
+        13
+      ],
+      "text": "看！"
+    },
+    {
+      "id": "diamond",
+      "line_indices": [
+        14
+      ],
+      "text": "菱形！"
+    },
+    {
+      "id": "wow-recap",
+      "line_indices": [
+        15
+      ],
+      "text": "哇！"
+    },
+    {
+      "id": "recap",
+      "line_indices": [
+        16
+      ],
+      "text": "找到六种形状啦！"
+    },
+    {
+      "id": "goodbye",
+      "line_indices": [
+        17
+      ],
+      "text": "我们下次见！"
+    },
+    {
+      "id": "bye",
+      "line_indices": [
+        18
+      ],
+      "text": "拜拜！"
+    }
+  ],
+  "source_dialogue_notes": [
+    "Six shapes: triangle, square, oval, rectangle, star, diamond. Owner requested circle removal; approved derived picture reused."
+  ],
+  "picture": "media/originals/production/Milo_EP01_Silent_Master.mp4",
+  "source_reference": "media/originals/production/Milo_EP01_Clean_Master.mp4",
+  "output": "exports/ZH_Final_v001/Milo_EP01_ZH_Final_v001.mp4",
+  "status": "owner_approved_owner_reports_published",
+  "name_decision": "Owner confirmed character name remains Milo.",
+  "split_boundary_overrides_s": {},
+  "revision": "Owner reported clipped ending of everywhere and requested circle removal for a six-shape lesson. Preserve v001; correct full speech boundaries, remove circle only in derived picture, and change recap/subtitle to six.",
+  "retouched_ending": "media/derived/picture-v002/ending-six-shapes-lossless-v002.mkv",
+  "retouch_start_frame": 1052,
+  "delivery": {
+    "drive_folder_id": "1ZzOdjj38WsGgWMLa0kCweU3PskiCycD9",
+    "youtube_video_id": "GCOFJkJ8cPw",
+    "youtube_url": "https://www.youtube.com/watch?v=GCOFJkJ8cPw",
+    "youtube_privacy": "public",
+    "youtube_processing": "succeeded",
+    "last_verified_youtube_privacy": "public"
+  },
+  "localization_notes": [
+    "Recap shortened naturally to fit the locked picture; retains six-shape meaning. Original longer generated take preserved."
+  ],
+  "owner_approval": "Owner approved all EN/ZH/MS versions and reported publication on 2026-11-04."
+}

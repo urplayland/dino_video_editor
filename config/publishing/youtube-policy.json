@@ -1,0 +1,34 @@
+{
+  "channel_id": "UC-73PZi4C7akIkRCMdN793Q",
+  "channel_title": "Family Learning Hub",
+  "allow_deletion": false,
+  "allowed_operations": [
+    "status",
+    "list_playlists",
+    "upload_private_milo_ep01_final"
+  ],
+  "publication_requires_user_instruction": true,
+  "playlist_assignment": "manual",
+  "requested_google_scopes": [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly"
+  ],
+  "google_scope_migration": "verified_upload_and_readonly",
+  "verified_google_scopes": [
+    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/youtube.upload"
+  ],
+  "private_upload_authorization": {
+    "owner_instruction_date": "2026-11-04",
+    "episodes": [
+      "Milo EP01"
+    ],
+    "languages": [
+      "EN",
+      "ZH",
+      "MS"
+    ],
+    "privacy": "private",
+    "owner_will_publish": true
+  }
+}

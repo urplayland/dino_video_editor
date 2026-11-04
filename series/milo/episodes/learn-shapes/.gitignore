@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+*.token*
+*client*.json
+__pycache__/
+.venv/
+media/
+assets/
+work/
+exports/
+reports/
+archive/

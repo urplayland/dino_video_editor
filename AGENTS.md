@@ -1,12 +1,9 @@
-# Dino Adventures workspace
+# Family Learning Hub video workspace
 
-This repository supports post-production for the whole Dino Adventures series.
-
-- Preserve original sources. Never overwrite, delete, or re-encode originals as a cleanup step.
-- Put episode-specific content in `episodes/<slug>/` and confirmed reusable assets in `library/`.
-- Keep media, caches, inventories, and exports out of Git using the repository ignore rules.
-- Keep the episode template and helper compatible. Use project-relative paths.
-- Treat missing creative decisions and source metadata as unknown. Do not fabricate timecodes, dialogue, asset contents, licensing, approval, or export settings.
-- Read kit instructions and the episode plan before editing. Record changes and review results in the episode plan.
-- Do not publish or upload episode media unless the user requests it.
-- Prefer a small dependency-free helper over introducing an application or framework without a concrete need.
+- This is one Git repository containing both Dino and Milo. Use `series/dino` for Dino, `series/milo` for Milo, `shared` for common guidelines, and `tools/publishing` for channel tools. Read applicable series instructions and the episode plan before editing.
+- The common owner guideline is `shared/Production_Guidelines.md`, published at Google Drive `Videos/Production_Guidelines.md` (file ID `1mfEJlUVYEakgr9LQ2Zs200RG9WFLil8M`). Follow its future uncompressed-video/PCM-audio requirement. Existing Milo EP01 deliveries are explicitly exempt; do not re-export them for that policy change.
+- Preserve original media, approved finals, raw voice takes, reusable assets and provenance. Keep temporary files under episode `work`, historical reviews under `archive/reviews`, and current deliverables under `exports`. Never delete or re-encode originals during cleanup.
+- `.env`, `secrets`, `local`, `backups`, environments, caches and full media are local-only. Never print, commit, or upload credential values. Keep the deliberate Dino small-asset allowlist; do not broaden it to include arbitrary media.
+- Existing series manifests and helpers use paths relative to their series or episode root. Run Dino commands from `series/dino`; Milo uses `workspace_paths.py` for cross-series resources. Update references when reorganizing files.
+- No publishing, deletion, playlist writes, sharing changes, billing changes, or credential broadening without owner authorization. YouTube remains upload/read-only; playlist assignment is manual. Preserve completed-upload records to prevent duplicate uploads.
+- Commit code, configuration, owner instructions and handoffs after appropriate checks. Retain the existing Git remote/history unless the owner requests a remote change. Local diagnostics and backup bundles are not release artifacts.

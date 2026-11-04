@@ -1,0 +1,14 @@
+# Dino Adventures workspace
+
+This repository supports post-production for the whole Dino Adventures series.
+
+- Preserve original sources. Never overwrite, delete, or re-encode originals as a cleanup step.
+- Put episode-specific content in `episodes/<slug>/` and confirmed reusable assets in `library/`.
+- Keep media, caches, inventories, and exports out of Git using the repository ignore rules.
+- Keep the episode template and helper compatible. Use project-relative paths.
+- Treat missing creative decisions and source metadata as unknown. Do not fabricate timecodes, dialogue, asset contents, licensing, approval, or export settings.
+- Read kit instructions and the episode plan before editing. Record changes and review results in the episode plan.
+- Read the common owner guideline for both series at Google Drive `Videos/Production_Guidelines.md` (file ID `1mfEJlUVYEakgr9LQ2Zs200RG9WFLil8M`); local source is `/srv/video_editor/shared/Production_Guidelines.md`.
+- Follow the future final-export policy in `docs/production.md`: uncompressed video masters with PCM audio, rendered directly from the timeline, without an additional lossy delivery encode. Existing Milo EP01 releases are exempt; do not re-export or replace them for this policy change.
+- Do not publish or upload episode media unless the user requests it.
+- Prefer a small dependency-free helper over introducing an application or framework without a concrete need.

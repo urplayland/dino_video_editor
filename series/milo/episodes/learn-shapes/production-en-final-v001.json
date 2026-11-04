@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "title": "Milo Series EP01 — Let's Learn Shapes!",
+  "language": "en",
+  "voice": "Achernar",
+  "voice_approval": "Owner selected Achernar and approved EN-first v1 production in this conversation.",
+  "model": "gemini-3.8-flash-tts",
+  "style": "Milo is a cute young boy fox. Use the selected Achernar voice with a soft, sweet, light youthful tone, gentle curiosity, and small delighted discoveries. Natural clear American English, slightly higher placement but not squeaky or breathy. Sound like a child talking to a friend, not an adult narrator. Warm little smile, playful and engaging, never baby talk or shouting. Speak clearly at an unhurried conversational pace, roughly 130 words per minute, with brief natural pauses between sentences. Read only the exact supplied dialogue.",
+  "duration_s": 50.291666666666664,
+  "intro_s": 2,
+  "outro_s": 2.5,
+  "lines": [
+    {
+      "id": "everywhere",
+      "source_start_s": 0.1,
+      "source_end_s": 1.95,
+      "text": "Shapes are everywhere!"
+    },
+    {
+      "id": "triangle",
+      "source_start_s": 2.88,
+      "source_end_s": 5.1,
+      "text": "This is a triangle."
+    },
+    {
+      "id": "square",
+      "source_start_s": 8.3,
+      "source_end_s": 11.2,
+      "text": "Look! A square!"
+    },
+    {
+      "id": "sign",
+      "source_start_s": 15.66,
+      "source_end_s": 17.85,
+      "text": "Look at that sign!"
+    },
+    {
+      "id": "oval",
+      "source_start_s": 18.08,
+      "source_end_s": 20.1,
+      "text": "This is an oval shape."
+    },
+    {
+      "id": "wow-door",
+      "source_start_s": 21.84,
+      "source_end_s": 22.55,
+      "text": "Wow!"
+    },
+    {
+      "id": "door",
+      "source_start_s": 23.06,
+      "source_end_s": 24.5,
+      "text": "Look at the door."
+    },
+    {
+      "id": "rectangle",
+      "source_start_s": 24.7,
+      "source_end_s": 27.0,
+      "text": "This is a rectangle shape."
+    },
+    {
+      "id": "wow-star",
+      "source_start_s": 28.24,
+      "source_end_s": 29.5,
+      "text": "Wow!"
+    },
+    {
+      "id": "star-look",
+      "source_start_s": 30.06,
+      "source_end_s": 31.65,
+      "text": "Look at that star!"
+    },
+    {
+      "id": "star-shape",
+      "source_start_s": 31.9,
+      "source_end_s": 34.0,
+      "text": "This is a star shape."
+    },
+    {
+      "id": "wow-kite",
+      "source_start_s": 36.04,
+      "source_end_s": 36.9,
+      "text": "Wow!"
+    },
+    {
+      "id": "kite",
+      "source_start_s": 37.24,
+      "source_end_s": 38.7,
+      "text": "Look at that kite!"
+    },
+    {
+      "id": "diamond-look",
+      "source_start_s": 39.32,
+      "source_end_s": 39.95,
+      "text": "Look!"
+    },
+    {
+      "id": "diamond",
+      "source_start_s": 40.38,
+      "source_end_s": 42.15,
+      "text": "A diamond shape."
+    },
+    {
+      "id": "wow-recap",
+      "source_start_s": 42.96,
+      "source_end_s": 44.05,
+      "text": "Wow!"
+    },
+    {
+      "id": "recap",
+      "source_start_s": 44.48,
+      "source_end_s": 47.1,
+      "text": "We found six shapes today!"
+    },
+    {
+      "id": "goodbye",
+      "source_start_s": 47.44,
+      "source_end_s": 48.65,
+      "text": "See you next time!"
+    },
+    {
+      "id": "bye",
+      "source_start_s": 48.84,
+      "source_end_s": 50.18,
+      "text": "Bye-bye!"
+    }
+  ],
+  "groups": [
+    {
+      "id": "opening",
+      "line_indices": [
+        0,
+        1
+      ],
+      "text": "Shapes are everywhere! This is a triangle."
+    },
+    {
+      "id": "square",
+      "line_indices": [
+        2
+      ],
+      "text": "Look! A square!"
+    },
+    {
+      "id": "oval",
+      "line_indices": [
+        3,
+        4
+      ],
+      "text": "Look at that sign! This is an oval shape."
+    },
+    {
+      "id": "door",
+      "line_indices": [
+        5,
+        6,
+        7
+      ],
+      "text": "Wow! Look at the door. This is a rectangle shape."
+    },
+    {
+      "id": "star",
+      "line_indices": [
+        8,
+        9,
+        10
+      ],
+      "text": "Wow! Look at that star! This is a star shape."
+    },
+    {
+      "id": "kite",
+      "line_indices": [
+        11,
+        12
+      ],
+      "text": "Wow! Look at that kite!"
+    },
+    {
+      "id": "diamond",
+      "line_indices": [
+        13,
+        14
+      ],
+      "text": "Look! A diamond shape."
+    },
+    {
+      "id": "recap",
+      "line_indices": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "text": "Wow! We found six shapes today! See you next time! Bye-bye!"
+    }
+  ],
+  "source_dialogue_notes": [
+    "Leading The has zero duration and low probability in tiny.en; independent base.en is checked before synthesis.",
+    "Six individual shape reveals; original recap says seven and ending shows additional shape icons. Wording preserved for review."
+  ],
+  "picture": "media/originals/production/Milo_EP01_Silent_Master.mp4",
+  "source_reference": "media/originals/production/Milo_EP01_Clean_Master.mp4",
+  "output": "exports/EN_Final_v001/Milo_EP01_EN_Final_v001.mp4",
+  "status": "owner_approved_owner_reports_published",
+  "name_decision": "Owner confirmed character name remains Milo.",
+  "split_boundary_overrides_s": {
+    "opening": [
+      2.0
+    ],
+    "oval": [
+      1.88
+    ],
+    "door": [
+      1.04,
+      2.45
+    ],
+    "star": [
+      1.08,
+      2.9
+    ],
+    "kite": [
+      1.16
+    ],
+    "diamond": [
+      1.0
+    ]
+  },
+  "revision": "Owner reported clipped ending of everywhere and requested circle removal for a six-shape lesson. Preserve v001; correct full speech boundaries, remove circle only in derived picture, and change recap/subtitle to six.",
+  "retouched_ending": "media/derived/picture-v002/ending-six-shapes-lossless-v002.mkv",
+  "retouch_start_frame": 1052,
+  "delivery": {
+    "drive_file_id": "1efV3WnQNUV-tltP9eGTj0A54WkVAPuzk",
+    "youtube_video_id": "Jd5r156tgfI",
+    "youtube_url": "https://www.youtube.com/watch?v=Jd5r156tgfI",
+    "last_verified_youtube_privacy": "private"
+  },
+  "owner_approval": "Owner approved all three versions and reported publication; last read-only check observed EN private."
+}
