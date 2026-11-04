@@ -23,7 +23,7 @@ sudo systemctl enable --now codex-startup.service
 
 To disable future boot launches, run `sudo systemctl disable codex-startup.service`. Use the native Codex lifecycle commands for deliberate daemon stops/restarts; stopping an owned daemon can interrupt active work.
 
-Validation: systemd unit syntax, enabled boot link, a successful launch against the existing daemon, and unchanged daemon PID are checked during installation. This does not constitute a second reboot test.
+Validation: unit syntax, enabled boot link, a successful launch against the existing daemon, and unchanged daemon PID were checked during installation. A separate owner-authorized reboot test passed on 2026-11-04: the server booted at14:43:03 UTC, systemd launched this unit at14:43:17 UTC, and the managed daemon started at14:43:32 UTC inside `/system.slice/codex-startup.service`. An independent postboot observer checked process ownership before querying Codex and confirmed one running managed daemon, a successful startup unit, and passing kernel/network/SSH/cron/OCI-agent checks. The temporary observer removed its own startup registration; existing cron jobs were preserved. Detailed host logs remain private under `local/diagnostics/codex-boot-test/`.
 
 Official lifecycle reference: https://learn.chatgpt.com/docs/cli/reference#codex-remote-control
 
