@@ -26,3 +26,7 @@ To disable future boot launches, run `sudo systemctl disable codex-startup.servi
 Validation: systemd unit syntax, enabled boot link, a successful launch against the existing daemon, and unchanged daemon PID are checked during installation. This does not constitute a second reboot test.
 
 Official lifecycle reference: https://learn.chatgpt.com/docs/cli/reference#codex-remote-control
+
+## Other checkout: freetierinstance
+
+The checkout at `/srv/dino_video/dino_video_editor` uses `/etc/systemd/system/codex-remote.service` instead. See [that host's service templates and operating guide](../tools/remote-access/README.md). Only one Codex boot launcher should be enabled per host; do not install this document's `/srv/video_editor` template blindly on the other checkout.
