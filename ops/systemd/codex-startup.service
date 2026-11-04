@@ -1,0 +1,24 @@
+[Unit]
+Description=Start the ubuntu user's managed Codex daemon at boot
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/srv/video_editor
+Environment=HOME=/home/ubuntu
+Environment=CODEX_HOME=/home/ubuntu/.codex
+Environment=PATH=/home/ubuntu/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ubuntu/.local/bin/codex remote-control start
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=15
+TimeoutStartSec=120
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
