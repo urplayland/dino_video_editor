@@ -25,3 +25,9 @@ No current video was re-exported. Future final delivery follows the shared uncom
 ## Validation
 
 The relocated Dino suite passed all 78 tests. Its selected-media policy verified 100 pinned files (30,704,692 bytes). Milo helper imports, resource paths, Python syntax and JSON parsing passed; original-source and all24 final-file checksums remained unchanged. The moved YouTube helper verified the existing channel with upload/read-only scopes and deletion blocked. Staged content was checked against configured credential values; private credentials, full deliveries, reports, caches and backups are excluded from Git.
+
+## Local files reconciled after pull — 2026-11-04
+
+In this checkout, pulling41c0765 moved tracked Dino files into series/dino but left ignored local originals/runtime media/reports at the old root paths. The owner authorized removing unused leftovers. Merged1463non-colliding local files/2,969,919,199bytes from root episodes,incoming,library,work into the corresponding series/dino locations. Each move retained device/inode,size and mtime; originals were relocated without overwrite, deletion or re-encoding. Removed the four empty legacy roots and43ignored Python bytecode cache files/545,791bytes. Shared root tools/publishing,config,docs,.env and.venv retained. No Drive or credential changes.
+
+Ran the78Dino regression tests from series/dino; all passed. The100pinned small assets/30,704,692bytes also verified at the new root. Detailed move/cache/result inventories and test log are ignored under local/diagnostics/dino-layout-migration-20261104. This was a directory reconciliation, not a3GB storage deletion; retained source material remains available locally.
