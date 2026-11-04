@@ -1,0 +1,16 @@
+[Unit]
+Description=Claude remote access for %i
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=%h/.config/flh-remote/%i.conf
+ExecStart=/usr/bin/python3 %h/.local/lib/flh-remote/claude-remote.py
+Restart=always
+RestartSec=15
+TimeoutStopSec=30
+UMask=0077
+
+[Install]
+WantedBy=default.target

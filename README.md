@@ -40,3 +40,5 @@ YouTube policy stays in `config/publishing/youtube-policy.json`; OAuth clients/t
 Drive keeps episode originals, full videos, audio, subtitles and large dependencies under `Videos/{Dino_Stories,Milo}`. Approved local outputs remain under each episode's `exports`; earlier Milo reviews are under `archive/reviews`. Scratch/model caches may be recreated in `work` when needed. Original media and all final deliverables were checksum-verified during cleanup.
 
 The repository was expanded from the existing Dino repository without replacing its history. Its existing GitHub remote remains `urplayland/dino_video_editor`; the workspace now covers both series. See [the reorganization record](docs/workspace-reorganization.md) for path migration and cleanup details.
+
+Codex boot startup and the existing video-workspace Claude service are documented in [remote service operations](tools/remote-access/README.md).

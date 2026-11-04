@@ -1,0 +1,28 @@
+[Unit]
+Description=Start the existing Codex remote-control daemon at boot
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment=HOME=/home/ubuntu
+Environment=USER=ubuntu
+Environment=LOGNAME=ubuntu
+Environment=CODEX_HOME=/home/ubuntu/.codex
+Environment=PATH=/home/ubuntu/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ubuntu/.local/bin/codex remote-control start --json
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=45
+UMask=0077
+# Native daemon owns its lifecycle; stopping this launcher must not stop live sessions.
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
