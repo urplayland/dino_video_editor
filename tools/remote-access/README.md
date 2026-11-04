@@ -62,6 +62,8 @@ journalctl --user -u claude-remote@video.service -n30 --no-pager
 
 The video workspace trust confirmation was accepted through Claude's native dialog, then the terminal test server was stopped and replaced with the enabled systemd service. Connection was verified. A controlled service restart was performed; no existing interactive Claude sessions in other workspaces were stopped. Automatic approval initially rejected the proposed three-workspace operation before execution, pending scope confirmation. The owner subsequently explicitly selected all three workspaces. Bursa and Family Hub instances were then installed/enabled using their existing trusted workspaces, without stopping their interactive terminals. All three services were verified active, enabled and connected.
 
+**Update 2026-11-04:** at the owner's request the video instance (`claude-remote@video.service`, "FLH Video — Dino and Milo") was judged unnecessary and was disabled and stopped. Its unit template, `video.conf` and workspace trust were left in place, so it can be re-enabled with `systemctl --user enable --now claude-remote@video.service`. The Bursa and Family Hub instances were not changed.
+
 Claude session restoration is provider-limited: according to [official Claude documentation](https://code.claude.com/docs/en/remote-control#resume-sessions-after-stopping-the-server), the server can restore remote sessions for roughly four hours. Longer downtime may create a new session URL, even though the service automatically returns. Expired sign-ins, account restrictions and upstream outages still require attention. Never treat boot automation as a guarantee that every old link stays valid forever.
 
 ## Distinguish the other host's template
