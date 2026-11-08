@@ -16,3 +16,7 @@ python3 tools/dino.py pull --manifest /path/to/DINO_MEDIA_RESTORE_v001.json
 For an isolated recovery test, add `--destination-root /path/to/empty-folder`. To restore one entry, add `--only episodes/.../exact-file.wav` using its recorded path. Existing identical files are skipped; differing files cause an error and are never overwritten. Every downloaded file must match its recorded size and SHA256 before installation. This command does not generate voices or incur model-generation charges.
 
 Original sources are preserved. Local caches and backed-up derived exports may be removed only after coverage and recovery checks. Secrets stay outside Git and shared source backups; environment setup and authentication must be configured separately.
+
+## Retirement update —2026-11-08
+
+Future Dino work moves to another environment. Use the freshly verified [v002restore manifest](https://drive.google.com/file/d/16HgAtIW5AMcQcG5yA2VHeyZB_24kRJBW/view), running the commands above from `series/dino` in the unified clone. Earlier records remain historical. Large verified local copies were removed with explicit owner authorization; Drive source assets remain intact. Full handoff: workspace `docs/dino-environment-handoff.md`.

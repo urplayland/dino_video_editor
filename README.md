@@ -42,3 +42,5 @@ Drive keeps episode originals, full videos, audio, subtitles and large dependenc
 The repository was expanded from the existing Dino repository without replacing its history. Its existing GitHub remote remains `urplayland/dino_video_editor`; the workspace now covers both series. See [the reorganization record](docs/workspace-reorganization.md) for path migration and cleanup details.
 
 Codex boot startup and the existing video-workspace Claude service are documented in [remote service operations](tools/remote-access/README.md).
+
+Future Dino editing runs on another environment; see [the retirement and media recovery handoff](docs/dino-environment-handoff.md).
